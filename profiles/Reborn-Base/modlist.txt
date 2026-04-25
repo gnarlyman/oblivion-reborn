@@ -12,6 +12,7 @@
 +BUG FIXES_separator
 +AV Uncapper Settings - Fixed
 +AV Uncapper
++MIEO - Parasol Mesh Fix
 +Mercers Ingredient Effect Overhaul
 +Cobl
 +Base Object Swapper Integrations

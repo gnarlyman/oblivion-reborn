@@ -3,6 +3,7 @@
 -UTILITIES_separator
 -USER INTERFACE_separator
 -Oblivion Construction Set - Non-installer version
+-MIEO - Parasol Mesh Fix
 -Mercers Ingredient Effect Overhaul
 -BUG FIXES_separator
 -BASE GAME FILES_separator

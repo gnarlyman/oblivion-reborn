@@ -4,6 +4,9 @@
 mods/*/*
 !mods/*/meta.ini
 
+# Local patch mods: no Nexus source, so their content must live in git
+!mods/MIEO - Parasol Mesh Fix/**
+
 # Archives: keep only .meta files (Nexus fileID + download source)
 downloads/*
 !downloads/*.meta
