@@ -190,6 +190,29 @@ def detect_kind(mod_name: str) -> str:
     return "+".join(parts)
 
 
+LOOSE_ASSET_DIRS = ("meshes", "textures", "sound", "music", "menus", "video",
+                    "distantlod", "trees", "lod", "fonts", "shaders", "facegen")
+
+
+def count_loose_files(mod_name: str) -> str:
+    """Count files under standard Oblivion BSA-able asset subdirs. Files outside these
+    (plugins, BSAs, meta.ini, OBSE DLLs, root configs) aren't BSA-repackable so don't
+    count. Returns '' for separators / missing mods, integer string otherwise."""
+    if mod_name.endswith("_separator"):
+        return ""
+    mod_dir = APW_MODS / mod_name
+    if not mod_dir.exists():
+        mod_dir = REBORN_MODS / mod_name
+        if not mod_dir.exists():
+            return ""
+    count = 0
+    for top in LOOSE_ASSET_DIRS:
+        d = mod_dir / top
+        if d.exists():
+            count += sum(1 for p in d.rglob("*") if p.is_file())
+    return str(count)
+
+
 def _parse_tes4_plugin(esp_path: Path) -> tuple[bool, list[str], int, bool]:
     """Parse TES4 plugin binary. Return (esm_flag, masters, num_records, has_new_records).
 
@@ -348,6 +371,7 @@ def main():
                 unknown_cats[cat_id] = unknown_cats.get(cat_id, 0) + 1
                 cat_name = f"?cat{cat_id}"
         kind = detect_kind(name)
+        loose_files = count_loose_files(name)
         bash_mergeable = check_mergeable(name)
         if args.reset_status:
             status = "installed" if name in installed else "skipped"
@@ -363,6 +387,7 @@ def main():
             "section": section,
             "nexus_category": cat_name,
             "mod_kind": kind,
+            "loose_files": loose_files,
             "bash_mergeable": bash_mergeable,
             "apw_enabled": r["apw_enabled"],
             "status": status,
@@ -379,7 +404,7 @@ def main():
         return (0, r["mo2_order"])
     out_rows.sort(key=sort_key)
 
-    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "bash_mergeable", "apw_enabled", "status", "notes", "nexus_url"]
+    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "loose_files", "bash_mergeable", "apw_enabled", "status", "notes", "nexus_url"]
     with MANIFEST.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()

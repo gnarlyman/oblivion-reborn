@@ -15,4 +15,6 @@ DLCOrrery.bsa
 DLCHorseArmor.bsa
 DLCFrostcrag.bsa
 DLCBattlehornCastle.bsa
+IHaveNoGreetingFix.bsa
+Spirit Stones.bsa
 DLCShiveringIsles - Faces.bsa
