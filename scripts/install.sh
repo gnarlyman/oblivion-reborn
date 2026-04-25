@@ -62,8 +62,8 @@ if [ -d "$TARGET" ] && [ "$(ls -A "$TARGET" 2>/dev/null)" ]; then
   echo "WARNING: --force given; existing content in $TARGET will be overwritten."
 fi
 
-# Refuse if Wabbajack/MO2 is running (file locks)
-for proc in ModOrganizer.exe Wabbajack.exe wabbajack-cli.exe; do
+# Refuse if Wabbajack/MO2/Oblivion is running (file locks)
+for proc in ModOrganizer.exe Wabbajack.exe wabbajack-cli.exe Oblivion.exe obse_loader.exe obse64_loader.exe; do
   if tasklist //FI "IMAGENAME eq $proc" 2>/dev/null | grep -qi "$proc"; then
     echo "ERROR: $proc is running. Close it before installing." >&2
     exit 4
