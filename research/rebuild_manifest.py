@@ -190,6 +190,111 @@ def detect_kind(mod_name: str) -> str:
     return "+".join(parts)
 
 
+def _parse_tes4_plugin(esp_path: Path) -> tuple[bool, list[str], int, bool]:
+    """Parse TES4 plugin binary. Return (esm_flag, masters, num_records, has_new_records).
+
+    Linear scan: skip TES4 record header + data, then walk the rest. Each chunk is either
+    a GRUP (20-byte header — descend by skipping the header) or a record (20-byte header
+    + dataSize bytes — read formID, then skip). Records' formIDs use a high-byte mod
+    index where 0..len(masters)-1 reference masters and len(masters) means this plugin
+    introduced the record (= "new record" blocker for Wrye Bash mergeability).
+    """
+    data = esp_path.read_bytes()
+    if len(data) < 20 or data[:4] != b"TES4":
+        raise ValueError(f"not a TES4 plugin (starts {data[:4]!r})")
+    tes4_data_size = int.from_bytes(data[4:8], "little")
+    tes4_flags = int.from_bytes(data[8:12], "little")
+    esm_flag = bool(tes4_flags & 0x1)
+    tes4_end = 20 + tes4_data_size
+
+    masters: list[str] = []
+    sub_pos = 20
+    while sub_pos + 6 <= tes4_end:
+        sub_type = data[sub_pos:sub_pos + 4]
+        sub_size = int.from_bytes(data[sub_pos + 4:sub_pos + 6], "little")
+        if sub_type == b"MAST":
+            masters.append(
+                data[sub_pos + 6:sub_pos + 6 + sub_size].rstrip(b"\x00")
+                .decode("cp1252", errors="replace")
+            )
+        sub_pos += 6 + sub_size
+
+    self_index = len(masters)
+    num_records = 0
+    has_new_records = False
+    pos = tes4_end
+    while pos + 20 <= len(data):
+        tag = data[pos:pos + 4]
+        if tag == b"GRUP":
+            pos += 20  # descend into body
+            continue
+        rec_data_size = int.from_bytes(data[pos + 4:pos + 8], "little")
+        rec_form_id = int.from_bytes(data[pos + 12:pos + 16], "little")
+        num_records += 1
+        if (rec_form_id >> 24) & 0xFF == self_index:
+            has_new_records = True
+        pos += 20 + rec_data_size
+
+    return esm_flag, masters, num_records, has_new_records
+
+
+def _dir_has_files(d: Path) -> bool:
+    if not d.exists():
+        return False
+    return any(p.is_file() for p in d.rglob("*"))
+
+
+def _esp_mergeability(esp_path: Path, mod_dir: Path) -> str:
+    """Return 'yes', 'no:reason1; reason2', or 'unknown:err'. Mirrors Wrye Bash's
+    intrinsic (load-order-independent) Oblivion mergeability rules from
+    plugin_types.isPBashMergeable: BSA, plugin INI, plugin-specific dirs (Sound\\Voice,
+    Textures\\Faces), empty plugin, new records. ESM-flag added as an extra blocker."""
+    reasons: list[str] = []
+    stem = esp_path.stem  # plugin name without .esp
+    if (mod_dir / f"{stem}.bsa").exists():
+        reasons.append("has BSA")
+    if (mod_dir / f"{stem}.ini").exists():
+        reasons.append("has INI")
+    if _dir_has_files(mod_dir / "Sound" / "Voice" / esp_path.name):
+        reasons.append("has Sound\\Voice")
+    if _dir_has_files(mod_dir / "Textures" / "Faces" / esp_path.name):
+        reasons.append("has Textures\\Faces")
+    try:
+        esm_flag, _masters, num_records, has_new_records = _parse_tes4_plugin(esp_path)
+    except Exception as e:
+        return f"unknown:{e}"
+    if esm_flag:
+        reasons.append("ESM-flagged")
+    if num_records == 0:
+        reasons.append("empty")
+    if has_new_records:
+        reasons.append("has new records")
+    return "no:" + "; ".join(reasons) if reasons else "yes"
+
+
+def check_mergeable(mod_name: str) -> str:
+    """Aggregate mergeability across every .esp in the mod folder. '' if no ESPs."""
+    if mod_name.endswith("_separator"):
+        return ""
+    mod_dir = APW_MODS / mod_name
+    if not mod_dir.exists():
+        mod_dir = REBORN_MODS / mod_name
+        if not mod_dir.exists():
+            return ""
+    esps = sorted(p for p in mod_dir.rglob("*") if p.is_file() and p.suffix.lower() == ".esp")
+    if not esps:
+        return ""
+    parts = []
+    for esp in esps:
+        result = _esp_mergeability(esp, mod_dir)
+        parts.append(result if len(esps) == 1 else f"{esp.name}={result}")
+    if len(esps) == 1:
+        return parts[0]
+    if all(p.endswith("=yes") for p in parts):
+        return "yes"
+    return " | ".join(parts)
+
+
 def installed_set() -> set[str]:
     if not REBORN_MODS.exists():
         return set()
@@ -243,6 +348,7 @@ def main():
                 unknown_cats[cat_id] = unknown_cats.get(cat_id, 0) + 1
                 cat_name = f"?cat{cat_id}"
         kind = detect_kind(name)
+        bash_mergeable = check_mergeable(name)
         if args.reset_status:
             status = "installed" if name in installed else "skipped"
         else:
@@ -257,6 +363,7 @@ def main():
             "section": section,
             "nexus_category": cat_name,
             "mod_kind": kind,
+            "bash_mergeable": bash_mergeable,
             "apw_enabled": r["apw_enabled"],
             "status": status,
             "notes": r["notes"],
@@ -272,7 +379,7 @@ def main():
         return (0, r["mo2_order"])
     out_rows.sort(key=sort_key)
 
-    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "apw_enabled", "status", "notes", "nexus_url"]
+    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "bash_mergeable", "apw_enabled", "status", "notes", "nexus_url"]
     with MANIFEST.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
