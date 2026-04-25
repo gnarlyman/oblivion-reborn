@@ -41,11 +41,11 @@ Guard Infamy Greeting Fix,49,BUG FIXES & QOL,Bug Fixes,esp,yes,yes,pending,,http
 Clickable Magic Gate,50,BUG FIXES & QOL,Models and Textures,meshes+textures,,yes,pending,,https://www.nexusmods.com/oblivion/mods/51375
 No Annoying Conjurer Attack (Spell Tomes DLC fix),51,BUG FIXES & QOL,Gameplay Effects,esp,yes,yes,pending,,https://www.nexusmods.com/oblivion/mods/47452
 Less Maddening Shivering Isles Fetch Quests,52,BUG FIXES & QOL,Gameplay Effects,esp,no:has new records,yes,pending,,https://www.nexusmods.com/oblivion/mods/52621
-UOP Talos Bridge Collision Fix,53,BUG FIXES & QOL,Bug Fixes,esp,yes,yes,pending,bash mergable,https://www.nexusmods.com/oblivion/mods/53283
+UOP Talos Bridge Collision Fix,53,BUG FIXES & QOL,Bug Fixes,esp,yes,yes,pending,,https://www.nexusmods.com/oblivion/mods/53283
 AveSithis Engine Fixes,54,BUG FIXES & QOL,Bug Fixes,obse-plugin,,yes,installed,Chapter 0 foundation mod,https://www.nexusmods.com/oblivion/mods/53911
-Ayleid Well Map Markers,55,BUG FIXES & QOL,Gameplay Effects,esp,no:has new records,yes,skipped,,https://www.nexusmods.com/oblivion/mods/54433
+Ayleid Well Map Markers,55,BUG FIXES & QOL,Gameplay Effects,esp,no:has new records,yes,pending,,https://www.nexusmods.com/oblivion/mods/54433
 GPEngineFixes,56,BUG FIXES & QOL,,obse-plugin,,yes,installed,Chapter 0 foundation mod,https://www.nexusmods.com/oblivion/mods/55890
-Icons for Alchemy Apparatus,57,BUG FIXES & QOL,Models and Textures,esp+textures,yes,yes,skipped,,https://www.nexusmods.com/oblivion/mods/43782
+Icons for Alchemy Apparatus,57,BUG FIXES & QOL,Models and Textures,esp+textures,yes,yes,pending,,https://www.nexusmods.com/oblivion/mods/43782
 OB gate partner bug fix,58,BUG FIXES & QOL,Bug Fixes (legacy),esp,no:has new records,yes,skipped,,https://www.nexusmods.com/oblivion/mods/21926
 Menu Alt-Tab Crash Fix,59,BUG FIXES & QOL,Bug Fixes,obse-plugin,,yes,installed,Chapter 0 foundation mod,https://www.nexusmods.com/oblivion/mods/47954
 SB Weapon Drop Fix,60,BUG FIXES & QOL,Gameplay Effects,esp,SB_WeaponDropFix_OOOFilterPatch.esp=yes | SB_WeaponDropFix.esp=no:has new records,yes,skipped,,https://www.nexusmods.com/oblivion/mods/50223
