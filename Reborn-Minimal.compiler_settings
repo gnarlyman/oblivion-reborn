@@ -57,7 +57,9 @@
     ".git",
     ".gitignore",
     ".gitattributes",
-    "Reborn-Minimal.compiler_settings"
+    "Reborn-Minimal.compiler_settings",
+    "Reborn-Base.compiler_settings",
+    "scripts"
   ],
   "AlwaysEnabled": [],
   "Version": "2.3.3",

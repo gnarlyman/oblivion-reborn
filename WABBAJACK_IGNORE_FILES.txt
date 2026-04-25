@@ -1,0 +1,12 @@
+webcache
+crashDumps
+logs
+__temp__
+.git
+.gitignore
+.gitattributes
+Reborn-Base.compiler_settings
+Reborn-Minimal.compiler_settings
+scripts
+WABBAJACK_NOMATCH_INCLUDE_FILES.txt
+WABBAJACK_IGNORE_FILES.txt
