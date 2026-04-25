@@ -92,9 +92,19 @@ set -e
 END=$(date +%s)
 DURATION=$((END - START))
 
+# wabbajack-cli emits exit code 1 even on successful installs because of an
+# unguarded NullReferenceException in StandardInstaller.SetScreenSizeInPrefs()
+# (logged misleadingly as "[FATAL] ... due to parse error"). Trust the log,
+# not the exit code: a successful install always logs "Finished Installation".
+WJ_LOG="$(dirname "$WJ_CLI")/logs/wabbajack-cli.current.log"
 if [ "$EXIT_CODE" -ne 0 ]; then
-  echo "ERROR: wabbajack-cli install exited with code $EXIT_CODE" >&2
-  exit "$EXIT_CODE"
+  if [ -f "$WJ_LOG" ] && grep -q "Finished Installation" "$WJ_LOG"; then
+    echo "NOTE: wabbajack-cli exited $EXIT_CODE but log shows 'Finished Installation' — treating as success."
+  else
+    echo "ERROR: wabbajack-cli install exited with code $EXIT_CODE and log has no 'Finished Installation'." >&2
+    [ -f "$WJ_LOG" ] && echo "       see $WJ_LOG" >&2
+    exit "$EXIT_CODE"
+  fi
 fi
 
 # Sanity-check: a successful MO2 install drops ModOrganizer.exe + profiles/
