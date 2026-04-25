@@ -41,3 +41,4 @@ MercerCoblOrePatch.esp
 Skyrim Ingredients.esp
 SoC Ingredient Patch.esp
 Cobl Filter Late MERGE ONLY.esp
+Bashed Patch, 0.esp

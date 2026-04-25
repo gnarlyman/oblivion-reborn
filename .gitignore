@@ -52,6 +52,9 @@ __temp__/
 # Per-profile save games (too big, user-specific)
 profiles/*/saves/
 
+# Wrye Bash runtime state (Bash Installers + Bash Mod Data Table.dat)
+Oblivion Mods/
+
 # ─── Build artifacts ───
 # .wabbajack compiled output goes to GitHub Releases, not the repo
 *.wabbajack

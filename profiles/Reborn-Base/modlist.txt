@@ -32,6 +32,7 @@
 +4gb Ram Patcher
 +MenuQue - OBSE Plugin
 -Oblivion Stutter Remover (OSR)
++Wrye Bash
 +Oblivion Construction Set - Non-installer version
 +Oblivion Script Extender (OBSE xOBSE)
 +UTILITIES_separator
@@ -47,3 +48,4 @@
 *DLC: DLCThievesDen
 *DLC: DLCVileLair
 *DLC: Knights
+*Unmanaged: Bashed Patch, 0

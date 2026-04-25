@@ -24,3 +24,4 @@ usvfs_x86.dll
 splash.png
 dump_running_process.bat
 mods\Cleaned Game Files
+mods\Wrye Bash
