@@ -54,6 +54,9 @@
     "crashDumps",
     "logs",
     "__temp__",
+    ".git",
+    ".gitignore",
+    ".gitattributes",
     "Reborn-Minimal.compiler_settings"
   ],
   "AlwaysEnabled": [],
