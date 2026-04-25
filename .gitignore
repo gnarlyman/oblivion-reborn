@@ -1,0 +1,57 @@
+# ─── Reproducible content: excluded (fetched by Wabbajack at install time) ───
+
+# Mod contents: keep only meta.ini (Nexus mod ID + version lock)
+mods/*/*
+!mods/*/meta.ini
+
+# Archives: keep only .meta files (Nexus fileID + download source)
+downloads/*
+!downloads/*.meta
+
+# Vanilla Oblivion game files
+Stock Game/
+
+# ─── MO2 runtime: reproducible by reinstalling MO2 portable ───
+plugins/
+stylesheets/
+translations/
+qml/
+dlls/
+tutorials/
+resources/
+loot/
+explorer++/
+styles/
+platforms/
+licenses/
+webcache/
+
+# MO2 binaries at root
+ModOrganizer.exe
+QtWebEngineProcess.exe
+helper.exe
+nxmhandler.exe
+usvfs_proxy_x64.exe
+usvfs_proxy_x86.exe
+usvfs_x64.dll
+usvfs_x86.dll
+libcrypto-3-x64.dll
+libssl-3-x64.dll
+uibase.dll
+splash.png
+dump_running_process.bat
+
+# ─── Ephemeral / runtime ───
+logs/
+crashDumps/
+overwrite/
+__temp__/
+*.log
+*.tmp
+
+# Per-profile save games (too big, user-specific)
+profiles/*/saves/
+
+# ─── Build artifacts ───
+# .wabbajack compiled output goes to GitHub Releases, not the repo
+*.wabbajack
