@@ -732,11 +732,11 @@ A Painted World Configs,740,LATE LOADERS,Visuals and Graphics,esp+meshes+texture
 Deathb0rns Modified Qarls LOD Normal Maps,741,LATE LOADERS,Models and Textures,textures,13,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/32709
 A Painted World - LODs,742,LATE LOADERS,Visuals and Graphics,esm+bsa+meshes+textures,162,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/54215
 Mesh Fixes & Recolors,743,LATE LOADERS,,meshes+textures,268,,,yes,skipped,,
-UW Main Menu 2K Ultrawide,744,ULTRAWIDE OPTIONALS (21x9),,textures,4,,,no,skipped,"ultrawide-only, not targeting ultrawide",https://www.nexusmods.com/oblivion/mods/54020
-UW Black Rectangle Ultrawide Fix,745,ULTRAWIDE OPTIONALS (21x9),Patches,textures,2,,,no,skipped,"ultrawide-only, not targeting ultrawide",https://www.nexusmods.com/oblivion/mods/48351
-UW HUD Config,746,ULTRAWIDE OPTIONALS (21x9),,config,5,,,no,skipped,"ultrawide-only, not targeting ultrawide",
-UW DarNified UI patch for Black Rectangle Ultrawide Fix,747,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,1,,,no,skipped,"ultrawide-only, not targeting ultrawide",https://www.nexusmods.com/oblivion/mods/53882
-UW Ultrawide map border fix for DarNified UI,748,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,3,,,no,skipped,"ultrawide-only, not targeting ultrawide",https://www.nexusmods.com/oblivion/mods/53723
+UW Main Menu 2K Ultrawide,744,ULTRAWIDE OPTIONALS (21x9),,textures,4,,,no,installed,ultrawide (21:9),https://www.nexusmods.com/oblivion/mods/54020
+UW Black Rectangle Ultrawide Fix,745,ULTRAWIDE OPTIONALS (21x9),Patches,textures,2,,,no,installed,ultrawide (21:9),https://www.nexusmods.com/oblivion/mods/48351
+UW HUD Config,746,ULTRAWIDE OPTIONALS (21x9),,config,5,,,no,installed,ultrawide (21:9),
+UW DarNified UI patch for Black Rectangle Ultrawide Fix,747,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,1,,,no,installed,ultrawide (21:9),https://www.nexusmods.com/oblivion/mods/53882
+UW Ultrawide map border fix for DarNified UI,748,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,3,,,no,installed,ultrawide (21:9),https://www.nexusmods.com/oblivion/mods/53723
 dxvk,749,OPTIONAL MODS,,config,0,,,yes,skipped,"APW meta.ini flags ""sometimes random crashes""; benefits (Reshade+ORC compatibility) do not apply to Reborn since both are cut. Stability-first = skip.",
 CPU Affinity,750,OPTIONAL MODS,Utilities,obse-plugin,0,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/53118
 Fast Travel Costs,751,OPTIONAL MODS,Gameplay Effects,esp,0,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/50201
