@@ -18,3 +18,4 @@ DLCBattlehornCastle.bsa
 IHaveNoGreetingFix.bsa
 Spirit Stones.bsa
 DLCShiveringIsles - Faces.bsa
+WorldMapsForAllWorldspaces.bsa

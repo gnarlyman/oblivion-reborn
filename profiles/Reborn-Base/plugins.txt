@@ -33,4 +33,11 @@ SB_WeaponDropFix.esp
 ArmoredShadowmereFix.esp
 BookTrackerUpdatedv1.1.esp
 Spirit Stones.esp
+Extended UI.esp
+QZ Easy Menus.esp
+Enhanced Hotkeys.esp
+lDisplay Skill Perk Effects.esp
+Dynamic Map.esp
+Better Enemy Health.esp
+WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp

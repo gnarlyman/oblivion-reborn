@@ -16,6 +16,7 @@ from pathlib import Path
 APW_MODS = Path("D:/Modlists/APW/mods")
 REBORN_MODS = Path("D:/Modlists/Reborn/mods")
 APW_MODLIST = Path("D:/Modlists/APW/profiles/A Painted World/modlist.txt")
+APW_PLUGINS = Path("D:/Modlists/APW/profiles/A Painted World/plugins.txt")
 MANIFEST = Path(__file__).resolve().parent / "manifest.csv"
 
 NEXUS_CATEGORIES = {
@@ -318,6 +319,66 @@ def check_mergeable(mod_name: str) -> str:
     return " | ".join(parts)
 
 
+_apw_loaded_plugins_cache: set[str] | None = None
+_apw_enabled_mods_cache: set[str] | None = None
+
+
+def apw_loaded_plugins() -> set[str]:
+    """Lowercased plugin filenames active in APW's profile (plugins.txt)."""
+    global _apw_loaded_plugins_cache
+    if _apw_loaded_plugins_cache is None:
+        loaded: set[str] = set()
+        if APW_PLUGINS.exists():
+            for line in APW_PLUGINS.read_text(encoding="utf-8", errors="replace").splitlines():
+                line = line.strip()
+                if line and not line.startswith("#"):
+                    loaded.add(line.lower())
+        _apw_loaded_plugins_cache = loaded
+    return _apw_loaded_plugins_cache
+
+
+def apw_enabled_mods() -> set[str]:
+    """Mod folder names enabled (`+`) in APW's modlist.txt."""
+    global _apw_enabled_mods_cache
+    if _apw_enabled_mods_cache is None:
+        enabled: set[str] = set()
+        for line in APW_MODLIST.read_text(encoding="utf-8").splitlines():
+            if line.startswith("+"):
+                name = line[1:]
+                if not name.endswith("_separator"):
+                    enabled.add(name)
+        _apw_enabled_mods_cache = enabled
+    return _apw_enabled_mods_cache
+
+
+def check_apw_merged(mod_name: str) -> str:
+    """Detect whether a mod's ESPs were absorbed into APW Merge*.esp / Conflict Resolution.
+
+    Heuristic: an ESP that exists on disk but is absent from plugins.txt (while the mod
+    itself is enabled) was either merged or disabled as an alt variant. Returns:
+      ''                         separator / Reborn-only / disabled-in-APW / no ESPs
+      'no'                       all ESPs are loaded directly
+      'yes:p1.esp;p2.esp'        every ESP is unloaded (fully merged)
+      'partial:p1.esp;p2.esp'    some ESPs loaded, others unloaded
+    """
+    if mod_name.endswith("_separator"):
+        return ""
+    if mod_name not in apw_enabled_mods():
+        return ""
+    mod_dir = APW_MODS / mod_name
+    if not mod_dir.exists():
+        return ""
+    esps = sorted(p.name for p in mod_dir.iterdir() if p.is_file() and p.suffix.lower() == ".esp")
+    if not esps:
+        return ""
+    loaded = apw_loaded_plugins()
+    unloaded = [e for e in esps if e.lower() not in loaded]
+    if not unloaded:
+        return "no"
+    label = "yes" if len(unloaded) == len(esps) else "partial"
+    return f"{label}:" + ";".join(unloaded)
+
+
 def installed_set() -> set[str]:
     if not REBORN_MODS.exists():
         return set()
@@ -373,6 +434,7 @@ def main():
         kind = detect_kind(name)
         loose_files = count_loose_files(name)
         bash_mergeable = check_mergeable(name)
+        apw_merged = check_apw_merged(name)
         if args.reset_status:
             status = "installed" if name in installed else "skipped"
         else:
@@ -389,6 +451,7 @@ def main():
             "mod_kind": kind,
             "loose_files": loose_files,
             "bash_mergeable": bash_mergeable,
+            "apw_merged": apw_merged,
             "apw_enabled": r["apw_enabled"],
             "status": status,
             "notes": r["notes"],
@@ -404,7 +467,7 @@ def main():
         return (0, r["mo2_order"])
     out_rows.sort(key=sort_key)
 
-    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "loose_files", "bash_mergeable", "apw_enabled", "status", "notes", "nexus_url"]
+    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "loose_files", "bash_mergeable", "apw_merged", "apw_enabled", "status", "notes", "nexus_url"]
     with MANIFEST.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()

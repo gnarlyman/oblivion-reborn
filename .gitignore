@@ -6,6 +6,7 @@ mods/*/*
 
 # Local patch mods: no Nexus source, so their content must live in git
 !mods/MIEO - Parasol Mesh Fix/**
+!mods/Extended UI - Boss Bar Position Fix/**
 
 # Archives: keep only .meta files (Nexus fileID + download source)
 downloads/*
