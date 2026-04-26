@@ -1,0 +1,166 @@
+<!--
+// DIRECTORY    dsEnemyHealth\Vanilla
+// FILE			Main.xml
+// VERSION		1.0.9
+// AUTHOR:		DavaScript
+// REBORN OVERRIDE: container <y> shifted from 30 to 40 (down by 10px)
+-->
+
+<!-- Vanilla Container -->
+<rect name="EnemyHealth_Vanilla_Container">
+    <locus>&true;</locus>
+    <visible>
+        <copy>1</copy>
+        <onlyif>
+            <copy src="HUDMainMenu" trait="user3"/>
+		    <eq>0</eq>
+            <or>
+                <copy src="me()" trait="_InCombat"/>
+                <eq>0</eq>
+            </or>
+        </onlyif>
+	</visible>
+    <x>
+        <copy src="screen()" trait="width"/>
+        <div>2</div>
+    </x>
+    <y>40</y>
+
+    <!-- Enemy Name -->
+    <rect name="Name">
+        <include src="dsEnemyHealth\Vanilla\String_Prefab.xml"/>
+    </rect>
+
+    <!-- Enemy Health -->
+    <rect name="Health">
+        <include src="dsEnemyHealth\Vanilla\Bar_Prefab.xml"/>
+        <_Ribbon>hud\hud_ribbon_health_full.dds</_Ribbon>
+        <_Scale>115</_Scale>
+        <_ScaleFactor>
+            <copy src="me()" trait="_Scale"/>
+            <div>100</div>
+        </_ScaleFactor>
+        <y>20</y>
+        <image name="Fortify_Icon">
+            <visible>1</visible>
+            <filename>icons\magic\restoration_icons\fortify_restoration.dds</filename>
+            <width>28</width>
+            <height>28</height>
+            <zoom>-1</zoom>
+            <x>-148</x>
+            <y>-5.5</y>
+        </image>
+        <rect name="Health_Numeric">
+            <visible>
+                <copy>1</copy>
+                <onlyif>
+                    <copy src="EnemyHealth_Vanilla_Container" trait="_DisableTextAV"/>
+                    <eq>1</eq>
+                </onlyif>
+            </visible>
+            <depth>4</depth>
+            <include src="dsEnemyHealth\Vanilla\String_Prefab.xml"/>
+            <y>3.5</y>
+        </rect>
+    </rect>
+
+    <!-- Enemy Magicka -->
+    <rect name="Magicka">
+        <include src="dsEnemyHealth\Vanilla\Bar_Prefab.xml"/>
+        <visible>
+            <copy>1</copy>
+            <onlyif>
+                <copy src="me()" trait="_BaseAV"/>
+                <eq>0</eq>
+                <or>
+                    <copy src="parent()" trait="_EnableExtras"/>
+                    <eq>0</eq>
+                </or>
+            </onlyif>
+        </visible>
+        <_Ribbon>hud\hud_ribbon_magic_full.dds</_Ribbon>
+        <_Scale>54</_Scale>
+        <_ScaleFactor>
+            <copy src="me()" trait="_Scale"/>
+            <div>100</div>
+        </_ScaleFactor>
+        <x>-51.3</x>
+        <y>
+            <copy src="sibling()" trait="y"/>
+            <add>17</add>
+        </y>
+    </rect>
+
+    <!-- Enemy Fatigue -->
+    <rect name="Fatigue">
+        <include src="dsEnemyHealth\Vanilla\Bar_Prefab.xml"/>
+        <visible>
+            <copy>1</copy>
+            <onlyif>
+                <copy src="me()" trait="_BaseAV"/>
+                <eq>0</eq>
+                <or>
+                    <copy src="parent()" trait="_EnableExtras"/>
+                    <eq>0</eq>
+                </or>
+            </onlyif>
+        </visible>
+        <_Ribbon>hud\hud_ribbon_fatigue_full.dds</_Ribbon>
+        <_Scale><copy src="sibling()" trait="_Scale"/></_Scale>
+        <_ScaleFactor><copy src="sibling()" trait="_ScaleFactor"/></_ScaleFactor>
+        <x>
+            <copy src="sibling()" trait="x"/>
+            <add>
+                <copy>101.6</copy>
+                <onlyif>
+                    <copy src="sibling()" trait="_BaseAV"/>
+                    <gt>0</gt>
+                </onlyif>
+            </add>
+        </x>
+        <y><copy src="sibling()" trait="y"/></y>
+    </rect>
+
+    <!-- Enemy Level -->
+    <rect name="Level">
+        <include src="dsEnemyHealth\Vanilla\String_Prefab.xml"/>
+        <_Width><copy src="child(String)" trait="width"/><_Width>
+        <visible>
+            <copy>1</copy>
+            <onlyif>
+                <copy src="parent()" trait="_DisableLevel"/>
+                <eq>1</eq>
+            </onlyif>
+        </visible>
+        <y>
+            <copy>45</copy>
+            <add>
+                <copy>10</copy>
+                <onlyif>
+                    <copy src="parent()" trait="_EnableExtras"/>
+                    <eq>1</eq>
+                </onlyif>
+            </add>
+        </y>
+    </rect>
+    <image name="Bracket_Left">
+        <visible><copy src="sibling()" trait="visible"/></visible>
+        <filename>dsEnemyHealth\Vanilla\bracket_left.dds</filename>
+        <width>54</width>
+        <height>5</height>
+        <x>
+            <copy>0</copy>
+            <sub src="me()" trait="width"/>
+            <sub src="sibling(Level)" trait="_Width"/>
+        </x>
+        <y><copy src="sibling()" trait="y"/></y>
+    </image>
+    <image name="Bracket_Right">
+        <visible><copy src="sibling()" trait="visible"/></visible>
+        <filename>dsEnemyHealth\Vanilla\bracket_right.dds</filename>
+        <width>54</width>
+        <height>5</height>
+        <x><copy src="sibling(Level)" trait="_Width"/></x>
+        <y><copy src="sibling()" trait="y"/></y>
+    </image>
+</rect>

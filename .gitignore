@@ -7,6 +7,7 @@ mods/*/*
 # Local patch mods: no Nexus source, so their content must live in git
 !mods/MIEO - Parasol Mesh Fix/**
 !mods/Extended UI - Boss Bar Position Fix/**
+!mods/Reborn Configs/**
 
 # Archives: keep only .meta files (Nexus fileID + download source)
 downloads/*
@@ -16,19 +17,21 @@ downloads/*
 Stock Game/
 
 # ─── MO2 runtime: reproducible by reinstalling MO2 portable ───
-plugins/
-stylesheets/
-translations/
-qml/
-dlls/
-tutorials/
-resources/
-loot/
-explorer++/
-styles/
-platforms/
-licenses/
-webcache/
+# Anchored to repo root so they don't match nested dirs in mod folders
+# (e.g. mods/Reborn Configs/OBSE/Plugins/).
+/plugins/
+/stylesheets/
+/translations/
+/qml/
+/dlls/
+/tutorials/
+/resources/
+/loot/
+/explorer++/
+/styles/
+/platforms/
+/licenses/
+/webcache/
 
 # MO2 binaries at root
 ModOrganizer.exe
