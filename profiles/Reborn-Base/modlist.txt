@@ -23,6 +23,7 @@
 +GPEngineFixes
 +Blue's Engine Fixes
 +BUG FIXES_separator
++Reborn Bashed Patch
 +Spirit Stones
 +Grip of Steel
 +Book Tracker Updated
@@ -52,7 +53,6 @@
 +Crash Logger Improved
 +4gb Ram Patcher
 +MenuQue - OBSE Plugin
--Oblivion Stutter Remover (OSR)
 +Wrye Bash
 +Oblivion Construction Set - Non-installer version
 +Oblivion Script Extender (OBSE xOBSE)
@@ -69,4 +69,3 @@
 *DLC: DLCThievesDen
 *DLC: DLCVileLair
 *DLC: Knights
-*Unmanaged: Bashed Patch, 0

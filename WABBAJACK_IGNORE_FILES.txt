@@ -12,4 +12,3 @@ research
 WABBAJACK_NOMATCH_INCLUDE_FILES.txt
 WABBAJACK_IGNORE_FILES.txt
 Oblivion Mods
-Stock Game\Data\Bashed Patch, 0.esp

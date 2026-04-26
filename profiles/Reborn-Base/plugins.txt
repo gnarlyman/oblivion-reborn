@@ -15,7 +15,6 @@ DLCVileLair - Unofficial Patch.esp
 DLCMehrunesRazor.esp
 DLCMehrunesRazor - Unofficial Patch.esp
 DLCSpellTomes.esp
-DLCSpellTomes - Unofficial Patch.esp
 DLCThievesDen.esp
 DLCThievesDen - Unofficial Patch.esp
 DLCThievesDen - Unofficial Patch - SSSB.esp
@@ -26,17 +25,12 @@ Knights - Unofficial Patch.esp
 LINK.esp
 MercerIngredientsCore.esp
 JCN_AV Uncap.esp
-MercerCoblOrePatch.esp
 IHaveNoGreetingFix.esp
-Stay Unicorn.esp
 MigMiscellanea.esp
-GuardInfamyGreetingFix.esp
-UOPTalosBridgeCollisionFix.esp
-DLCSpellTomes-No Attack.esp
 LessMaddeningShiveringIsles.esp
 ApparatusIcons.esp
 SB_WeaponDropFix.esp
 ArmoredShadowmereFix.esp
-AleswellNoRefractFix.esp
 BookTrackerUpdatedv1.1.esp
 Spirit Stones.esp
+Bashed Patch, 0.esp

@@ -25,3 +25,4 @@ splash.png
 dump_running_process.bat
 mods\Cleaned Game Files
 mods\Wrye Bash
+mods\Reborn Bashed Patch

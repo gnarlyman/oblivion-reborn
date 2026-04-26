@@ -40,7 +40,6 @@ MercerIngredientsMidasSpells.esp
 MercerIngredientsQarlsHarvestAddon.esp
 MercerIngredientsReducedAlchemistInventories.esp
 MercerCoblOrePatch.esp
-Skyrim Ingredients.esp
 SoC Ingredient Patch.esp
 IHaveNoGreetingFix.esp
 Stay Unicorn.esp
