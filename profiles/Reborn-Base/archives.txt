@@ -19,3 +19,8 @@ IHaveNoGreetingFix.bsa
 Spirit Stones.bsa
 DLCShiveringIsles - Faces.bsa
 WorldMapsForAllWorldspaces.bsa
+Maskar's Oblivion Overhaul - Meshes.bsa
+Maskar's Oblivion Overhaul - Misc.bsa
+Maskar's Oblivion Overhaul - Sounds.bsa
+Maskar's Oblivion Overhaul - Textures.bsa
+Ultimate Leveling.bsa
