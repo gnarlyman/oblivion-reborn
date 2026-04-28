@@ -39,6 +39,12 @@ lDisplay Skill Perk Effects.esp
 Dynamic Map.esp
 Better Enemy Health.esp
 Ultimate Leveling.esp
+Balanced Unleveled Rewards - Complete.esp
+Skip Intro and Random Start.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp
+MercerIngredientsMaskarsOO.esp
+Initial Quest Popups Begone.esp
+Delay DLC Start.esp
+PSMainQuestDelayer.esp

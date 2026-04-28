@@ -109,14 +109,14 @@ Rescue Menien From the Kvatch Oblivion Gate (Fully Voiced),117,QUESTS,Quests,esp
 Better Kvatch Rebuilt (Submod),118,QUESTS,Towns and Villages,esp+meshes,5,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/54202
 More Artifacts For Martin,119,QUESTS,Patches,esp+bsa,0,no:has BSA; has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/49113
 Sinderion's Serendipity - Nirnroot Quest Reward,120,QUESTS,Gameplay Effects,esp+textures,1,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/50129
-Initial Quest Popups Begone,121,QUESTS,Quests,esp,0,yes,yes:Initial Quest Popups Begone.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/53160
+Initial Quest Popups Begone,121,QUESTS,Quests,esp,0,yes,yes:Initial Quest Popups Begone.esp,yes,installed,"Phase 1.5 dev-test QoL: removes startup quest popups (""find a sword"" etc.). Loaded standalone in Reborn (APW had it merged into bashed patch).",https://www.nexusmods.com/oblivion/mods/53160
 Colored Quests - Updated,122,QUESTS,User Interface,textures,36,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/49966
 Companion Vilja,123,QUESTS,Companions,esp+bsa,0,1em_Vilja.esp=no:has BSA; has new records | 1em_Vilja_OCOV2.esp=yes,partial:1em_Vilja_OCOV2.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/28977
 Knights of the Nine - Revelation - Reasonable Flavor,124,QUESTS,Bug Fixes,esp+meshes+textures,43,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/53934
 The Ayleid Steps,125,QUESTS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/16316
 Bounty Quests Fixed and Polished,126,QUESTS,Quests,esp+bsa,0,Bounty Quests OOO Patch.esp=no:has new records | Bounty Quests.esp=no:has BSA; has new records,partial:Bounty Quests OOO Patch.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/48330
 The Ayleid Steps - Compatibility Patches,127,QUESTS,Bug Fixes,esp,0,yes,yes:The Ayleid Steps - Patches.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/47142
-PrinceShroob Main Quest Delayer (Oblivion),128,QUESTS,Gameplay Effects,esp+bsa,0,PSMainQuestDelayer -- Knights.esp=no:has new records | PSMainQuestDelayer.esp=no:has BSA; has new records,partial:PSMainQuestDelayer -- Knights.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/45890
+PrinceShroob Main Quest Delayer (Oblivion),128,QUESTS,Gameplay Effects,esp+bsa,0,PSMainQuestDelayer -- Knights.esp=no:has new records | PSMainQuestDelayer.esp=no:has BSA; has new records,partial:PSMainQuestDelayer -- Knights.esp,yes,installed,"Phase 1.5: main quest stays dormant until player triggers it. Pairs with Skip Intro alt-start. Activated PSMainQuestDelayer.esp only (Knights variant skipped — not using Knights Infamy mod).",https://www.nexusmods.com/oblivion/mods/45890
 Mudwater,129,QUESTS,Towns and Villages,bsa,0,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/35434
 Thievery in the Imperial City - Tweaks and Fixes,130,QUESTS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/52785
 Render Unto Them Their Desert - An Inn of Ill Omen Overhaul,131,QUESTS,Quests,esp+meshes+textures+sound,250,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/54579
@@ -125,7 +125,7 @@ Fame Based Daedric Quest Requirements,133,QUESTS,Gameplay Effects,esp,0,yes,yes:
 Quests make friends,134,QUESTS,Immersion,esp,0,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/51792
 Into The Void,135,QUESTS,Quests,esp+meshes+textures+sound,47,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/52365
 Elsweyr the Deserts of Anequina,136,QUESTS,Locations - Cyrodiil Expansion,esp+meshes+textures+sound,7806,no:has Sound\Voice; has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/25023
-Delay DLC Start,137,QUESTS,Quests,esp,0,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/52871
+Delay DLC Start,137,QUESTS,Quests,esp,0,no:has new records,no,yes,installed,"Phase 1.5: prevents DLC tutorial popups from auto-firing on new game (KOTN, Mehrunes Razor, Frostcrag, Vile Lair, Thieves Den, Battlehorn, Orrery, Spell Tomes).",https://www.nexusmods.com/oblivion/mods/52871
 Journal-Based Quest Directions,138,QUESTS,Immersion,esp,0,yes,yes:QuestDirections.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/52593
 Frostcrag Reborn,139,QUESTS,,esp+meshes+textures+sound+music,2248,no:has Sound\Voice; has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/9769
 Tales of Cyrodiil,140,QUESTS,Quests,esp+meshes+textures,20,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/48792
@@ -161,7 +161,7 @@ Av Latta Magicka - Sun Magic Additions,169,MAGIC,Magic - Spells,esp,0,no:has new
 Better Summon Undead Effect,170,MAGIC,Models and Textures,meshes,1,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/10418
 Varied Spell Sounds,171,MAGIC,Audio - Voice,esp+sound,14,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/14799
 Restore All Attributes Spell,172,MAGIC,Magic - Spells,esp,0,no:has new records,yes:RestoreAllAttributesSpell.esp,yes,skipped,,https://www.nexusmods.com/oblivion/mods/36537
-Mercers Ingredient Effect Overhaul,173,MAGIC,Magic - Alchemy,esp+meshes+textures,400,MercerIngredientsBC.esp=yes | MercerIngredientsCore.esp=no:has new records | MercerIngredientsOOO.esp=yes,partial:MercerIngredientsBC.esp;MercerIngredientsOOO.esp,yes,installed,,https://www.nexusmods.com/oblivion/mods/27610
+Mercers Ingredient Effect Overhaul,173,MAGIC,Magic - Alchemy,esp+meshes+textures,400,MercerIngredientsBC.esp=yes | MercerIngredientsCore.esp=no:has new records | MercerIngredientsOOO.esp=yes | MercerIngredientsMaskarsOO.esp=yes,partial:MercerIngredientsBC.esp;MercerIngredientsOOO.esp,yes,installed,"Phase 1.5: activated MercerIngredientsMaskarsOO.esp for MOO integration (only MOO-related Mercer patch needed; OOO variant disabled since no OOO).",https://www.nexusmods.com/oblivion/mods/27610
 Magic Revised - Mysticism,174,MAGIC,Magic - Gameplay,esp,0,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/47897
 Quieter Varied Spell Sounds,175,MAGIC,Audio - Voice,sound,44,,,yes,skipped,,https://www.nexusmods.com/oblivion/mods/15563
 Necromancy and Lichdom,176,MAGIC,Magic - Gameplay,esp+meshes+textures,1482,no:has new records,no,yes,skipped,,https://www.nexusmods.com/oblivion/mods/49700
@@ -780,3 +780,6 @@ Reborn Configs,,UTILITIES (Reborn-added),,config,2,,,no,installed,"Reborn-added 
 SB_WeaponDropFix,,UTILITIES (Reborn-added),,esp,0,SB_WeaponDropFix_OOOFilterPatch.esp=yes | SB_WeaponDropFix.esp=no:has new records,,no,installed,Reborn-added (not in APW),https://www.nexusmods.com/oblivion/mods/50223
 Wrye Bash,,UTILITIES (Reborn-added),,config,0,,,no,installed,Reborn-added (not in APW),https://www.nexusmods.com/oblivion/mods/591
 Ultimate Leveling,,UTILITIES (Reborn-added),,esp+bsa,0,no:has BSA; has new records,,no,installed,"Phase 1 leveling system. v1.9.5.2. Defaults + rested_mode=2 (XP-based rested bonus, prevents AFK leveling) override in Reborn Configs/Ultimate Leveling for advanced users.ini. Pairs natively with MOO via Maskar same-author auto-detection.",https://www.nexusmods.com/oblivion/mods/49134
+Balanced Unleveled Rewards,,UTILITIES (Reborn-added),,esp,0,no:has new records,,no,installed,"Phase 1.5: pins quest reward items to fixed lore-appropriate tiers (no more level-30 turn-in for the legendary version). PTWB modular tool, no patches needed for MOO/UL.",https://www.nexusmods.com/oblivion/mods/51050
+Skip Intro and Random Start,,UTILITIES (Reborn-added),,esp,0,no:has new records,,no,installed,"Phase 1.5 alternate start (active): in-game menu offers Skip Intro / Vanilla / Random Start. Required because skipping prison via console (coc weye) leaves UL/MOO in partially-initialized state. v1.2 by Mixxa77.",https://www.nexusmods.com/oblivion/mods/52710
+Alternate Start Revamped,,UTILITIES (Reborn-added),,esp,0,no:has new records,,no,skipped,"Phase 1.5 alternate start (BACKUP, disabled in MO2): RP-style alternate start with house/cave/ship options. Kept as fallback if Skip Intro and Random Start has issues.",https://www.nexusmods.com/oblivion/mods/3973
