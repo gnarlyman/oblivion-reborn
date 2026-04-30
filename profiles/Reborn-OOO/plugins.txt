@@ -28,20 +28,15 @@ SB_WeaponDropFix.esp
 Oscuro's_Oblivion_Overhaul.esp
 OOOShiveringIsles.esp
 MercerIngredientsCore.esp
-MercerIngredientsOOO.esp
 Balanced Unleveled Rewards - Complete.esp
-Cobl Tweaks - OOO.esp
 PSMainQuestDelayer.esp
 Delay DLC Start.esp
-Initial Quest Popups Begone.esp
 IHaveNoGreetingFix.esp
 MigMiscellanea.esp
 LessMaddeningShiveringIsles.esp
 ApparatusIcons.esp
 ArmoredShadowmereFix.esp
 BookTrackerUpdatedv1.1.esp
-Cobl Tweaks - OOO Mergeable.esp
-OOO_Unoficial-Patch.esp
 DLC Integration.esp
 Spirit Stones.esp
 Extended UI.esp
@@ -51,12 +46,9 @@ lDisplay Skill Perk Effects.esp
 Dynamic Map.esp
 Better Enemy Health.esp
 Ultimate Leveling.esp
-PSMQD - Delay DLC Start Patch.esp
 LootMenu.esp
 NIARA.esp
-SB_WeaponDropFix_OOOFilterPatch.esp
 OOOShiveringIsles_Optional_CrucibleEdits.esp
-Oscuro's_Oblivion_Overhaul - Knights of Nine.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp
