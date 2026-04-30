@@ -92,11 +92,11 @@ Extended UI - Vanilla and Darn Boss Bar Retexture,working,installed,100,USER INT
 My Universal Fonts,needs to be copied from APW,installed,101,USER INTERFACE,,config,8,,,,yes,https://www.nexusmods.com/oblivion/mods/53605
 QZ Easy Menus Update,,installed,102,USER INTERFACE,,esp,0,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/23404
 Horse HUD Bars - Standalone,maybe later,skipped,103,USER INTERFACE,,esp+textures,2,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55274
-Faster Dungeon Doors,,skipped,104,SKELETON & ANIMATION,Dungeons,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/46889
-Two-handed weapon swing fix for First Person View (Tick Fix),,pending,105,SKELETON & ANIMATION,Bug Fixes,meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/53555
-NPC Idle Animation Restoration and Additions,,pending,106,SKELETON & ANIMATION,Animation,esp+meshes,2,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53184
-WalkBlessed OBSE Plugin (diagonal move),,pending,107,SKELETON & ANIMATION,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49067
-Nirnroot Quest Revised,,pending,108,QUESTS,Quests,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52744
+Faster Dungeon Doors,,installed,104,SKELETON & ANIMATION,Dungeons,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/46889
+Two-handed weapon swing fix for First Person View (Tick Fix),,installed,105,SKELETON & ANIMATION,Bug Fixes,meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/53555
+NPC Idle Animation Restoration and Additions,,installed,106,SKELETON & ANIMATION,Animation,esp+meshes,2,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53184
+WalkBlessed OBSE Plugin (diagonal move),,installed,107,SKELETON & ANIMATION,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49067
+Nirnroot Quest Revised,,skipped,108,QUESTS,Quests,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52744
 Vampire Hunting - Order of the Virtuous Blood,,skipped,109,QUESTS,Guilds/Factions,meshes+textures+sound,2876,,,,yes,https://www.nexusmods.com/oblivion/mods/30568
 Knights of the Nine Revelation,,skipped,110,QUESTS,Quests,esm+bsa+meshes+textures+sound,5474,,,,yes,https://www.nexusmods.com/oblivion/mods/42490
 Hackdirt Alive,,skipped,111,QUESTS,Immersion,esp+meshes+textures,76,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/42948
@@ -177,7 +177,7 @@ Ancestor Moths Expanded,,skipped,185,IMMERSION,Buildings and Camps,esp,0,no:has 
 Kaizits Animated Ingredients,,skipped,186,IMMERSION,Models and Textures,meshes+textures,44,,,,yes,https://www.nexusmods.com/oblivion/mods/46962
 Kaizits Animated Ingredients - No Shadows,,skipped,187,IMMERSION,,meshes,6,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
 Lava Does Fire Damage,,skipped,188,IMMERSION,Gameplay Effects,esp,0,no:has new records,yes:Lava Does Fire Damage.esp,,yes,https://www.nexusmods.com/oblivion/mods/43046
-Radiant AI - NPCs Alive - Cyrodiil - Beta,"thinking no, probably script heavy",skipped,189,IMMERSION,NPC,esp+meshes,6,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49610
+Radiant AI - NPCs Alive - Cyrodiil - Beta,"thinking no, probably script heavy, Analyze to see",skipped,189,IMMERSION,NPC,esp+meshes,6,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49610
 Simple Shield on Back,,skipped,190,IMMERSION,Gameplay Effects,esp+meshes,161,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/15392
 Better Letters,,skipped,191,IMMERSION,Patches,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/5392
 Progress Tracker - Quest Completionist's Companion,,skipped,192,IMMERSION,User Interface,esp,15,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53328

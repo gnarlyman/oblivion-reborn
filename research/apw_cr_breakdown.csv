@@ -1,0 +1,509 @@
+master,signature,theme,count
+Better Cities Full.esp,REFR,worldspace_glue,14620
+Oblivion.esm,REFR,worldspace_glue,2487
+Oblivion.esm,CELL,worldspace_glue,2180
+Maskar's Oblivion Overhaul.esp,NPC_,npc_normalization,1738
+Unique Landscapes.esp,REFR,worldspace_glue,1604
+Oblivion.esm,CONT,containers_loot,685
+Oblivion.esm,NPC_,npc_normalization,614
+ElsweyrCityExtension.esp,REFR,worldspace_glue,577
+Oscuro's_Oblivion_Overhaul.esp,REFR,worldspace_glue,514
+xulChorrolHinterland-BC6.esp,REFR,worldspace_glue,464
+Oscuro's_Oblivion_Overhaul.esm,CONT,containers_loot,408
+ElsweyrAnequina.esp,REFR,worldspace_glue,383
+Oblivion.esm,ENCH,magic,283
+Highwood.esp,REFR,worldspace_glue,257
+Oscuro's_Oblivion_Overhaul.esm,CREA,npc_normalization,255
+Oblivion.esm,QUST,dialogue_quest,238
+Oblivion.esm,ALCH,item_balance,237
+Better Imperial City.esp,REFR,worldspace_glue,236
+Oscuro's_Oblivion_Overhaul.esm,LVLI,leveled_lists,226
+ElsweyrAnequina.esp,NPC_,npc_normalization,205
+Oscuro's_Oblivion_Overhaul.esm,NPC_,npc_normalization,204
+Extended Dialogue.esp,INFO,dialogue_quest,190
+Unique Landscapes.esp,NPC_,npc_normalization,183
+300_Lore_Dialogue_Updated.esp,INFO,dialogue_quest,176
+Oblivion.esm,SPEL,magic,174
+Oblivion.esm,PACK,dialogue_quest,168
+Oblivion.esm,INFO,dialogue_quest,160
+Bounty Quests.esp,QUST,dialogue_quest,160
+Oscuro's_Oblivion_Overhaul.esm,CLOT,item_balance,150
+Maskar's Oblivion Overhaul.esp,CREA,npc_normalization,148
+Maskar's Oblivion Overhaul.esp,INGR,item_balance,146
+Maskar's Oblivion Overhaul.esp,WEAP,item_balance,140
+Oblivion.esm,CREA,npc_normalization,137
+OOOShiveringIsles.esp,NPC_,npc_normalization,135
+Better Cities Resources.esm,WEAP,item_balance,132
+Add some flavor - Priories.esp,REFR,worldspace_glue,132
+Oscuro's_Oblivion_Overhaul.esm,SCPT,scripts,131
+<NEW>,REFR,worldspace_glue,121
+300_Lore_Dialogue_Updated.esp,DIAL,dialogue_quest,121
+Oblivion.esm,SCPT,scripts,118
+OOO Enhanced.esp,CREA,npc_normalization,111
+FGRebuild.esp,REFR,worldspace_glue,103
+Better Cities Resources.esm,NPC_,npc_normalization,90
+Better Cities Resources.esm,REFR,worldspace_glue,90
+Oblivion.esm,MGEF,magic,89
+Oblivion.esm,WEAP,item_balance,86
+Oblivion.esm,LAND,worldspace_glue,77
+Kvatch Rebuilt.esp,NPC_,npc_normalization,74
+Oscuro's_Oblivion_Overhaul.esm,SPEL,magic,68
+Cobl Main.esm,QUST,dialogue_quest,65
+Oblivion.esm,DIAL,dialogue_quest,64
+Knights - Revelation.esp,NPC_,npc_normalization,63
+Add some flavor - Wayshrines & AyleidWells.esp,REFR,worldspace_glue,59
+Oblivion.esm,CLOT,item_balance,55
+Oblivion.esm,ACHR,worldspace_glue,54
+Oblivion.esm,HAIR,npc_normalization,51
+Oblivion.esm,PGRD,worldspace_glue,48
+Oblivion.esm,LSCR,other,45
+Oblivion.esm,ARMO,item_balance,43
+Maskar's Oblivion Overhaul.esp,LVLI,leveled_lists,43
+Oblivion.esm,GMST,world_settings,42
+Reaction.esp,INFO,dialogue_quest,41
+Better Cities Resources.esm,CELL,worldspace_glue,39
+OOO Enhanced.esp,REFR,worldspace_glue,39
+Maskar's Oblivion Overhaul.esp,LIGH,world_settings,37
+Oblivion.esm,MISC,item_balance,37
+MTCExpandedVillages.esp,REFR,worldspace_glue,37
+Maskar's Oblivion Overhaul.esp,FLOR,world_settings,36
+Oblivion.esm,LVLC,leveled_lists,36
+Ayleid Wells.esp,SPEL,magic,35
+Maskar's Oblivion Overhaul.esp,CLOT,item_balance,34
+OOO Enhanced.esp,CONT,containers_loot,33
+Oblivion.esm,LVLI,leveled_lists,33
+Maskar's Oblivion Overhaul - OCRAFT Patch.esp,CLOT,item_balance,32
+OOO Enhanced.esp,NPC_,npc_normalization,31
+DLCFrostcragReborn.esp,NPC_,npc_normalization,31
+Add some flavor - Roadside inns.esp,REFR,worldspace_glue,31
+Unique Landscapes.esp,ACRE,worldspace_glue,31
+Knights - Revelation.esp,ARMO,item_balance,30
+Shroud Over Stalrous Manor.esp,REFR,worldspace_glue,30
+Better Dungeons.esp,REFR,worldspace_glue,29
+ElsweyrAnequina.esp,CELL,worldspace_glue,29
+Oscuro's_Oblivion_Overhaul.esm,WEAP,item_balance,28
+Oblivifall - Losing My Religion.esp,SPEL,magic,27
+Oblivion.esm,SLGM,item_balance,27
+BetterCampsites.esp,REFR,worldspace_glue,27
+Add some flavor - Bridges.esp,REFR,worldspace_glue,26
+Oscuro's_Oblivion_Overhaul.esm,ARMO,item_balance,24
+Extended Dialogue.esp,DIAL,dialogue_quest,24
+<NEW>,SPEL,magic,23
+GOSH Region Ambiance.esp,WTHR,world_settings,23
+OOO Enhanced.esp,CLOT,item_balance,22
+Oblivion.esm,WRLD,worldspace_glue,22
+Arena Alive+ BC Compatible.esp,REFR,worldspace_glue,21
+Add some flavor - Talos bridge.esp,REFR,worldspace_glue,21
+OCRAFT - Stations for Sale.esp,SCPT,scripts,20
+OOO Enhanced.esp,ARMO,item_balance,20
+Cobl Main.esm,INGR,item_balance,20
+MercerIngredientsCore.esp,REFR,worldspace_glue,20
+bgIntegrationIntegratedEV.esp,REFR,worldspace_glue,20
+SkillSpecialization.esp,SCPT,scripts,19
+Devotion - Blessings Remastered.esp,SPEL,magic,19
+OCRAFT - Stations for Sale.esp,INGR,item_balance,19
+Imperial Furniture Renovated.esp,MISC,item_balance,19
+The Ayleid Steps.esp,REFR,worldspace_glue,19
+Artifacts.esp,REFR,worldspace_glue,19
+Oblivifall Master File.esm,DIAL,dialogue_quest,19
+Better Cities Resources.esm,PACK,dialogue_quest,19
+Oblivion.esm,CLAS,npc_normalization,18
+AyleidRuinsOverhaul.esp,NPC_,npc_normalization,18
+AyleidRuinsOverhaul.esp,CREA,npc_normalization,18
+DLCMehrunesRazor.esp,CELL,worldspace_glue,18
+Maskar's Oblivion Overhaul.esp,SPEL,magic,17
+OOO Enhanced.esp,WEAP,item_balance,17
+Oblivion.esm,ACRE,worldspace_glue,17
+JoinTheBlackwoodCompany.esp,REFR,worldspace_glue,17
+Oblivion.esm,WATR,other,17
+xulChorrolHinterland-BC6.esp,NPC_,npc_normalization,16
+Better Cities Resources.esm,LVLI,leveled_lists,16
+OCRAFT - Stations for Sale.esp,MISC,item_balance,15
+AyleidRuinsOverhaul.esp,REFR,worldspace_glue,15
+<NEW>,ACHR,worldspace_glue,15
+Oscuro's_Oblivion_Overhaul.esp,ACHR,worldspace_glue,15
+JoinTheBlackwoodCompany.esp,ACHR,worldspace_glue,15
+SMO.esp,INFO,dialogue_quest,15
+Oblivion.esm,FACT,factions_ai,14
+bgIntegrationIntegratedEV.esp,HAIR,npc_normalization,14
+Oscuro's_Oblivion_Overhaul.esm,LIGH,world_settings,14
+Glenmoril Covens.esp,NPC_,npc_normalization,14
+0WeynonPrioryAlive.esp,REFR,worldspace_glue,14
+ElsweyrAnequina.esp,INFO,dialogue_quest,14
+Oblivion.esm,RACE,npc_normalization,13
+Oblivion.esm,SKIL,other,13
+Oblivion.esm,BSGN,npc_normalization,13
+Unique Landscapes.esp,CREA,npc_normalization,13
+IllerOmen.esp,REFR,worldspace_glue,13
+ElsweyrCityExtension.esp,NPC_,npc_normalization,12
+Oblivion.esm,WTHR,world_settings,12
+APW Merge.esp,REFR,worldspace_glue,12
+Knights.esp,QUST,dialogue_quest,12
+bgIntegrationIntegratedEV.esp,SPEL,magic,11
+IllerOmen.esp,NPC_,npc_normalization,11
+Minotaur Encampments.esp,REFR,worldspace_glue,11
+Oblivifall - Losing My Religion.esp,SCPT,scripts,10
+OOO Enhanced.esp,SPEL,magic,10
+SkoomaRefiningAddictionEnhanced.esp,SPEL,magic,10
+Highwood.esp,BOOK,item_balance,10
+JoinTheBlackwoodCompany.esp,NPC_,npc_normalization,10
+PSMainQuestDelayer.esp,REFR,worldspace_glue,10
+Av Latta Magicka.esp,REFR,worldspace_glue,10
+<NEW>,GMST,world_settings,9
+bgIntegrationIntegratedEV.esp,RACE,npc_normalization,9
+ElsweyrAnequina.esp,RACE,npc_normalization,9
+Oblivion.esm,SOUN,world_settings,9
+SkillSpecialization.esp,SPEL,magic,9
+Knights - Revelation.esp,WEAP,item_balance,9
+Orden des Drachen.esp,NPC_,npc_normalization,9
+Knights.esp,CELL,worldspace_glue,9
+AyleidRuinsOverhaul.esp,ACRE,worldspace_glue,9
+Better Cities Full.esp,ACRE,worldspace_glue,9
+HackdirtAlive.esp,REFR,worldspace_glue,9
+<NEW>,LSCR,other,9
+InfinitumCompendium.esp,SCPT,scripts,8
+SupremeMagickaLite.esp,SCPT,scripts,8
+RacesReshoveled.esp,SCPT,scripts,8
+Maskar's Oblivion Overhaul.esp,SCPT,scripts,8
+Maskar's Oblivion Overhaul.esp,BOOK,item_balance,8
+IllerOmen.esp,LIGH,world_settings,8
+ElsweyrCityExtension.esp,ACRE,worldspace_glue,8
+Better Cities Resources.esm,GLOB,world_settings,7
+CombatReshoveled.esp,SCPT,scripts,7
+BoonStones.esp,SPEL,magic,7
+Oblivifall - Losing My Religion.esp,ACTI,containers_loot,7
+Oblivion.esm,LIGH,world_settings,7
+DLCFrostcragReborn.esp,FURN,world_settings,7
+CDEP_FanaCeya.esp,NPC_,npc_normalization,7
+AyleidRuinsOverhaul.esp,LVLC,leveled_lists,7
+DLCBattlehornCastle.esp,CELL,worldspace_glue,7
+CombatReshoveled.esp,GMST,world_settings,6
+Oblivifall - Losing My Religion.esp,ARMO,item_balance,6
+Tales from Elsweyr Anequina-Rev's Redo.esp,CONT,containers_loot,6
+Maskar's Oblivion Overhaul.esp,MISC,item_balance,6
+Unique Landscapes.esp,TREE,world_settings,6
+Oblivifall - Losing My Religion.esp,NPC_,npc_normalization,6
+WellDiver.esp,CREA,npc_normalization,6
+Minotaur Encampments.esp,CREA,npc_normalization,6
+Oscuro's_Oblivion_Overhaul.esm,LVLC,leveled_lists,6
+Oblivifall - Losing My Religion.esp,REFR,worldspace_glue,6
+JoinTheMoragTong.esp,REFR,worldspace_glue,6
+Maskar's Oblivion Overhaul.esp,ACRE,worldspace_glue,6
+Kvatch Rebuilt.esp,REFR,worldspace_glue,6
+JoinTheBlackwoodCompany.esp,PACK,dialogue_quest,6
+Unique Landscapes.esp,LTEX,world_settings,5
+Maskar's Oblivion Overhaul.esp,ENCH,magic,5
+JoinTheMoragTong.esp,ARMO,item_balance,5
+Better Cities Resources.esm,MISC,item_balance,5
+Elsweyr Mysteries.esp,NPC_,npc_normalization,5
+ElsweyrAnequina.esp,ACRE,worldspace_glue,5
+Oscuro's_Oblivion_Overhaul.esp,GMST,world_settings,4
+BirthsignsReshoveled.esp,SCPT,scripts,4
+Redressing Cyrodiil - Nibenay.esp,SCPT,scripts,4
+EM_FarmAnimals1.esp,SCPT,scripts,4
+Better Cities Resources.esm,ENCH,magic,4
+Oscuro's_Oblivion_Overhaul.esm,BOOK,item_balance,4
+Better Cities Resources.esm,CLOT,item_balance,4
+Artifacts_Remastered.esm,LIGH,world_settings,4
+ElsweyrAnequina.esp,TREE,world_settings,4
+Maskar's Oblivion Overhaul.esp,AMMO,item_balance,4
+JoinTheMoragTong.esp,NPC_,npc_normalization,4
+Better Cities Resources.esm,CREA,npc_normalization,4
+Unofficial Oblivion Patch.esp,CREA,npc_normalization,4
+Artifacts.esp,CREA,npc_normalization,4
+Productive Mines - Vendors - OCRAFT.esp,LVLI,leveled_lists,4
+ElsweyrAnequina.esp,REGN,worldspace_glue,4
+InfinitumCompendium.esp,REFR,worldspace_glue,4
+FGRebuild.esp,ACHR,worldspace_glue,4
+Steve - Thieves Guils HQ.esp,REFR,worldspace_glue,4
+DLCVileLair.esp,CELL,worldspace_glue,4
+Oscuro's_Oblivion_Overhaul.esp,ACRE,worldspace_glue,4
+OOO Enhanced.esp,ACRE,worldspace_glue,4
+Artifacts.esp,ACRE,worldspace_glue,4
+ElsweyrAnequina.esp,WRLD,worldspace_glue,4
+Knights.esp,INFO,dialogue_quest,4
+Better Cities Resources.esm,DIAL,dialogue_quest,4
+MTCExpandedVillages.esp,INFO,dialogue_quest,4
+Oblivion.esm,IDLE,dialogue_quest,4
+Oscuro's_Oblivion_Overhaul.esm,CLAS,npc_normalization,3
+Oscuro's_Oblivion_Overhaul.esm,FACT,factions_ai,3
+APW Merge 2.esp,HAIR,npc_normalization,3
+Oblivion.esm,EYES,npc_normalization,3
+bgIntegrationIntegratedEV.esp,SCPT,scripts,3
+OOO Enhanced.esp,SCPT,scripts,3
+BoonStones.esp,SCPT,scripts,3
+<NEW>,SCPT,scripts,3
+bgIntegrationIntegratedEV.esp,ENCH,magic,3
+Arena Alive+ BC Compatible.esp,ENCH,magic,3
+<NEW>,ENCH,magic,3
+Oblivion.esm,ACTI,containers_loot,3
+<NEW>,ACTI,containers_loot,3
+Better Cities Resources.esm,ARMO,item_balance,3
+OOOShiveringIsles.esp,ARMO,item_balance,3
+Arena Alive+ BC Compatible.esp,CLOT,item_balance,3
+<NEW>,CLOT,item_balance,3
+Oblivion.esm,DOOR,world_settings,3
+Maskar's Oblivion Overhaul - OCRAFT Patch.esp,INGR,item_balance,3
+MercerIngredientsCore.esp,FLOR,world_settings,3
+APW Merge.esp,FLOR,world_settings,3
+Vampire Hunting - Order of the Virtuous Blood.esp,WEAP,item_balance,3
+OOO Enhanced.esp,AMMO,item_balance,3
+Knights.esp,NPC_,npc_normalization,3
+HackdirtTheDeepOnes.esp,NPC_,npc_normalization,3
+bgIntegrationIntegratedEV.esp,ALCH,item_balance,3
+The Ayleid Steps.esp,CELL,worldspace_glue,3
+Vampire Hunting - Order of the Virtuous Blood.esp,REFR,worldspace_glue,3
+Steve - Thieves Guils HQ.esp,CELL,worldspace_glue,3
+DLCFrostcrag.esp,REFR,worldspace_glue,3
+Oblivifall - Losing My Religion.esp,CELL,worldspace_glue,3
+APW Merge.esp,CELL,worldspace_glue,3
+DLCFrostcragReborn.esp,REFR,worldspace_glue,3
+ElsweyrAnequina.esp,ACHR,worldspace_glue,3
+Better Cities Resources.esm,INFO,dialogue_quest,3
+APW Merge.esp,LSCR,other,3
+OOO Enhanced.esp,GMST,world_settings,2
+APW Merge.esp,GMST,world_settings,2
+BoonStones.esp,GLOB,world_settings,2
+Simple Primary Needs.esp,GLOB,world_settings,2
+OOO Enhanced.esp,CLAS,npc_normalization,2
+Knights - Revelation.esp,RACE,npc_normalization,2
+Orden des Drachen.esp,RACE,npc_normalization,2
+DLCFrostcragReborn.esp,RACE,npc_normalization,2
+Av Latta Magicka.esm,SCPT,scripts,2
+SkoomaRefiningAddictionEnhanced.esp,SCPT,scripts,2
+PSMainQuestDelayer.esp,SCPT,scripts,2
+300_Lore_Dialogue_Updated.esp,SCPT,scripts,2
+Harvest xOBSE.esp,SCPT,scripts,2
+Eri's Simple Sprint n Gallop.esp,SCPT,scripts,2
+Oscuro's_Oblivion_Overhaul.esm,ENCH,magic,2
+OOO Enhanced.esp,ENCH,magic,2
+Vampire Hunting - Order of the Virtuous Blood.esp,SPEL,magic,2
+DownsidesToShields.esp,SPEL,magic,2
+tbskGuardsFeatures.esp,ARMO,item_balance,2
+DLCFrostcragReborn.esp,ARMO,item_balance,2
+OOO Enhanced.esp,BOOK,item_balance,2
+Oblivifall - Losing My Religion.esp,CLOT,item_balance,2
+MannimarcoRevisited.esp,CLOT,item_balance,2
+SupremeMagickaLite.esp,CLOT,item_balance,2
+Vampire Hunting - Order of the Virtuous Blood.esp,CONT,containers_loot,2
+Oblivion.esm,INGR,item_balance,2
+Better Cities Resources.esm,INGR,item_balance,2
+Oscuro's_Oblivion_Overhaul.esm,MISC,item_balance,2
+Oblivion.esm,TREE,world_settings,2
+DLCFrostcrag.esp,FLOR,world_settings,2
+Artifacts.esp,WEAP,item_balance,2
+JoinTheNecromancers.esp,NPC_,npc_normalization,2
+bgIntegrationIntegratedEV.esp,NPC_,npc_normalization,2
+Vampire Hunting - Order of the Virtuous Blood.esp,NPC_,npc_normalization,2
+Productive Mines.esp,NPC_,npc_normalization,2
+DLCHorseArmor.esp,CREA,npc_normalization,2
+InfinitumCompendium.esp,CREA,npc_normalization,2
+Better Cities Resources.esm,ALCH,item_balance,2
+OOO Enhanced.esp,ALCH,item_balance,2
+Oblivion.esm,SGST,other,2
+Unique Landscapes.esp,LVLI,leveled_lists,2
+OOO Enhanced.esp,LVLI,leveled_lists,2
+Oblivion.esm,REGN,worldspace_glue,2
+Vampire Hunting - Order of the Virtuous Blood.esp,CELL,worldspace_glue,2
+DLCThievesDen.esp,CELL,worldspace_glue,2
+JoinTheMoragTong.esp,CELL,worldspace_glue,2
+Dungeons of Tamriel.esp,CELL,worldspace_glue,2
+OOO Enhanced.esp,ACHR,worldspace_glue,2
+xulChorrolHinterland-BC6.esp,ACHR,worldspace_glue,2
+RadiantAI - NPCs Alive - Cyrodiil.esp,REFR,worldspace_glue,2
+Knights.esp,REFR,worldspace_glue,2
+ULM BetterCities-UniqueLandscapes merged patch.esp,ACHR,worldspace_glue,2
+Add some flavor - Roadside inns.esp,ACRE,worldspace_glue,2
+xulChorrolHinterland-BC6.esp,ACRE,worldspace_glue,2
+ElsweyrAnequina.esp,LAND,worldspace_glue,2
+ElsweyrCityExtension.esp,ACHR,worldspace_glue,2
+JoinTheBlackwoodCompany.esp,DIAL,dialogue_quest,2
+MTCExpandedVillages.esp,DIAL,dialogue_quest,2
+ElsweyrAnequina.esp,DIAL,dialogue_quest,2
+Tales of Cyrodiil.esp,DIAL,dialogue_quest,2
+lTraveler's Tent.esp,DIAL,dialogue_quest,2
+lTraveler's Tent.esp,INFO,dialogue_quest,2
+Unofficial Oblivion Patch.esp,QUST,dialogue_quest,2
+Oblivion Collectible Cards.esp,QUST,dialogue_quest,2
+bgIntegrationIntegratedEV.esp,QUST,dialogue_quest,2
+Redressing Cyrodiil - Nibenay.esp,QUST,dialogue_quest,2
+<NEW>,QUST,dialogue_quest,2
+DLCFrostcragReborn.esp,LSCR,other,2
+APW Merge 3.esp,GMST,world_settings,1
+Oscuro's_Oblivion_Overhaul.esm,GLOB,world_settings,1
+De Rerum Dirennis.esp,GLOB,world_settings,1
+IllerOmen.esp,FACT,factions_ai,1
+Oblivifall Master File.esm,HAIR,npc_normalization,1
+Better Cities Resources.esm,RACE,npc_normalization,1
+TheWellOfMinlorada.esp,RACE,npc_normalization,1
+MannimarcoRevisited.esp,RACE,npc_normalization,1
+1em_Vilja.esp,RACE,npc_normalization,1
+DLCHorseArmor.esp,SCPT,scripts,1
+DLCOrrery.esp,SCPT,scripts,1
+DLCVileLair.esp,SCPT,scripts,1
+DLCMehrunesRazor.esp,SCPT,scripts,1
+DLCThievesDen.esp,SCPT,scripts,1
+DLCBattlehornCastle.esp,SCPT,scripts,1
+DLCFrostcrag.esp,SCPT,scripts,1
+Knights.esp,SCPT,scripts,1
+Kvatch Rebuilt.esp,SCPT,scripts,1
+JoinTheBlackwoodCompany.esp,SCPT,scripts,1
+JoinTheMythicDawn.esp,SCPT,scripts,1
+Oblivion Collectible Cards.esp,SCPT,scripts,1
+Oblivion Content Restoration Project.esp,SCPT,scripts,1
+Vampire Hunting - Order of the Virtuous Blood.esp,SCPT,scripts,1
+SMO.esp,SCPT,scripts,1
+ElsweyrAnequina.esp,SCPT,scripts,1
+De Rerum Dirennis.esp,SCPT,scripts,1
+Tales of Cyrodiil.esp,SCPT,scripts,1
+Highwood.esp,SCPT,scripts,1
+Arena Alive+ BC Compatible.esp,SCPT,scripts,1
+Living Imperial Palace Classic.esp,SCPT,scripts,1
+lTraveler's Tent.esp,SCPT,scripts,1
+MagicRevisedMysticism.esp,SCPT,scripts,1
+MannimarcoRevisited.esp,SCPT,scripts,1
+Modern Security Overhaul.esp,SCPT,scripts,1
+Simple Horse Utilities.esp,SCPT,scripts,1
+BCShivIsles.esp,SCPT,scripts,1
+JCN_AV Uncap.esp,SCPT,scripts,1
+NecroLich.esp,SCPT,scripts,1
+1em_Vilja.esp,SCPT,scripts,1
+OCRAFT.esp,SCPT,scripts,1
+Delay DLC Start.esp,SCPT,scripts,1
+City Settings BC and DLC.esp,SCPT,scripts,1
+DownsidesToShields.esp,SCPT,scripts,1
+Oblivion.esm,LTEX,world_settings,1
+Yami's Unique Gear.esp,ENCH,magic,1
+MannimarcoRevisited.esp,ENCH,magic,1
+Shroud Over Stalrous Manor.esp,SPEL,magic,1
+SMO.esp,SPEL,magic,1
+Knights - Revelation.esp,SPEL,magic,1
+MagicRevisedMysticism.esp,SPEL,magic,1
+SupremeMagickaLite.esp,SPEL,magic,1
+NecroLich.esp,SPEL,magic,1
+Eri's Simple Sprint n Gallop.esp,SPEL,magic,1
+Better Cities Resources.esm,ACTI,containers_loot,1
+AyleidRuinsOverhaul.esp,ACTI,containers_loot,1
+SkillSpecialization.esp,ACTI,containers_loot,1
+Artifacts_Remastered.esm,ARMO,item_balance,1
+Kvatch Rebuilt.esp,ARMO,item_balance,1
+Arena Alive+ BC Compatible.esp,ARMO,item_balance,1
+Oblivion.esm,BOOK,item_balance,1
+CDEP_FanaCeya.esp,BOOK,item_balance,1
+Nosferat's Merchant Additions.esp,BOOK,item_balance,1
+<NEW>,BOOK,item_balance,1
+Redressing Cyrodiil.esm,CLOT,item_balance,1
+Artifacts.esp,CLOT,item_balance,1
+CDEP_FanaCeya.esp,CLOT,item_balance,1
+Better Cities Resources.esm,CONT,containers_loot,1
+MannimarcoRevisited.esp,CONT,containers_loot,1
+ElsweyrAnequina.esp,INGR,item_balance,1
+Tales from Elsweyr Anequina-Rev's Redo.esp,INGR,item_balance,1
+OOO Enhanced.esp,INGR,item_balance,1
+Better Cities Resources.esm,LIGH,world_settings,1
+Unofficial Oblivion Patch.esp,LIGH,world_settings,1
+SI Unmarked Locations without markers.esp,LIGH,world_settings,1
+DFTG_GlowingStones.esp,LIGH,world_settings,1
+<NEW>,LIGH,world_settings,1
+AyleidRuinsOverhaul.esp,MISC,item_balance,1
+Gamblers_of_Cyrodiil.esp,MISC,item_balance,1
+Oblivion.esm,STAT,world_settings,1
+Unique Landscapes.esp,GRAS,other,1
+WellDiver.esp,WEAP,item_balance,1
+Unique Landscapes.esp,WEAP,item_balance,1
+OOOShiveringIsles.esp,WEAP,item_balance,1
+DLCFrostcragReborn.esp,WEAP,item_balance,1
+DLCVileLair.esp,NPC_,npc_normalization,1
+DLCSpellTomes.esp,NPC_,npc_normalization,1
+Imperial Furniture Renovated.esp,NPC_,npc_normalization,1
+TheWellOfMinlorada.esp,NPC_,npc_normalization,1
+WanderersWharf.esp,NPC_,npc_normalization,1
+PSMainQuestDelayer.esp,NPC_,npc_normalization,1
+1em_Vilja.esp,NPC_,npc_normalization,1
+Gamblers_of_Cyrodiil.esp,NPC_,npc_normalization,1
+APW Merge.esp,NPC_,npc_normalization,1
+DLCBattlehornCastle.esp,CREA,npc_normalization,1
+DLCFrostcrag.esp,CREA,npc_normalization,1
+Bounty Quests.esp,CREA,npc_normalization,1
+JoinTheBlackwoodCompany.esp,CREA,npc_normalization,1
+Vampire Hunting - Order of the Virtuous Blood.esp,CREA,npc_normalization,1
+NecroLich.esp,CREA,npc_normalization,1
+Tales from Elsweyr Anequina-Rev's Redo.esp,ALCH,item_balance,1
+Cobl Main.esm,LVLI,leveled_lists,1
+AyleidRuinsOverhaul.esp,LVLI,leveled_lists,1
+FGRebuild.esp,LVLI,leveled_lists,1
+<NEW>,LVLI,leveled_lists,1
+DLCFrostcrag.esp,REGN,worldspace_glue,1
+PSMainQuestDelayer.esp,CELL,worldspace_glue,1
+Better Dark Brotherhood Sanctuary.esp,ACHR,worldspace_glue,1
+DLC Integration.esp,REFR,worldspace_glue,1
+DLCBattlehornCastle.esp,REFR,worldspace_glue,1
+Artifacts.esp,CELL,worldspace_glue,1
+DLCMehrunesRazor.esp,REFR,worldspace_glue,1
+CRTRenewed.esp,REFR,worldspace_glue,1
+Maskar's Oblivion Overhaul.esp,CELL,worldspace_glue,1
+JoinTheNecromancers.esp,REFR,worldspace_glue,1
+MannimarcoRevisited.esp,REFR,worldspace_glue,1
+Better Cities Resources.esm,ACHR,worldspace_glue,1
+Dungeons of Tamriel.esp,REFR,worldspace_glue,1
+CDEP_FanaCeya.esp,CELL,worldspace_glue,1
+CDEP_FanaCeya.esp,ACRE,worldspace_glue,1
+Unique Landscapes.esp,CELL,worldspace_glue,1
+xulChorrolHinterland-BC6.esp,CELL,worldspace_glue,1
+Unofficial Oblivion Patch.esp,ACRE,worldspace_glue,1
+Kvatch Rebuilt.esp,CELL,worldspace_glue,1
+OCRAFT - Integration.esp,REFR,worldspace_glue,1
+<NEW>,ACRE,worldspace_glue,1
+AyleidRuinsOverhaul.esp,CELL,worldspace_glue,1
+Artifacts.esp,ACHR,worldspace_glue,1
+MTCExpandedVillages.esp,CELL,worldspace_glue,1
+PSMainQuestDelayer.esp,ACHR,worldspace_glue,1
+Living Imperial Palace Classic.esp,REFR,worldspace_glue,1
+Cliff_BetterLetters.esp,REFR,worldspace_glue,1
+Better Benirus Manor.esp,REFR,worldspace_glue,1
+Elsweyr Mysteries.esp,CELL,worldspace_glue,1
+Artifacts_Remastered.esm,REFR,worldspace_glue,1
+Unofficial Oblivion Patch.esp,REFR,worldspace_glue,1
+bgIntegrationIntegratedEV.esp,ACHR,worldspace_glue,1
+Tales from Elsweyr Anequina-Rev's Redo.esp,REFR,worldspace_glue,1
+WanderersWharf.esp,REFR,worldspace_glue,1
+Better Cities - Oblivion Collectible Cards.esp,REFR,worldspace_glue,1
+thievery.esp,REFR,worldspace_glue,1
+Better Imperial City.esp,ACRE,worldspace_glue,1
+Better Imperial City.esp,ACHR,worldspace_glue,1
+Tales from Elsweyr Anequina-Rev's Redo.esp,ACHR,worldspace_glue,1
+APW Merge 3.esp,REFR,worldspace_glue,1
+Productive Mines.esp,REFR,worldspace_glue,1
+ElsweyrCityExtension.esp,PGRD,worldspace_glue,1
+Oblivifall Master File.esm,INFO,dialogue_quest,1
+Knights.esp,DIAL,dialogue_quest,1
+Kragenir's Death Quest.esp,DIAL,dialogue_quest,1
+Oblivion Collectible Cards.esp,DIAL,dialogue_quest,1
+Oblivion Collectible Cards.esp,INFO,dialogue_quest,1
+Oblivifall - Losing My Religion.esp,DIAL,dialogue_quest,1
+SMO.esp,DIAL,dialogue_quest,1
+PSMainQuestDelayer.esp,DIAL,dialogue_quest,1
+EM_FarmAnimals1.esp,DIAL,dialogue_quest,1
+EM_FarmAnimals1.esp,INFO,dialogue_quest,1
+Oscuro's_Oblivion_Overhaul.esm,QUST,dialogue_quest,1
+Better Cities Resources.esm,QUST,dialogue_quest,1
+DLCHorseArmor.esp,QUST,dialogue_quest,1
+DLCOrrery.esp,QUST,dialogue_quest,1
+DLCVileLair.esp,QUST,dialogue_quest,1
+DLCMehrunesRazor.esp,QUST,dialogue_quest,1
+DLCThievesDen.esp,QUST,dialogue_quest,1
+DLCBattlehornCastle.esp,QUST,dialogue_quest,1
+DLCFrostcrag.esp,QUST,dialogue_quest,1
+JoinTheNecromancers.esp,QUST,dialogue_quest,1
+JoinTheMythicDawn.esp,QUST,dialogue_quest,1
+Shroud Over Stalrous Manor.esp,QUST,dialogue_quest,1
+ElsweyrAnequina.esp,QUST,dialogue_quest,1
+Knights - Revelation.esp,QUST,dialogue_quest,1
+OOO Enhanced.esp,QUST,dialogue_quest,1
+OOOShiveringIsles.esp,QUST,dialogue_quest,1
+1em_Vilja.esp,QUST,dialogue_quest,1
+ClassBonusPerk.esp,QUST,dialogue_quest,1
+SkillSpecialization.esp,QUST,dialogue_quest,1
+Oblivion Content Restoration Project.esp,IDLE,dialogue_quest,1
+ElsweyrAnequina.esp,PACK,dialogue_quest,1
+Oblivion.esm,CSTY,other,1
