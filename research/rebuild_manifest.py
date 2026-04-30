@@ -351,6 +351,91 @@ def apw_enabled_mods() -> set[str]:
     return _apw_enabled_mods_cache
 
 
+_apw_cr_targets_cache: set[str] | None = None
+APW_CR_ESP = APW_MODS / "A Painted World Configs" / "APW - Conflict Resolution.esp"
+
+
+def apw_cr_targets() -> set[str]:
+    """Lowercased plugin filenames that have at least one record overridden by
+    APW - Conflict Resolution.esp. Masters listed by the ESP but with zero overrides
+    (referenced only via FormID pointers) are excluded — those are soft deps, not CR."""
+    global _apw_cr_targets_cache
+    if _apw_cr_targets_cache is not None:
+        return _apw_cr_targets_cache
+    targets: set[str] = set()
+    if APW_CR_ESP.exists():
+        data = APW_CR_ESP.read_bytes()
+        if len(data) >= 20 and data[:4] == b"TES4":
+            tes4_size = int.from_bytes(data[4:8], "little")
+            masters: list[str] = []
+            pos = 20
+            end = 20 + tes4_size
+            while pos + 6 <= end:
+                sub_type = data[pos:pos + 4]
+                sub_size = int.from_bytes(data[pos + 4:pos + 6], "little")
+                if sub_type == b"MAST":
+                    masters.append(
+                        data[pos + 6:pos + 6 + sub_size].rstrip(b"\x00")
+                        .decode("cp1252", errors="replace")
+                    )
+                pos += 6 + sub_size
+            counts: dict[int, int] = {}
+            pos = 20 + tes4_size
+            while pos + 20 <= len(data):
+                tag = data[pos:pos + 4]
+                if tag == b"GRUP":
+                    pos += 20
+                    continue
+                rec_size = int.from_bytes(data[pos + 4:pos + 8], "little")
+                rec_fid = int.from_bytes(data[pos + 12:pos + 16], "little")
+                high = (rec_fid >> 24) & 0xFF
+                if high < len(masters):
+                    counts[high] = counts.get(high, 0) + 1
+                pos += 20 + rec_size
+            for idx, n in counts.items():
+                if n > 0:
+                    targets.add(masters[idx].lower())
+    _apw_cr_targets_cache = targets
+    return _apw_cr_targets_cache
+
+
+_mod_plugins_cache: dict[str, set[str]] | None = None
+
+
+def mod_plugins(mod_name: str) -> set[str]:
+    """Lowercased .esp/.esm filenames present in a mod folder (top-level only)."""
+    global _mod_plugins_cache
+    if _mod_plugins_cache is None:
+        _mod_plugins_cache = {}
+    if mod_name in _mod_plugins_cache:
+        return _mod_plugins_cache[mod_name]
+    out: set[str] = set()
+    for base in (APW_MODS, REBORN_MODS):
+        d = base / mod_name
+        if d.exists():
+            for p in d.iterdir():
+                if p.is_file() and p.suffix.lower() in (".esp", ".esm"):
+                    out.add(p.name.lower())
+            break
+    _mod_plugins_cache[mod_name] = out
+    return out
+
+
+def check_apw_cr(mod_name: str) -> str:
+    """'yes' if any of the mod's plugins is overridden by APW - Conflict Resolution.esp.
+    Blank for separators, mods without plugins, or mods whose plugins aren't CR'd."""
+    if mod_name.endswith("_separator"):
+        return ""
+    plugins = mod_plugins(mod_name)
+    if not plugins:
+        return ""
+    targets = apw_cr_targets()
+    hits = sorted(p for p in plugins if p in targets)
+    if not hits:
+        return ""
+    return "yes"
+
+
 def check_apw_merged(mod_name: str) -> str:
     """Detect whether a mod's ESPs were absorbed into APW Merge*.esp / Conflict Resolution.
 
@@ -435,6 +520,7 @@ def main():
         loose_files = count_loose_files(name)
         bash_mergeable = check_mergeable(name)
         apw_merged = check_apw_merged(name)
+        apw_cr = check_apw_cr(name)
         if args.reset_status:
             status = "installed" if name in installed else "skipped"
         else:
@@ -445,6 +531,8 @@ def main():
         nexus_url = f"https://www.nexusmods.com/oblivion/mods/{modid}" if modid and modid != "0" else ""
         out_rows.append({
             "apw_name": name,
+            "notes": r["notes"],
+            "status": status,
             "mo2_order": order,
             "section": section,
             "nexus_category": cat_name,
@@ -452,9 +540,8 @@ def main():
             "loose_files": loose_files,
             "bash_mergeable": bash_mergeable,
             "apw_merged": apw_merged,
+            "apw_cr": apw_cr,
             "apw_enabled": r["apw_enabled"],
-            "status": status,
-            "notes": r["notes"],
             "nexus_url": nexus_url,
         })
 
@@ -467,7 +554,7 @@ def main():
         return (0, r["mo2_order"])
     out_rows.sort(key=sort_key)
 
-    fieldnames = ["apw_name", "mo2_order", "section", "nexus_category", "mod_kind", "loose_files", "bash_mergeable", "apw_merged", "apw_enabled", "status", "notes", "nexus_url"]
+    fieldnames = ["apw_name", "notes", "status", "mo2_order", "section", "nexus_category", "mod_kind", "loose_files", "bash_mergeable", "apw_merged", "apw_cr", "apw_enabled", "nexus_url"]
     with MANIFEST.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
