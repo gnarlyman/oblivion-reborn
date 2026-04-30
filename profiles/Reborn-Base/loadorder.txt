@@ -39,6 +39,12 @@ MercerIngredientsQarlsHarvestAddon.esp
 MercerIngredientsReducedAlchemistInventories.esp
 MercerCoblOrePatch.esp
 SoC Ingredient Patch.esp
+Balanced Unleveled Rewards - Complete.esp
+PSMainQuestDelayer.esp
+Delay DLC Start - no UOP and SSSB.esp
+Delay DLC Start - no SSSB.esp
+Delay DLC Start.esp
+Initial Quest Popups Begone.esp
 IHaveNoGreetingFix.esp
 Stay Unicorn.esp
 MigMiscellanea.esp
@@ -51,6 +57,7 @@ SB_WeaponDropFix.esp
 ArmoredShadowmereFix.esp
 AleswellNoRefractFix.esp
 BookTrackerUpdatedv1.1.esp
+DLC Integration.esp
 Spirit Stones.esp
 Extended UI.esp
 QZ Easy Menus.esp
@@ -59,16 +66,9 @@ lDisplay Skill Perk Effects.esp
 Dynamic Map.esp
 Better Enemy Health.esp
 Ultimate Leveling.esp
-Balanced Unleveled Rewards - Complete.esp
-Skip Intro and Random Start.esp
+PSMQD - Delay DLC Start Patch.esp
 Cobl Filter Late MERGE ONLY.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp
 MercerIngredientsMaskarsOO.esp
-Initial Quest Popups Begone.esp
-Delay DLC Start - no SSSB.esp
-Delay DLC Start - no UOP and SSSB.esp
-Delay DLC Start.esp
-PSMainQuestDelayer.esp
-Knigts Infamy Delay DLC patch.esp

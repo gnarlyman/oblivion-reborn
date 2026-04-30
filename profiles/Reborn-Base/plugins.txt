@@ -24,6 +24,10 @@ Knights.esp
 Knights - Unofficial Patch.esp
 LINK.esp
 MercerIngredientsCore.esp
+Balanced Unleveled Rewards - Complete.esp
+PSMainQuestDelayer.esp
+Delay DLC Start.esp
+Initial Quest Popups Begone.esp
 IHaveNoGreetingFix.esp
 MigMiscellanea.esp
 LessMaddeningShiveringIsles.esp
@@ -31,6 +35,7 @@ ApparatusIcons.esp
 SB_WeaponDropFix.esp
 ArmoredShadowmereFix.esp
 BookTrackerUpdatedv1.1.esp
+DLC Integration.esp
 Spirit Stones.esp
 Extended UI.esp
 QZ Easy Menus.esp
@@ -39,12 +44,8 @@ lDisplay Skill Perk Effects.esp
 Dynamic Map.esp
 Better Enemy Health.esp
 Ultimate Leveling.esp
-Balanced Unleveled Rewards - Complete.esp
-Skip Intro and Random Start.esp
+PSMQD - Delay DLC Start Patch.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp
 MercerIngredientsMaskarsOO.esp
-Initial Quest Popups Begone.esp
-Delay DLC Start.esp
-PSMainQuestDelayer.esp
