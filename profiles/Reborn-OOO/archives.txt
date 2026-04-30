@@ -24,4 +24,6 @@ Maskar's Oblivion Overhaul - Misc.bsa
 Maskar's Oblivion Overhaul - Sounds.bsa
 Maskar's Oblivion Overhaul - Textures.bsa
 Ultimate Leveling.bsa
+Oscuro's_Oblivion_Overhaul.bsa
+OOOShiveringIsles.bsa
 PSMainQuestDelayer.bsa

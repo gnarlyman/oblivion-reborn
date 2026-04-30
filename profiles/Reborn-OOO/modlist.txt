@@ -11,6 +11,9 @@
 +Initial Quest Popups Begone
 +PSMainQuestDelayer
 -QUESTS_separator
++OOO - Oscuro's Oblivion Overhaul - Updated (Unofficial patch)
++OOO Shivering Isles
++OOO - Oscuro's Oblivion Overhaul - Updated
 +Balanced Unleveled Rewards
 +Ultimate Leveling
 +Maskars Oblivion Overhaul 5_0_5
