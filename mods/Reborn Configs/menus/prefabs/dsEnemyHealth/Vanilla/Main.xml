@@ -24,7 +24,7 @@
         <copy src="screen()" trait="width"/>
         <div>2</div>
     </x>
-    <y>40</y>
+    <y>65</y>
 
     <!-- Enemy Name -->
     <rect name="Name">
