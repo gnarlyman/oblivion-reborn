@@ -9,10 +9,15 @@ Strategy:
 
 Pre-fill heuristic:
 - ITPO-style patterns ("Record Header:+" only, no real data change) -> drop
-- LVLI / LVLC / CONT / FACT -> merge (Bashed Patch handles these via
-  auto-merge; the CR ESP doesn't need to carry them)
 - SCPT / QUST per-record -> review (must be looked at individually)
 - Everything else -> keep (default-trust APW CR's resolution)
+
+Removed the "merge" pre-fill: Bashed Patch's auto-merge only handles
+specific subrecords (e.g. CNTO for containers, leveled list entries),
+not all changes a CR ESP might make to those record types. Pattern keys
+that diff non-bashed-handled subrecords need to stay in the CR ESP.
+Letting them default to "keep" is safer; user can flip to "merge" if
+they verify the change is purely bash-handled.
 
 Output columns:
   decision_type   "pattern" or "record"
@@ -38,7 +43,6 @@ PATTERNS_CSV = RESEARCH / "apw_cr_ooo_patterns.csv"
 DECISIONS_CSV = RESEARCH / "cr_decisions.csv"
 
 PER_RECORD_SIGS = {"SCPT", "QUST"}
-MERGE_SIGS = {"LVLI", "LVLC", "CONT", "FACT"}
 
 
 def is_itpo(change_summary: str) -> bool:
@@ -53,8 +57,6 @@ def prefill_decision(signature: str, change_summary: str, is_per_record: bool) -
         return "review"
     if is_itpo(change_summary):
         return "drop"
-    if signature in MERGE_SIGS:
-        return "merge"
     return "keep"
 
 
