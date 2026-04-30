@@ -55,6 +55,12 @@ overwrite/
 __temp__/
 *.log
 *.tmp
+*.bak
+*.before_*
+__pycache__/
+
+# xEdit per-user view settings (per-profile runtime state)
+profiles/*/plugins.tes4viewsettings
 
 # Per-profile save games (too big, user-specific)
 profiles/*/saves/
