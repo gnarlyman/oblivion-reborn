@@ -53,10 +53,12 @@ def is_itpo(change_summary: str) -> bool:
 
 
 def prefill_decision(signature: str, change_summary: str, is_per_record: bool) -> str:
-    if is_per_record:
-        return "review"
+    # ITPO check wins over per-record: if a SCPT/QUST has no real data change,
+    # drop it just like any other ITPO no-op.
     if is_itpo(change_summary):
         return "drop"
+    if is_per_record:
+        return "review"
     return "keep"
 
 
