@@ -71,3 +71,9 @@ Oblivion Mods/
 # ─── Build artifacts ───
 # .wabbajack compiled output goes to GitHub Releases, not the repo
 *.wabbajack
+
+# ─── .NET build artifacts (research/usvfs-poc/UsvfsLauncher) ───
+research/usvfs-poc/**/bin/
+research/usvfs-poc/**/obj/
+# Validation output artifacts (regenerable by re-running the launcher)
+research/usvfs-poc/*.json
