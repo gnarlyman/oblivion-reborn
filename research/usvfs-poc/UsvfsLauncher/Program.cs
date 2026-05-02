@@ -101,15 +101,40 @@ internal static class Program
         // 1. Build priority-ordered list of source layers.
         //    File order: top = highest priority. Stock Game/Data is the vanilla baseline (lowest).
         //    Overwrite is highest of all (above mods).
+        //    In --repl-server mode we also push a scratch layer above overwrite tagged with
+        //    CreateTarget so that hooked-process writes to virtual Data\* land there instead
+        //    of falling through to the real Stock Game\Data\ on disk. (USVFS source rule:
+        //    deepest/last-registered ancestor with FLAG_CREATETARGET wins for new file
+        //    creates — see usvfs maptracker.h FindCreateTarget. Without this flag, USVFS
+        //    only intercepts reads; writes pass through unchanged.)
         var enabled = ParseModlistEnabled(modlistTxt);
-        var priorityHighFirst = new List<string>();
-        if (Directory.Exists(overwriteDir)) priorityHighFirst.Add(overwriteDir);
+        var priorityHighFirst = new List<(string source, LinkFlags flags)>();
+
+        string? scratchDir = null;
+        if (replServer)
+        {
+            var existingScratch = Environment.GetEnvironmentVariable("XEDIT_REPL_SCRATCH_DIR");
+            if (string.IsNullOrEmpty(existingScratch))
+            {
+                scratchDir = Path.Combine(Path.GetTempPath(), $"xedit-repl-scratch-{Environment.ProcessId}");
+                Environment.SetEnvironmentVariable("XEDIT_REPL_SCRATCH_DIR", scratchDir);
+            }
+            else
+            {
+                scratchDir = existingScratch;
+            }
+            Directory.CreateDirectory(scratchDir);
+            // Highest-priority layer: scratch absorbs all virtual Data\* writes.
+            priorityHighFirst.Add((scratchDir, LinkFlags.Recursive | LinkFlags.CreateTarget));
+        }
+
+        if (Directory.Exists(overwriteDir)) priorityHighFirst.Add((overwriteDir, LinkFlags.Recursive));
         foreach (var modName in enabled)
         {
             var path = Path.Combine(modsDir, modName);
             if (Directory.Exists(path))
             {
-                priorityHighFirst.Add(path);
+                priorityHighFirst.Add((path, LinkFlags.Recursive));
             }
             else
             {
@@ -121,6 +146,7 @@ internal static class Program
         info.WriteLine($"Profile:           {profile}");
         info.WriteLine($"Layers (top=hi):   {priorityHighFirst.Count} (mods + overwrite, on top of Stock Game/Data)");
         info.WriteLine($"Destination:       {stockData}");
+        if (scratchDir != null) info.WriteLine($"Scratch (writes):  {scratchDir}");
         info.WriteLine($"Child exe:         {childExe}");
         if (childArgs.Length > 0) info.WriteLine($"Child args:        {string.Join(" ", childArgs)}");
         info.WriteLine();
@@ -159,13 +185,14 @@ internal static class Program
             // 3. Register mappings.
             //    USVFS resolves duplicate destinations with last-call-wins. Iterate from
             //    LOWEST priority to HIGHEST priority so the highest priority's calls happen LAST
-            //    and win on collisions.
+            //    and win on collisions. Per-layer flags carry CreateTarget for the scratch
+            //    layer (REPL mode) so it absorbs new-file writes; the rest are read-only.
             var sw = Stopwatch.StartNew();
             int linked = 0;
             for (int i = priorityHighFirst.Count - 1; i >= 0; i--)
             {
-                var src = priorityHighFirst[i];
-                if (!usvfsVirtualLinkDirectoryStatic(src, stockData, (uint)LinkFlags.Recursive))
+                var (src, flags) = priorityHighFirst[i];
+                if (!usvfsVirtualLinkDirectoryStatic(src, stockData, (uint)flags))
                 {
                     Console.Error.WriteLine($"  (warn) usvfsVirtualLinkDirectoryStatic failed for: {src}");
                     continue;
