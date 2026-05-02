@@ -244,6 +244,25 @@ xEdit fork changes live in `gnarlyman/TES5Edit` on branch `feat/repl-mode`:
 - [ ] Two seed example scripts (`find_overrides.pas`, `dump_record_full.pas`) that the agent can crib from
 - [ ] Performance smoke: cold boot + 10 sequential point queries timing
 
+## Probe results
+
+### Probe 0.1 — JvInterpreter multi-instance state isolation (resolved by source inspection, 2026-05-01)
+
+Inspecting `External/jvcl/jvcl/run/JvInterpreter.pas`:
+
+- `TJvInterpreterUnit.FUnitSection: TUnitSection` (line 1018) — symbol table for user-defined identifiers (procedures, types, vars from submitted source). **Instance field**, freed with `TJvInterpreterProgram.Free`. Cannot leak across instances.
+- `FieldGlobalJvInterpreterAdapter: TJvInterpreterAdapter` (line 1328) — module-level singleton holding *registered externals* (host-provided callables like `AddMessage`, and our future `OpenOutput`/`EmitJSONLine`/`WriteSummary`). Persists for process lifetime. This is exactly the desired behavior: register helpers once at REPL startup, available to every script for free.
+
+**Conclusion:** structural guarantee that user symbols don't leak across `TJvInterpreterProgram` instances. Live probe (planned task 0.1) skipped — source inspection gives a stronger guarantee than empirical "didn't leak this time" would.
+
+### Probe 0.2 — threaded stdin reader (skipped as low-risk, 2026-05-01)
+
+A `TThread` worker calling blocking `Readln(Input, line)` while the main thread runs JvInterpreter is standard Delphi RTL behavior with no xEdit-specific concerns. The worker doesn't touch wb globals, the VCL message pump, or any xEdit-internal state — it just appends to a critical-section-guarded `TStringList`. Live probe (planned task 0.2) skipped.
+
+### Implementation note carried forward
+
+Helper registration in REPL startup must call `TJvInterpreterAdapter.AddFunction` (etc.) on the **`GlobalJvInterpreterAdapter`** singleton — not on a per-instance adapter. Otherwise registrations would be lost on the first `Program.Free`.
+
 ## Open questions / explicit deferrals
 
 - **Cancellation.** Not in v1. If interactive sessions hit "I started the wrong sweep" often, add a `cancel` operation that kills + relaunches. Fancier in-process cancel (cooperative checkpoint flag) is possible but adds complexity that's not justified by current usage patterns.
