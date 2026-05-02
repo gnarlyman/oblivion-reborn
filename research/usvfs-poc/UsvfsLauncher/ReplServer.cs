@@ -26,6 +26,28 @@ internal static class ReplServer
 {
     public static int Run(ReplServerOptions opts)
     {
+        // Output dir for the REPL's disk-first helpers (OpenOutput / EmitJSONLine).
+        // The xEdit fork reads XEDIT_REPL_OUTPUT_DIR via GetEnvironmentVariable;
+        // since usvfsCreateProcessHooked inherits the launcher's env (we pass
+        // lpEnvironment=NULL), setting it here propagates to the child. We
+        // honor an externally-set value (so the agent can pick a stable path)
+        // and fall back to a per-process subdirectory under TEMP otherwise.
+        var existingOutputDir = Environment.GetEnvironmentVariable("XEDIT_REPL_OUTPUT_DIR");
+        string replOutputDir;
+        if (string.IsNullOrEmpty(existingOutputDir))
+        {
+            replOutputDir = Path.Combine(Path.GetTempPath(), $"xedit-repl-{Environment.ProcessId}");
+            Environment.SetEnvironmentVariable("XEDIT_REPL_OUTPUT_DIR", replOutputDir);
+            Directory.CreateDirectory(replOutputDir);
+            Console.Error.WriteLine($"[repl] output dir (default): {replOutputDir}");
+        }
+        else
+        {
+            replOutputDir = existingOutputDir;
+            Directory.CreateDirectory(replOutputDir);
+            Console.Error.WriteLine($"[repl] output dir (env): {replOutputDir}");
+        }
+
         // Pipes must be inheritable when created so the child can pick them up.
         var sa = new SECURITY_ATTRIBUTES
         {
