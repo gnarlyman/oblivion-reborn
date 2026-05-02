@@ -13,19 +13,53 @@ internal static class Program
 {
     static int Main(string[] args)
     {
+        // Pull non-positional flags out before the positional parse.
+        // --repl-server   : run in REPL wrapper mode (owns xEdit's stdio pipes)
+        // --exec <path>   : (repl-server only) single-shot — run this script then exit
+        bool replServer = false;
+        string? execScript = null;
+        var argList = new List<string>(args);
+        for (int i = 0; i < argList.Count; )
+        {
+            if (argList[i] == "--repl-server")
+            {
+                replServer = true;
+                argList.RemoveAt(i);
+                continue;
+            }
+            if (argList[i] == "--exec" && i + 1 < argList.Count)
+            {
+                execScript = argList[i + 1];
+                argList.RemoveAt(i + 1);
+                argList.RemoveAt(i);
+                continue;
+            }
+            i++;
+        }
+        args = argList.ToArray();
+
         if (args.Length < 4)
         {
             Console.Error.WriteLine(
                 "Usage:\n" +
-                "  UsvfsLauncher.exe <modlist-root> <profile> <usvfs-install> <child-exe> [child-args...]\n\n" +
+                "  UsvfsLauncher.exe [--repl-server [--exec <script>]] <modlist-root> <profile> <usvfs-install> <child-exe> [child-args...]\n\n" +
                 "Args:\n" +
                 "  <modlist-root>   e.g. D:\\Modlists\\Reborn\n" +
                 "  <profile>        e.g. Reborn-Base\n" +
                 "  <usvfs-install>  dir containing usvfs_x64.dll + usvfs_proxy_*.exe (typically <modlist-root>)\n" +
                 "  <child-exe>      target exe to launch under USVFS\n" +
-                "  [child-args...]  forwarded verbatim to child\n");
+                "  [child-args...]  forwarded verbatim to child\n\n" +
+                "REPL mode:\n" +
+                "  --repl-server         own the child's stdin/stdout pipes; speak the xEdit REPL framing\n" +
+                "                        protocol on this process's own stdin/stdout\n" +
+                "  --exec <script.pas>   (repl-server only) submit one Pascal script then exit\n");
             return 2;
         }
+
+        // In repl-server mode, the agent reads our stdout for the framing
+        // protocol — bootstrap noise must NOT pollute it. Route everything
+        // informational to stderr instead.
+        TextWriter info = replServer ? Console.Error : Console.Out;
 
         var modlistRoot = Path.GetFullPath(args[0]);
         var profile = args[1];
@@ -56,7 +90,7 @@ internal static class Program
         try
         {
             var version = Marshal.PtrToStringAnsi(usvfsVersionString());
-            Console.WriteLine($"usvfs version: {version}");
+            info.WriteLine($"usvfs version: {version}");
         }
         catch (Exception ex)
         {
@@ -79,17 +113,17 @@ internal static class Program
             }
             else
             {
-                Console.WriteLine($"  (warn) modlist enables '{modName}' but mods/{modName}/ does not exist");
+                info.WriteLine($"  (warn) modlist enables '{modName}' but mods/{modName}/ does not exist");
             }
         }
         // Stock Game/Data is the destination (real) — not added as a layer.
 
-        Console.WriteLine($"Profile:           {profile}");
-        Console.WriteLine($"Layers (top=hi):   {priorityHighFirst.Count} (mods + overwrite, on top of Stock Game/Data)");
-        Console.WriteLine($"Destination:       {stockData}");
-        Console.WriteLine($"Child exe:         {childExe}");
-        if (childArgs.Length > 0) Console.WriteLine($"Child args:        {string.Join(" ", childArgs)}");
-        Console.WriteLine();
+        info.WriteLine($"Profile:           {profile}");
+        info.WriteLine($"Layers (top=hi):   {priorityHighFirst.Count} (mods + overwrite, on top of Stock Game/Data)");
+        info.WriteLine($"Destination:       {stockData}");
+        info.WriteLine($"Child exe:         {childExe}");
+        if (childArgs.Length > 0) info.WriteLine($"Child args:        {string.Join(" ", childArgs)}");
+        info.WriteLine();
 
         // 2. Initialize USVFS.
         var instanceName = "usvfs-launcher-" + Process.GetCurrentProcess().Id;
@@ -139,15 +173,29 @@ internal static class Program
                 linked++;
             }
             sw.Stop();
-            Console.WriteLine($"Linked {linked}/{priorityHighFirst.Count} layers in {sw.ElapsedMilliseconds} ms");
+            info.WriteLine($"Linked {linked}/{priorityHighFirst.Count} layers in {sw.ElapsedMilliseconds} ms");
 
-            // 4. Spawn the child process under USVFS hooks.
-            var commandLine = BuildCommandLine(childExe, childArgs);
-            var si = new STARTUPINFOW { cb = (uint)Marshal.SizeOf<STARTUPINFOW>() };
+            // 4. Spawn the child process — branch on mode.
             var workingDir = Path.GetDirectoryName(childExe) ?? modlistRoot;
 
-            Console.WriteLine($"\nSpawning hooked: {commandLine}");
-            Console.WriteLine($"  cwd: {workingDir}\n");
+            if (replServer)
+            {
+                info.WriteLine($"[repl-server] handing off to ReplServer for stdio-piped spawn");
+                return ReplServer.Run(new ReplServerOptions
+                {
+                    ChildExe   = childExe,
+                    ChildArgs  = childArgs,
+                    WorkingDir = workingDir,
+                    ExecScript = execScript,
+                });
+            }
+
+            // Non-REPL path: existing behavior, no stdio inheritance.
+            var commandLine = BuildCommandLine(childExe, childArgs);
+            var si = new STARTUPINFOW { cb = (uint)Marshal.SizeOf<STARTUPINFOW>() };
+
+            info.WriteLine($"\nSpawning hooked: {commandLine}");
+            info.WriteLine($"  cwd: {workingDir}\n");
 
             if (!usvfsCreateProcessHooked(
                 null,
@@ -172,7 +220,7 @@ internal static class Program
             CloseHandle(pi.hThread);
             CloseHandle(pi.hProcess);
 
-            Console.WriteLine($"\nChild exited (code {exitCode}, wall {waitSw.ElapsedMilliseconds} ms)");
+            info.WriteLine($"\nChild exited (code {exitCode}, wall {waitSw.ElapsedMilliseconds} ms)");
             return (int)exitCode;
         }
         finally

@@ -118,6 +118,18 @@ internal static class UsvfsNative
     public const uint INFINITE = 0xFFFFFFFF;
     public const uint WAIT_OBJECT_0 = 0;
 
+    // STARTUPINFO flags + std handle constants for repl-server mode (stdio inheritance).
+    public const uint STARTF_USESTDHANDLES = 0x00000100;
+    public const uint HANDLE_FLAG_INHERIT  = 0x00000001;
+
+    [StructLayout(LayoutKind.Sequential)]
+    public struct SECURITY_ATTRIBUTES
+    {
+        public uint nLength;
+        public IntPtr lpSecurityDescriptor;
+        [MarshalAs(UnmanagedType.Bool)] public bool bInheritHandle;
+    }
+
     [DllImport("kernel32.dll", SetLastError = true)]
     public static extern uint WaitForSingleObject(IntPtr hHandle, uint dwMilliseconds);
 
@@ -128,4 +140,44 @@ internal static class UsvfsNative
     [DllImport("kernel32.dll", SetLastError = true)]
     [return: MarshalAs(UnmanagedType.Bool)]
     public static extern bool CloseHandle(IntPtr hObject);
+
+    // For repl-server mode: anonymous pipe pair between launcher and xEdit child.
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool CreatePipe(
+        out IntPtr hReadPipe, out IntPtr hWritePipe,
+        ref SECURITY_ATTRIBUTES lpPipeAttributes, uint nSize);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool SetHandleInformation(IntPtr hObject, uint dwMask, uint dwFlags);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool ReadFile(
+        IntPtr hFile,
+        [Out] byte[] lpBuffer,
+        uint nNumberOfBytesToRead,
+        out uint lpNumberOfBytesRead,
+        IntPtr lpOverlapped);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool WriteFile(
+        IntPtr hFile,
+        byte[] lpBuffer,
+        uint nNumberOfBytesToWrite,
+        out uint lpNumberOfBytesWritten,
+        IntPtr lpOverlapped);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    public static extern IntPtr GetStdHandle(int nStdHandle);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    public static extern bool TerminateProcess(IntPtr hProcess, uint uExitCode);
+
+    public const int STD_INPUT_HANDLE  = -10;
+    public const int STD_OUTPUT_HANDLE = -11;
+    public const int STD_ERROR_HANDLE  = -12;
 }
