@@ -39,22 +39,27 @@ The xEdit fork is MPL-2.0, build chain is established (memory: `feedback_xedit_b
 
 ### Process topology
 
+**Architecture pivot 2026-05-01:** original design had a separate Python wrapper between the launcher and xEdit. Empirical testing during Phase 1 showed that the launcher's `usvfsCreateProcessHooked` call uses `bInheritHandles=false`, which severs stdio between the launcher and xEdit. Patching the launcher to pass through stdio works but adds a flag and a conceptual layer for no benefit; merging the wrapper into the launcher itself is cleaner. New topology has two processes total instead of three.
+
 ```
-oblivion-usvfs-launcher xedit-repl \
-    --profile <plugins.txt> \
-    --scratch <scratch-dir> \
-    --output <output-dir>
-  │  (initializes USVFS hook with Data\ write redirect → scratch dir,
-  │   verifies USVFS interception is active before spawning child,
-  │   then spawns:)
-  └─ wrapper: xedit-repl [Python, ~150 lines]
-       (owns subprocess lifetime, frames stdin/stdout for callers,
-        exposes `exec` command for ad-hoc and scripted use)
-       └─ child: TES4Edit_patched.exe -repl -D:<data> -P:<plugins.txt> ...
-            (Delphi binary, USVFS-hooked,
-             boots load order once,
-             enters read-eval-print loop on stdin)
+agent  ──spawns──▶  oblivion-usvfs-launcher --repl-server \
+                       --profile <plugins.txt> \
+                       --scratch <scratch-dir> \
+                       --output <output-dir>
+                     (C# launcher, .NET 8)
+                     (initializes USVFS hook with Data\ write redirect,
+                      verifies USVFS interception, owns REPL framing,
+                      spawns xEdit with bInheritHandles=true and explicit
+                      stdin/stdout pipes:)
+                       │
+                       └─ TES4Edit_patched.exe -repl -tes4 -autoload \
+                              -D:<data> -P:<plugins.txt>
+                          (Delphi binary, USVFS-hooked, boots load order
+                           once, enters read-eval-print loop on stdin
+                           supplied by parent launcher)
 ```
+
+The launcher process speaks the REPL framing protocol on its own stdin/stdout (which are connected to the agent — e.g. via `subprocess.Popen` pipes). It translates agent requests into stdin writes to xEdit and forwards xEdit's stdout marker frames back to the agent.
 
 ### Component 1: xEdit fork patch (`-repl` mode)
 
@@ -77,36 +82,45 @@ New CLI mode in `gnarlyman/TES5Edit` on branch `feat/repl-mode`. Sibling to exis
 - Pascal source executes on the main thread. A separate thread reads stdin and queues source blocks. Cancellation is not supported in v1; if needed, the wrapper kills the subprocess and the launcher restarts it.
 - Estimated patch size: 200–400 lines of Delphi.
 
-### Component 2: wrapper (`xedit-repl`)
+### Component 2: wrapper (extension to `oblivion-usvfs-launcher`)
 
-New small repo `D:\Modlists\_clones\oblivion-xedit-repl\`. Implementation language: Python (preferred for fast iteration) or Go (preferred if we want a single-file binary distribution). v1 starts in Python; can rewrite if/when distribution matters.
+The wrapper lives **inside the launcher** as a new mode `--repl-server`. Implementation language: C# (.NET 8, matching the existing launcher). No separate repo.
 
-**Responsibilities:**
-- Spawn the xEdit child via `oblivion-usvfs-launcher`. Hold its stdio pipes.
-- Wait for `===READY===` on the child's stdout before accepting commands.
-- Provide an `exec` operation:
-  - Accept Pascal source as a string or file path.
-  - Escape any lines that would conflict with frame markers.
-  - Write source + `===END_SOURCE===` to the child's stdin.
-  - Read child stdout: collect `STDOUT:`-prefixed lines as `stdout`, capture the JSON between `===RESULT===` and `===END_RESULT===` as the result envelope.
-  - Return `{ok, stdout, summary, error?, output_files: [...]}`.
-- Subprocess lifecycle:
-  - On child crash: log; surface `{ok: false, error: "subprocess died"}` on the in-flight `exec`; mark the wrapper as needing relaunch (caller decides).
-  - On wrapper SIGTERM/SIGINT: send EOF to child stdin; wait briefly; SIGKILL if needed.
-- Optional CLI for ad-hoc use:
-  - `xedit-repl start --profile ... --scratch ... --output ...` → daemonize, print socket/pipe address
-  - `xedit-repl exec <script-path>` → submit to running daemon, return result
-  - `xedit-repl stop`
+**Why merged:** the launcher's `usvfsCreateProcessHooked` call uses `bInheritHandles=false`, severing stdio across the launcher→xEdit hop. A separate Python wrapper sits *above* the launcher, so its pipes never reach xEdit. Patching the launcher to pass through stdio works but adds a flag and a layer. Owning the spawn directly from the wrapper-launcher means the C# code holds xEdit's pipe handles itself — no inheritance dance, no extra process.
 
-For the agent's normal use, a single-shot invocation pattern works too:
+**New launcher mode `--repl-server`:**
 
+When `--repl-server` is set, the launcher activates wrapper behavior after USVFS bootstrap:
+- Spawns xEdit with explicit `STARTF_USESTDHANDLES` + anonymous pipes for stdin/stdout, retains the read/write handles internally.
+- Speaks the REPL framing protocol (`===READY===`, `===END_SOURCE===`, `===RESULT===`, `===END_RESULT===`) on its **own** stdin/stdout (which are connected to the agent that spawned the launcher).
+- Reads agent input → escapes lines matching markers → writes to xEdit stdin → reads xEdit stdout until `===END_RESULT===` → forwards result envelope to agent stdout.
+
+**CLI shapes:**
+
+Ad-hoc single-shot (agent submits one script):
 ```bash
-xedit-repl --profile <p> --output <out> --exec foo.pas
+oblivion-usvfs-launcher --repl-server \
+    <modlist-root> <profile> <usvfs-install-dir> \
+    <xedit-exe> --tes4 -autoload -repl -D:<data> -P:<plugins> \
+    --exec <script.pas>
 ```
+The launcher boots xEdit, submits the script, prints the result envelope, exits. Useful for batch use.
 
-This spawns the REPL, waits for ready, submits `foo.pas`, prints the result envelope, exits. Pays the boot cost — useful for batch scripts. The persistent daemon mode is the win for interactive sessions.
+Persistent (agent drives interactively):
+```bash
+oblivion-usvfs-launcher --repl-server \
+    <modlist-root> <profile> <usvfs-install-dir> \
+    <xedit-exe> --tes4 -autoload -repl -D:<data> -P:<plugins>
+```
+With no `--exec`, the launcher waits on its own stdin for source blocks (terminated by `===END_SOURCE===`), runs them, emits envelopes, loops. Stdin EOF triggers clean shutdown.
 
-**Estimated size:** 150–250 lines of Python.
+**Lifecycle:**
+- On xEdit crash: launcher detects EOF on xEdit's stdout pipe, surfaces `{ok: false, error: "subprocess died"}` on the in-flight envelope, exits with a non-zero code so the agent knows.
+- On launcher SIGTERM (Ctrl-C): send EOF to xEdit stdin, wait briefly, SIGKILL if needed.
+
+**Existing positional CLI preserved:** without `--repl-server`, the launcher behaves exactly as today — same args, same behavior. `-conflicts`, GUI launches, etc. unchanged.
+
+**Estimated size:** 200–300 additional lines of C# in the launcher.
 
 ### Component 3: Pascal helper library (mounted into REPL)
 
@@ -202,44 +216,40 @@ agent writes patch_npc.pas (loads NPC by FormID, modifies fields, Saves owning p
 
 ## Repo layout
 
-New repo: `D:\Modlists\_clones\oblivion-xedit-repl\`
+No new repo. Wrapper code lives inside the existing launcher project:
 
 ```
-oblivion-xedit-repl/
-├── README.md
-├── LICENSE  (MPL-2.0 to match family)
-├── xedit_repl/             (Python package)
-│   ├── __init__.py
-│   ├── wrapper.py          (subprocess + framing)
-│   ├── cli.py              (entry points: start, exec, stop, --exec)
-│   └── markers.py          (frame marker constants, source escaping)
-├── pascal/
-│   └── repl_helpers.pas    (mounted by -repl mode; OpenOutput etc.)
-├── examples/
-│   ├── find_overrides.pas
-│   ├── dump_record_full.pas  (port from oblivion-conflicts)
-│   └── README.md
-└── tests/
-    ├── fixtures/             (3-plugin fixture set, shared with oblivion-conflicts)
-    ├── test_wrapper.py
-    └── test_e2e.py
+D:\Modlists\Reborn\research\usvfs-poc\UsvfsLauncher\   (existing, will be split out per memory follow-up)
+├── Program.cs           (existing — gains --repl-server arg parsing + dispatch)
+├── UsvfsNative.cs       (existing — P/Invoke; no changes)
+├── ReplServer.cs        (NEW — REPL framing, xEdit pipe ownership, exec loop)
+├── Markers.cs           (NEW — frame marker constants, source escaping)
+└── UsvfsLauncher.csproj (existing — no changes)
+
+D:\Modlists\Reborn\research\repl-examples\   (NEW; or moved into launcher repo)
+├── find_overrides.pas
+├── dump_record_full.pas (port from oblivion-conflicts)
+└── README.md
+
+D:\Modlists\Reborn\research\repl-tests\      (NEW; xunit or simple .NET test project)
+├── ReplServerTests.cs   (against a fake xEdit-stub)
+└── E2ETests.cs          (against a real xEdit binary, opt-in via env var)
 ```
 
 xEdit fork changes live in `gnarlyman/TES5Edit` on branch `feat/repl-mode`:
-- New `-repl` CLI mode wiring
-- REPL loop implementation (probably in a new unit `wbREPLMode.pas` or similar)
-- Helper library auto-mount logic
+- New `-repl` CLI mode wiring (Tasks 1.1–1.4 — done as of 2026-05-01)
+- REPL loop implementation in `xEdit\wbREPLMode.pas` (Tasks 1.5–1.7)
+- Helper library auto-mount logic (`xEdit\wbREPLHelpers.pas`, Phase 2)
 - Updated CLI docs in the fork
 
 ## v1 punch list
 
-- [ ] xEdit fork: `feat/repl-mode` branch with `-repl` CLI mode + REPL loop + helper auto-mount
-- [ ] Pascal helper library (`repl_helpers.pas`) ported from oblivion-conflicts conventions
-- [ ] Wrapper Python package with subprocess + framing + escape logic
-- [ ] CLI entry points (`start`, `exec`, `stop`, single-shot `--exec`)
-- [ ] `oblivion-usvfs-launcher` REPL launch profile (scratch redirect + interception verification)
-- [ ] Fixture-based wrapper tests
-- [ ] End-to-end test: launch + mutation + scratch promotion
+- [x] xEdit fork: `feat/repl-mode` branch with `-repl` CLI mode skeleton (Tasks 1.1–1.4 done)
+- [ ] xEdit fork: stdin reader thread + read-eval-print loop body (Tasks 1.5–1.7)
+- [ ] xEdit fork: Pascal helper library (`wbREPLHelpers.pas`) mounted on JvI global adapter
+- [ ] `oblivion-usvfs-launcher` extended with `--repl-server` mode (REPL framing in C#)
+- [ ] xEdit-stub tests (deterministic framing, no Delphi dependency required to run)
+- [ ] End-to-end test: launch + mutation + scratch promotion via real xEdit binary
 - [ ] README with: setup, common patterns, the 2–3 example scripts, "how to write a Pascal script that returns structured output"
 - [ ] Two seed example scripts (`find_overrides.pas`, `dump_record_full.pas`) that the agent can crib from
 - [ ] Performance smoke: cold boot + 10 sequential point queries timing
