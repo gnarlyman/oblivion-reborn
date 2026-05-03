@@ -61,6 +61,8 @@ ApparatusIcons.esp
 ArmoredShadowmereFix.esp
 AleswellNoRefractFix.esp
 BookTrackerUpdatedv1.1.esp
+OOO_Unoficial-Patch.esp
+Reborn - OOO Unofficial Patch CR.esp
 DLC Integration.esp
 Spirit Stones.esp
 Extended UI.esp

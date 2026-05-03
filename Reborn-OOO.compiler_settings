@@ -47,7 +47,9 @@
     "usvfs_x86.dll",
     "splash.png",
     "dump_running_process.bat",
-    "mods\\Cleaned Game Files"
+    "mods\\Cleaned Game Files",
+    "mods\\Reborn - OOO Unofficial Patch CR",
+    "mods\\UW HUD Config"
   ],
   "Include": [],
   "Ignore": [

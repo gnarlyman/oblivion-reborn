@@ -8,6 +8,7 @@ mods/*/*
 !mods/MIEO - Parasol Mesh Fix/**
 !mods/Extended UI - Boss Bar Position Fix/**
 !mods/Reborn Configs/**
+!mods/Reborn - OOO Unofficial Patch CR/**
 
 # Archives: keep only .meta files (Nexus fileID + download source)
 downloads/*

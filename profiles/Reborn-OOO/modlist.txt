@@ -12,6 +12,8 @@
 +Initial Quest Popups Begone
 +PSMainQuestDelayer
 -QUESTS_separator
++Reborn - OOO Unofficial Patch CR
++OOO - Oscuro's Oblivion Overhaul - Updated (Unofficial patch)
 +OOO Shivering Isles
 +OOO - Oscuro's Oblivion Overhaul - Updated
 +Balanced Unleveled Rewards
