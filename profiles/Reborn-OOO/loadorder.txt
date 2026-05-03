@@ -43,6 +43,7 @@ MercerCoblOrePatch.esp
 SoC Ingredient Patch.esp
 Balanced Unleveled Rewards - Complete.esp
 Cobl Tweaks - OOO.esp
+Reborn Cobl Tweaks.esp
 PSMainQuestDelayer.esp
 Delay DLC Start - no UOP and SSSB.esp
 Delay DLC Start - no SSSB.esp
@@ -52,6 +53,7 @@ IHaveNoGreetingFix.esp
 Stay Unicorn.esp
 MigMiscellanea.esp
 GuardInfamyGreetingFix.esp
+Harvest xOBSE.esp
 UOPTalosBridgeCollisionFix.esp
 DLCSpellTomes-No Attack.esp
 LessMaddeningShiveringIsles.esp
@@ -59,8 +61,6 @@ ApparatusIcons.esp
 ArmoredShadowmereFix.esp
 AleswellNoRefractFix.esp
 BookTrackerUpdatedv1.1.esp
-Cobl Tweaks - OOO Mergeable.esp
-OOO_Unoficial-Patch.esp
 DLC Integration.esp
 Spirit Stones.esp
 Extended UI.esp

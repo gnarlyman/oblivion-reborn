@@ -33,6 +33,7 @@ PSMainQuestDelayer.esp
 Delay DLC Start.esp
 IHaveNoGreetingFix.esp
 MigMiscellanea.esp
+Harvest xOBSE.esp
 LessMaddeningShiveringIsles.esp
 ApparatusIcons.esp
 ArmoredShadowmereFix.esp
