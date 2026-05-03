@@ -1,0 +1,8 @@
+=== P2 fixture gen ===
+FileCount(start)=1
+NewA.esp created, load order=1
+  WEAP MergeSwordA loFID=01001100
+NewB.esp created, load order=2
+  CONT MergeChestB loFID=02001200
+  CNTO Item=01001100 (points at MergeSwordA)
+Done. xEdit autosave will write NewA.esp + NewB.esp on exit.

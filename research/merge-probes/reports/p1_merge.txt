@@ -1,0 +1,25 @@
+=== P1 override-only merge probe ===
+FileCount=3
+  loaded[0]=Master.esm
+  loaded[1]=OverrideA.esp
+  loaded[2]=OverrideB.esp
+Created target MergeAB.esp
+After AddMasterIfMissing(Master.esm), masters=Master.esm
+Copying OverrideA records...
+  COPY ok sig=ARMO edid=TestArmor fid=00001002
+  COPY ok sig=WEAP edid=TestSword fid=00001001
+  COPY ok sig=WEAP edid= fid=00001004
+  -> copied=3 errs=0
+After A, masters=Master.esm
+Copying OverrideB records...
+  COPY ok sig=CONT edid=TestChest fid=00001003
+  COPY ok sig=WEAP edid=TestSword fid=00001001
+  -> copied=2 errs=0
+After B, masters=Master.esm
+Calling CleanMasters(target)...
+  CleanMasters ok, masters=Master.esm
+Final record dump:
+  REC sig=ARMO edid=TestArmor fid=00001002
+  REC sig=CONT edid=TestChest fid=00001003
+  REC sig=WEAP edid=TestSword fid=00001001
+  REC sig=WEAP edid= fid=00001004

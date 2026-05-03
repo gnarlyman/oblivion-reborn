@@ -1,0 +1,12 @@
+=== P1 verify ===
+FileCount=2
+  loaded[0]=Master.esm
+  loaded[1]=MergeAB.esp
+MergeAB.esp masters=Master.esm
+  REC sig=ARMO edid=TestArmor fid=00001002
+    DATA\Armor=20.000000
+  REC sig=CONT edid=TestChest fid=00001003
+  REC sig=WEAP edid=TestSword fid=00001001
+    DATA\Damage=7  DATA\Value=15
+  REC sig=WEAP edid= fid=00001004
+    DATA\Damage=  DATA\Value=

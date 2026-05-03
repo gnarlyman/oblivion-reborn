@@ -1,0 +1,307 @@
+scn MQ16Script
+
+short setupBattle
+short deadDaedra		; tracks the number of dead daedra, so gates know when to respawn
+ref bladeRef				; Baurus or Steffan. set by MQ15 stage 20
+short baurusDead		; 1 if Steffan is bladeRef (condition for his packages, so he doesn't show up if Baurus dies during MQ16)
+short DagonStaggered		; 1 if Dagon has been staggered
+
+float timer
+float fQuestDelayTime
+
+begin gamemode
+
+if timer > 0
+	set timer to timer - getsecondspassed
+endif
+
+; Martin approaches Baurus/Steffan near Palace
+if getstage MQ16 == 8
+	if bladeRef.getdistance MartinRef < 600
+		setstage MQ16 9
+		bladeRef.startconversation MartinRef
+	endif
+endif
+
+; Martin and player arrive in Elder Council chamber
+if getstage MQ16 >= 5 && getstage MQ16 < 9
+	if MartinRef.getincell ICPalaceElderCouncilChambers == 1
+		setstage MQ16 9
+	endif
+endif
+
+if getstage MQ16 >= 5 && getstage MQ16 <= 9
+	if MartinRef.getdistance MQ16MartinElderCouncilMarker < 600 && player.getdistance MQ16MartinElderCouncilMarker < 600
+		setstage MQ16 10
+	endif
+endif
+
+if getstage MQ16 == 10
+	if player.getincell ICPalaceElderCouncilChambers == 1 && OcatoRef.getincell ICPalaceElderCouncilChambers == 0
+		; if Ocato has left the Elder Council chamber, move him back
+		OcatoRef.moveto player
+		OcatoRef.evp
+	endif
+endif
+
+; timer for messenger
+if getstage MQ16 == 15
+	if MQ16MessengerRef.getdistance OcatoRef < 900
+		setstage mq16 16
+		MQ16MessengerRef.sayto OcatoRef MQ16Voice 1
+	endif
+endif
+
+; player exits council chamber after battle starts
+if getstage MQ16 >= 21 && getstagedone MQ16 25 == 0
+	if player.getincell ICPalaceElderCouncilChambers == 0
+		setstage MQ16 25
+	endif
+endif
+
+; Martin exits council chamber after battle starts
+if getstage MQ16 >= 21 && getstagedone MQ16 26 == 0
+	if MartinRef.getincell ICPalaceElderCouncilChambers == 0
+		setstage MQ16 26
+	endif
+endif
+
+
+; player sees Mehrunes Dagon for the first time
+; NOTE: moved to MQ16MehrunesDagonTriggerZoneSCRIPT
+;if getstage mq16 >= 25 && getstage MQ16 < 30
+;	if player.getLOS MehrunesDagonRef == 1 && player.getdistance MehrunesDagonRef < 2300
+;		setstage MQ16 30
+;	endif
+;endif
+
+; player and Martin reach Temple of the One
+if getstage MQ16 == 35
+	if player.GetInCell ICTempleDistrictTempleOfTheOneMQ16 == 1 && MartinRef.GetInCell ICTempleDistrictTempleOfTheOneMQ16 == 1
+		setstage MQ16 40
+	endif
+endif
+
+; Endgame finished
+; give last journal after timer runs out
+if getstage MQ16 == 60 && timer <= 0
+	setstage MQ16 65
+endif
+
+; give last journal after timer runs out
+if getstage MQ16 == 65 && timer <= 0
+	setstage MQ16 80
+endif
+
+
+; EVERYTHING AFTER THIS IS SETUP CODE (pre and post battle)
+if setupBattle == 0
+	return
+endif
+
+if setupBattle == 1
+	set setupBattle to 0
+	
+	; enable all the battle stuff
+	MQ16AttackParentMarker.enable
+
+	; disable Mythic Dawn assassins
+	StyrbjornRef.disable
+
+	; Martin can die now
+	SetEssential Martin 0
+
+	; set weather
+	forceweather OblivionStormTamriel 1
+
+	; set Oblivion gate variables
+	set MQ16OblivionGate01.mySpawnMarker to MQ16Gate1SpawnMarker
+	set MQ16OblivionGate02.mySpawnMarker to MQ16Gate2SpawnMarker
+
+	; set up council chamber attack
+	MQ16CouncilChamberAttacker.setfactionrank MQ16DaedraFaction 1
+	MQ16CouncilChamberAttacker.startcombat MartinRef
+	MQ16CouncilChamberAttacker.setav aggression 50
+	MQ16CouncilChamberAttacker2.setfactionrank MQ16DaedraFaction 1
+	MQ16CouncilChamberAttacker2.startcombat player
+	MQ16CouncilChamberAttacker2.setav aggression 50
+
+	MQ16PalaceGuard01.setav aggression 25
+	MQ16PalaceGuard02.setav aggression 25
+	MQ16PalaceGuard01.setalert 1
+	MQ16PalaceGuard02.setalert 1
+	MQ16MessengerRef.startcombat MQ16CouncilChamberAttacker
+
+	; move Baurus/Steffan into battle worldspace
+	bladeRef.moveto MQ16BladeWaitMarker
+
+	; add everybody to MQ16AlliesFaction
+	OcatoRef.setfactionrank MQ16AlliesFaction 1
+	BaurusRef.setfactionrank MQ16AlliesFaction 1
+	JauffreRef.setfactionrank MQ16AlliesFaction 1
+	SteffanRef.setfactionrank MQ16AlliesFaction 1
+	player.setfactionrank MQ16AlliesFaction 1
+
+	; ignore friendly hits during battle
+	OcatoRef.SetIgnoreFriendlyHits 1
+	SteffanRef.SetIgnoreFriendlyHits 1
+	BaurusRef.SetIgnoreFriendlyHits 1
+	MQ16PalaceGuard01.SetIgnoreFriendlyHits 1
+	MQ16PalaceGuard02.SetIgnoreFriendlyHits 1
+	MQ16MessengerRef.SetIgnoreFriendlyHits 1
+
+
+
+	; restrain/ghost Dagon attackers
+	MQ16DagonAttack1.setghost 1
+	MQ16DagonAttack2.setghost 1
+	MQ16DagonAttack3.setghost 1
+;	MQ16DagonAttack4.setghost 1
+	MQ16DagonAttack5.setghost 1
+	MQ16DagonAttack6.setghost 1
+;	MQ16DagonAttack7.setghost 1
+	MQ16DagonAttack8.setghost 1
+
+	MQ16DagonAttack1.setrestrained 1
+	MQ16DagonAttack2.setrestrained 1
+	MQ16DagonAttack3.setrestrained 1
+;	MQ16DagonAttack4.setrestrained 1
+	MQ16DagonAttack5.setrestrained 1
+	MQ16DagonAttack6.setrestrained 1
+;	MQ16DagonAttack7.setrestrained 1
+	MQ16DagonAttack8.setrestrained 1
+
+
+	; evp everybody
+	OcatoRef.evp
+	MartinRef.evp
+	JauffreRef.evp
+
+	; give Dagon his spell (leveled to the player):
+	MehrunesDagonRef.removespell MQ16DagonAreaAttack1
+	if player.getlevel >= 24
+		MehrunesDagonRef.addspell MQ16DagonAreaAttack5
+	elseif player.getlevel >= 18
+		MehrunesDagonRef.addspell MQ16DagonAreaAttack4
+	elseif player.getlevel >= 12
+		MehrunesDagonRef.addspell MQ16DagonAreaAttack3
+	elseif player.getlevel >= 8
+		MehrunesDagonRef.addspell MQ16DagonAreaAttack2
+	else
+		MehrunesDagonRef.addspell MQ16DagonAreaAttack1
+	endif
+	; NOTE: he has the Attack1 spell by default
+
+endif
+
+if setupBattle == 2
+	MartinRef.disable
+	set setupBattle to 0
+
+	; change weather back
+	releaseweatheroverride
+	setweather clear
+
+	; swap doors -- now door leads to "normal" Temple district
+	MQ16TempleToMQ16ExteriorDoor.disable
+
+	; disable all the battle stuff
+	; TODO: this should probably be on a timer eventually
+	MQ16AttackParentMarker.disable
+
+	; pathgrid change in Temple District
+	MQ16PathgridRock.activate MQ16PathgridRock
+
+	; remove everybody from MQ16AlliesFaction
+	OcatoRef.setfactionrank MQ16AlliesFaction -1
+	BaurusRef.setfactionrank MQ16AlliesFaction -1
+	JauffreRef.setfactionrank MQ16AlliesFaction -1
+	SteffanRef.setfactionrank MQ16AlliesFaction -1
+	player.setfactionrank MQ16AlliesFaction -1
+	
+	; OOO: Changes Jauffre and Baurus to stopped-combat mode to avoid problem where
+	; they kept on fighting with allies after battle finishes.
+	If ( GetDeadCount Baurus < 1 )
+		BaurusRef.ScaOnActor
+		BaurusRef.StopCombat
+		BaurusRef.ModAv Health 128
+	Endif
+	If ( JauffreRef.GetDead < 1 )
+		JauffreRef.SetAV Aggression 5
+		JauffreRef.ScaOnActor
+		JauffreRef.StopCombat
+		JauffreRef.ModAV Health 160
+	Endif
+
+	OcatoRef.SetIgnoreFriendlyHits 0
+
+	; move Ocato and Jauffre into MQ16Temple, if alive
+	if OcatoRef.getdead == 0
+		OcatoRef.Resurrect 1 ; UOP 3.4.6 - This looks weird, but he's essential. This will simply heal him on the spot instead of giving him insane health.
+		MQ16DummyDoorToMQ16TempleInterior.activate OcatoRef
+		OcatoRef.evp
+	endif
+
+	if JauffreRef.getdead == 0
+		MQ16DummyDoorToMQ16TempleInterior.activate JauffreRef
+		JauffreRef.evp
+	endif
+
+
+	; move real NPCs back to normal world
+	if bladeRef.getdead == 0
+		MQ16DummyDoorToMQ16TempleInterior.activate bladeRef
+		bladeRef.evp
+	endif
+
+	; close Elder Council door
+	ICPalaceElderCouncilMainDoor.SetDoorDefaultOpen 0
+
+	; reenable normal palace guards
+	MQ16PalaceGuard01.disable
+
+	; enable all post-battle stuff
+	MQ16AkatoshStatueRef.enable
+	MQ16PathgridRock.disablelinkedpathpoints
+
+	; quest cleanup
+	setstage MS94 100
+	
+	; player is hero of Cyrodiil
+	modpcfame 3
+
+	setfactionreaction ICFaction playerFaction 30
+	;The following lines have been changed to give Bruma and Kvatch disposition increases equal with the other cities -- SetFactionReaction is not cumulative, as this script seems to assume.
+	setfactionreaction KvatchFaction playerFaction 30	; Kvatch already loves the player
+	setfactionreaction BrumaFaction playerFaction 30	; Bruma already loves the player 
+	setfactionreaction ChorrolFaction playerFaction 30
+	setfactionreaction BravilFaction playerFaction 30
+	setfactionreaction CheydinhalFaction playerFaction 30
+	setfactionreaction LeyawiinFaction playerFaction 30
+	setfactionreaction AnvilFaction playerFaction 30
+	setfactionreaction SkingradFaction playerFaction 30
+	; rulers like the player even more for being Champion
+	AndelIndarysRef.moddisposition player 20
+	MariusCaroRef.moddisposition player 20
+	RegulusTerentiusRef.moddisposition player 20
+	JanusHassildorRef.moddisposition player 20
+	ArrianaValgaRef.moddisposition player 20
+	MillonaUmbranoxRef.moddisposition player 20
+	OcatoRef.moddisposition player 20
+
+	; make Mythic Dawn faction neutral to player (so they won't attack anymore)
+	setfactionreaction MythicDawn playerFaction 0
+	; make Blades neutral to MD (so they won't attack MD members)
+	setfactionreaction MythicDawn Blades 0
+	setfactionreaction MythicDawn WeynonPrioryFaction 0
+	setfactionreaction Blades MythicDawn 0
+
+	; no more Oblivion Crisis:
+	set MQ00.maxOpenGates to 0
+	set MQ00.randomGateChance  to 0
+endif
+
+end
+;<CSEBlock>
+;<CSECaretPos> 8897 </CSECaretPos>
+;</CSEBlock>

@@ -49,6 +49,10 @@ uibase.dll
 splash.png
 dump_running_process.bat
 
+# MO2 Nexus-category cache (regenerated on launch)
+/categories.dat
+/nexuscatmap.dat
+
 # ─── Ephemeral / runtime ───
 logs/
 crashDumps/
@@ -62,6 +66,7 @@ __pycache__/
 
 # xEdit per-user view settings (per-profile runtime state)
 profiles/*/plugins.tes4viewsettings
+profiles/*/plugins.fo4viewsettings
 
 # Per-profile save games (too big, user-specific)
 profiles/*/saves/
@@ -78,3 +83,22 @@ research/usvfs-poc/**/bin/
 research/usvfs-poc/**/obj/
 # Validation output artifacts (regenerable by re-running the launcher)
 research/usvfs-poc/*.json
+
+# ─── REPL daemon runtime + scratch probe outputs ───
+# Daemon control directories (job submit/done queue + logs)
+research/.repl-daemon*/
+# One-shot probe stdout/stderr captures
+research/repl-*.out
+research/repl-*.err
+research/repl-smoke.txt
+# oblivion-conflicts sweep one-shot outputs
+research/v0*-smoke.*
+research/v0*-conflicts-smoke.*
+
+# ─── merge-probes workspace runtime ───
+# Test-fixture ESPs and xEdit cache (regenerable by re-running probe scripts)
+research/merge-probes/data/
+# xEdit load-order/view state captured during probe runs
+research/merge-probes/loadorder_*.txt
+research/merge-probes/loadorder_*.tes4viewsettings
+research/merge-probes/loadorder_*.fo4viewsettings

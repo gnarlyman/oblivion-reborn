@@ -1,0 +1,93 @@
+scn SEDoorToShiveringIslesScript
+
+;This script is attached to the door in Cyrodiil that leads to the Shivering Isles
+
+short journalVAR
+
+
+Begin OnActivate
+	if IsActionRef player == 1 && ( Player.IsRidingHorse == 0 )
+		if ( GetStage SE14 >= 6 )
+			;Player.AddSpell SE14RezSpell
+			;Player.AddSpell SE14WeatherSpell
+			;Player.AddSpell SELpSummonHaskill
+		endif
+
+		if ( SE01Door.GatespeechVAR != 4 )
+			Message "This door will not yet open to you."
+			return
+		endif
+
+		; player is entering Shivering Isles:
+		Player.SCAOnActor
+		setPlayerInSEWorld 1
+		SEJailMarkerParentTamriel.Disable				; turns OFF jail markers in Tamriel and turns ON jail markers in SE
+		SEJailMarkerCrucible.Enable
+		SEJailMarkerBliss.Enable
+		SEPrisonMarkerAichan.Enable
+		SEPrisonMarkerCorpserot.Enable
+
+		;SE02 Gatekeeper leveling:
+		;If the player hasn't killed the Gatekeeper at the end of SE02, then this enables the correct 
+		;Gatekeeper for the player's level and disables the other ones.
+	
+		if getStage SE02 < 150
+			SE02Gatekeeper1Ref.disable
+			SE02Gatekeeper2Ref.disable
+			SE02Gatekeeper3Ref.disable
+			SE02Gatekeeper4Ref.disable
+			SE02Gatekeeper5Ref.disable
+			SE02Gatekeeper6Ref.disable
+			SE02Gatekeeper7Ref.disable
+			SE02Gatekeeper8Ref.disable
+			set SE02.whichGatekeeper to 0
+
+			if player.getLevel < 10
+					SE02Gatekeeper2Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper2Ref
+					set SE02.whichGatekeeper to 2
+			elseif player.getLevel < 14
+					SE02Gatekeeper3Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper3Ref
+					set SE02.whichGatekeeper to 3
+			elseif player.getLevel < 18
+					SE02Gatekeeper4Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper4Ref
+					set SE02.whichGatekeeper to 4
+			elseif player.getLevel < 22
+					SE02Gatekeeper5Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper5Ref
+					set SE02.whichGatekeeper to 5
+			elseif player.getLevel < 26
+					SE02Gatekeeper6Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper6Ref
+					set SE02.whichGatekeeper to 6
+			elseif player.getLevel < 30
+					SE02Gatekeeper7Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper7Ref
+					set SE02.whichGatekeeper to 7
+			else
+					SE02Gatekeeper8Ref.enable
+					set SE02.GatekeeperRef to SE02Gatekeeper8Ref
+					set SE02.whichGatekeeper to 8
+			endif
+		endif
+		If Player.GetEquipped TGGrayFoxCowl == 1
+			Set SECrime.EnteredSECowlOn to 1
+		EndIf
+		activate
+	endif
+End			;OnActivate Player
+
+Begin GameMode
+	if ( GetDistance Player <= 512 ) && ( GetStage SE01Door == 0 )
+		set journalVAR to 1
+	endif
+
+	if ( journalVAR == 1 ) && ( GetStage SE01Door == 0 )
+		SetStage SE01Door 10
+	endif
+End
+;<CSEBlock>
+;<CSECaretPos> 2033 </CSECaretPos>
+;</CSEBlock>

@@ -1,0 +1,21 @@
+=== P2 copy-as-new probe ===
+FileCount=3
+  loaded[0]=Master.esm
+  loaded[1]=NewA.esp
+  loaded[2]=NewB.esp
+Created MergeNew.esp, load order=3
+After Master.esm add, masters=Master.esm
+Copying NewA records as NEW...
+  COPY-NEW ok sig=WEAP edid=MergeSwordA src=01001100 -> dst=03000800
+  copied=1 errs=0
+After A copy-as-new, masters=Master.esm
+Copying NewB records as NEW...
+  COPY-NEW ok sig=CONT edid=MergeChestB src=02001200 -> dst=03000801
+  copied=1 errs=0
+After B copy-as-new, masters=Master.esm
+Final dump (look at CNTO Item ref):
+  REC sig=CONT edid=MergeChestB fid=03000801
+    CNTO Item=00000000 -> <unresolved>
+  REC sig=WEAP edid=MergeSwordA fid=03000800
+Calling CleanMasters...
+  CleanMasters ok, masters=

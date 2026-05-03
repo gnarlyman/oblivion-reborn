@@ -1,0 +1,99 @@
+scn DLCFrostcragSpireScript
+
+float fQuestDelayTime
+short Arrived
+short Book
+short MerchSetup
+short Doonce
+short Doonce1
+short Doonce2
+short Doonce3
+short Doonce4
+short Doonce5
+short Doonce6
+short Follow
+short TotalCount
+short Candles
+
+begin MenuMode 1012
+
+	if Doonce5 == 0 && ( Player.GetFactionRank MagesGuild >= 0 ) && (IsPCSleeping == 1) && (GetPlayerInSEWorld == 0) && (PlayerRef.GetLevel >= DLCFrostcragLevel)
+		set fQuestDelayTime to 0.5
+		set Doonce5 to 1
+	elseif Doonce5 == 0 && ( Player.GetFactionRank MagesGuild >= 0 ) && (GetPlayerInSEWorld == 0)  && (PlayerRef.GetLevel >= DLCFrostcragLevel)
+		set fQuestDelayTime to 0.5
+	endif
+
+end
+
+begin gamemode
+
+	;kickoff block
+
+if Doonce5 == 0 && ( Player.GetFactionRank MagesGuild >= 0 ) && (IsPCSleeping == 1) && (GetPlayerInSEWorld == 0)  && (PlayerRef.GetLevel >= DLCFrostcragLevel)
+	set fQuestDelayTime to 0
+	set Doonce5 to 1
+elseif Doonce5 == 0 && ( Player.GetFactionRank MagesGuild >= 0 ) && (GetPlayerInSEWorld == 0)  && (PlayerRef.GetLevel >= DLCFrostcragLevel)
+	set fQuestDelayTime to 0.5		
+endif
+
+
+if Doonce5 == 1 && ( GetStage DLCFrostcragSpire <= 0 ) && ( Player.IsInCombat == 0 ) && ( GetStage CharacterGen >= 88 ) && ( Player.GetinCell ImperialDungeon03 == 0 ) && (PlayerRef.GetLevel >= DLCFrostcragLevel)
+	SetStage DLCFrostcragSpire 10
+endif
+
+;arrival trigger
+
+if ( Player.GetDistance DLCFrostcragArrivalMarker <= 500 ) && ( GetStage DLCFrostcragSpire == 10 ) && ( Arrived == 0 )
+	SetStage DLCFrostcragSpire 20
+	Set Arrived to 1
+endif
+
+;book trigger
+
+if ( Player.GetDistance FrostcragSpireMemoirsRef <= 200 ) && ( GetStage DLCFrostcragSpire >= 20 ) && ( Book == 0 )
+	SetStage DLCFrostcragSpire 30
+	Set Book to 1
+endif
+
+;These are the variable triggers that are set when a voucher is acquired
+
+if ( Player.GetItemCount FrostcragBedroomAreaReceipt == 1 ) && ( Doonce == 0 )
+	FroscragBedroomParentRef.Enable
+	set TotalCount to ( TotalCount + 1 )
+	set Doonce to 1
+endif
+
+if ( Player.GetItemCount FrostcragLibraryAreaReceipt == 1 ) && ( Doonce1 == 0 )
+	FrostCragLibraryParentREF.Enable
+	set TotalCount to ( TotalCount + 1 )
+	set Doonce1 to 1
+endif
+
+if ( Player.GetItemCount FrostcragVaultAreaReceipt == 1 ) && ( Doonce2 == 0 )
+	FrostCragVaultParentREF.Enable
+	set TotalCount to ( TotalCount + 1 )
+	set Doonce2 to 1
+endif
+
+if ( Candles == 2 ) && ( Doonce3 == 0 )
+	set TotalCount to ( TotalCount + 1 )
+	set Doonce3 to 1
+endif
+
+if ( Player.GetItemCount FrostcragApparatusReceipt == 1 ) && ( Doonce4 == 0 )
+	FrostCragMiniParent03.Enable
+	FrostCragAlchemyParentREF.Enable
+	set TotalCount to ( TotalCount + 1 )
+	set Doonce4 to 1
+endif
+
+;Ends Quest if All Bought
+
+if ( TotalCount == 5 ) && (Doonce6 == 0)
+	set Doonce6 to 1
+	FrostcragRingBox.Enable
+	setstage DLCFrostcragSpire 50
+endif
+
+end

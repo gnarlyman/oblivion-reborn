@@ -1,0 +1,589 @@
+SCN DelayDLCStartCMScript
+
+; *** Configurable variables, set in Delay DLC Start.ini file.
+short MaxSkillLevel ; Maximum natural level per skill.
+
+short ShiveringMinLevel
+short ShiveringCheckLocation
+
+short KnightsMinLevel
+short KnightsMinOverallFame
+short KnightsCheckLocation
+
+short BattlehornMinFGRank
+short BattlehornMinSkillTotal
+short BattlehornCheckLocation
+
+short FrostcragMinMGRank
+short FrostcragMinSkillTotal
+short FrostcragCheckLocation
+
+short ThievesDenMinTGRank
+short ThievesDenMinSkillTotal
+short ThievesDenAllowEntry
+short ThievesDenCheckLocation
+
+short DeepscornMinDBRank
+short DeepscornMinVampireDays
+short DeepscornMinInfamy
+short DeepscornCheckLocation
+
+short HorseArmorMinLevel
+short HorseArmorMinGold
+short HorseArmorMinFame
+short HorseArmorCheckLocation
+
+short MehrunesMinLevel
+short MehrunesMinInfamy
+short MehrunesCheckLocation
+
+short OrreryMinMGRank
+short OrreryMaxDistBothiel
+short OrreryCheckDistance
+
+; *** These are set to 1 when the DLC quest has started or is not loaded.
+short ShiveringIslesStarted
+short KnightsStarted
+short BattlehornStarted
+short FrostcragStarted
+short ThievesDenStarted
+short DeepscornStarted
+short HorseArmorStarted
+short MehrunesStarted
+short OrreryStarted
+
+short NumberDLCsStarted	; Number of DLCs that have started, max is 9.
+short SkillTotal			; Sum of a set of skills.
+short WaitOneLoop		; Delays the time between starting DLCs to avoid missing a "make active quest" popup.
+short StartDLC			; Flag to start a DLC.
+short ThievesDenEarly		; Found location before conditions met. Only applicable if the entry door is enabled.
+float fQuestDelayTime		; For faster GetDistance processing during the Orrery quest.
+short ContinueProcessing	; V1.2 flag to continue processing.
+
+Begin GameMode
+
+; The process is the same for each:
+; 1) If the related Started == 1, skip block.
+; 2) If the DLC is already running, set the related Started to 1.
+; 3) If the conditions are met, start the quest and set the related Started to 1.
+; Faction ranks go from -1 to x, -1 = not a member.
+
+; V1.2 added flag to indicate mod is now checking conditions to start DLCs.
+; Changed starting condition from MQ01 stage 100 was done to the player is outside.
+; Also included a feedback message the mod processing is active.
+; This handles conflicts with mods that skip the tutorial quest and don’t set stage 100.
+if ContinueProcessing == 0
+	if Player.IsInInterior == 0
+		Set ContinueProcessing to 1
+		Message "Delay DLC Start processing is now active."
+	else
+		RETURN
+	endif
+endif
+
+; *** Load the configurable variables and handle door to the Black Flag area. ***
+if GetGameLoaded == 1 ; Requires OBSE.
+	; Load the ini file for the configurable variables.
+	if FileExists "Data\ini\Delay DLC Start.ini" == 0	; *** Requires OBSE 15.
+		MessageBox "The 'Delay DLC Start.ini' file is missing from the Data\ini\ folder. Please exit the game and install it."
+		RETURN
+	endif
+	RunBatchScript "Data\ini\Delay DLC Start.ini"
+
+	; Error checking for ini settings. If out of range, provide a warning message to fix it.
+	; Maximum skill level. Minimum is 100.
+	if MaxSkillLevel < 100
+		MessageBox "Delay DLC Start Warning: Check INI file - MaxSkillLevel is not set to a valid value."
+		RETURN
+	endif
+	; Shivering Isles.
+	if ShiveringMinLevel < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - ShiveringMinLevel is not set to a valid value."
+		RETURN
+	elseif ShiveringCheckLocation < 0 || ShiveringCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - ShiveringCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Knights of the Nine.
+	if KnightsMinLevel < 1
+		MessageBox "Delay DLC Start Warning: Check INI file - KnightsMinLevel is not set to a valid value."
+		RETURN
+	elseif KnightsMinOverallFame < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - KnightsMinOverallFame is not set to a valid value."
+		RETURN
+	elseif KnightsCheckLocation < 0 || KnightsCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - KnightsCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Battlehorn Castle (Fighter's Stronghold).
+	if BattlehornMinFGRank < -1 || BattlehornMinFGRank > 9
+		MessageBox "Delay DLC Start Warning: Check INI file - BattlehornMinFGRank is not set to a valid value."
+		RETURN
+	elseif BattlehornMinSkillTotal < 0 || (BattlehornMinSkillTotal > (MaxSkillLevel * 7))
+		MessageBox "Delay DLC Start Warning: Check INI file - BattlehornMinSkillTotal is not set to a valid value."
+		RETURN
+	elseif BattlehornCheckLocation < 0 || BattlehornCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - BattlehornCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Frostcrag Spire (Wizard's Tower).
+	if FrostcragMinMGRank < -1 || FrostcragMinMGRank > 9
+		MessageBox "Delay DLC Start Warning: Check INI file - FrostcragMinMGRank is not set to a valid value."
+		RETURN
+	elseif FrostcragMinSkillTotal < 0 || (FrostcragMinSkillTotal > (MaxSkillLevel * 7))
+		MessageBox "Delay DLC Start Warning: Check INI file - FrostcragMinSkillTotal is not set to a valid value."
+		RETURN
+	elseif FrostcragCheckLocation < 0 || FrostcragCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - FrostcragCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Thieves Den (Dunbarrow Cove).
+	if ThievesDenMinTGRank < -1 || ThievesDenMinTGRank > 7
+		MessageBox "Delay DLC Start Warning: Check INI file - ThievesDenMinTGRank is not set to a valid value."
+		RETURN
+	elseif ThievesDenMinSkillTotal < 0 || (ThievesDenMinSkillTotal > (MaxSkillLevel * 7))
+		MessageBox "Delay DLC Start Warning: Check INI file - ThievesDenMinSkillTotal is not set to a valid value."
+		RETURN
+	elseif ThievesDenAllowEntry < 0 || ThievesDenAllowEntry > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - ThievesDenAllowEntry is not set to a valid value."
+		RETURN
+	elseif ThievesDenCheckLocation < 0 || ThievesDenCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - ThievesDenCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Deepscorn Hollow (Vile Lair).
+	if DeepscornMinDBRank < -1 || DeepscornMinDBRank > 7
+		MessageBox "Delay DLC Start Warning: Check INI file - DeepscornMinDBRank is not set to a valid value."
+		RETURN
+	elseif DeepscornMinVampireDays < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - DeepscornMinVampireDays is not set to a valid value."
+		RETURN
+	elseif DeepScornMinInfamy < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - DeepScornMinInfamy is not set to a valid value."
+		RETURN
+	elseif DeepscornCheckLocation < 0 || DeepscornCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - DeepscornCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; Horse Armor.
+	if HorseArmorMinLevel < 1
+		MessageBox "Delay DLC Start Warning: Check INI file - HorseArmorMinLevel is not set to a valid value."
+		RETURN
+	elseif HorseArmorMinGold < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - HorseArmorMinGold is not set to a valid value."
+		RETURN
+	elseif HorseArmorMinFame < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - HorseArmorMinFame is not set to a valid value."
+		RETURN
+	elseif HorseArmorCheckLocation < 0 || HorseArmorCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - Shiverin HorseArmorCheckLocation gMinLevel is not set to a valid value."
+		RETURN
+	endif
+
+	; Mehrunes Razor.
+	if MehrunesMinLevel < 1
+		MessageBox "Delay DLC Start Warning: Check INI file - MehrunesMinLevel is not set to a valid value."
+		RETURN
+	elseif MehrunesMinInfamy < 0
+		MessageBox "Delay DLC Start Warning: Check INI file - MehrunesMinInfamy is not set to a valid value."
+		RETURN
+	elseif MehrunesCheckLocation < 0 || MehrunesCheckLocation > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - MehrunesCheckLocation is not set to a valid value."
+		RETURN
+	endif
+
+	; *** The Orrery.
+	if OrreryMinMGRank < -1 || OrreryMinMGRank > 9
+		MessageBox "Delay DLC Start Warning: Check INI file - OrreryMinMGRank is not set to a valid value."
+		RETURN
+	elseif OrreryMaxDistBothiel < 50
+		MessageBox "Delay DLC Start Warning: Check INI file - OrreryMaxDistBothiel is not set to a valid value."
+		RETURN
+	elseif OrreryCheckDistance < 0 || OrreryCheckDistance > 1
+		MessageBox "Delay DLC Start Warning: Check INI file - OrreryCheckDistance is not set to a valid value."
+		RETURN
+	endif
+
+	; Disable or enable the door to the Black Flag area. Player can change setting between game loads.
+	; Player can change setting until the DLC starts.
+	if ThievesDenStarted == 0
+		if ThievesDenAllowEntry == 0 ; INI variable, disable the door if DLC hasn't started.
+			if GetStage DLC06ThievesDen == 0
+				DLDunbarrowHavenDoorRef.Disable
+			else ; DLC is past stage 0, so enable it.
+				DLDunbarrowHavenDoorRef.Enable
+			endif
+		else ; Enable the door so it can be found before conditions are met.
+			DLDunbarrowHavenDoorRef.Enable
+		endif
+	endif
+endif
+
+; *** Now for the main portion of the loop. ***
+
+; Stop the quest if all DLCs have started.
+if ShiveringIslesStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set ShiveringIslesStarted to 2
+endif
+if KnightsStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set KnightsStarted to 2
+endif
+if BattlehornStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set BattlehornStarted to 2
+endif
+if FrostcragStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set FrostcragStarted to 2
+endif
+if ThievesDenStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set ThievesDenStarted to 2
+endif
+if DeepscornStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set DeepscornStarted to 2
+endif
+if HorseArmorStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set HorseArmorStarted to 2
+endif
+if MehrunesStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set MehrunesStarted to 2
+endif
+if OrreryStarted == 1
+	Set NumberDLCsStarted to NumberDLCsStarted + 1
+	set OrreryStarted to 2
+endif
+if NumberDLCsStarted == 9
+	StopQuest DelayDLCStartCM
+endif
+
+; Special case if player found the Thieves Den location before conditions met (door was enabled).
+; Quickly advance through the initial stages.
+if ThievesDenEarly == 1
+	SetStage DLC06ThievesDen 11
+	Set ThievesDenEarly to 2
+	Set WaitOneLoop to 1
+elseif ThievesDenEarly == 2
+	SetStage DLC06ThievesDen 15
+	Set ThievesDenEarly to 3 ; Done.
+	Set WaitOneLoop to 1
+endif
+
+; Speed up GetDistance processing while in the Arcane University.
+if OrreryStarted == 0 && OrreryCheckDistance == 1
+	if Player.GetInCell ICArcaneUniversity == 1 || Player.GetInWorldspace ICTheArcaneUniversity == 1
+		if fQuestDelayTime != 0.5
+			Set fQuestDelayTime to 0.5
+		endif
+	elseif fQuestDelayTime != 0
+		Set fQuestDelayTime to 0
+	endif
+elseif fQuestDelayTime != 0
+	Set fQuestDelayTime to 0
+endif
+
+; *** Orrery conditions. ***
+; Placed first since the distance check takes priority.
+; 1) Mages Guild rank >= OrreryMinMGRank.
+; 2) Player is close enough to Bothiel (BothielRef or 34EBA) at the Arcane University.
+; ****************************
+if OrreryStarted == 0 && WaitOneLoop == 0
+	if GetStage DLCOrrery > 0
+		Set OrreryStarted to 1
+	elseif Player.GetFactionRank MagesGuild >= OrreryMinMGRank
+		if OrreryCheckDistance == 1
+			if  Player.GetDistance BothielRef <= OrreryMaxDistBothiel
+				Set StartDLC to 1
+			endif
+		else ; If no distance check, player must be in the Arcane University to get the note.
+			if Player.GetInCell ICArcaneUniversity == 1 || Player.GetInWorldspace ICTheArcaneUniversity == 1
+				Set StartDLC to 1
+			endif
+		endif
+		if StartDLC == 1
+			StartQuest DLCOrrery
+			Set OrreryStarted to 1
+			Set WaitOneLoop to 1
+			Set StartDLC to 0
+			if fQuestDelayTime  != 0
+				Set fQuestDelayTime to 0
+			endif
+		endif
+	endif
+endif
+
+
+; *** Shivering Isles conditions. ***
+; 1) Level >= ShiveringMinLevel.
+; 2) Player must be in the Bravil worldspace.
+; 3) Allow Entry == 1 and player finds the Strange Door.
+; *************************************
+if ShiveringIslesStarted == 0 && WaitOneLoop == 0
+	if GetStage SE01Door > 0
+		Set ShiveringIslesStarted to 1
+
+	elseif SEGateMapMarker.CanTravelToMapMarker == 1 ; OBSE 16
+		Set StartDLC to 1
+
+	elseif Player.GetLevel >= ShiveringMinLevel
+		if ShiveringCheckLocation == 1
+			if Player.GetInWorldSpace BravilWorld == 1
+				Set StartDLC to 1
+			endif
+		else
+			Set StartDLC to 1
+		endif
+	endif
+	; Start the quest. Let the quest or door script set stage 10.
+	if StartDLC == 1
+		StartQuest SE01Door
+		Set ShiveringIslesStarted to 1
+		Set WaitOneLoop to 1
+		Set StartDLC to 0
+	endif
+endif
+
+
+; *** Knights of the Nine conditions. ***
+; 1) Level >= KnightsMinLevel.
+; 2) Fame - Infamy >= KnightsMinOverallFame.
+; 3) Player is not in the Anvil worldspace, the AnvilCastleCourtyard worldspace,
+;      not in any Anvil cell and not in the Imperial Dungeon.
+; ******************************************
+if KnightsStarted == 0 && WaitOneLoop == 0
+	if GetStage NDPilgrim > 0
+		Set KnightsStarted to 1
+	elseif Player.GetLevel >= KnightsMinLevel && (Player.GetPCFame - Player.GetPCInfamy) >= KnightsMinOverallFame
+		if KnightsCheckLocation == 1
+			if Player.GetInWorldspace AnvilWorld == 0 && Player.GetInWorldspace AnvilCastleCourtyardWorld == 0 && Player.GetInCell Anvil == 0 && Player.GetInCell ImperialDungeon == 0
+				Set StartDLC to 1
+			endif
+		else
+			Set StartDLC to 1
+		endif
+		if StartDLC == 1
+			SetStage NDPilgrim 2 ; Let player know to start asking around.
+			; *** Moved from Stage 0 script ***
+			SetStage NDPilgrim 5 ; Adds the dialog topic.
+			Set KnightsStarted to 1
+			Set WaitOneLoop to 1
+			Set StartDLC to 0
+		endif
+	endif
+endif
+
+
+; *** Battlehorn Castle (Fighters Castle) conditions. ***
+; 1) Fighters Guild rank >= BattlehornMinFGRank.
+; 2) Combat skills sum >= BattlehornMinSkillTotal.
+; 3) Player must be in the Chorrol worldspace.
+; (Also starts if the player finds castle and attackers, no change to script)
+; ***********************************************************
+if BattlehornStarted == 0 && WaitOneLoop == 0
+	if GetStage DLCBattlehornCastle > 0
+		Set BattlehornStarted to 1
+	elseif Player.GetFactionRank FightersGuild >= BattlehornMinFGRank
+		Set SkillTotal to Player.GetBaseActorValue Armorer
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Athletics
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Blade
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Block
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Blunt
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue HandToHand
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue HeavyArmor
+		if SkillTotal >= BattlehornMinSkillTotal
+			if BattlehornCheckLocation == 1 
+				if Player.GetInWorldspace ChorrolWorld == 1
+					Set StartDLC to 1
+				endif
+			else
+				Set StartDLC to 1
+			endif
+			if StartDLC == 1
+				StartQuest DLCBattlehornCastle
+				Set BattlehornStarted to 1
+				Set WaitOneLoop to 1
+				Set StartDLC to 0
+			endif
+		endif
+	endif
+endif
+
+
+; *** Frostcrag Spire (Wizard's Tower) conditions. ***
+; 1) Mages Guild rank >= FrostcragMinMGRank.
+; 2) Magic Skills sum >= FrostcragMinSkillTotal.
+; 3) Player must be in the Bruma worldspace.
+; **********************************************************
+if FrostcragStarted == 0 && WaitOneLoop == 0
+	if GetStage DLCFrostcragSpire > 0
+		Set FrostcragStarted to 1
+	elseif Player.GetFactionRank MagesGuild >= FrostcragMinMGRank
+		Set SkillTotal to Player.GetBaseActorValue Alchemy
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Alteration
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Conjuration
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Destruction
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Illusion
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Mysticism
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Restoration
+		if SkillTotal >= FrostcragMinSkillTotal
+			if FrostcragCheckLocation == 1
+				if Player.GetInWorldspace BrumaWorld == 1
+					Set StartDLC to 1
+				endif
+			else
+				Set StartDLC to 1
+			endif
+			if StartDLC == 1
+				StartQuest DLCFrostcragSpire
+				Set FrostcragStarted to 1
+				Set WaitOneLoop to 1
+				Set StartDLC to 0
+			endif
+		endif
+	endif
+endif
+
+
+; *** Thieves Den (Dunbarrow Cove) conditions. ***
+; 1) Thieves Guild rank >= ThievesDenMinTGRank.
+; 2) Stealth skills sum >= ThievesDenMinSkillTotal.
+; 3) Player must be in the Anvil worldspace.
+; 4) If the door is enabled and player finds Black Flag ship area in DLDunbarrowHaven cell.
+; *********************************************************
+if ThievesDenStarted == 0 && WaitOneLoop == 0
+	if GetStage DLC06ThievesDen > 0
+		Set ThievesDenStarted to 1
+		DLDunbarrowHavenDoorRef.Enable ; Enable the door to the Black Flag cell regardless of setting.
+	elseif Player.GetFactionRank ThievesGuild >= ThievesDenMinTGRank
+		Set SkillTotal to Player.GetBaseActorValue Acrobatics
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue LightArmor
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Marksman
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Mercantile
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Security
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Sneak
+		Set SkillTotal to SkillTotal + Player.GetBaseActorValue Speechcraft
+		if SkillTotal >= ThievesDenMinSkillTotal
+			if ThievesDenCheckLocation == 1
+				if Player.GetInWorldspace AnvilWorld == 1
+					Set StartDLC to 1
+				endif
+			else
+				Set StartDLC to 1
+			endif
+			if StartDLC == 1
+				StartQuest DLC06ThievesDen
+				Set ThievesDenStarted to 1
+				Set WaitOneLoop to 1
+				Set StartDLC to 0
+				DLDunbarrowHavenDoorRef.Enable ; Enable the door to the Black Flag cell.
+			endif
+		endif
+	; Section used if the door to the cell with the Black Flag is initially enabled.
+	; It can be entered and start the DLC before the conditions are met.
+	elseif ThievesDenAllowEntry == 1
+		if Player.GetInCell DLDunbarrowHaven == 1
+			StartQuest DLC06ThievesDen
+			Set ThievesDenStarted to 1
+			Set WaitOneLoop to 1
+			Set ThievesDenEarly to 1
+		endif
+	endif
+endif
+
+
+; *** Vile Lair (Deepscorn Hollow) conditions. ***
+; 1) Dark Brotherhood rank >= DeepscornMinDBRank OR
+; 2) A vampire for at least DeepscornMinVampireDays days (Misc Stat 22)
+; AND
+; 3) Infamy >= DeepScornMinInfamy.
+; AND
+; 4) Player is in Leyawiin worldspace.
+; ******************************************************
+if DeepscornStarted == 0 && WaitOneLoop == 0
+	if GetStage DLCDeepscorn > 0
+		Set DeepscornStarted to 1
+	elseif (Player.GetFactionRank DarkBrotherhood >= DeepscornMinDBRank || GetPCMiscStat 22 >= DeepscornMinVampireDays) && (GetPCInfamy >= DeepScornMinInfamy)
+		if DeepscornCheckLocation == 1
+			if Player.GetInWorldspace LeyawiinWorld == 1
+				Set StartDLC to 1
+			endif
+		else
+			Set StartDLC to 1
+		endif
+		if StartDLC == 1
+			StartQuest DLCDeepscorn
+			Set DeepscornStarted to 1
+			Set WaitOneLoop to 1
+			Set StartDLC to 0
+		endif
+	endif
+endif
+
+
+; *** Horse Armor conditions. ***
+; 1) Level >= HorseArmorMinLevel.
+; 2) Gold >= HorseArmorMinGold.
+; 3) Fame >= HorseArmorMinFame.
+; 4) Player is in the IC Talos Plaza District (close to the stables).
+; ************************************
+if HorseArmorStarted == 0 && WaitOneLoop == 0
+	if GetStage DLCHorseArmor > 0
+		Set HorseArmorStarted to 1
+	elseif Player.GetLevel >= HorseArmorMinLevel && Player.GetGold >= HorseArmorMinGold && Player.GetPCFame >= HorseArmorMinFame
+		if HorseArmorCheckLocation == 1
+			if Player.GetInWorldspace ICTalosPlazaDistrict == 1 ; District closest to the stables.
+				Set StartDLC to 1
+			endif
+		else
+			Set StartDLC to 1
+		endif
+		if StartDLC == 1
+			StartQuest DLCHorseArmor
+			Set HorseArmorStarted to 1
+			Set WaitOneLoop to 1
+			Set StartDLC to 0
+		endif
+	endif
+endif
+
+
+; *** Mehrunes Razor conditions. ***
+; 1) Level >= MehrunesMinLevel.
+; 2) Infamy >= MehrunesMinInfamy.
+; 3) Player is in the IC Elven Gardens District.
+; (Also starts if the player finds Sundercliff Watch and enters, no change to script)
+; ****************************************
+if MehrunesStarted == 0 && WaitOneLoop == 0
+	if GetStage DL9MehrunesQuest > 0
+		Set MehrunesStarted to 1
+	elseif Player.GetLevel >= MehrunesMinLevel && Player.GetPCInfamy >= MehrunesMinInfamy
+		if MehrunesCheckLocation == 1
+			if Player.GetInWorldspace ICElvenGardensDistrict == 1
+				Set StartDLC to 1
+			endif
+		else
+			Set StartDLC to 1
+		endif
+		if StartDLC == 1
+			StartQuest DL9MehrunesQuest
+			Set MehrunesStarted to 1
+			Set WaitOneLoop to 1
+			Set StartDLC to 0
+		endif
+	endif
+endif
+
+Set WaitOneLoop to 0
+
+End ; GameMode

@@ -1,0 +1,176 @@
+scn PSCharactergenScript
+
+float fQuestDelayTime
+short MenuStatus ;Tracking for which menu is active; 0 = race, 1 = birthsign, 2 = class, 3 = wealth, 4 = vampire. The quest stages track overall progress, but this variable is used when revising the character.
+short WealthStatus ;1 = beggar, 2 = poor, 3 = middle class, 4 = upper class, 5 = noble class
+short ButtonPressed
+short Button
+short Destination ;1 = Anvil, 2 = Imperial City, 3 = Leyawiin, 4 = Bravil
+
+begin Gamemode
+
+	if (MenuStatus == 3)
+		if (ButtonPressed == 1)
+			set Button to GetButtonPressed
+			if (Button > -1)
+
+				;If the player had already chosen, remove what they were given (doing it here so that clothes are removed and added in the same frame).
+				if (WealthStatus == 1)
+					Player.RemoveItemNS LowerShirt05 1
+					Player.RemoveItemNS LowerPants05 1
+					Player.RemoveItemNS LowerShoes05 1
+				elseif (WealthStatus == 2)
+					Player.RemoveItemNS LowerShirt04 1
+					Player.RemoveItemNS LowerPants04 1
+					Player.RemoveItemNS LowerShoes04 1
+					Player.RemoveItemNS Gold001 100
+				elseif (WealthStatus == 3)
+					Player.RemoveItemNS MiddleShirt01 1
+					Player.RemoveItemNS MiddlePants01 1
+					Player.RemoveItemNS MiddleShoes01 1
+					Player.RemoveItemNS Gold001 250
+				elseif (WealthStatus == 4)
+					Player.RemoveItemNS MiddleShirt04 1
+					Player.RemoveItemNS MiddlePants04 1
+					Player.RemoveItemNS MiddleShoes04 1
+					Player.RemoveItemNS Gold001 500
+				elseif (WealthStatus == 5)
+					Player.RemoveItemNS UpperShirt04 1
+					Player.RemoveItemNS UpperPants04 1
+					Player.RemoveItemNS UpperShoes02 1
+					Player.RemoveItemNS Gold001 1000
+				endif
+
+				if (Button == 0)
+					set ButtonPressed to 0
+					set WealthStatus to 1
+					Player.AddItemNS LowerShirt05 1
+					Player.AddItemNS LowerPants05 1
+					Player.AddItemNS LowerShoes05 1
+					Player.EquipItemSilent LowerShirt05
+					Player.EquipItemSilent LowerPants05
+					Player.EquipItemSilent LowerShoes05
+					set MenuStatus to -1
+					SetStage PSCharactergen 50
+				elseif (Button == 1)
+					set ButtonPressed to 0
+					set WealthStatus to 2
+					Player.AddItemNS LowerShirt04 1
+					Player.AddItemNS LowerPants04 1
+					Player.AddItemNS LowerShoes04 1
+					Player.EquipItemSilent LowerShirt04
+					Player.EquipItemSilent LowerPants04
+					Player.EquipItemSilent LowerShoes04
+					Player.AddItemNS Gold001 100
+					set MenuStatus to -1
+					SetStage PSCharactergen 50
+				elseif (Button == 2)
+					set ButtonPressed to 0
+					set WealthStatus to 3
+					Player.AddItemNS MiddleShirt01 1
+					Player.AddItemNS MiddlePants01 1
+					Player.AddItemNS MiddleShoes01 1
+					Player.EquipItemSilent MiddleShirt01
+					Player.EquipItemSilent MiddlePants01
+					Player.EquipItemSilent MiddleShoes01
+					Player.AddItemNS Gold001 250
+					set MenuStatus to -1
+					SetStage PSCharactergen 50
+				elseif (Button == 3)
+					set ButtonPressed to 0
+					set WealthStatus to 4
+					Player.AddItemNS MiddleShirt04 1
+					Player.AddItemNS MiddlePants04 1
+					Player.AddItemNS MiddleShoes04 1
+					Player.EquipItemSilent MiddleShirt04
+					Player.EquipItemSilent MiddlePants04
+					Player.EquipItemSilent MiddleShoes04
+					Player.AddItemNS Gold001 500
+					set MenuStatus to -1
+					SetStage PSCharactergen 50
+				elseif (Button == 4)
+					set ButtonPressed to 0
+					set WealthStatus to 5
+					Player.AddItemNS UpperShirt04 1
+					Player.AddItemNS UpperPants04 1
+					Player.AddItemNS UpperShoes02 1
+					Player.EquipItemSilent UpperShirt04
+					Player.EquipItemSilent UpperPants04
+					Player.EquipItemSilent UpperShoes02
+					Player.AddItemNS Gold001 1000
+					set MenuStatus to -1
+					SetStage PSCharactergen 50
+				endif
+			endif
+		endif
+	elseif (MenuStatus == 4)
+		if (ButtonPressed == 1)
+			set Button to getButtonPressed
+			if (Button > -1)
+				if (Button == 0)
+					set ButtonPressed to 0
+					set MenuStatus to -1
+					SetStage PSCharactergen 81
+				elseif (Button == 1)
+					set ButtonPressed to 0
+					set PCVampire to 1
+					if (IsModLoaded "Unofficial Oblivion Patch.esp" == 0)
+						set Vampire.VampDay to GameDay
+					else
+						set Vampire.VampDay to GameDaysPassed
+					endif
+					set Vampire.VampHour to GameHour
+					set Vampire.HasDisease to -1
+					Player.AddSpellNS Vampirism25
+					Player.AddSpellNS Vampirism25Att
+					Player.AddSpellNS Vampirism25Skills
+					Player.AddSpellNS VampireHuntersSight
+					Player.SetFactionRank PlayerVampireFaction 0
+					AddTopic CureForVampirism
+					StartQuest MS40
+					set MenuStatus to -1
+					SetStage PSCharactergen 90
+				endif
+			endif
+		endif
+	endif
+
+	if (GetStage PSCharactergen == 80)
+		if (ButtonPressed == 0)
+			MessageBox "Do you want to be a vampire?" "No" "Yes"
+			set MenuStatus to 4
+			set ButtonPressed to 1
+		endif
+	endif
+	
+	if (MenuStatus == 3)
+		if (ButtonPressed == 0)
+			MessageBox "What is your financial status?" "Beggar" "Poor" "Comfortable" "Wealthy" "Rich"
+			set ButtonPressed to 1
+		endif
+	endif
+
+	if (MenuStatus == 2)
+		set MenuStatus to 3
+		ShowClassMenu
+		SetStage PSCharactergen 40
+	endif
+
+	if (MenuStatus == 1)
+		set MenuStatus to 2
+		ShowBirthsignMenu
+		SetStage PSCharactergen 30
+	endif
+	
+	if (MenuStatus == 0)
+		if (GetStageDone Charactergen 5 == 1)
+			set MenuStatus to 1
+			;We don't call ShowRaceMenu here because it's automatically called at the start of a new game.
+			SetStage PSCharactergen 20
+		endif
+	endif
+	
+end
+;<CSEBlock>
+;<CSECaretPos> 814 </CSECaretPos>
+;</CSEBlock>
