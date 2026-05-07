@@ -1,0 +1,81 @@
+# Oblivion.exe symbol catalog harvested from Reborn RE work.
+# Format: <hex-addr><TAB><name><TAB><kind>   (kind: function | label)
+# Lines starting with # or empty lines are ignored.
+# Sources: reference_facegen_call_chain.md, reference_blockhead_source.md,
+#          reference_oblivion_lockfree_internals.md, feedback_facegen_storm_root_cause.md
+
+# === IOManager / lock-free task system ===
+00430DE0	BSTaskThread_Runnable	function
+00431D10	LockFreeMap_DispatchVtblFn	function
+00431D60	ThreadSpecificInterfaceManager_AddInterface	function
+00431E10	LockFreeMap_TraversalHelper	function
+00431F30	BSTaskManagerThread_dtor	function
+00432130	IOManager_TaskStateTransition	function
+00432400	LockFreeQueue_IOTask_ctor	function
+00432820	IOManager_sub_432820	function
+004328B0	LockFreeMap_CollectDeferredFrees	function
+00432A00	LockFreeMap_DeferredListWalkHelper	function
+00432C30	LockFreeMap_IteratorAdvance	function
+00433380	LockFreeMap_IterHelper1	function
+00433BC0	LockFreeMap_IterHelper2	function
+00433FD0	LockFreeMap_IterHelper3	function
+00434350	BSTask_RunDispatcher	function
+00434480	IOManager_ctor	function
+00434550	IOManager_dtor	function
+00434820	ModelLoader_IsModelLoaded	function
+00435300	QueuedHead_Run	function
+00435E70	ThreadSpecificInterfaceManager_ctor	function
+00437A70	QueuedHelmet_dtor	function
+004379A0	QueuedHead_dtor	function
+00438060	ModelLoader_QueueReference	function
+00438870	LockFreeQueue_QueuedReference_ctor	function
+00438DC0	LockFreeMap_Model_ctor	function
+00438F10	LockFreeMap_KFModel_ctor	function
+004348B0	LFM_DoublyLinkedQueueInsert	function
+004395A9	kFinishedWithFile_HookAddr	label
+004392E0	ModelLoader_CancelPending_helper2	function
+00439B90	ModelLoader_CancelPending_helper	function
+00439DC0	ModelLoader_CancelPendingForRefr	function
+
+# === FaceGen call chain (RE'd 2026-05-05) ===
+004E0F80	TESObjectREFR_Set3D	function
+00522260	FaceGen_ReleaseFace0Face1	function
+005221C0	TESNPC_FaceGenFiller	function
+00523220	FaceGen_GatingFunction	function
+00527C90	FaceGen_LocalHelperCtor	function
+00528D90	FaceGen_PerFrameProcessor	function
+0052CD50	FaceGen_HelperPopulator	function
+0052DED0	FaceGen_ChokepointAlloc	function
+0054CAF0	FaceGen_Struct1E0_ctor	function
+005528F0	FaceGen_FallbackPopulator	function
+00552990	FaceGen_SilentSkipLoop_TESRace_unk12	function
+0055CD70	FaceGen_Struct118_ctor	function
+005538D0	FaceGen_DefaultGetter	function
+005547F0	FaceGen_SetEyeRefs_AVSite	function
+005551C0	BSFaceGen_DoSomething	function
+00555A80	FaceGen_HelperToOutStateMachine	function
+
+# === Blockhead hook patch sites ===
+00528BF5	BlockheadHook_FaceGen_Site1	label
+00529301	BlockheadHook_FaceGen_Site2	label
+0052966E	BlockheadHook_FaceGen_Site3	label
+0052E03B	BlockheadHook_FaceGen_Site4	label
+005C7720	BlockheadHook_FaceGen_Site5	label
+005C7AC1	BlockheadHook_FaceGen_Site6	label
+005C936F	BlockheadHook_FaceGen_Site7	label
+005289BB	BlockheadHook_DoSomethingFaceGenNode	label
+00555457	BlockheadHook_AgeTexturePath	label
+004E34AB	BlockheadHook_TESObjectREFRRefreshAnimData	label
+0052D472	BlockheadHook_TESRaceGetTailTexture	label
+
+# === Engine globals (data) ===
+00B33A10	g_IOManager_singleton	label
+00B33A1C	g_ModelLoader_singleton	label
+
+# === RTTI / vtable addresses ===
+00A36CE0	QueuedHead_vtbl	label
+009ED1A4	RTTI_QueuedHead	label
+009ED218	RTTI_QueuedCharacter	label
+009ECC34	RTTI_BSTaskThread	label
+009FA59C	RTTI_BSFaceGenNiNode	label
+00A255C4	NiRTTI_BSFaceGenNiNode	label

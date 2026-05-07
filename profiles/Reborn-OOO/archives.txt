@@ -15,9 +15,9 @@ DLCOrrery.bsa
 DLCHorseArmor.bsa
 DLCFrostcrag.bsa
 DLCBattlehornCastle.bsa
+DLCShiveringIsles - Faces.bsa
 IHaveNoGreetingFix.bsa
 Spirit Stones.bsa
-DLCShiveringIsles - Faces.bsa
 WorldMapsForAllWorldspaces.bsa
 Maskar's Oblivion Overhaul - Meshes.bsa
 Maskar's Oblivion Overhaul - Misc.bsa

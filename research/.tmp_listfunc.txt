@@ -1,0 +1,121 @@
+﻿INFO  Using log config file: jar:file:/D:/Modlists/ghidra_12.0.4_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: C:\Users\mschon\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\application.log (LoggingInitialization)  
+INFO  Loading user preferences: C:\Users\mschon\AppData\Roaming\ghidra\ghidra_12.0.4_PUBLIC\preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (544 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: SHA1PRNG (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1241 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 58 extension points (18 false positives) (ClassSearcher)  
+analyzeHeadless.bat : WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+At line:2 char:8
++ $out = & $ghidra 'D:\Modlists\Reborn\research\ghidra-projects' Oblivi ...
++        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: A term...has been called:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+WARNING: sun.misc.Unsafe::staticFieldOffset has been called by org.apache.felix.framework.util.SecureAction 
+(file:/D:/Modlists/ghidra_12.0.4_PUBLIC/Ghidra/Features/Base/lib/org.apache.felix.framework-7.0.5.jar)
+WARNING: Please consider reporting this to the maintainers of class org.apache.felix.framework.util.SecureAction
+WARNING: sun.misc.Unsafe::staticFieldOffset will be removed in a future release
+INFO  HEADLESS Script Paths:
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\Jython\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\PDB\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\SystemEmulation\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Processors\DATA\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Processors\8051\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Processors\JVM\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\SwiftDemangler\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\PyGhidra\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\FileFormats\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Processors\Atmel\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\Decompiler\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\WildcardAssembler\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Processors\PIC\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\BytePatterns\ghidra_scripts
+    D:\Modlists\Reborn\research\ghidra-scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Debug\Debugger-rmi-trace\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\VersionTracking\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\BSim\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\DecompilerDependent\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Debug\Debugger\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\MicrosoftCodeAnalyzer\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\GnuDemangler\ghidra_scripts
+    D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\Base\ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: D:\Modlists\Reborn\research\ghidra-projects\Oblivion (HeadlessAnalyzer)  
+INFO  Opening project: D:\Modlists\Reborn\research\ghidra-projects\Oblivion (HeadlessProject)  
+INFO  REPORT: Processing read-only project file: /Oblivion.exe (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: /Oblivion.exe (HeadlessAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___raise_securityfailure' specified in file: D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___report_rangecheckfailure' specified in file: D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\Base\data\PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+INFO  Skipping PDB processing: failed to locate PDB file in configured locations (PdbUniversalAnalyzer)  
+INFO  Use a script to set the PDB file location. I.e.,
+    PdbAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb")); or
+    PdbUniversalAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb"));
+Or set the symbol server search configuration using:    PdbPlugin.saveSymbolServerServiceConfig(...);
+ This must be done using a pre-script (prior to analysis). (PdbUniversalAnalyzer)  
+INFO  Packed database cache: C:\Users\mschon\AppData\Local\ghidra\packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.502 secs
+    Apply Data Archives                        0.293 secs
+    Call Convention ID                         0.210 secs
+    Call-Fixup Installer                       0.069 secs
+    Create Address Tables                      1.914 secs
+    Create Function                            0.000 secs
+    Data Reference                             2.268 secs
+    Decompiler Switch Analysis                17.850 secs
+    Demangler Microsoft                        0.030 secs
+    Disassemble Entry Points                   0.490 secs
+    Disassemble Entry Points - One Time        0.003 secs
+    Embedded Media                             0.053 secs
+    External Entry References                  0.001 secs
+    Function ID                                6.876 secs
+    Function Start Pre Search                  0.149 secs
+    Function Start Search                      3.881 secs
+    Function Start Search After Code           1.303 secs
+    Function Start Search After Data           1.283 secs
+    Non-Returning Functions - Discovered       5.311 secs
+    Non-Returning Functions - Known            0.075 secs
+    PDB Universal                              0.012 secs
+    Reference                                  2.496 secs
+    Scalar Operand References                  3.926 secs
+    Shared Return Calls                        2.029 secs
+    Stack                                      5.386 secs
+    Subroutine References                      1.878 secs
+    WindowsResourceReference                   0.311 secs
+    X86 Function Callee Purge                  0.270 secs
+    x86 Constant Reference Analyzer           22.692 secs
+-----------------------------------------------------
+     Total Time   81 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: /Oblivion.exe (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: ListFunctions.java  (HeadlessAnalyzer)  
+INFO  SCRIPT: D:\Modlists\ghidra_12.0.4_PUBLIC\Ghidra\Features\FunctionID\ghidra_scripts\ListFunctions.java (HeadlessAnalyzer)  
+ERROR REPORT SCRIPT ERROR:  (HeadlessAnalyzer) java.lang.IllegalArgumentException: Error processing variable 'Output file Choose output file:' in headless mode -- it was not found in script arguments or a .properties file.
+	at ghidra.app.script.GhidraScript.loadAskValue(GhidraScript.java:1986)
+	at ghidra.app.script.GhidraScript.loadAskValue(GhidraScript.java:1943)
+	at ghidra.app.script.GhidraScript.askFile(GhidraScript.java:2093)
+	at ListFunctions.run(ListFunctions.java:58)
+	at ghidra.app.script.GhidraScript.executeNormal(GhidraScript.java:460)
+	at ghidra.app.script.GhidraScript.doExecute(GhidraScript.java:314)
+	at ghidra.app.script.GhidraScript.execute(GhidraScript.java:290)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScript(HeadlessAnalyzer.java:595)
+	at ghidra.app.util.headless.HeadlessAnalyzer.runScriptsList(HeadlessAnalyzer.java:938)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1086)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileNoImport(HeadlessAnalyzer.java:1184)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFolderNoImport(HeadlessAnalyzer.java:1356)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processNoImport(HeadlessAnalyzer.java:1385)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:459)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:199)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:81)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+INFO  ANALYZING changes made by post scripts: /Oblivion.exe (HeadlessAnalyzer)  
+INFO  REPORT: Post-analysis succeeded for file: /Oblivion.exe (HeadlessAnalyzer)  
+INFO  REPORT: Discarding changes to the following read-only file: /Oblivion.exe (HeadlessAnalyzer)  

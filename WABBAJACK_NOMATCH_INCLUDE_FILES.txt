@@ -27,6 +27,7 @@ mods\Cleaned Game Files
 mods\Wrye Bash
 mods\Reborn Bashed Patch
 mods\Reborn - OOO Unofficial Patch CR
+mods\Reborn - OOO Enhanced Mesh Fixes
 mods\UW HUD Config
 mods\CSE Batch Compile
 mods\PSMQD - Delay DLC Start Patch

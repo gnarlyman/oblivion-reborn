@@ -102,3 +102,9 @@ research/merge-probes/data/
 research/merge-probes/loadorder_*.txt
 research/merge-probes/loadorder_*.tes4viewsettings
 research/merge-probes/loadorder_*.fo4viewsettings
+
+# ─── Ghidra project runtime (binary DB files; regenerable from .exe) ───
+# Keep .gpr metadata + decompiled .c/.h + per-segment exports + scripts; drop the binary DB.
+research/ghidra-projects/**/*.gbf
+research/ghidra-projects/**/*.bak
+research/ghidra-projects/Oblivion.rep/idata/00/~00000000.db/

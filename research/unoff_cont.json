@@ -1,0 +1,240 @@
+[
+  {
+    "fid": "00005130",
+    "edid": "PCCupboardClutterUpperShelfSilverware01",
+    "full": "Cupboard",
+    "modl": "harvest\\containers\\XMSharvestUpperCupboard02HiFi.nif",
+    "scri": "BEC30401"
+  },
+  {
+    "fid": "0000514A",
+    "edid": "PCDeskClutterUpper01",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "94460601"
+  },
+  {
+    "fid": "0000514B",
+    "edid": "PCDeskClutterUpper02",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "94460601"
+  },
+  {
+    "fid": "00005154",
+    "edid": "PCCoveredBowlClutterLower01",
+    "full": "Covered Pot",
+    "modl": "harvest\\containers\\XMSharvestLowerCoveredPot01HiFi.nif",
+    "scri": "A95B0001"
+  },
+  {
+    "fid": "0000515E",
+    "edid": "PCDeskExecClutter01",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperExecDesk01HiFi.nif",
+    "scri": "BEC30401"
+  },
+  {
+    "fid": "00024466",
+    "edid": "DeskClutterUpper01",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "92460601"
+  },
+  {
+    "fid": "00024467",
+    "edid": "DeskClutterUpper02",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "92460601"
+  },
+  {
+    "fid": "0002494D",
+    "edid": "CoveredBowlClutterLower01",
+    "full": "Covered Pot",
+    "modl": "harvest\\containers\\XMSharvestLowerCoveredPot01HiFi.nif",
+    "scri": "A95B0001"
+  },
+  {
+    "fid": "00030147",
+    "edid": "Dark12RottedBox",
+    "full": "Rotten Box",
+    "modl": "harvest\\containers\\XMSharvestMiddleCrate06NoFi.nif",
+    "scri": "D9500001"
+  },
+  {
+    "fid": "00034890",
+    "edid": "MS51PaintSuppliesClue",
+    "full": "Lectern",
+    "modl": "harvest\\containers\\XMSharvestMiddleLectern02HiFi.nif",
+    "scri": "5A570300"
+  },
+  {
+    "fid": "0003859C",
+    "edid": "MS11Chest",
+    "full": "Waterlogged Chest",
+    "modl": "harvest\\containers\\XMSharvestUpperChest01LoFi.nif",
+    "scri": "A35B0001"
+  },
+  {
+    "fid": "0004EA41",
+    "edid": "RoastRat01",
+    "full": "Roasted Rat",
+    "modl": "harvest\\containers\\DEJXRoastRat01LoFi.nif",
+    "scri": "C0600001"
+  },
+  {
+    "fid": "0005F491",
+    "edid": "SilverRock01",
+    "full": "Silver Vein",
+    "modl": "harvest\\containers\\XMSharvestSilverRock01.nif",
+    "scri": "C1600001"
+  },
+  {
+    "fid": "0005F492",
+    "edid": "SilverRock02",
+    "full": "Silver Vein",
+    "modl": "harvest\\containers\\XMSharvestSilverRock02.nif",
+    "scri": "C1600001"
+  },
+  {
+    "fid": "0005F493",
+    "edid": "SilverRock03",
+    "full": "Silver Vein",
+    "modl": "harvest\\containers\\XMSharvestSilverRock03.nif",
+    "scri": "C1600001"
+  },
+  {
+    "fid": "0006DDA2",
+    "edid": "MG06DeskUpper01",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "93460601"
+  },
+  {
+    "fid": "0006FDA5",
+    "edid": "DarkSecretSafe",
+    "full": "Hidden Wall Safe",
+    "modl": "harvest\\containers\\XMSmiddlepaintingforest02b.nif",
+    "scri": "CC590601"
+  },
+  {
+    "fid": "0007170D",
+    "edid": "Clams01",
+    "full": "Clams",
+    "modl": "Landscape\\Clams01.NIF",
+    "scri": "B4C20601"
+  },
+  {
+    "fid": "0007170E",
+    "edid": "Clams02",
+    "full": "Clams",
+    "modl": "Landscape\\Clams02.NIF",
+    "scri": "B4C20601"
+  },
+  {
+    "fid": "0007170F",
+    "edid": "Clams03",
+    "full": "Clams",
+    "modl": "Landscape\\Clams03.NIF",
+    "scri": "B4C20601"
+  },
+  {
+    "fid": "00074A8B",
+    "edid": "MS12HiddenBarrel",
+    "full": "Frozen Barrel",
+    "modl": "harvest\\containers\\XMSharvestMiddleBarrelTopped01HiFi.nif",
+    "scri": ""
+  },
+  {
+    "fid": "000C5531",
+    "edid": "DeskClutterUpperEmpty",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "92460601"
+  },
+  {
+    "fid": "000C80DD",
+    "edid": "MG07CoffinManduin",
+    "full": "Manduin's Coffin",
+    "modl": "harvest\\containers\\XMSCoffin03Open01.nif",
+    "scri": "9E5B0001"
+  },
+  {
+    "fid": "0011939F",
+    "edid": "GoldRock01",
+    "full": "Gold Vein",
+    "modl": "harvest\\containers\\XMSharvestGoldRock01.nif",
+    "scri": "9A5B0001"
+  },
+  {
+    "fid": "001193A0",
+    "edid": "GoldRock02",
+    "full": "Gold Vein",
+    "modl": "harvest\\containers\\XMSharvestGoldRock02.nif",
+    "scri": "9A5B0001"
+  },
+  {
+    "fid": "001193A1",
+    "edid": "GoldRock03",
+    "full": "Gold Vein",
+    "modl": "harvest\\containers\\XMSharvestGoldRock03.nif",
+    "scri": "9A5B0001"
+  },
+  {
+    "fid": "0100A177",
+    "edid": "ZOOODeskUpper02NobleRespawn",
+    "full": "Fine Wood Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "92460601"
+  },
+  {
+    "fid": "010120B1",
+    "edid": "zOOODragonborneChest",
+    "full": "Dragonborne Supply Chest",
+    "modl": "harvest\\containers\\XMSharvestLowerChest02LoFi.nif",
+    "scri": "31500601"
+  },
+  {
+    "fid": "010141EC",
+    "edid": "ZOOOChestUpper01NobleDragonClaymore",
+    "full": "Elegant Chest",
+    "modl": "harvest\\containers\\XMSharvestUpperChest02LoFi.nif",
+    "scri": "B79C0201"
+  },
+  {
+    "fid": "0101C259",
+    "edid": "ZOOODeskExecClutter01Noble",
+    "full": "Ornate Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperExecDesk01HiFi.nif",
+    "scri": "CB7D0501"
+  },
+  {
+    "fid": "0101CC38",
+    "edid": "ZOOODeskUpper02Noble",
+    "full": "Elegant Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "92460601"
+  },
+  {
+    "fid": "01024E89",
+    "edid": "ZOOODungVampireCoffinBoss",
+    "full": "Coffin",
+    "modl": "harvest\\containers\\XMSCoffin03Open01.nif",
+    "scri": "9E5B0001"
+  },
+  {
+    "fid": "01048A2F",
+    "edid": "TandSafeBarrelOOO",
+    "full": "Barrel",
+    "modl": "harvest\\containers\\XMSharvestMiddleBarrelTopped06noFi.nif",
+    "scri": "A9870501"
+  },
+  {
+    "fid": "01048A34",
+    "edid": "TandSafeDeskOOO",
+    "full": "Desk",
+    "modl": "harvest\\containers\\XMSharvestUpperDesk01HiFi.nif",
+    "scri": "93460601"
+  }
+]

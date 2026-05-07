@@ -23,33 +23,36 @@ DLCBattlehornCastle.esp
 DLCFrostcrag.esp
 Knights.esp
 Knights - Unofficial Patch.esp
-LINK.esp
 SB_WeaponDropFix.esp
 Oscuro's_Oblivion_Overhaul.esp
+OOO Enhanced.esp
 OOOShiveringIsles.esp
 MercerIngredientsCore.esp
+Oblivion_Character_Overhaul.esp
+DLC Integration.esp
 Balanced Unleveled Rewards - Complete.esp
+LessMaddeningShiveringIsles.esp
+EVE_ShiveringIslesEasterEggs.esp
 PSMainQuestDelayer.esp
 Delay DLC Start.esp
 IHaveNoGreetingFix.esp
-MigMiscellanea.esp
-Harvest xOBSE.esp
-LessMaddeningShiveringIsles.esp
-ApparatusIcons.esp
-ArmoredShadowmereFix.esp
 BookTrackerUpdatedv1.1.esp
-DLC Integration.esp
 Spirit Stones.esp
-Extended UI.esp
-QZ Easy Menus.esp
-Enhanced Hotkeys.esp
-lDisplay Skill Perk Effects.esp
-Dynamic Map.esp
+MigMiscellanea.esp
+ArmoredShadowmereFix.esp
+Harvest xOBSE.esp
+LINK.esp
 Better Enemy Health.esp
-Ultimate Leveling.esp
+Dynamic Map.esp
 LootMenu.esp
-NIARA.esp
+Enhanced Hotkeys.esp
+Extended UI.esp
+lDisplay Skill Perk Effects.esp
+QZ Easy Menus.esp
 OOOShiveringIsles_Optional_CrucibleEdits.esp
+Ultimate Leveling.esp
+NIARA.esp
+Reborn - OOO Enhanced Mesh Fixes.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp

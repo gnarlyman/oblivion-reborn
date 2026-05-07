@@ -1,0 +1,34 @@
+{"plugin":"Oblivion.esm","edid":"MartinScript","fid":"0004980F","sctx_len":2448,"hits":"CFAC PAM "}
+{"plugin":"Oblivion.esm","edid":"DASkullofCorruptionStaffScript","fid":"00073A58","sctx_len":5355,"hits":"CFAC "}
+{"plugin":"Oblivion.esm","edid":"SE11bStandingStoneScript","fid":"000AEE99","sctx_len":10822,"hits":"CFAC "}
+{"plugin":"Cobl Main.esm","edid":"cobRUEProductTypePotionFAS","fid":"020023B2","sctx_len":13717,"hits":"CLONE "}
+{"plugin":"Cobl Main.esm","edid":"cobRUERecipeEnchScrollOS","fid":"020023B3","sctx_len":4384,"hits":"CLONE "}
+{"plugin":"Cobl Main.esm","edid":"cobPoisonAppQS","fid":"02004320","sctx_len":13234,"hits":"CLONE "}
+{"plugin":"Unofficial Oblivion Patch.esp","edid":"DASkullofCorruptionStaffScript","fid":"00073A58","sctx_len":1435,"hits":"CFAC "}
+{"plugin":"Unofficial Shivering Isles Patch.esp","edid":"SE11bStandingStoneScript","fid":"000AEE99","sctx_len":11450,"hits":"CFAC "}
+{"plugin":"OOOShiveringIsles.esp","edid":"SE11bStandingStoneScript","fid":"000AEE99","sctx_len":12861,"hits":"CFAC "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedFunctionScript","fid":"38000ED5","sctx_len":23250,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOOnHitByCreatureFunctionScript","fid":"3801DF75","sctx_len":3350,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetWeapFunctionScript","fid":"382261AC","sctx_len":2462,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetApparelFunctionScript","fid":"382261AF","sctx_len":1242,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetWantedNpcFunctionScript","fid":"3823281B","sctx_len":2887,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetWantedNpcItemFunctionScript","fid":"38236CFC","sctx_len":1275,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetLostItemFunctionScript","fid":"3825530E","sctx_len":1758,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOInitCloneRockFunctionScript","fid":"382C7BD7","sctx_len":1466,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOLockContainerFunctionScript","fid":"382E682F","sctx_len":2019,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOTameUpdateAbilitiesFunctionScript","fid":"38313692","sctx_len":3305,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOTameGetCloneFunctionScript","fid":"383181F1","sctx_len":521,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOTameSetAbilitiesFunctionScript","fid":"38318F9B","sctx_len":6071,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOPlaceCraftingObjectFunctionScript","fid":"3831AB01","sctx_len":975,"hits":"PAM CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOInitNpcTokenForNpcBossesFunctionScript","fid":"3833529B","sctx_len":2641,"hits":"PAM CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOORuneUpdateScript","fid":"38428C65","sctx_len":707,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetAdventurerFunctionScript","fid":"3848D4F8","sctx_len":3147,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOOnHitByCreatureAtCloneFormFunctionScript","fid":"38546650","sctx_len":960,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedWerewolvesRegionsFunctionScript","fid":"386485A7","sctx_len":13186,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedTotemsUpdateHeartsFunctionScript","fid":"38663B2B","sctx_len":1313,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedTotemsUpdateTotemsFunctionScript","fid":"38663B2C","sctx_len":2998,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedWerewolvesSummonsFunctionScript","fid":"3868C489","sctx_len":1334,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOWerewolfFeedTakeTotemFunctionScript","fid":"386A13EE","sctx_len":957,"hits":"CLONE WW "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedCorruptedApparelFunctionScript","fid":"3871CBD8","sctx_len":1166,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOGetGameLoadedCorruptedWeaponFunctionScript","fid":"3871CBD9","sctx_len":1789,"hits":"CLONE "}
+{"plugin":"Maskar's Oblivion Overhaul.esp","edid":"MOOOnReleaseByPlayerCastingWerewolfFormSelfFunctionScript","fid":"3872EB28","sctx_len":1145,"hits":"CLONE WW "}

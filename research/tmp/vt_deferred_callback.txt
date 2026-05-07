@@ -1,0 +1,26 @@
+Vtable at 00a3698c (24 slots):
+  idx  slot-addr     ptr         function/symbol
+  [ 0] 00a3698c  0x00439030  FUN_00439030
+  [ 1] 00a36990  0x0060D0A0  FUN_0060d0a0
+  [ 2] 00a36994  0x0060D0A0  FUN_0060d0a0
+  [ 3] 00a36998  0x0068F970  FUN_0068f970
+  [ 4] 00a3699c  0x006FE080  FUN_006fe080
+  [ 5] 00a369a0  0x00437BB0  FUN_00437bb0
+  [ 6] 00a369a4  0x004365F0  FUN_004365f0
+  [ 7] 00a369a8  0x004365D0  LAB_004365d0
+  [ 8] 00a369ac  0x00000000  DAT_00000000
+  [ 9] 00a369b0  0x78656552  (no symbol)
+  [10] 00a369b4  0x74726F70  (no symbol)
+  [11] 00a369b8  0x73252720  (no symbol)
+  [12] 00a369bc  0x6F742027  (no symbol)
+  [13] 00a369c0  0x74656720  (no symbol)
+  [14] 00a369c4  0x64697220  (no symbol)
+  [15] 00a369c8  0x20666F20  (no symbol)
+  [16] 00a369cc  0x20656874  (no symbol)
+  [17] 00a369d0  0x6675425A  (no symbol)
+  [18] 00a369d4  0x20726566  (no symbol)
+  [19] 00a369d8  0x2F646E61  (no symbol)
+  [20] 00a369dc  0x5620726F  (no symbol)
+  [21] 00a369e0  0x65747265  (no symbol)
+  [22] 00a369e4  0x6F437478  (no symbol)
+  [23] 00a369e8  0x20726F6C  (no symbol)
