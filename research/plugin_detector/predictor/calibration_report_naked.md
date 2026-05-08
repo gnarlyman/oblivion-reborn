@@ -106,26 +106,49 @@ the recall number.
 
 This is left for a v2 calibration pass.
 
+## Operator notes (post-run, 2026-05-08)
+
+- **Most NPCs that the predictor flagged were naked-but-visible** — they spawned
+  without armor/clothing but had intact body meshes. So the predictor's
+  *predicate* ("this NPC will spawn without armor") is essentially correct on
+  what it predicts. The inv-empty proxy is measuring the right thing.
+- **Only the Dremora variants had invisible body portions.** No other apparent
+  FPs were Dremora-class TPs — the precision number does NOT upgrade beyond
+  the 6 already counted. (`armor_mesh_missing` reason has 100% sensitivity for
+  the visible-bug class on this corpus, just on a tiny n.)
+- **A couple of NPCs had explicit "Testing" names** for OOO/MOO — confirmed
+  out-of-scope abstract test NPCs.
+- **Encounterability is unknown.** Many flagged NPCs may never appear in
+  normal play even if their record is overridden — this affects how to
+  interpret precision but isn't measurable from a static + spawn corpus.
+
 ## Verdict
 
-**INCONCLUSIVE on spec gates.** Precision FAILS the 0.90 gate at 38.7%, but
-the precision number is contaminated by abstract NPCs (Voice, Test) that
-shouldn't count as either TP or FP. After operator review, "real" precision
-on substantively-broken NPCs may be much higher.
+**Spec gate: precision FAILS at 38.7%.** Operator review confirmed this is NOT
+because the predictor is wrong about its predicate (it isn't — flagged NPCs
+really do spawn naked) but because **"naked at runtime" is a broader category
+than "visible bug a player would notice"**. The precision metric as defined by
+the spike conflates the two.
 
-**Spike outcome:** the predictor is **useful as a coarse-grained naked-NPC
-candidate generator** (catches the Dremora-class bug the inv-empty proxy
-misses) but **not yet as a reliable bug enumerator** — too many false alarms
-from abstract NPCs and template NPCs.
+**Spike outcome (revised after operator confirmation):**
+- The predictor's `predicted_naked` predicate is **functionally correct**
+- Its `armor_mesh_missing` reason has **100% sensitivity for the visible-bug
+  class** on this corpus (6/6 Dremora-class catches; nothing else)
+- The 0.90 precision gate, as written, doesn't separate "naked at runtime"
+  from "broken in normal play" — and the gap between those two is dominated
+  by abstract/test/encounter-rate factors the predictor can't see
+- **Useful as-is** for: catching `armor_mesh_missing` NPCs (zero false alarms
+  on the visible-bug class), generating a candidate list for manual triage
+- **Not useful as-is** for: telling the player "here are bugs you'll encounter"
+  without further filtering
 
 **Concrete v2 work the result implies:**
 - Drop "abstract" NPCs (Voice, Test, NOSUMMON, *DEAD*, etc.) from the corpus
   via an EDID-prefix exclude list before scoring. Re-run precision.
-- Build a recall corpus (random sample of 50-100 `predicted_naked=false` NPCs).
-- Re-walk the LVLI tree under the assumption that MOO/OOO push armor via
-  conditional list arms the predictor mis-traverses.
-
-## Operator notes (to fill in)
-
-_Visual oddities the operator caught during the corpus run go here. In particular:
-which apparent FPs (inv > 0) looked visually broken (Dremora-class TPs)?_
+- Add an "encounterability" heuristic: cross-reference NPC FormID against
+  CELL/PLAC records; NPCs with no static placement and no faction-spawn
+  membership are likely never seen.
+- Build a recall corpus (random sample of 50-100 `predicted_naked=false` NPCs)
+  so the recall gate can be measured.
+- Treat `armor_mesh_missing` as a separate, higher-confidence bug class —
+  it earned 100% precision-on-visible-bugs in this run.
