@@ -102,6 +102,41 @@ def resolve_inventory(
     }
 
 
+def resolve_inventory_with_meshes(
+    npc_lo_fid: int,
+    winners: dict,
+    lo,  # LoadOrder
+    vfs,  # VFS instance
+) -> dict:
+    """Extends resolve_inventory by checking VFS path existence for each
+    ARMO/CLOT/WEAP MODL/MOD2/MOD3/MOD4 path. Returns the same dict plus:
+        "missing_meshes": list of (form_id, missing_path) for unresolved paths.
+    """
+    from predictor.plugin_parser import cstr  # local import to avoid cycle
+
+    inv = resolve_inventory(npc_lo_fid, winners, lo)
+    missing: list[tuple[int, str]] = []
+    for fid in inv["concrete"]:
+        if fid not in winners:
+            continue
+        plugin, sig, body = winners[fid]
+        if sig not in ("ARMO", "CLOT", "WEAP"):
+            continue
+        for ssig, ssub in parse_subrecords(body):
+            if ssig not in ("MODL", "MOD2", "MOD3", "MOD4"):
+                continue
+            mesh_path = cstr(ssub)
+            if not mesh_path:
+                continue
+            virtual = mesh_path.lower().replace("\\", "/")
+            if not virtual.startswith("meshes/"):
+                virtual = "meshes/" + virtual
+            if not vfs.path_exists(virtual):
+                missing.append((fid, virtual))
+    inv["missing_meshes"] = missing
+    return inv
+
+
 def extract_base_cnto(npc_body: bytes) -> list[tuple[int, int]]:
     """Walk an NPC_ record body's CNTO subrecords. Returns list of
     (raw_form_id, count) tuples, in order of appearance.

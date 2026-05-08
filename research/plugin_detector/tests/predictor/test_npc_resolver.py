@@ -69,3 +69,27 @@ def test_resolve_inventory_returns_concrete_set():
     assert isinstance(inv["lvli_paths_walked"], list)
     # Vanilla guard should have at least one concrete entry.
     assert len(inv["concrete"]) > 0
+
+
+def test_resolve_inventory_with_mesh_check():
+    from predictor.npc_resolver import resolve_inventory_with_meshes
+    from predictor.vfs import VFS, parse_modlist
+
+    lo = build_load_order(profile_dir=PROFILE_DIR, data_dir=DATA_DIR)
+    winners = build_winning_records(lo, signatures={"NPC_", "LVLI", "ARMO", "WEAP", "CLOT"})
+    mods = parse_modlist(PROFILE_DIR / "modlist.txt")
+    vfs = VFS(active_mods=mods, mods_dir=Path(r"D:\Modlists\Reborn\mods"))
+
+    # Dremora0ChurlMissile1 (FormID 0x00014692) — known visually-broken NPC
+    # per T15 spot-check.
+    dremora_lo_fid = 0x00014692
+    inv = resolve_inventory_with_meshes(dremora_lo_fid, winners, lo, vfs)
+    assert "concrete" in inv
+    assert "missing_meshes" in inv
+    # missing_meshes is a list of (form_id, missing_path) tuples.
+    assert isinstance(inv["missing_meshes"], list)
+    for entry in inv["missing_meshes"]:
+        assert isinstance(entry, tuple)
+        assert len(entry) == 2
+        assert isinstance(entry[0], int)
+        assert isinstance(entry[1], str)
