@@ -62,6 +62,7 @@ def main() -> int:
     tp = fp = fn = tn = 0
     skipped_script = 0
     skipped_not_in_predictions = 0
+    review_rows: list[dict] = []
 
     for row in g5:
         fid = row["form_id"].upper()
@@ -78,6 +79,15 @@ def main() -> int:
             tp += 1
         elif predicted_naked and not actually_naked:
             fp += 1
+            # Apparent FP — but could be a Dremora-class TP (visually broken
+            # despite non-empty inventory). Capture for operator spot-review.
+            review_rows.append({
+                "form_id": fid,
+                "edid": row.get("edid"),
+                "predicted_reason": pred.get("reason"),
+                "predicted_missing_meshes": pred.get("missing_meshes", []),
+                "g5_inventory_count": len(row.get("inventory", [])),
+            })
         elif (not predicted_naked) and actually_naked:
             fn += 1
         else:
@@ -152,9 +162,14 @@ def main() -> int:
         "to compute valid precision/recall.",
     ]
     args.report.write_text("\n".join(lines), encoding="utf-8")
+
+    review_path = args.report.with_suffix(".review.json")
+    review_path.write_text(json.dumps(review_rows, indent=2), encoding="utf-8")
+
     import sys
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     print("\n".join(lines))
+    print(f"\n{len(review_rows)} apparent FPs written to {review_path} for spot-check")
     return 0
 
 
