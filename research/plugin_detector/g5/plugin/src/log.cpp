@@ -12,8 +12,10 @@ std::mutex g_logMutex;
 namespace g5 { namespace log {
 
 void Init() {
+    if (g_logFile) return;  // already open
     char path[MAX_PATH];
     if (!GetEnvironmentVariableA("USERPROFILE", path, MAX_PATH)) return;
+    if (strlen(path) + 55 > MAX_PATH) return;  // path too long
     char fullPath[MAX_PATH];
     snprintf(fullPath, sizeof(fullPath),
              "%s\\Documents\\My Games\\Oblivion\\OBSE\\Plugins\\g5.log", path);
