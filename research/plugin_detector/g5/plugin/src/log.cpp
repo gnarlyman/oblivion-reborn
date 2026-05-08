@@ -13,12 +13,27 @@ namespace g5 { namespace log {
 
 void Init() {
     if (g_logFile) return;  // already open
-    char path[MAX_PATH];
-    if (!GetEnvironmentVariableA("USERPROFILE", path, MAX_PATH)) return;
-    if (strlen(path) + 55 > MAX_PATH) return;  // path too long
+
+    // Resolve the directory the DLL lives in. Writes there get USVFS-redirected
+    // to Reborn/overwrite/OBSE/Plugins/, same as every other OBSE plugin.
+    HMODULE hm = nullptr;
+    GetModuleHandleExA(
+        GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT,
+        reinterpret_cast<LPCSTR>(&Init), &hm);
+    char dllPath[MAX_PATH] = {};
+    if (!GetModuleFileNameA(hm, dllPath, MAX_PATH)) return;
+
+    // Find the last '\' or '/' and chop the filename.
+    char* lastSep = nullptr;
+    for (char* p = dllPath; *p; ++p) {
+        if (*p == '\\' || *p == '/') lastSep = p;
+    }
+    if (!lastSep) return;
+    *lastSep = '\0';  // dllPath now holds the directory.
+
+    if (strlen(dllPath) + 8 > MAX_PATH) return;  // " /g5.log" tail
     char fullPath[MAX_PATH];
-    snprintf(fullPath, sizeof(fullPath),
-             "%s\\Documents\\My Games\\Oblivion\\OBSE\\Plugins\\g5.log", path);
+    snprintf(fullPath, sizeof(fullPath), "%s\\g5.log", dllPath);
     g_logFile = fopen(fullPath, "w");
     if (g_logFile) {
         Write("g5: log opened");
