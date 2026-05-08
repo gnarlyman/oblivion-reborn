@@ -542,12 +542,23 @@ InventoryResult InspectInventory(uint32_t ref_id) {
 
 
 bool DeleteRef(uint32_t ref_id) {
-    char cmd[128];
-    snprintf(cmd, sizeof(cmd), "prid %08X", ref_id);
-    if (!ExecuteConsoleCommand(cmd)) return false;
-    if (!ExecuteConsoleCommand("disable")) return false;
-    if (!ExecuteConsoleCommand("markfordelete")) return false;
-    G5_LOG("engine: DeleteRef ref_id=%08X -> ok", ref_id);
+    if (!g_consoleIntfc || !g_consoleIntfc->RunScriptLine2) {
+        G5_LOG("engine: DeleteRef: console interface or RunScriptLine2 unavailable");
+        return false;
+    }
+    // Resolve ref via LookupFormByID (same address used by InspectInventory).
+    typedef void* (__cdecl *LookupFn)(uint32_t);
+    auto* lookup = reinterpret_cast<LookupFn>(0x0046B250);
+    void* refr = lookup(ref_id);
+    if (!refr) {
+        G5_LOG("engine: DeleteRef: ref %08X not found", ref_id);
+        return false;
+    }
+    G5_LOG("engine: DeleteRef refId=%08X refr=%p", ref_id, refr);
+    bool ok1 = g_consoleIntfc->RunScriptLine2("disable", refr, true);
+    bool ok2 = g_consoleIntfc->RunScriptLine2("markfordelete", refr, true);
+    G5_LOG("engine: DeleteRef RunScriptLine2 disable=%d markfordelete=%d (return ignored, trusting side effect)",
+           ok1, ok2);
     return true;
 }
 
