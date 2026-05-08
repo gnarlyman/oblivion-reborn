@@ -1,0 +1,154 @@
+"""NPC inventory resolution.
+
+Walks a winning NPC_ record body and returns the inventory in stages:
+  base CNTO → template chain → race default → LVLI rolls.
+"""
+import struct
+from typing import Iterable
+
+from predictor.plugin_parser import parse_subrecords
+
+
+def has_script(npc_body: bytes) -> bool:
+    """Returns True if the NPC_ record contains a SCRI subrecord."""
+    for ssig, _ in parse_subrecords(npc_body):
+        if ssig == "SCRI":
+            return True
+    return False
+
+
+def resolve_lvli(
+    lvli_lo_fid: int,
+    winners: dict,
+    lo,  # LoadOrder
+    max_depth: int = 8,
+    _seen: set | None = None,
+) -> set:
+    """Walk an LVLI's LVLO subrecords recursively. Returns the set of leaf
+    LO FormIDs that could appear at runtime.
+
+    LVLI body has LVLO subrecords with format:
+      uint16 level + uint16 unused + uint32 form_id + uint16 count + uint16 unused
+    Per UESP wiki for Oblivion LVLI records.
+    """
+    if _seen is None:
+        _seen = set()
+    if lvli_lo_fid in _seen or max_depth <= 0:
+        return set()
+    _seen.add(lvli_lo_fid)
+    if lvli_lo_fid not in winners:
+        return set()
+    plugin, sig, body = winners[lvli_lo_fid]
+    if sig != "LVLI":
+        return {lvli_lo_fid}  # leaf — caller treats as concrete
+
+    leaves: set = set()
+    for ssig, ssub in parse_subrecords(body):
+        if ssig != "LVLO":
+            continue
+        if len(ssub) < 12:
+            continue
+        # Skip 4 bytes (level + unused), read form_id, ignore count + unused.
+        raw_fid = struct.unpack_from("<I", ssub, 4)[0]
+        target_lo_fid = lo.to_lo_fid(plugin, raw_fid)
+        if target_lo_fid < 0:
+            continue
+        if target_lo_fid in winners and winners[target_lo_fid][1] == "LVLI":
+            leaves |= resolve_lvli(target_lo_fid, winners, lo, max_depth - 1, _seen)
+        else:
+            leaves.add(target_lo_fid)
+    return leaves
+
+
+def resolve_inventory(
+    npc_lo_fid: int,
+    winners: dict,
+    lo,  # LoadOrder
+) -> dict:
+    """Resolve an NPC's possible inventory.
+
+    Returns:
+        {
+            "concrete": set of LO FormIDs that will definitely or could appear
+                        in inventory (LVLI-resolved leaves are included),
+            "has_script": bool — True if NPC_ has SCRI (S1 boundary),
+            "lvli_paths_walked": list of LVLI LO FormIDs walked (debug),
+        }
+    """
+    if npc_lo_fid not in winners:
+        return {"concrete": set(), "has_script": False, "lvli_paths_walked": []}
+
+    plugin, sig, body = winners[npc_lo_fid]
+    if sig != "NPC_":
+        return {"concrete": set(), "has_script": False, "lvli_paths_walked": []}
+
+    has_scri = has_script(body)
+    base_cnto = extract_base_cnto(body)
+    concrete: set = set()
+    lvli_walked: list = []
+    for raw_fid, count in base_cnto:
+        target_lo_fid = lo.to_lo_fid(plugin, raw_fid)
+        if target_lo_fid < 0:
+            continue
+        if target_lo_fid in winners and winners[target_lo_fid][1] == "LVLI":
+            lvli_walked.append(target_lo_fid)
+            concrete |= resolve_lvli(target_lo_fid, winners, lo)
+        else:
+            concrete.add(target_lo_fid)
+    return {
+        "concrete": concrete,
+        "has_script": has_scri,
+        "lvli_paths_walked": lvli_walked,
+    }
+
+
+def resolve_inventory_with_meshes(
+    npc_lo_fid: int,
+    winners: dict,
+    lo,  # LoadOrder
+    vfs,  # VFS instance
+) -> dict:
+    """Extends resolve_inventory by checking VFS path existence for each
+    ARMO/CLOT/WEAP MODL/MOD2/MOD3/MOD4 path. Returns the same dict plus:
+        "missing_meshes": list of (form_id, missing_path) for unresolved paths.
+    """
+    from predictor.plugin_parser import cstr  # local import to avoid cycle
+
+    inv = resolve_inventory(npc_lo_fid, winners, lo)
+    missing: list[tuple[int, str]] = []
+    for fid in inv["concrete"]:
+        if fid not in winners:
+            continue
+        plugin, sig, body = winners[fid]
+        if sig not in ("ARMO", "CLOT", "WEAP"):
+            continue
+        for ssig, ssub in parse_subrecords(body):
+            if ssig not in ("MODL", "MOD2", "MOD3", "MOD4"):
+                continue
+            mesh_path = cstr(ssub)
+            if not mesh_path:
+                continue
+            virtual = mesh_path.lower().replace("\\", "/")
+            if not virtual.startswith("meshes/"):
+                virtual = "meshes/" + virtual
+            if not vfs.path_exists(virtual):
+                missing.append((fid, virtual))
+    inv["missing_meshes"] = missing
+    return inv
+
+
+def extract_base_cnto(npc_body: bytes) -> list[tuple[int, int]]:
+    """Walk an NPC_ record body's CNTO subrecords. Returns list of
+    (raw_form_id, count) tuples, in order of appearance.
+
+    Does NOT perform FID conversion — caller must convert raw_form_id to
+    LO FID via the plugin's master table."""
+    out: list[tuple[int, int]] = []
+    for ssig, ssub in parse_subrecords(npc_body):
+        if ssig != "CNTO":
+            continue
+        if len(ssub) < 8:
+            continue
+        fid, count = struct.unpack_from("<II", ssub, 0)
+        out.append((fid, count))
+    return out
