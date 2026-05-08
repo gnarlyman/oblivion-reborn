@@ -34,6 +34,25 @@ json HandleCoc(const json& req) {
     return {{"ok", ok}};
 }
 
+json HandleSpawn(const json& req) {
+    if (!req.contains("form_id")) {
+        return {{"ok", false}, {"error", "missing_form_id"}};
+    }
+    uint32_t form_id;
+    if (req["form_id"].is_string()) {
+        std::string s = req["form_id"].get<std::string>();
+        form_id = static_cast<uint32_t>(std::stoul(s, nullptr, 16));
+    } else {
+        form_id = req["form_id"].get<uint32_t>();
+    }
+    uint32_t count = req.value("count", 1u);
+    auto result = engine::SpawnAtPlayer(form_id, count);
+    if (!result.ok) {
+        return {{"ok", false}, {"error", result.error}};
+    }
+    return {{"ok", true}, {"ref_id", result.ref_id}};
+}
+
 }  // namespace
 
 std::string Dispatch(const std::string& line) {
@@ -52,6 +71,7 @@ std::string Dispatch(const std::string& line) {
     if (cmd == "ping") resp = HandlePing(req);
     else if (cmd == "quit") resp = HandleQuit(req);
     else if (cmd == "coc") resp = HandleCoc(req);
+    else if (cmd == "spawn") resp = HandleSpawn(req);
     else resp = json{{"ok", false}, {"error", "unknown_cmd"}, {"cmd", cmd}};
     return resp.dump();
 }
