@@ -2,10 +2,43 @@
 #include "obse_minimal.h"
 #include "log.h"
 #include "socket_server.h"
+#include "command_queue.h"
 
 namespace {
 PluginHandle g_pluginHandle = kPluginHandle_Invalid;
+
+DWORD WINAPI WaitForWindowAndInit(LPVOID) {
+    HWND hwnd = nullptr;
+    for (int i = 0; i < 600; ++i) {
+        hwnd = FindWindowA("Oblivion", nullptr);
+        if (hwnd) break;
+        Sleep(100);
+    }
+    if (!hwnd) {
+        G5_LOG("init: timeout waiting for Oblivion main window");
+        return 1;
+    }
+    G5_LOG("init: main window = %p", (void*)hwnd);
+    Sleep(2000);  // let the engine finish startup hooks
+
+    g5::InitCommandQueue(hwnd, [](const std::string& line) -> std::string {
+        // For now, just echo on main thread.
+        return std::string("{\"ok\":true,\"main_thread_echo\":\"") + line + "\"}";
+    });
+    return 0;
 }
+
+void OBSEMessageHandler(OBSEMessagingInterface::Message* msg) {
+    if (msg->type == OBSEMessagingInterface::kMessage_PostPostLoad) {
+        G5_LOG("OBSE: PostPostLoad -- starting init worker");
+        HANDLE h = CreateThread(nullptr, 0, &WaitForWindowAndInit, nullptr, 0, nullptr);
+        if (h) CloseHandle(h);
+    }
+}
+
+OBSEMessagingInterface* g_msgIntfc = nullptr;
+
+}  // namespace
 
 extern "C" {
 
@@ -21,9 +54,16 @@ __declspec(dllexport) bool OBSEPlugin_Query(const OBSEInterface* obse, PluginInf
 __declspec(dllexport) bool OBSEPlugin_Load(const OBSEInterface* obse, void*) {
     g_pluginHandle = obse->GetPluginHandle();
     G5_LOG("Load: plugin handle=%u", g_pluginHandle);
+
+    g_msgIntfc = (OBSEMessagingInterface*)obse->QueryInterface(kInterface_Messaging);
+    if (g_msgIntfc) {
+        g_msgIntfc->RegisterListener(g_pluginHandle, "OBSE", &OBSEMessageHandler);
+        G5_LOG("Load: registered OBSE message listener");
+    }
+
+    // Start socket server, route lines through the main-thread queue.
     bool ok = g5::StartSocketServer(13580, [](const std::string& line) -> std::string {
-        G5_LOG("recv: %s", line.c_str());
-        return std::string("{\"ok\":true,\"echo\":\"") + line + "\"}";
+        return g5::EnqueueAndWait(line);
     });
     if (!ok) G5_LOG("Load: socket server failed to start");
     return true;
