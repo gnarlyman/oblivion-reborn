@@ -117,3 +117,7 @@ research/ghidra-projects/Oblivion.rep/idata/00/~00000000.db/
 
 # ─── Worktrees (subagent-driven dev) ───
 _worktrees/
+
+# ─── Plugin-detector regenerable outputs ───
+research/plugin_detector/predictions.jsonl
+research/plugin_detector/oracle_winning.jsonl
