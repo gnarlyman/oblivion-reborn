@@ -207,3 +207,99 @@ predicate itself). Two concrete next investigations:
    too narrow and should also catch SLGM/MISC/SCRL wrappers.
 
 Recall corpus and encounterability heuristic remain on the v3+ list.
+
+---
+
+## v3 update — visible-armor calibration check (2026-05-08)
+
+The v2 investigation followed up on "168 inv_no_concrete_armor FPs" and
+discovered the v1/v2 precision number itself was wrong. The `is_actually_naked`
+proxy ("inventory empty") was misclassifying NPCs in two ways:
+
+### What the proxy got wrong
+
+1. **MOO script-token CLOTs.** MOO uses CLOT records with no MODL as
+   inventory flags (`MOOTokenNpcLoot`, `MOOTokenCombatNpc`,
+   `zzzRandomDurabilityToken`). Inserted by MOO's runtime scripts.
+   These are *items* in the inventory but they have no mesh — they are
+   not garments. The proxy counted them and concluded "not empty,
+   therefore clothed at runtime," falsely flagging hundreds of naked
+   NPCs as FPs.
+
+2. **Missing-mesh ARMO records.** When an NPC's inventory has an ARMO
+   with a MODL whose path doesn't exist in VFS (Dremora-class bug), the
+   item *exists* in inventory but renders as nothing. The proxy
+   counted the item and called the NPC "clothed"; visually they were
+   the actual broken NPCs the predictor was trying to flag.
+
+### v3 fix in compute_metrics.py
+
+Replaced `is_actually_naked` with a VFS-aware armor classifier:
+- An NPC is "actually naked" if its runtime inventory contains zero
+  items that are real ARMO/CLOT — defined as records with a non-empty
+  MODL whose mesh path resolves in VFS.
+- Pre-computes `(sig, visible)` per ARMO/CLOT in the load order so
+  the runtime scoring is O(inv) per NPC.
+- Old proxy preserved behind `--legacy-inv-empty-proxy` for comparison.
+
+### Result on the same 284-NPC corpus
+
+| metric | v1 (inv-empty proxy) | v2 (+ default excludes) | **v3 (visible-armor + excludes)** |
+|---|---:|---:|---:|
+| Excluded as abstract | 0 | 65 | 65 |
+| TP | 110 | 86 | **214** |
+| FP | 174 | 133 | **5** |
+| Total scored | 284 | 219 | 219 |
+| **Precision** | **38.7%** | **39.3%** | **97.7%** |
+| **Spec gate ≥ 0.90** | FAIL | FAIL | **PASS** |
+
+Recall is structurally 1.0 because the corpus has no `predicted_naked=false`
+rows; the recall gate is not meaningfully evaluable from this corpus alone.
+A separate negative-bucket recall corpus is still needed for the full
+recall measurement.
+
+### The 5 remaining FPs
+
+| EDID | reason | what's at runtime |
+|---|---|---|
+| Dremora0ChurlMissile2 | armor_mesh_missing | `Dremora0ChurlCuirass` (visible) |
+| Dremora0ChurlMissile1 | armor_mesh_missing | `Dremora0ChurlCuirass` (visible) |
+| Dremora0ChurlMelee3 | armor_mesh_missing | `Dremora0ChurlCuirass` (visible) |
+| Dremora0ChurlMelee1 | armor_mesh_missing | `Dremora0ChurlCuirass` (visible) |
+| Dark04MythicDawn | inv_no_concrete_armor | `BoundMythicDawnArmor` + `BoundMythicDawnHelmet` (both visible) |
+
+These split into two real predictor gaps:
+
+- **LVLI mis-traversal (4 Dremora).** Predictor's static walk found
+  an armor record whose MODL is missing
+  (`meshes/soooequipment/daedricchurl/m/churl armor 1.nif`); runtime
+  resolved to a *different* leaf with a present mesh
+  (`sOOOEquipment\Dremora Armors\Daedric1\Churl Armor.nif`). The
+  static walk picks one branch of the LVLI tree, runtime picks
+  another. Operator visual data showed Dremora as the only
+  invisible-body NPCs, so for some Dremora the predictor's call
+  *is* right (the missing-mesh slot causes a partial visible bug),
+  but its accounting is misaligned with what runtime equips.
+- **SPLO → bound-armor not followed (1 Dark04MythicDawn).** Dark04
+  has zero CNTO entries; its armor comes from bound-armor spells in
+  SPLO that the predictor's static walk doesn't follow.
+
+### Revised spike verdict
+
+**Spec gate PASS** at 97.7% precision (was 38.7% under the broken proxy).
+The predictor v1's `predicted_naked` predicate is functionally correct on
+the no-script bucket of Reborn-OOO. The 5 FPs reveal two narrow follow-up
+fixes for v4, neither of which threatens the spec gate.
+
+### v4 candidates (lower priority now that gates PASS)
+
+1. **LVLI multi-branch walker.** Treat any branch of an LVLI tree
+   that lands on a missing-mesh ARMO as a positive signal even when
+   other branches resolve to present meshes. Would correctly flag
+   the 4 Dremora as TPs by reason instead of FPs by accounting.
+2. **SPLO → bound-armor follower.** Walk NPC SPLO entries to SPELs;
+   for SPELs with bound-armor effects, treat the effect's ARMO as
+   part of the NPC's concrete inventory.
+3. **Recall corpus.** Random sample 50–100 `predicted_naked=false`
+   NPCs and re-run G5 on them. Would produce the first real recall
+   measurement.

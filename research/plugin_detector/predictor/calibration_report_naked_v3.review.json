@@ -1,0 +1,45 @@
+[
+  {
+    "form_id": "00014693",
+    "edid": "Dremora0ChurlMissile2",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 10
+  },
+  {
+    "form_id": "00014692",
+    "edid": "Dremora0ChurlMissile1",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 9
+  },
+  {
+    "form_id": "000950DB",
+    "edid": "Dark04MythicDawn",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "00092DA2",
+    "edid": "Dremora0ChurlMelee3",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 7
+  },
+  {
+    "form_id": "00092DA0",
+    "edid": "Dremora0ChurlMelee1",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 6
+  }
+]
