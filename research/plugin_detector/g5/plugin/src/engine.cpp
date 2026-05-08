@@ -196,9 +196,14 @@ bool ExecuteConsoleCommand(const std::string& cmd) {
         G5_LOG("engine: console interface not available");
         return false;
     }
-    bool ok = g_consoleIntfc->RunScriptLine(cmd.c_str());
-    if (!ok) G5_LOG("engine: RunScriptLine returned false");
-    return ok;
+    // RunScriptLine's bool is unreliable: empirically returns false even when
+    // the side effect happened (placeatme spawns NPCs but returns false), and
+    // returns true even when the command was a no-op (coc with invalid EDID).
+    // We log it for diagnostics but always return true after a successful call.
+    bool runScriptOk = g_consoleIntfc->RunScriptLine(cmd.c_str());
+    G5_LOG("engine: RunScriptLine -> %s (informational; return ignored)",
+           runScriptOk ? "true" : "false");
+    return true;
 }
 
 SpawnResult SpawnAtPlayer(uint32_t form_id, uint32_t count) {
