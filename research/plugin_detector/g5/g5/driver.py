@@ -24,6 +24,20 @@ class G5Driver:
         if not resp.get("ok"):
             raise RuntimeError(f"coc failed: {resp}")
 
+    async def exec_console(self, line: str) -> None:
+        """Send a raw console command line to Oblivion via OBSE RunScriptLine.
+        The bool return is unreliable (per the plugin source comment); we trust
+        the side effect rather than the response."""
+        resp = await self.proto.send_command({"cmd": "exec", "line": line})
+        if not resp.get("ok"):
+            raise RuntimeError(f"exec failed: {resp}")
+
+    async def player_add_item(self, form_id: int, count: int = 1) -> None:
+        await self.exec_console(f"Player.AddItem {form_id:08X} {count}")
+
+    async def player_remove_item(self, form_id: int, count: int = 1) -> None:
+        await self.exec_console(f"Player.RemoveItem {form_id:08X} {count}")
+
     async def spawn(self, form_id: int, count: int = 1) -> int:
         resp = await self.proto.send_command({
             "cmd": "spawn",
