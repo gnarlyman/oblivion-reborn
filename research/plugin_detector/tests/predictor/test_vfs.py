@@ -48,3 +48,19 @@ def test_bsa_index_finds_vanilla_mesh():
     for key in list(idx.keys())[:10]:
         assert key == key.lower()
         assert "\\" not in key
+
+
+def test_path_exists_combines_loose_and_bsa():
+    from predictor.vfs import VFS
+    mods = parse_modlist(PROFILE_DIR / "modlist.txt")
+    vfs = VFS(active_mods=mods, mods_dir=MODS_DIR)
+    # Loose: G5 plugin DLL.
+    assert vfs.path_exists("obse/plugins/g5.dll")
+    # Definitively non-existent.
+    assert not vfs.path_exists("meshes/this/does/not/exist.nif")
+    # resolve() works for both.
+    p = vfs.resolve("obse/plugins/g5.dll")
+    assert p is not None
+    assert p.exists()
+    # Non-existent returns None.
+    assert vfs.resolve("meshes/does/not/exist.nif") is None

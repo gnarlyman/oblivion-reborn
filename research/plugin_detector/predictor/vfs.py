@@ -102,6 +102,30 @@ def build_bsa_index(
     return index
 
 
+class VFS:
+    """Replicates MO2's USVFS file presentation for read queries.
+
+    Combines loose-file priority (highest-priority active mod's loose files)
+    with BSA archive contents. Loose files always shadow BSAs.
+    """
+
+    def __init__(self, active_mods: list[str], mods_dir: Path):
+        self.loose: dict[str, Path] = build_loose_index(active_mods, mods_dir)
+        self.bsa: dict[str, Path] = build_bsa_index(active_mods, mods_dir)
+
+    def path_exists(self, virtual_path: str) -> bool:
+        v = virtual_path.replace("\\", "/").lower()
+        return v in self.loose or v in self.bsa
+
+    def resolve(self, virtual_path: str) -> Path | None:
+        v = virtual_path.replace("\\", "/").lower()
+        if v in self.loose:
+            return self.loose[v]
+        if v in self.bsa:
+            return self.bsa[v]
+        return None
+
+
 def parse_modlist(modlist_txt: Path) -> list[str]:
     """Return active mod names in priority-DESCENDING order
     (highest priority first; this matches the file order from top to bottom)."""
