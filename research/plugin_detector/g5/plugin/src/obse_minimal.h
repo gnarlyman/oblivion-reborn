@@ -55,6 +55,16 @@ struct OBSEInterface {
     UInt32 (*GetPluginVersion)(const char* pluginName);
 };
 
+// Layout matches xOBSE obse/PluginAPI.h::OBSEConsoleInterface (kInterface_Console = 0).
+// We use this to dispatch console-text commands without hardcoding the engine
+// address of the internal RunScriptLine helper.
+struct OBSEConsoleInterface {
+    enum { kVersion = 2 };
+    UInt32 version;
+    bool (*RunScriptLine)(const char* buf);
+    bool (*RunScriptLine2)(const char* buf, void* callingRefr, bool bSuppressConsoleOutput);
+};
+
 struct OBSEMessagingInterface {
     UInt32 version;
 

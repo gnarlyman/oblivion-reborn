@@ -3,7 +3,13 @@
 #include <string>
 #include <vector>
 
+// Forward-declare at global scope so the pointer type matches obse_minimal.h.
+struct OBSEConsoleInterface;
+
 namespace g5 { namespace engine {
+
+// Set the OBSEConsoleInterface* obtained from QueryInterface during plugin load.
+void SetConsoleInterface(OBSEConsoleInterface* intfc);
 
 // Submit a console command string to Oblivion's console parser.
 // Must run on main thread. Returns true if the command was accepted.

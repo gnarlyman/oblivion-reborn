@@ -1,5 +1,6 @@
 #include <Windows.h>
 #include "obse_minimal.h"
+#include "engine.h"
 #include "log.h"
 #include "socket_server.h"
 #include "command_queue.h"
@@ -57,6 +58,14 @@ __declspec(dllexport) bool OBSEPlugin_Load(const OBSEInterface* obse, void*) {
     if (g_msgIntfc) {
         g_msgIntfc->RegisterListener(g_pluginHandle, "OBSE", &OBSEMessageHandler);
         G5_LOG("Load: registered OBSE message listener");
+    }
+
+    auto* consoleIntfc = (OBSEConsoleInterface*)obse->QueryInterface(kInterface_Console);
+    if (consoleIntfc) {
+        g5::engine::SetConsoleInterface(consoleIntfc);
+        G5_LOG("Load: console interface acquired (version=%u)", consoleIntfc->version);
+    } else {
+        G5_LOG("Load: WARNING console interface not available");
     }
 
     // Start socket server, route lines through the main-thread queue.

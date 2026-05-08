@@ -1,19 +1,13 @@
 #include "engine.h"
+#include "obse_minimal.h"
 #include "log.h"
 #include <Windows.h>
 #include <cstdint>
 #include <unordered_map>
 #include <vector>
 
-// Oblivion 1.2.0.416 (Steam): the console-script execute helper is at
-// 0x005B5C70. Signature: void __cdecl ExecuteScript(const char* cmd, void* targetRef);
-//
-// This is the same address widely used by community OBSE plugins for
-// remote-console functionality (cf. ConScribe, Pluggy, CSE remote console).
-
 namespace {
-using ExecuteScriptFn = void(__cdecl*)(const char* cmd, void* targetRef);
-constexpr uintptr_t kExecuteScriptAddr    = 0x005B5C70;
+OBSEConsoleInterface* g_consoleIntfc = nullptr;
 // Global written by the engine immediately after player.placeatme creates a ref.
 // Address: Oblivion 1.2.0.416 (Steam). Unverified — user confirms in-game.
 constexpr uintptr_t kLastCreatedRefIdAddr = 0x00B324CC;
@@ -192,16 +186,19 @@ bool ExtraDataList_IsWorn(const RawExtraDataList* edl) {
 
 namespace g5 { namespace engine {
 
+void SetConsoleInterface(OBSEConsoleInterface* intfc) {
+    g_consoleIntfc = intfc;
+}
+
 bool ExecuteConsoleCommand(const std::string& cmd) {
     G5_LOG("engine: ExecuteConsoleCommand: %s", cmd.c_str());
-    auto fn = reinterpret_cast<ExecuteScriptFn>(kExecuteScriptAddr);
-    __try {
-        fn(cmd.c_str(), nullptr);
-        return true;
-    } __except(EXCEPTION_EXECUTE_HANDLER) {
-        G5_LOG("engine: ExecuteConsoleCommand SEH caught");
+    if (!g_consoleIntfc || !g_consoleIntfc->RunScriptLine) {
+        G5_LOG("engine: console interface not available");
         return false;
     }
+    bool ok = g_consoleIntfc->RunScriptLine(cmd.c_str());
+    if (!ok) G5_LOG("engine: RunScriptLine returned false");
+    return ok;
 }
 
 SpawnResult SpawnAtPlayer(uint32_t form_id, uint32_t count) {
