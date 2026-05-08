@@ -6,9 +6,9 @@
 
 ## Counts
 - True positives (predicted naked, actually naked):   0
-- False positives (predicted naked, actually clothed): 17
+- False positives (predicted naked, actually clothed): 1
 - False negatives (predicted ok, actually naked):     0
-- True negatives (predicted ok, actually clothed):    4
+- True negatives (predicted ok, actually clothed):    20
 - Skipped (has_script in prediction):                  29
 - Skipped (G5 NPC not in predictions):                 0
 - Total scored (no-script bucket):                     21
@@ -16,13 +16,13 @@
 ## Metrics (no-script bucket)
 - **Precision:** 0.000  (target ≥ 0.90)
 - **Recall:**    0.000  (target ≥ 0.80)
-- Accuracy:    0.190
+- Accuracy:    0.952
 
 ## False-positive analysis
-- **False-positive rate (FP / total_scored):** 0.810
-  (17 of 21 clothed NPCs incorrectly flagged as naked)
-- **True-negative rate (specificity):** 0.190
-  (4 of 21 clothed NPCs correctly passed)
+- **False-positive rate (FP / total_scored):** 0.048
+  (1 of 21 clothed NPCs incorrectly flagged as naked)
+- **True-negative rate (specificity):** 0.952
+  (20 of 21 clothed NPCs correctly passed)
 
 ## Spec gates
 - Precision ≥ 0.90: FAIL
@@ -36,7 +36,7 @@ non-empty inventories. This means:
 - TP = 0 and FN = 0 by construction (no actually-naked NPCs in corpus).
 - Precision and Recall are degenerate metrics here (0/0 → 0.0).
 - The **meaningful calibration signal is the false-positive rate**:
-  17/21 clothed NPCs (81.0%) were incorrectly predicted naked.
+  1/21 clothed NPCs (4.8%) were incorrectly predicted naked.
 
 To compute true precision/recall, the corpus needs naked-NPC ground-truth
 entries (e.g. from the Dremora finding in the T15 report, or from the
@@ -47,7 +47,7 @@ Below target — examine false positives/negatives
 
 **Honest assessment:** Precision/recall gates are formally FAIL because the
 G5 corpus has no positive (naked) examples, making both metrics degenerate.
-The real finding is a **81% false-positive rate on vanilla clothed NPCs**.
+The real finding is a **5% false-positive rate on vanilla clothed NPCs**.
 Root cause: BSA index is incomplete (SI DLC BSAs not indexed), so vanilla
 armor mesh paths that ship in SI BSAs appear missing, inflating predicted_naked.
 Calibration against a corpus with both positive and negative examples is needed

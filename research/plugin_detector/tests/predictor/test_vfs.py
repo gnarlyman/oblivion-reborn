@@ -64,3 +64,16 @@ def test_path_exists_combines_loose_and_bsa():
     assert p.exists()
     # Non-existent returns None.
     assert vfs.resolve("meshes/does/not/exist.nif") is None
+
+
+def test_bsa_index_includes_data_dir_bsas():
+    """Vanilla and DLC BSAs in Stock Game/Data/ should be indexed."""
+    from predictor.vfs import build_bsa_index
+    DATA_DIR = Path(r"D:\Modlists\Reborn\Stock Game\Data")
+    mods = parse_modlist(PROFILE_DIR / "modlist.txt")
+    idx_with_data = build_bsa_index(mods, MODS_DIR, data_dir=DATA_DIR)
+    idx_without_data = build_bsa_index(mods, MODS_DIR)
+    # The Data/ inclusion should at least double the index (vanilla meshes
+    # BSA alone has tens of thousands of paths).
+    assert len(idx_with_data) > len(idx_without_data) * 1.5, \
+        f"with-data: {len(idx_with_data)}, without: {len(idx_without_data)}"

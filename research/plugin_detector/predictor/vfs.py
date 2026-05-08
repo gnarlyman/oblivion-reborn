@@ -75,9 +75,14 @@ def _parse_bsa(bsa_path: Path) -> Iterator[str]:
 def build_bsa_index(
     active_mods: list[str],
     mods_dir: Path,
+    data_dir: Path | None = None,
 ) -> dict[str, Path]:
-    """For each active mod, find all .bsa files at the mod root and parse
-    their file lists. Returns lowercase_virtual_path → bsa_path.
+    """For each active mod (priority-DESCENDING), find all .bsa at mod root
+    and parse their file lists. Optionally also includes BSAs from `data_dir`
+    (vanilla + DLC) at the LOWEST priority — mod-folder BSAs win over Data/
+    BSAs for the same path.
+
+    Returns lowercase_virtual_path → bsa_path.
 
     ``bsa_path`` is the BSA file that contains the virtual path (the
     "real" location on disk).  Higher-priority mods (earlier in
@@ -88,6 +93,8 @@ def build_bsa_index(
     even 1.7 GB archives parse in under a second.
     """
     index: dict[str, Path] = {}
+
+    # First pass: mod-folder BSAs in priority order (existing logic).
     for mod_name in active_mods:
         mod_root = mods_dir / mod_name
         if not mod_root.is_dir():
@@ -99,6 +106,17 @@ def build_bsa_index(
                         index[virtual] = bsa
             except Exception:
                 continue
+
+    # Second pass: Data/ BSAs at the bottom of priority (vanilla + DLC fallback).
+    if data_dir is not None and data_dir.is_dir():
+        for bsa in data_dir.glob("*.bsa"):
+            try:
+                for virtual in _parse_bsa(bsa):
+                    if virtual not in index:
+                        index[virtual] = bsa
+            except Exception:
+                continue
+
     return index
 
 
@@ -109,9 +127,14 @@ class VFS:
     with BSA archive contents. Loose files always shadow BSAs.
     """
 
-    def __init__(self, active_mods: list[str], mods_dir: Path):
+    def __init__(
+        self,
+        active_mods: list[str],
+        mods_dir: Path,
+        data_dir: Path | None = None,
+    ):
         self.loose: dict[str, Path] = build_loose_index(active_mods, mods_dir)
-        self.bsa: dict[str, Path] = build_bsa_index(active_mods, mods_dir)
+        self.bsa: dict[str, Path] = build_bsa_index(active_mods, mods_dir, data_dir)
 
     def path_exists(self, virtual_path: str) -> bool:
         v = virtual_path.replace("\\", "/").lower()

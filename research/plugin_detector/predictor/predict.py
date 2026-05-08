@@ -34,7 +34,7 @@ def main() -> int:
 
     print("building VFS…")
     mods = parse_modlist(profile_dir / "modlist.txt")
-    vfs = VFS(active_mods=mods, mods_dir=args.mods_dir)
+    vfs = VFS(active_mods=mods, mods_dir=args.mods_dir, data_dir=args.data_dir)
     print(f"  {len(vfs.loose)} loose paths, {len(vfs.bsa)} bsa paths")
 
     print("resolving NPCs…")
