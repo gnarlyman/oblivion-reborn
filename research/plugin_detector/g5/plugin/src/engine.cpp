@@ -430,4 +430,15 @@ InventoryResult InspectInventory(uint32_t ref_id) {
     return result;
 }
 
+
+bool DeleteRef(uint32_t ref_id) {
+    char cmd[128];
+    snprintf(cmd, sizeof(cmd), "prid %08X", ref_id);
+    if (!ExecuteConsoleCommand(cmd)) return false;
+    if (!ExecuteConsoleCommand("disable")) return false;
+    if (!ExecuteConsoleCommand("markfordelete")) return false;
+    G5_LOG("engine: DeleteRef ref_id=%08X -> ok", ref_id);
+    return true;
+}
+
 }}

@@ -38,4 +38,8 @@ struct InventoryResult {
 // returns {false, [], "chase_faulted"} rather than crashing the host.
 InventoryResult InspectInventory(uint32_t ref_id);
 
+// Select the ref via prid, then disable and markfordelete it via console.
+// Returns true if all three console commands were accepted.
+bool DeleteRef(uint32_t ref_id);
+
 }}

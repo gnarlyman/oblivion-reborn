@@ -79,6 +79,15 @@ json HandleInspectInventory(const json& req) {
     return {{"ok", true}, {"items", items}};
 }
 
+json HandleDelete(const json& req) {
+    if (!req.contains("ref_id")) return {{"ok", false}, {"error", "missing_ref_id"}};
+    uint32_t ref_id = req["ref_id"].is_string()
+        ? static_cast<uint32_t>(std::stoul(std::string(req["ref_id"]), nullptr, 16))
+        : (uint32_t)req["ref_id"];
+    bool ok = engine::DeleteRef(ref_id);
+    return {{"ok", ok}};
+}
+
 }  // namespace
 
 std::string Dispatch(const std::string& line) {
@@ -99,6 +108,7 @@ std::string Dispatch(const std::string& line) {
     else if (cmd == "coc") resp = HandleCoc(req);
     else if (cmd == "spawn") resp = HandleSpawn(req);
     else if (cmd == "inspect_inventory") resp = HandleInspectInventory(req);
+    else if (cmd == "delete") resp = HandleDelete(req);
     else resp = json{{"ok", false}, {"error", "unknown_cmd"}, {"cmd", cmd}};
     return resp.dump();
 }
