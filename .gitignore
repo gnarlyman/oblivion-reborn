@@ -108,3 +108,12 @@ research/merge-probes/loadorder_*.fo4viewsettings
 research/ghidra-projects/**/*.gbf
 research/ghidra-projects/**/*.bak
 research/ghidra-projects/Oblivion.rep/idata/00/~00000000.db/
+
+# ─── Secrets ───
+# Nexus API key etc. — never commit
+.env
+*.env
+!*.env.template
+
+# ─── Worktrees (subagent-driven dev) ───
+_worktrees/
