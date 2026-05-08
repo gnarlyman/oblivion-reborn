@@ -71,6 +71,7 @@ bool StartSocketServer(uint16_t port, LineHandler handler) {
     g_listenSock = socket(AF_INET, SOCK_STREAM, 0);
     if (g_listenSock == INVALID_SOCKET) {
         G5_LOG("socket: socket() failed err=%d", WSAGetLastError());
+        WSACleanup();
         return false;
     }
 
@@ -85,11 +86,13 @@ bool StartSocketServer(uint16_t port, LineHandler handler) {
     if (bind(g_listenSock, (sockaddr*)&addr, sizeof(addr)) == SOCKET_ERROR) {
         G5_LOG("socket: bind to port %u failed err=%d", port, WSAGetLastError());
         closesocket(g_listenSock);
+        WSACleanup();
         return false;
     }
     if (listen(g_listenSock, 1) == SOCKET_ERROR) {
         G5_LOG("socket: listen failed err=%d", WSAGetLastError());
         closesocket(g_listenSock);
+        WSACleanup();
         return false;
     }
 
