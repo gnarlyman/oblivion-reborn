@@ -22,13 +22,14 @@ OBSEConsoleInterface* g_consoleIntfc = nullptr;
 // (0x00514B50). Both call sites were located empirically with
 // research/find_callsites.py: 0x00514F58 and 0x005152A9. Each is a
 // standard 5-byte CALL rel32. We rewrite the rel32 to point at our
-// __cdecl wrapper, which forwards to the original factory and (when
+// __fastcall wrapper, which forwards to the original factory and (when
 // the capture flag is set) records the returned formID.
 //
-// CreateReference signature (from RE):
-//   TESObjectREFR* __cdecl CreateReference(
+// CreateReference signature (from RE, confirmed via call-site disasm):
+//   TESObjectREFR* __thiscall CreateReference(
 //       TESForm* baseForm, float pos[3], float rot[3],
 //       TESObjectCELL* cell, int worldspaceFlag, TESObjectREFR* existingRef);
+// ECX = this (factory/world object at [0x00B33A98]); callee cleans 6 stack args.
 // ---------------------------------------------------------------------------
 constexpr uintptr_t kCreateReferenceAddr = 0x0044A7D0;
 constexpr uintptr_t kPlaceAtMeCallSite1  = 0x00514F58;
@@ -38,12 +39,18 @@ std::atomic<bool>     g_captureSpawn{false};
 std::atomic<uint32_t> g_capturedRefId{0};
 std::atomic<bool>     g_spawnHookInstalled{false};
 
-using CreateReferenceFn = void* (__cdecl*)(void*, float*, float*, void*, int, void*);
-
-void* __cdecl Wrap_CreateReference(void* baseForm, float* pos, float* rot,
-                                   void* cell, int wsFlag, void* existingRef) {
-    auto fn = reinterpret_cast<CreateReferenceFn>(kCreateReferenceAddr);
-    void* result = fn(baseForm, pos, rot, cell, wsFlag, existingRef);
+// CreateReference is __thiscall: ECX = `this`, 6 stack args, callee-cleans.
+// MSVC doesn't allow __thiscall on free functions, so we emulate it with
+// __fastcall (ECX=arg1, EDX=arg2-ignored, then stack args, callee-cleans).
+// EDX is unused by CreateReference (it's a __thiscall, not a __fastcall).
+void* __fastcall Wrap_CreateReference(
+    void* thisPtr,           // ECX = real `this`
+    void* /*edxPad*/,        // EDX = unused; padding to make __fastcall act like __thiscall
+    void* baseForm, float* pos, float* rot,
+    void* cell, int wsFlag, void* existingRef) {
+    typedef void* (__fastcall *Fn)(void*, void*, void*, float*, float*, void*, int, void*);
+    auto* fn = reinterpret_cast<Fn>(kCreateReferenceAddr);
+    void* result = fn(thisPtr, nullptr, baseForm, pos, rot, cell, wsFlag, existingRef);
     if (g_captureSpawn.load(std::memory_order_acquire) && result) {
         // formID at offset 0x0C of TESObjectREFR (TESForm header layout).
         uint32_t fid = *reinterpret_cast<uint32_t*>(
