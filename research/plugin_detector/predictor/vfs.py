@@ -13,6 +13,38 @@ modlist.txt convention:
 from pathlib import Path
 
 
+def build_loose_index(
+    active_mods: list[str],
+    mods_dir: Path,
+) -> dict[str, Path]:
+    """For each active mod (priority-DESCENDING order), walk its loose files.
+    Higher-priority mods override lower-priority ones for the same path.
+
+    Returns lowercase_virtual_path → absolute_real_path.
+
+    `lowercase_virtual_path` uses forward slashes and is relative to the
+    mod folder root. For Oblivion under MO2, mod folders are presented as
+    if their root were the game's Data/ directory.
+    """
+    index: dict[str, Path] = {}
+    # Process priority-DESCENDING (highest priority first). First-write wins.
+    for mod_name in active_mods:
+        mod_root = mods_dir / mod_name
+        if not mod_root.is_dir():
+            continue
+        for f in mod_root.rglob("*"):
+            if not f.is_file():
+                continue
+            try:
+                rel = f.relative_to(mod_root)
+            except ValueError:
+                continue
+            virtual = str(rel).replace("\\", "/").lower()
+            if virtual not in index:
+                index[virtual] = f
+    return index
+
+
 def parse_modlist(modlist_txt: Path) -> list[str]:
     """Return active mod names in priority-DESCENDING order
     (highest priority first; this matches the file order from top to bottom)."""
