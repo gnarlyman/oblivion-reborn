@@ -12,7 +12,27 @@ Writes a Markdown summary to predictor/calibration_report.md.
 """
 import argparse
 import json
+import re
 from pathlib import Path
+
+
+# Patterns for "abstract" NPCs that exist as records but never appear visibly
+# in normal play — voice-only daedric speakers, dev test NPCs, leveled-list
+# templates, no-summon variants, etc. These should be excluded from
+# precision/recall scoring because the predictor's correctness on them is
+# uninteresting (they're naked by design and never seen).
+DEFAULT_ABSTRACT_PATTERNS = [
+    r"Voice",                # *Voice* — abstract daedric speakers
+    r"^[Tt][Ee][Ss][Tt]",    # Test*/TEST*/test* prefix — dev test NPCs
+    r"NOSUMMON",             # *NOSUMMON template variants
+    r"^SE09Experiment",      # SE Experiment corpses
+    r"ActBase$",             # *ActBase templates (cobGenActBase, OOOActBase)
+    r"^cob[A-Z]",            # cob* utility NPCs
+    r"^ZU",                  # ZU* utility NPCs
+    r"Template$|TEMPLATE$",  # *Template suffix
+    r"^Generic",             # Generic* prefix
+    r"Dead|DEAD",            # *Dead*/*DEAD* templates
+]
 
 
 def load_predictions(path: Path) -> dict[str, dict]:
@@ -54,7 +74,21 @@ def main() -> int:
     ap.add_argument("--predictions", required=True, type=Path)
     ap.add_argument("--g5", required=True, type=Path)
     ap.add_argument("--report", required=True, type=Path)
+    ap.add_argument("--exclude-edid-pattern", action="append", default=[],
+                    help="extra regex pattern (repeatable) to exclude abstract NPCs by EDID")
+    ap.add_argument("--no-default-excludes", action="store_true",
+                    help="disable the built-in DEFAULT_ABSTRACT_PATTERNS list")
     args = ap.parse_args()
+
+    pattern_strs: list[str] = list(args.exclude_edid_pattern)
+    if not args.no_default_excludes:
+        pattern_strs = DEFAULT_ABSTRACT_PATTERNS + pattern_strs
+    abstract_patterns = [re.compile(p) for p in pattern_strs]
+
+    def is_abstract_edid(edid: str | None) -> bool:
+        if not edid:
+            return False
+        return any(p.search(edid) for p in abstract_patterns)
 
     preds = load_predictions(args.predictions)
     g5 = load_g5(args.g5)
@@ -62,7 +96,9 @@ def main() -> int:
     tp = fp = fn = tn = 0
     skipped_script = 0
     skipped_not_in_predictions = 0
+    skipped_abstract = 0
     review_rows: list[dict] = []
+    excluded_rows: list[dict] = []
 
     for row in g5:
         fid = row["form_id"].upper()
@@ -72,6 +108,15 @@ def main() -> int:
         pred = preds[fid]
         if pred["has_script"]:
             skipped_script += 1
+            continue
+        if is_abstract_edid(row.get("edid")):
+            skipped_abstract += 1
+            excluded_rows.append({
+                "form_id": fid,
+                "edid": row.get("edid"),
+                "predicted_reason": pred.get("reason"),
+                "g5_inventory_count": len(row.get("inventory", [])),
+            })
             continue
         actually_naked = is_actually_naked(row)
         predicted_naked = pred["predicted_naked"]
@@ -118,8 +163,9 @@ def main() -> int:
         f"- False negatives (predicted ok, actually naked):     {fn}",
         f"- True negatives (predicted ok, actually clothed):    {tn}",
         f"- Skipped (has_script in prediction):                  {skipped_script}",
+        f"- Skipped (abstract NPC by EDID pattern):              {skipped_abstract}",
         f"- Skipped (G5 NPC not in predictions):                 {skipped_not_in_predictions}",
-        f"- Total scored (no-script bucket):                     {total_scored}",
+        f"- Total scored (no-script, non-abstract bucket):       {total_scored}",
         "",
         "## Metrics (no-script bucket)",
         f"- **Precision:** {precision:.3f}  (target ≥ 0.90)",
@@ -166,10 +212,14 @@ def main() -> int:
     review_path = args.report.with_suffix(".review.json")
     review_path.write_text(json.dumps(review_rows, indent=2), encoding="utf-8")
 
+    excluded_path = args.report.with_suffix(".excluded.json")
+    excluded_path.write_text(json.dumps(excluded_rows, indent=2), encoding="utf-8")
+
     import sys
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     print("\n".join(lines))
     print(f"\n{len(review_rows)} apparent FPs written to {review_path} for spot-check")
+    print(f"{len(excluded_rows)} abstract NPCs written to {excluded_path}")
     return 0
 
 
