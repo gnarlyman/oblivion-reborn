@@ -88,6 +88,15 @@ json HandleDelete(const json& req) {
     return {{"ok", ok}};
 }
 
+json HandleExec(const json& req) {
+    if (!req.contains("line") || !req["line"].is_string()) {
+        return {{"ok", false}, {"error", "missing_line"}};
+    }
+    std::string line = req["line"];
+    bool ok = engine::ExecuteConsoleCommand(line);
+    return {{"ok", ok}};
+}
+
 }  // namespace
 
 std::string Dispatch(const std::string& line) {
@@ -109,6 +118,7 @@ std::string Dispatch(const std::string& line) {
     else if (cmd == "spawn") resp = HandleSpawn(req);
     else if (cmd == "inspect_inventory") resp = HandleInspectInventory(req);
     else if (cmd == "delete") resp = HandleDelete(req);
+    else if (cmd == "exec") resp = HandleExec(req);
     else resp = json{{"ok", false}, {"error", "unknown_cmd"}, {"cmd", cmd}};
     return resp.dump();
 }
