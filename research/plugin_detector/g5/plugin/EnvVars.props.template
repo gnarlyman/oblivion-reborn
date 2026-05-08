@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copy this file to EnvVars.props and edit the paths.
+  EnvVars.props is gitignored.
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <OblivionPath>D:\Modlists\Reborn\Stock Game</OblivionPath>
+    <!-- Where the post-build step copies the DLL. Typically a path inside an
+         MO2 mod folder so USVFS overlays it when you launch through MO2.
+         Leave empty to skip post-build deployment. -->
+    <MO2DeployPath>D:\Modlists\Reborn\mods\G5 Validator\OBSE\Plugins</MO2DeployPath>
+  </PropertyGroup>
+</Project>

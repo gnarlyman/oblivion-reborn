@@ -1,0 +1,5 @@
+LIBRARY g5
+
+EXPORTS
+    OBSEPlugin_Query
+    OBSEPlugin_Load

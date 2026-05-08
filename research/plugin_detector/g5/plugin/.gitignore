@@ -1,0 +1,10 @@
+EnvVars.props
+*.user
+*.suo
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+*.dll
+*.pdb
+*.exp
+*.lib

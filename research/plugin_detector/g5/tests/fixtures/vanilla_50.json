@@ -1,0 +1,252 @@
+[
+  {
+    "form_id": "00005568",
+    "edid": "VeyondArgFemale4Scout",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0000A095",
+    "edid": "Nahsi",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0000A09A",
+    "edid": "VolanaroDead",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0000A111",
+    "edid": "UrsanneLoche",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00012092",
+    "edid": "SEUlfri",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00014692",
+    "edid": "Dremora0ChurlMissile1",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00015588",
+    "edid": "SECindanwe",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001558C",
+    "edid": "SEDulphumphGroUrgash",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00015867",
+    "edid": "SEAtrabhiDementia",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001624C",
+    "edid": "TheranisDeadBody",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00016330",
+    "edid": "ICTalosGuardPatrolNight02",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001719A",
+    "edid": "SE08KnightBasicPackage",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000171C4",
+    "edid": "SE12OrderPriestDementia3",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00017C82",
+    "edid": "SE08c2PriestNPCunique",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001A769",
+    "edid": "SE32Fanatic7",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001D356",
+    "edid": "PennusMallius",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001EBF7",
+    "edid": "MelsMaryon",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0001FDD5",
+    "edid": "Areldil",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00022466",
+    "edid": "Gwinas",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000224E2",
+    "edid": "Earana",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00022EF5",
+    "edid": "MQ05MythicDawnGuard01",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000234AA",
+    "edid": "ArrianaValga",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00026B37",
+    "edid": "Maraska",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0002800B",
+    "edid": "JesanRilian",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0002CD1F",
+    "edid": "KudEi",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00032942",
+    "edid": "MG16NecromancerFemale1TEMPLATE",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00035EB2",
+    "edid": "SnartheCook",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000362CA",
+    "edid": "BrumaGuardCityPatrolNight02",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0003C806",
+    "edid": "MQ15Eldamil",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0004119B",
+    "edid": "SEZealot3HighElfFemale",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0004A938",
+    "edid": "MQ16ImperialWatch",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0004B76F",
+    "edid": "TG06PaleLadyVampire",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0004B939",
+    "edid": "NecromancerFemaleBreton4",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00052848",
+    "edid": "SEZealot3BretonFemale",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00052F74",
+    "edid": "SE32Reveler06",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00058AF5",
+    "edid": "ImperialLegionSoldierInnWawnet",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00059B4B",
+    "edid": "SE07Xirethard01DarkSeducerPatrol01a",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0005D545",
+    "edid": "Demetrius",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00060793",
+    "edid": "SEGrommokgroBarakGhosted",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00071FBF",
+    "edid": "SEBeggarBhisha",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00078207",
+    "edid": "SEPadEi",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "0007BA80",
+    "edid": "Dark07MercenaryMale2",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00082659",
+    "edid": "SE10DarkSeducerDead",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000927AE",
+    "edid": "KvatchFallenGuard03",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00097CB1",
+    "edid": "MQ06MythicDawnShrineGuard02",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00099A70",
+    "edid": "MG13Vampire08Sorcerer",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000A2AE3",
+    "edid": "DABoethiaChosen07",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000A3164",
+    "edid": "Blade1",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "000A3832",
+    "edid": "TolvasaSendas",
+    "ticks_wait": 30
+  },
+  {
+    "form_id": "00185FE0",
+    "edid": "AelwinMerowald",
+    "ticks_wait": 30
+  }
+]
