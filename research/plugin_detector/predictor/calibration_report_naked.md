@@ -152,3 +152,58 @@ the spike conflates the two.
   so the recall gate can be measured.
 - Treat `armor_mesh_missing` as a separate, higher-confidence bug class —
   it earned 100% precision-on-visible-bugs in this run.
+
+---
+
+## v2 update — EDID-prefix exclude list (2026-05-08)
+
+Implemented in `compute_metrics.py` as `DEFAULT_ABSTRACT_PATTERNS` plus
+`--exclude-edid-pattern` repeatable CLI flag (`--no-default-excludes` to opt
+out). Patterns: `Voice`, `^[Tt][Ee][Ss][Tt]`, `NOSUMMON`, `^SE09Experiment`,
+`ActBase$`, `^cob[A-Z]`, `^ZU`, `Template$|TEMPLATE$`, `^Generic`, `Dead|DEAD`.
+
+### Result on the same 284-NPC corpus
+
+| metric | v1 (no exclude) | v2 (default excludes) |
+|---|---:|---:|
+| Excluded as abstract | 0 | 65 |
+| TP (inv==0, predicted naked) | 110 | 86 |
+| FP (inv>0, predicted naked) | 174 | 133 |
+| Total scored | 284 | 219 |
+| **Precision (inv-empty proxy)** | **38.7%** | **39.3%** |
+
+Default excludes drop 24 TPs and 41 FPs. Direction is correct (more FPs
+removed than TPs) but the precision shift is **negligible** — the abstract-NPC
+hypothesis only explains ~6% of the FP volume.
+
+### Aggressive-exclude probe (exploratory, not committed)
+
+Tried adding `^MOOWanted`, `^Dark[0-9]`, `Victim`, `Captive` to the pattern
+list. Result: 268 of 284 NPCs got swept into the "abstract" bucket, leaving 16
+scored with precision **31.2% (worse)**. MOOWanted alone accounts for ~40
+NPCs that genuinely spawn naked — they're either the wanted-poster 3D models
+or actual encounterable bandits, and excluding them throws out real bugs
+along with the noise.
+
+### Revised v2 verdict
+
+The exclude-list lever is **useful infrastructure** (kept) but **does not
+materially fix the precision problem**. The dominant FP source is the 168
+`inv_no_concrete_armor` NPCs whose runtime inventory has items but none
+classified as ARMO/CLOT by the predictor's static walk — these are not
+abstract, they are real NPCs whose armor the predictor failed to trace.
+
+**The real predictor v2 fix is upstream of corpus filtering** — likely in
+LVLI traversal or ARMO/CLOT classification (the `inv_no_concrete_armor`
+predicate itself). Two concrete next investigations:
+
+1. **LVLI traversal audit.** Pick 5–10 of the 168 `inv_no_concrete_armor` FPs
+   that have non-trivial inventory at runtime (e.g. MOOWanted with 3+ items),
+   xEdit-walk the NPC's INVE→LVLI tree, and compare to what the predictor
+   reaches. The gap is the LVLI bug.
+2. **ARMO/CLOT classification audit.** Sample some FPs whose runtime inventory
+   includes items that look armor-shaped (by EDID); check what record signature
+   they actually have. If it's not ARMO/CLOT, the predictor's static check is
+   too narrow and should also catch SLGM/MISC/SCRL wrappers.
+
+Recall corpus and encounterability heuristic remain on the v3+ list.

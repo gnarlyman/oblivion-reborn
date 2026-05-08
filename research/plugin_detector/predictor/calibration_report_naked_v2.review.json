@@ -1,0 +1,941 @@
+[
+  {
+    "form_id": "00014693",
+    "edid": "Dremora0ChurlMissile2",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 10
+  },
+  {
+    "form_id": "00014692",
+    "edid": "Dremora0ChurlMissile1",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 9
+  },
+  {
+    "form_id": "0006E7EF",
+    "edid": "LorgrenBenirusNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000950DB",
+    "edid": "Dark04MythicDawn",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "00092DA2",
+    "edid": "Dremora0ChurlMelee3",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 7
+  },
+  {
+    "form_id": "00092DA0",
+    "edid": "Dremora0ChurlMelee1",
+    "predicted_reason": "armor_mesh_missing",
+    "predicted_missing_meshes": [
+      "meshes/soooequipment/daedricchurl/m/churl armor 1.nif"
+    ],
+    "g5_inventory_count": 6
+  },
+  {
+    "form_id": "0001DFB3",
+    "edid": "LumdumgroGolpok",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000231A0",
+    "edid": "FemaleFashionModel",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417F7",
+    "edid": "MOOWantedArgonianMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417FA",
+    "edid": "MOOWantedBosmerFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417FC",
+    "edid": "MOOWantedBosmerFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417FF",
+    "edid": "MOOWantedBosmerFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241800",
+    "edid": "MOOWantedBosmerFemale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 6
+  },
+  {
+    "form_id": "41241801",
+    "edid": "MOOWantedBosmerFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241802",
+    "edid": "MOOWantedBosmerMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "41241803",
+    "edid": "MOOWantedBosmerMale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241804",
+    "edid": "MOOWantedBosmerMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241805",
+    "edid": "MOOWantedBosmerMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241809",
+    "edid": "MOOWantedBosmerMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124180A",
+    "edid": "MOOWantedBosmerMale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124180B",
+    "edid": "MOOWantedBosmerMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124180E",
+    "edid": "MOOWantedDunmerFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124180F",
+    "edid": "MOOWantedDunmerFemale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241810",
+    "edid": "MOOWantedDunmerFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241811",
+    "edid": "MOOWantedDunmerFemale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241812",
+    "edid": "MOOWantedDunmerFemale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241813",
+    "edid": "MOOWantedDunmerFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241814",
+    "edid": "MOOWantedDunmerFemale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241815",
+    "edid": "MOOWantedDunmerFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241816",
+    "edid": "MOOWantedDunmerMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241817",
+    "edid": "MOOWantedDunmerMale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241818",
+    "edid": "MOOWantedDunmerMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241819",
+    "edid": "MOOWantedDunmerMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124181A",
+    "edid": "MOOWantedDunmerMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124181B",
+    "edid": "MOOWantedDunmerMale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124181C",
+    "edid": "MOOWantedDunmerMale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124181D",
+    "edid": "MOOWantedDunmerMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "4124181E",
+    "edid": "MOOWantedDunmerMale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124181F",
+    "edid": "MOOWantedDunmerMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241820",
+    "edid": "MOOWantedKhajiitFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241821",
+    "edid": "MOOWantedKhajiitFemale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241822",
+    "edid": "MOOWantedKhajiitFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241824",
+    "edid": "MOOWantedKhajiitFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241827",
+    "edid": "MOOWantedKhajiitFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241829",
+    "edid": "MOOWantedKhajiitFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124182C",
+    "edid": "MOOWantedKhajiitMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124182E",
+    "edid": "MOOWantedKhajiitMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241831",
+    "edid": "MOOWantedKhajiitMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241834",
+    "edid": "MOOWantedNordFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241836",
+    "edid": "MOOWantedNordFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124183B",
+    "edid": "MOOWantedNordFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124183D",
+    "edid": "MOOWantedNordFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241840",
+    "edid": "MOOWantedNordMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241842",
+    "edid": "MOOWantedNordMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241845",
+    "edid": "MOOWantedNordMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241846",
+    "edid": "MOOWantedNordMale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241847",
+    "edid": "MOOWantedNordMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241848",
+    "edid": "MOOWantedOrcFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241849",
+    "edid": "MOOWantedOrcFemale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124184A",
+    "edid": "MOOWantedOrcFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124184B",
+    "edid": "MOOWantedOrcFemale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "4124184C",
+    "edid": "MOOWantedOrcFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124184D",
+    "edid": "MOOWantedOrcFemale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124184E",
+    "edid": "MOOWantedOrcFemale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124184F",
+    "edid": "MOOWantedOrcFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241850",
+    "edid": "MOOWantedOrcFemale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241851",
+    "edid": "MOOWantedOrcFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241852",
+    "edid": "MOOWantedOrcMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241853",
+    "edid": "MOOWantedOrcMale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241854",
+    "edid": "MOOWantedOrcMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241855",
+    "edid": "MOOWantedOrcMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241856",
+    "edid": "MOOWantedOrcMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241857",
+    "edid": "MOOWantedOrcMale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241858",
+    "edid": "MOOWantedOrcMale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241859",
+    "edid": "MOOWantedOrcMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124185C",
+    "edid": "MOOWantedRedguardFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241863",
+    "edid": "MOOWantedRedguardFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241866",
+    "edid": "MOOWantedRedguardMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241868",
+    "edid": "MOOWantedRedguardMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124186A",
+    "edid": "MOOWantedRedguardMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124186D",
+    "edid": "MOOWantedRedguardMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241872",
+    "edid": "MOOWantedAltmerFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241873",
+    "edid": "MOOWantedAltmerFemale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241877",
+    "edid": "MOOWantedAltmerFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241879",
+    "edid": "MOOWantedAltmerFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124187C",
+    "edid": "MOOWantedAltmerMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124187D",
+    "edid": "MOOWantedAltmerMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124187E",
+    "edid": "MOOWantedAltmerMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124187F",
+    "edid": "MOOWantedAltmerMale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241880",
+    "edid": "MOOWantedAltmerMale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241881",
+    "edid": "MOOWantedAltmerMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241882",
+    "edid": "MOOWantedAltmerMale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "41241883",
+    "edid": "MOOWantedAltmerMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241884",
+    "edid": "MOOWantedBretonFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241885",
+    "edid": "MOOWantedBretonFemale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241886",
+    "edid": "MOOWantedBretonFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "41241887",
+    "edid": "MOOWantedBretonFemale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241888",
+    "edid": "MOOWantedBretonFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241889",
+    "edid": "MOOWantedBretonFemale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124188A",
+    "edid": "MOOWantedBretonFemale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124188B",
+    "edid": "MOOWantedBretonFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124188C",
+    "edid": "MOOWantedBretonFemale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4124188D",
+    "edid": "MOOWantedBretonFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124188E",
+    "edid": "MOOWantedBretonMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4124188F",
+    "edid": "MOOWantedBretonMale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241890",
+    "edid": "MOOWantedBretonMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "41241891",
+    "edid": "MOOWantedBretonMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41241895",
+    "edid": "MOOWantedBretonMale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "416FDF6F",
+    "edid": "MOONpcOrc",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "416FDF70",
+    "edid": "MOONpcRedguard",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "416FDF71",
+    "edid": "MOONpcDarkElf",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "416FDF7C",
+    "edid": "MOONpc",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41232119",
+    "edid": "MOOWantedImperialFemale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4123211C",
+    "edid": "MOOWantedImperialFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "4123211F",
+    "edid": "MOOWantedImperialFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41232121",
+    "edid": "MOOWantedImperialFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41232126",
+    "edid": "MOOWantedImperialMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "41232127",
+    "edid": "MOOWantedImperialMale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "4123212B",
+    "edid": "MOOWantedImperialMale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417E4",
+    "edid": "MOOWantedArgonianFemale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417E5",
+    "edid": "MOOWantedArgonianFemale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "412417E6",
+    "edid": "MOOWantedArgonianFemale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417E7",
+    "edid": "MOOWantedArgonianFemale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417E8",
+    "edid": "MOOWantedArgonianFemale05",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "412417E9",
+    "edid": "MOOWantedArgonianFemale06",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417EA",
+    "edid": "MOOWantedArgonianFemale07",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417EB",
+    "edid": "MOOWantedArgonianFemale08",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417EC",
+    "edid": "MOOWantedArgonianFemale09",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417ED",
+    "edid": "MOOWantedArgonianFemale10",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "412417EE",
+    "edid": "MOOWantedArgonianMale01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "412417EF",
+    "edid": "MOOWantedArgonianMale02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417F0",
+    "edid": "MOOWantedArgonianMale03",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "412417F1",
+    "edid": "MOOWantedArgonianMale04",
+    "predicted_reason": "inv_no_concrete_armor",
+    "predicted_missing_meshes": [],
+    "g5_inventory_count": 4
+  }
+]
