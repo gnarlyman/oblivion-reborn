@@ -49,7 +49,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;_DEBUG;G5_VERSION=0x000001;OBLIVION_VERSION=0x010201A0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;_DEBUG;_CRT_SECURE_NO_WARNINGS;G5_VERSION=0x000001;OBLIVION_VERSION=0x010201A0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
@@ -102,10 +102,12 @@
     <ClInclude Include="src\obse_minimal.h" />
     <ClInclude Include="src\log.h" />
     <ClInclude Include="src\json.hpp" />
+    <ClInclude Include="src\socket_server.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\log.cpp" />
     <ClCompile Include="src\plugin_main.cpp" />
+    <ClCompile Include="src\socket_server.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="g5.def" />
