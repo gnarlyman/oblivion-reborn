@@ -1,4 +1,5 @@
 #include "commands.h"
+#include "engine.h"
 #include "json.hpp"
 #include "log.h"
 
@@ -23,6 +24,16 @@ json HandleQuit(const json&) {
     return {{"ok", true}, {"msg", "quitting"}};
 }
 
+json HandleCoc(const json& req) {
+    if (!req.contains("edid") || !req["edid"].is_string()) {
+        return {{"ok", false}, {"error", "missing_edid"}};
+    }
+    std::string edid = req["edid"];
+    std::string cmd = "coc " + edid;
+    bool ok = engine::ExecuteConsoleCommand(cmd);
+    return {{"ok", ok}};
+}
+
 }  // namespace
 
 std::string Dispatch(const std::string& line) {
@@ -40,6 +51,7 @@ std::string Dispatch(const std::string& line) {
     json resp;
     if (cmd == "ping") resp = HandlePing(req);
     else if (cmd == "quit") resp = HandleQuit(req);
+    else if (cmd == "coc") resp = HandleCoc(req);
     else resp = json{{"ok", false}, {"error", "unknown_cmd"}, {"cmd", cmd}};
     return resp.dump();
 }

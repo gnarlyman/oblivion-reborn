@@ -105,6 +105,7 @@
     <ClInclude Include="src\socket_server.h" />
     <ClInclude Include="src\command_queue.h" />
     <ClInclude Include="src\commands.h" />
+    <ClInclude Include="src\engine.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\log.cpp" />
@@ -112,6 +113,7 @@
     <ClCompile Include="src\socket_server.cpp" />
     <ClCompile Include="src\command_queue.cpp" />
     <ClCompile Include="src\commands.cpp" />
+    <ClCompile Include="src\engine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="g5.def" />
