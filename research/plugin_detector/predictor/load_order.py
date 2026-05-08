@@ -71,6 +71,7 @@ class LoadOrder:
     plugins: list[str]                       # ordered active plugin names
     data_dir: Path                           # path to Data/
     masters: dict[str, list[str]] = field(default_factory=dict)  # name -> masters
+    plugin_paths: dict[str, Path] = field(default_factory=dict)  # lower(name) -> Path
 
     def index_of(self, plugin_name: str) -> int | None:
         """Case-insensitive lookup."""
@@ -79,6 +80,10 @@ class LoadOrder:
             if p.lower() == target:
                 return i
         return None
+
+    def resolve_plugin_path(self, plugin_name: str) -> Path | None:
+        """Return the filesystem path for a plugin, or None if not found."""
+        return self.plugin_paths.get(plugin_name.lower())
 
     def to_lo_fid(self, plugin_name: str, raw_fid: int) -> int:
         """Convert a raw FID from `plugin_name`'s record body to a load-order FID.
@@ -143,7 +148,7 @@ def build_load_order(
 
     plugins = parse_plugins_txt(profile_dir / "plugins.txt")
     plugin_index = _build_plugin_index(data_dir, mods_dir)
-    lo = LoadOrder(plugins=plugins, data_dir=data_dir)
+    lo = LoadOrder(plugins=plugins, data_dir=data_dir, plugin_paths=plugin_index)
     for p in plugins:
         plugin_file = plugin_index.get(p.lower())
         if plugin_file and plugin_file.exists():
@@ -151,3 +156,34 @@ def build_load_order(
         else:
             lo.masters[p] = []
     return lo
+
+
+def build_winning_records(
+    lo: LoadOrder,
+    signatures: set[str] | None = None,
+) -> dict[int, tuple[str, str, bytes]]:
+    """For each LO FID, return (winning_plugin_name, signature, body_bytes).
+
+    Walks the load order in order; later plugins overwrite earlier ones for
+    the same LO FID. This works correctly even when Bashed Patch is NOT last
+    in load order (which is the case in Reborn-OOO — MOO loads after BP).
+
+    `signatures` filters which record types to track; None means all.
+    """
+    winners: dict[int, tuple[str, str, bytes]] = {}
+    for plugin_name in lo.plugins:
+        plugin_path = lo.resolve_plugin_path(plugin_name)
+        if plugin_path is None or not plugin_path.exists():
+            continue
+        with plugin_path.open("rb") as f:
+            data = f.read()
+        for top, sig, raw_fid, flags, body in iter_records(data):
+            if sig == "TES4":
+                continue
+            if signatures and sig not in signatures:
+                continue
+            lo_fid = lo.to_lo_fid(plugin_name, raw_fid)
+            if lo_fid < 0:
+                continue
+            winners[lo_fid] = (plugin_name, sig, body)
+    return winners

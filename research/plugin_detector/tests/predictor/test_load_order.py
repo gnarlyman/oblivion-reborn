@@ -60,3 +60,21 @@ def test_to_lo_fid_master_reference():
             break
     assert second_plugin is not None, "expected at least one ESP referencing Oblivion.esm"
     assert lo.to_lo_fid(second_plugin, 0x00023F2A) == 0x00023F2A
+
+
+def test_build_winning_records_basics():
+    lo = build_load_order(
+        profile_dir=PROFILE_DIR,
+        data_dir=Path(r"D:\Modlists\Reborn\Stock Game\Data"),
+    )
+    from predictor.load_order import build_winning_records
+    winners = build_winning_records(lo, signatures={"NPC_"})
+    # We expect thousands of NPC_ records.
+    assert len(winners) > 1000, f"expected >1000 winning NPCs, got {len(winners)}"
+    # Vanilla Imperial Legion guard FormID; should be present.
+    guard_lo_fid = 0x00023F2A
+    assert guard_lo_fid in winners, "expected vanilla guard FID 00023F2A as a winner"
+    plugin_name, sig, body = winners[guard_lo_fid]
+    assert sig == "NPC_"
+    assert isinstance(body, (bytes, bytearray))
+    assert len(body) > 0
