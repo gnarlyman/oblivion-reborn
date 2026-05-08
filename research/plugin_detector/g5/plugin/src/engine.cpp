@@ -46,10 +46,12 @@ constexpr uint8_t kExtraData_WornLeft         = 0x1C;
 
 // ---------------------------------------------------------------------------
 // Form-type IDs for reference validation (xOBSE GameForms.h:243-245).
+// Comments in the enum (// 10, // 20, // 30) are hex offsets from
+// kFormType_None=0; Cell=0x30, REFR=0x31, ACHR=0x32, ACRE=0x33.
 // ---------------------------------------------------------------------------
-constexpr uint8_t kFormType_REFR = 0x33;
-constexpr uint8_t kFormType_ACHR = 0x34;
-constexpr uint8_t kFormType_ACRE = 0x35;
+constexpr uint8_t kFormType_REFR = 0x31;
+constexpr uint8_t kFormType_ACHR = 0x32;
+constexpr uint8_t kFormType_ACRE = 0x33;
 
 // ---------------------------------------------------------------------------
 // Minimal POD layouts. Offsets verified against xOBSE headers.
