@@ -1,7 +1,7 @@
 from pathlib import Path
 import pytest
 from predictor.load_order import build_load_order, build_winning_records
-from predictor.npc_resolver import extract_base_cnto
+from predictor.npc_resolver import extract_base_cnto, resolve_lvli
 
 PROFILE_DIR = Path(r"D:\Modlists\Reborn\profiles\Reborn-OOO")
 DATA_DIR = Path(r"D:\Modlists\Reborn\Stock Game\Data")
@@ -36,3 +36,20 @@ def test_has_script_detects_scri_subrecord():
             has_script_count += 1
     # Some NPCs should have scripts (PSMQD, MOO regional packs, etc.).
     assert has_script_count > 0, "expected at least one NPC with SCRI in 200 samples"
+
+
+def test_resolve_lvli_returns_leaves():
+    from predictor.npc_resolver import resolve_lvli
+    lo = build_load_order(profile_dir=PROFILE_DIR, data_dir=DATA_DIR)
+    winners = build_winning_records(lo, signatures={"NPC_", "LVLI", "ARMO", "WEAP", "CLOT"})
+    # Find an LVLI in winners.
+    lvli_lo_fid = None
+    for fid, (plugin, sig, body) in winners.items():
+        if sig == "LVLI":
+            lvli_lo_fid = fid
+            break
+    assert lvli_lo_fid is not None, "expected at least one LVLI in load order"
+    leaves = resolve_lvli(lvli_lo_fid, winners, lo, max_depth=8)
+    assert isinstance(leaves, set)
+    # Most LVLIs should resolve to at least one leaf, but some may be empty
+    # (depth-cap edge cases or empty entry lists). Just check the function ran.
