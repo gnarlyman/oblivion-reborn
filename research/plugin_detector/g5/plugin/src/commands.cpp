@@ -53,6 +53,32 @@ json HandleSpawn(const json& req) {
     return {{"ok", true}, {"ref_id", result.ref_id}};
 }
 
+json HandleInspectInventory(const json& req) {
+    if (!req.contains("ref_id")) {
+        return {{"ok", false}, {"error", "missing_ref_id"}};
+    }
+    uint32_t ref_id;
+    if (req["ref_id"].is_string()) {
+        std::string s = req["ref_id"].get<std::string>();
+        ref_id = static_cast<uint32_t>(std::stoul(s, nullptr, 16));
+    } else {
+        ref_id = req["ref_id"].get<uint32_t>();
+    }
+    auto r = engine::InspectInventory(ref_id);
+    if (!r.ok) {
+        return {{"ok", false}, {"error", r.error}};
+    }
+    json items = json::array();
+    for (const auto& it : r.items) {
+        items.push_back({
+            {"form_id", it.form_id},
+            {"count",   it.count},
+            {"equipped", it.equipped}
+        });
+    }
+    return {{"ok", true}, {"items", items}};
+}
+
 }  // namespace
 
 std::string Dispatch(const std::string& line) {
@@ -72,6 +98,7 @@ std::string Dispatch(const std::string& line) {
     else if (cmd == "quit") resp = HandleQuit(req);
     else if (cmd == "coc") resp = HandleCoc(req);
     else if (cmd == "spawn") resp = HandleSpawn(req);
+    else if (cmd == "inspect_inventory") resp = HandleInspectInventory(req);
     else resp = json{{"ok", false}, {"error", "unknown_cmd"}, {"cmd", cmd}};
     return resp.dump();
 }
