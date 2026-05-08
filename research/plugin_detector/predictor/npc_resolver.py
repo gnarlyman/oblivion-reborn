@@ -9,6 +9,14 @@ from typing import Iterable
 from predictor.plugin_parser import parse_subrecords
 
 
+def has_script(npc_body: bytes) -> bool:
+    """Returns True if the NPC_ record contains a SCRI subrecord."""
+    for ssig, _ in parse_subrecords(npc_body):
+        if ssig == "SCRI":
+            return True
+    return False
+
+
 def extract_base_cnto(npc_body: bytes) -> list[tuple[int, int]]:
     """Walk an NPC_ record body's CNTO subrecords. Returns list of
     (raw_form_id, count) tuples, in order of appearance.
