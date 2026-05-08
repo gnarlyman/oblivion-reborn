@@ -60,6 +60,48 @@ def resolve_lvli(
     return leaves
 
 
+def resolve_inventory(
+    npc_lo_fid: int,
+    winners: dict,
+    lo,  # LoadOrder
+) -> dict:
+    """Resolve an NPC's possible inventory.
+
+    Returns:
+        {
+            "concrete": set of LO FormIDs that will definitely or could appear
+                        in inventory (LVLI-resolved leaves are included),
+            "has_script": bool — True if NPC_ has SCRI (S1 boundary),
+            "lvli_paths_walked": list of LVLI LO FormIDs walked (debug),
+        }
+    """
+    if npc_lo_fid not in winners:
+        return {"concrete": set(), "has_script": False, "lvli_paths_walked": []}
+
+    plugin, sig, body = winners[npc_lo_fid]
+    if sig != "NPC_":
+        return {"concrete": set(), "has_script": False, "lvli_paths_walked": []}
+
+    has_scri = has_script(body)
+    base_cnto = extract_base_cnto(body)
+    concrete: set = set()
+    lvli_walked: list = []
+    for raw_fid, count in base_cnto:
+        target_lo_fid = lo.to_lo_fid(plugin, raw_fid)
+        if target_lo_fid < 0:
+            continue
+        if target_lo_fid in winners and winners[target_lo_fid][1] == "LVLI":
+            lvli_walked.append(target_lo_fid)
+            concrete |= resolve_lvli(target_lo_fid, winners, lo)
+        else:
+            concrete.add(target_lo_fid)
+    return {
+        "concrete": concrete,
+        "has_script": has_scri,
+        "lvli_paths_walked": lvli_walked,
+    }
+
+
 def extract_base_cnto(npc_body: bytes) -> list[tuple[int, int]]:
     """Walk an NPC_ record body's CNTO subrecords. Returns list of
     (raw_form_id, count) tuples, in order of appearance.

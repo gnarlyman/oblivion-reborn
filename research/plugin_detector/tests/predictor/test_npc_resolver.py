@@ -53,3 +53,19 @@ def test_resolve_lvli_returns_leaves():
     assert isinstance(leaves, set)
     # Most LVLIs should resolve to at least one leaf, but some may be empty
     # (depth-cap edge cases or empty entry lists). Just check the function ran.
+
+
+def test_resolve_inventory_returns_concrete_set():
+    from predictor.npc_resolver import resolve_inventory
+    lo = build_load_order(profile_dir=PROFILE_DIR, data_dir=DATA_DIR)
+    winners = build_winning_records(lo, signatures={"NPC_", "LVLI", "ARMO", "WEAP", "CLOT"})
+    guard_lo_fid = 0x00023F2A
+    inv = resolve_inventory(guard_lo_fid, winners, lo)
+    assert "concrete" in inv
+    assert "has_script" in inv
+    assert "lvli_paths_walked" in inv
+    assert isinstance(inv["concrete"], set)
+    assert isinstance(inv["has_script"], bool)
+    assert isinstance(inv["lvli_paths_walked"], list)
+    # Vanilla guard should have at least one concrete entry.
+    assert len(inv["concrete"]) > 0
