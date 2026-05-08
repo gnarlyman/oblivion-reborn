@@ -23,6 +23,7 @@ DWORD WINAPI WaitForWindowAndInit(LPVOID) {
     G5_LOG("init: main window = %p", (void*)hwnd);
     Sleep(2000);  // let the engine finish startup hooks
 
+    g5::engine::InstallSpawnHook();
     g5::InitCommandQueue(hwnd, &g5::commands::Dispatch);
     return 0;
 }

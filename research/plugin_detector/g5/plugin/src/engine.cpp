@@ -2,15 +2,85 @@
 #include "obse_minimal.h"
 #include "log.h"
 #include <Windows.h>
+#include <atomic>
 #include <cstdint>
 #include <unordered_map>
 #include <vector>
 
 namespace {
 OBSEConsoleInterface* g_consoleIntfc = nullptr;
-// Global written by the engine immediately after player.placeatme creates a ref.
-// Address: Oblivion 1.2.0.416 (Steam). Unverified — user confirms in-game.
-constexpr uintptr_t kLastCreatedRefIdAddr = 0x00B324CC;
+
+// ---------------------------------------------------------------------------
+// CreateReference hook (T08-fix).
+//
+// 0x00B324CC turned out to be a static, not a "last-created-ref" global —
+// every TESObjectREFR creation actually goes through the universal factory
+// at 0x0044A7D0 and returns the new TESObjectREFR* in EAX.
+//
+// Rather than splice into the factory itself (5-byte JMP + naked-asm
+// trampoline), we patch the two call sites inside placeatme Execute
+// (0x00514B50). Both call sites were located empirically with
+// research/find_callsites.py: 0x00514F58 and 0x005152A9. Each is a
+// standard 5-byte CALL rel32. We rewrite the rel32 to point at our
+// __cdecl wrapper, which forwards to the original factory and (when
+// the capture flag is set) records the returned formID.
+//
+// CreateReference signature (from RE):
+//   TESObjectREFR* __cdecl CreateReference(
+//       TESForm* baseForm, float pos[3], float rot[3],
+//       TESObjectCELL* cell, int worldspaceFlag, TESObjectREFR* existingRef);
+// ---------------------------------------------------------------------------
+constexpr uintptr_t kCreateReferenceAddr = 0x0044A7D0;
+constexpr uintptr_t kPlaceAtMeCallSite1  = 0x00514F58;
+constexpr uintptr_t kPlaceAtMeCallSite2  = 0x005152A9;
+
+std::atomic<bool>     g_captureSpawn{false};
+std::atomic<uint32_t> g_capturedRefId{0};
+std::atomic<bool>     g_spawnHookInstalled{false};
+
+using CreateReferenceFn = void* (__cdecl*)(void*, float*, float*, void*, int, void*);
+
+void* __cdecl Wrap_CreateReference(void* baseForm, float* pos, float* rot,
+                                   void* cell, int wsFlag, void* existingRef) {
+    auto fn = reinterpret_cast<CreateReferenceFn>(kCreateReferenceAddr);
+    void* result = fn(baseForm, pos, rot, cell, wsFlag, existingRef);
+    if (g_captureSpawn.load(std::memory_order_acquire) && result) {
+        // formID at offset 0x0C of TESObjectREFR (TESForm header layout).
+        uint32_t fid = *reinterpret_cast<uint32_t*>(
+            reinterpret_cast<uintptr_t>(result) + 0xC);
+        g_capturedRefId.store(fid, std::memory_order_release);
+        G5_LOG("hook: captured spawned formID=%08X (refr=%p)", fid, result);
+    }
+    return result;
+}
+
+bool PatchCallTarget(uintptr_t callInstrAddr, void* newTarget) {
+    DWORD oldProtect = 0;
+    if (!VirtualProtect((LPVOID)callInstrAddr, 5, PAGE_EXECUTE_READWRITE, &oldProtect)) {
+        G5_LOG("hook: VirtualProtect(RW) failed at %08X (err=%u)",
+               (unsigned)callInstrAddr, GetLastError());
+        return false;
+    }
+    uint8_t* p = reinterpret_cast<uint8_t*>(callInstrAddr);
+    if (p[0] != 0xE8) {
+        DWORD tmp;
+        VirtualProtect((LPVOID)callInstrAddr, 5, oldProtect, &tmp);
+        G5_LOG("hook: expected E8 at %08X, found %02X — aborting patch",
+               (unsigned)callInstrAddr, p[0]);
+        return false;
+    }
+    int32_t origRel = *reinterpret_cast<int32_t*>(p + 1);
+    int32_t newRel = static_cast<int32_t>(
+        reinterpret_cast<uintptr_t>(newTarget) - (callInstrAddr + 5));
+    *reinterpret_cast<int32_t*>(p + 1) = newRel;
+
+    DWORD tmp = 0;
+    VirtualProtect((LPVOID)callInstrAddr, 5, oldProtect, &tmp);
+    FlushInstructionCache(GetCurrentProcess(), (LPVOID)callInstrAddr, 5);
+    G5_LOG("hook: patched call site %08X: origRel=%08X newRel=%08X target=%p",
+           (unsigned)callInstrAddr, (unsigned)origRel, (unsigned)newRel, newTarget);
+    return true;
+}
 
 // ---------------------------------------------------------------------------
 // Engine pointers (Oblivion 1.2.0.416, verified against xOBSE source).
@@ -207,14 +277,45 @@ bool ExecuteConsoleCommand(const std::string& cmd) {
 }
 
 SpawnResult SpawnAtPlayer(uint32_t form_id, uint32_t count) {
+    if (!g_spawnHookInstalled.load(std::memory_order_acquire)) {
+        G5_LOG("engine: SpawnAtPlayer called before hook installed");
+        return {false, 0, "hook_not_installed"};
+    }
+
     char cmd[64];
     snprintf(cmd, sizeof(cmd), "player.placeatme %08X %u", form_id, count);
-    if (!ExecuteConsoleCommand(cmd)) {
+
+    g_capturedRefId.store(0, std::memory_order_release);
+    g_captureSpawn.store(true,  std::memory_order_release);
+    bool ok = ExecuteConsoleCommand(cmd);
+    g_captureSpawn.store(false, std::memory_order_release);
+
+    uint32_t refId = g_capturedRefId.load(std::memory_order_acquire);
+    if (!ok && refId == 0) {
         return {false, 0, "console_exec_failed"};
     }
-    uint32_t refId = *reinterpret_cast<volatile uint32_t*>(kLastCreatedRefIdAddr);
-    G5_LOG("engine: SpawnAtPlayer form_id=%08X count=%u -> refId=%08X", form_id, count, refId);
+    G5_LOG("engine: SpawnAtPlayer form_id=%08X count=%u -> refId=%08X",
+           form_id, count, refId);
     return {true, refId, ""};
+}
+
+void InstallSpawnHook() {
+    if (g_spawnHookInstalled.load(std::memory_order_acquire)) {
+        G5_LOG("hook: InstallSpawnHook already installed — no-op");
+        return;
+    }
+    bool a = PatchCallTarget(kPlaceAtMeCallSite1,
+                             reinterpret_cast<void*>(&Wrap_CreateReference));
+    bool b = PatchCallTarget(kPlaceAtMeCallSite2,
+                             reinterpret_cast<void*>(&Wrap_CreateReference));
+    if (a && b) {
+        g_spawnHookInstalled.store(true, std::memory_order_release);
+        G5_LOG("hook: InstallSpawnHook OK (call sites %08X, %08X -> Wrap_CreateReference @ %p)",
+               (unsigned)kPlaceAtMeCallSite1, (unsigned)kPlaceAtMeCallSite2,
+               (void*)&Wrap_CreateReference);
+    } else {
+        G5_LOG("hook: InstallSpawnHook FAILED (a=%d b=%d)", a ? 1 : 0, b ? 1 : 0);
+    }
 }
 
 // ---------------------------------------------------------------------------

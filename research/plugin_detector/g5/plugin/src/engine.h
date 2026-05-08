@@ -11,6 +11,13 @@ namespace g5 { namespace engine {
 // Set the OBSEConsoleInterface* obtained from QueryInterface during plugin load.
 void SetConsoleInterface(OBSEConsoleInterface* intfc);
 
+// Patch the two CALL sites inside placeatme Execute (0x00514B50) so that
+// each call to CreateReference (0x0044A7D0) is routed through our wrapper.
+// This lets us capture the spawned TESObjectREFR's formID without relying on
+// any "last-created-ref" engine global. Idempotent; safe to call once after
+// PostPostLoad on the worker thread.
+void InstallSpawnHook();
+
 // Submit a console command string to Oblivion's console parser.
 // Must run on main thread. Returns true if the command was accepted.
 bool ExecuteConsoleCommand(const std::string& cmd);
