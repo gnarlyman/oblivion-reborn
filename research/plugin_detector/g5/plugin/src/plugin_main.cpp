@@ -3,6 +3,7 @@
 #include "log.h"
 #include "socket_server.h"
 #include "command_queue.h"
+#include "commands.h"
 
 namespace {
 PluginHandle g_pluginHandle = kPluginHandle_Invalid;
@@ -21,10 +22,7 @@ DWORD WINAPI WaitForWindowAndInit(LPVOID) {
     G5_LOG("init: main window = %p", (void*)hwnd);
     Sleep(2000);  // let the engine finish startup hooks
 
-    g5::InitCommandQueue(hwnd, [](const std::string& line) -> std::string {
-        // For now, just echo on main thread.
-        return std::string("{\"ok\":true,\"main_thread_echo\":\"") + line + "\"}";
-    });
+    g5::InitCommandQueue(hwnd, &g5::commands::Dispatch);
     return 0;
 }
 
