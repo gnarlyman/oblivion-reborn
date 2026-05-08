@@ -15,7 +15,7 @@ async def test_send_command_round_trip(mock_plugin):
 
 
 @pytest.mark.asyncio
-async def test_send_command_timeout(mock_plugin):
+async def test_send_command_timeout():
     # Mock plugin doesn't register a response for "slow", so it returns the unknown-cmd default fast.
     # Real timeout test: configure a hanging server that NEVER responds, and use asyncio.wait_for.
     class HangingPlugin:

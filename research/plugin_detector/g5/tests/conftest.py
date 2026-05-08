@@ -1,8 +1,6 @@
 import asyncio
 import json
 import pytest
-import socket
-from contextlib import contextmanager
 
 
 class MockPlugin:
@@ -41,6 +39,12 @@ class MockPlugin:
         if self.server:
             self.server.close()
             await self.server.wait_closed()
+            if self._task:
+                self._task.cancel()
+                try:
+                    await self._task
+                except asyncio.CancelledError:
+                    pass
 
 
 @pytest.fixture

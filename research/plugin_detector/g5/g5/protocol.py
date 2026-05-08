@@ -27,7 +27,9 @@ class Protocol:
 
     async def close(self) -> None:
         if self.writer is not None:
-            self.writer.close()
-            await self.writer.wait_closed()
-            self.writer = None
-            self.reader = None
+            try:
+                self.writer.close()
+                await self.writer.wait_closed()
+            finally:
+                self.writer = None
+                self.reader = None
