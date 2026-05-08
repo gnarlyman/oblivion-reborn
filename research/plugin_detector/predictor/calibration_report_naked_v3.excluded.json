@@ -1,0 +1,392 @@
+[
+  {
+    "form_id": "0004683B",
+    "edid": "SE14VoiceofSheogorath",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000440FB",
+    "edid": "SE09ExperimentCorpse02",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "00044044",
+    "edid": "SE09ExperimentCorpse01",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0000C23E",
+    "edid": "TestBruceItems",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "0000950D",
+    "edid": "TestBruceNoMagic",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "00005254",
+    "edid": "TestBruceSpells",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "00000FCD",
+    "edid": "Dremora0ChurlMissileNOSUMMON",
+    "predicted_reason": "armor_mesh_missing",
+    "g5_inventory_count": 9
+  },
+  {
+    "form_id": "00000FCC",
+    "edid": "Dremora0ChurlMeleeNOSUMMON",
+    "predicted_reason": "armor_mesh_missing",
+    "g5_inventory_count": 6
+  },
+  {
+    "form_id": "000C798E",
+    "edid": "TestErikNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00064DA8",
+    "edid": "TESTRedguard",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00064DA7",
+    "edid": "TESTNord",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "00064DA6",
+    "edid": "TESTKhajiit",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00064DA4",
+    "edid": "TESTBreton",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00062B9E",
+    "edid": "TestArgonianMale",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "00132AEB",
+    "edid": "TESTArgonian",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 4
+  },
+  {
+    "form_id": "000B1231",
+    "edid": "DASanguineVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0008ADCA",
+    "edid": "DAVaerminaVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000897C1",
+    "edid": "DAPeryiteVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000897C0",
+    "edid": "DASheogorathVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "00084A49",
+    "edid": "DANocturnalVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0005C01E",
+    "edid": "DANamiraVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000579C4",
+    "edid": "DAMeridiaVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "00051EE3",
+    "edid": "DAMephalaVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "00051EE2",
+    "edid": "DAMalacathVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "00051EDB",
+    "edid": "DAHircineVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00037847",
+    "edid": "DAMolagBalVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0002C6C0",
+    "edid": "DAAzuraVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000243C3",
+    "edid": "DABarnasVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000243C1",
+    "edid": "DAClavicusVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000A948B",
+    "edid": "DAHermaeusVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0009F98A",
+    "edid": "DABoethiaVoice",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000980E0",
+    "edid": "TestDeadMeat",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00049821",
+    "edid": "TestTakeCoverCaster2",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "00049820",
+    "edid": "TestTakeCoverCaster1",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003F8B1",
+    "edid": "TestToddMan55",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003F8AF",
+    "edid": "TestToddMan35",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003F8AE",
+    "edid": "TestToddMan25",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003F8AD",
+    "edid": "TestToddMan15",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003DB99",
+    "edid": "TestVampireFoodNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0003832F",
+    "edid": "testDremoraMaleA",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0001E4EB",
+    "edid": "TestVendorNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "000342C3",
+    "edid": "TestDremora",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00003A8A",
+    "edid": "TestVampireNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "00025236",
+    "edid": "TestCharactersMaleskeleton",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "0001DB54",
+    "edid": "TestToddWoman55",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0001DB53",
+    "edid": "TestToddWoman35",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0001DB52",
+    "edid": "TestToddWoman25",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0001DB4E",
+    "edid": "TestToddManOrc",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0001DB3E",
+    "edid": "TestToddMaleRedguard",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "000105E4",
+    "edid": "TestToddWoman15",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "01006158",
+    "edid": "OOOActBase",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0101C2E7",
+    "edid": "DeadCaptiveZh",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0101C2EB",
+    "edid": "DeadCaptiveZi",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "01029228",
+    "edid": "DeadCaptiveZ",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "01029229",
+    "edid": "DeadCaptiveZa",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0102922A",
+    "edid": "DeadCaptiveZb",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0102922B",
+    "edid": "DeadCaptiveZc",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 3
+  },
+  {
+    "form_id": "01029C10",
+    "edid": "DeadCaptiveZd",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "01029C11",
+    "edid": "DeadCaptiveZe",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 1
+  },
+  {
+    "form_id": "0102A11A",
+    "edid": "DeadCaptiveZf",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0102A11B",
+    "edid": "DeadCaptiveZg",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0104D584",
+    "edid": "DeadCaptiveZj",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 2
+  },
+  {
+    "form_id": "0200081E",
+    "edid": "cobGenActBase",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "19000F4D",
+    "edid": "NDUmarilVoiceNPC",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  },
+  {
+    "form_id": "1D102B21",
+    "edid": "ZUFlameAtroTorchHolder",
+    "predicted_reason": "inv_no_concrete_armor",
+    "g5_inventory_count": 0
+  }
+]
