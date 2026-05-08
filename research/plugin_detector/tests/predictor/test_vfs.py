@@ -33,3 +33,18 @@ def test_loose_index_finds_g5_dll():
     real_path = idx[target]
     assert real_path.exists()
     assert real_path.name.lower() == "g5.dll"
+
+
+def test_bsa_index_finds_vanilla_mesh():
+    """Oblivion - Meshes.bsa should be present in active mods and contain
+    well-known vanilla mesh paths (or at least, the BSA index should be
+    non-empty)."""
+    from predictor.vfs import build_bsa_index
+    mods = parse_modlist(PROFILE_DIR / "modlist.txt")
+    idx = build_bsa_index(mods, MODS_DIR)
+    # Sanity: at least some BSA was parsed.
+    assert len(idx) > 0, f"expected non-empty BSA index, got {len(idx)} entries"
+    # All keys should be lowercase forward-slash paths.
+    for key in list(idx.keys())[:10]:
+        assert key == key.lower()
+        assert "\\" not in key
