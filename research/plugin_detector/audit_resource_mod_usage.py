@@ -44,7 +44,26 @@ from predictor.vfs import VFS, parse_modlist
 
 
 PATH_SUBRECORDS = {"MODL", "MOD2", "MOD3", "MOD4", "ICON"}
-SCAN_SIGNATURES = {"ARMO", "CLOT", "WEAP", "AMMO"}
+# Default scan covers inventory items, world objects, and creatures. TREE is
+# excluded — its MODL paths use 'trees/' root not 'meshes/' and most refs
+# resolve via vanilla SI BSAs, producing noise rather than signal.
+SCAN_SIGNATURES = {
+    "ARMO", "CLOT", "WEAP", "AMMO",          # equipment
+    "MISC", "BOOK", "ALCH", "INGR",          # inventory
+    "KEYM", "APPA", "SLGM", "SCRL", "NOTE",  # inventory
+    "STAT", "FURN", "ACTI", "DOOR",          # world objects
+    "CONT", "LIGH",                          # containers, lights
+    "FLOR",                                  # plants
+    "CREA",                                  # creatures
+}
+
+# Inventory-item signatures whose ICON subrec is an inventory icon (engine
+# resolves under textures/menus/icons/). For other signatures (TREE, STAT,
+# ACTI etc.) ICON is something else and lives under textures/ directly.
+INVENTORY_ICON_SIGS = {
+    "ARMO", "CLOT", "WEAP", "AMMO", "MISC", "BOOK", "ALCH", "INGR",
+    "KEYM", "APPA", "SLGM", "SCRL", "NOTE", "LIGH",
+}
 
 
 def attribute_to_mod(provider_path: Path, mods_dir: Path, data_dir: Path) -> str:
@@ -63,14 +82,16 @@ def attribute_to_mod(provider_path: Path, mods_dir: Path, data_dir: Path) -> str
         return f"<external: {provider_path}>"
 
 
-def extract_paths(body: bytes) -> list[tuple[str, str]]:
+def extract_paths(body: bytes, record_sig: str) -> list[tuple[str, str]]:
     """Walk a record body, return list of (subrec_sig, path) for path-bearing subrecs.
 
     Path normalization to engine convention:
       - MODL/MOD2/MOD3/MOD4 → relative to meshes/
-      - ICON → relative to textures/menus/icons/  (NOT textures/ — Oblivion's
-        engine rule for inventory-icon DDS files; records store the
-        relative-to-icons path)
+      - ICON on inventory-item sigs (ARMO/CLOT/...) → relative to
+        textures/menus/icons/
+      - ICON on non-inventory sigs (TREE/STAT/ACTI/...) → relative to textures/
+      - Leading slashes / collapsed double slashes (some vanilla records
+        store '\foo.spt' which would otherwise produce 'meshes//foo.spt').
     """
     out = []
     for ssig, ssub in parse_subrecords(body):
@@ -79,17 +100,25 @@ def extract_paths(body: bytes) -> list[tuple[str, str]]:
         s = cstr(ssub)
         if not s:
             continue
-        v = s.lower().replace("\\", "/")
+        v = s.lower().replace("\\", "/").lstrip("/")
+        # Collapse repeated slashes.
+        while "//" in v:
+            v = v.replace("//", "/")
         if ssig in ("MODL", "MOD2", "MOD3", "MOD4"):
             if not v.startswith("meshes/"):
                 v = "meshes/" + v
         elif ssig == "ICON":
-            if v.startswith("textures/menus/icons/"):
-                pass
-            elif v.startswith("textures/"):
-                v = "textures/menus/icons/" + v[len("textures/"):]
+            inventory = record_sig in INVENTORY_ICON_SIGS
+            if inventory:
+                if v.startswith("textures/menus/icons/"):
+                    pass
+                elif v.startswith("textures/"):
+                    v = "textures/menus/icons/" + v[len("textures/"):]
+                else:
+                    v = "textures/menus/icons/" + v
             else:
-                v = "textures/menus/icons/" + v
+                if not v.startswith("textures/"):
+                    v = "textures/" + v
         out.append((ssig, v))
     return out
 
@@ -174,7 +203,7 @@ def main() -> int:
             if ssig == "EDID":
                 edid = cstr(ssub)
                 break
-        for ssig, vpath in extract_paths(body):
+        for ssig, vpath in extract_paths(body, sig):
             total_paths_scanned += 1
             provider = vfs.resolve(vpath)
             if provider is None:
