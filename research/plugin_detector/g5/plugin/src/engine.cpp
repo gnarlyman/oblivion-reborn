@@ -550,25 +550,37 @@ InventoryResult InspectInventory(uint32_t ref_id) {
 //
 // xOBSE GameAPI.cpp:107: `const _Console_Print Console_Print = (_Console_Print)0x00579B9B;`
 // Signature: `void __cdecl Console_Print(const char* fmt, ...)`.
-// This is the single funnel for every line printed to the on-screen console
-// — every xOBSE plugin that wants to print calls this address, and the
-// engine itself calls it directly for getstage/getrace/sqv/etc. output.
+// This is the funnel xOBSE plugins call to print to the on-screen console
+// (and that the engine itself uses for getstage/getrace/sqv/etc. output).
+// The actual function entry is at 0x00579B60; 0x00579B9B is the post-checks
+// tail entry that skips menu-mode/script-state guards.
 //
-// Approach: head-splice with a 5-byte JMP rel32 to our wrapper. Save the
-// first 5 bytes into a separately-allocated executable trampoline that
-// re-runs them and JMPs to (kConsolePrintAddr + 5). The wrapper formats
-// the va_list itself (so we get the resolved string) then calls the
-// trampoline as `original("%s", formatted)` — which is safe because the
-// wrapper-formatted string is treated as a single %s argument and any
-// stray '%' chars in user-supplied content are not re-interpreted.
+// Approach: head-splice with a 5-byte JMP rel32 to our wrapper, padded with
+// 3 NOPs to cover an 8-byte window. The first 8 bytes at 0x00579B9B are
+// two complete stack-relative instructions:
+//
+//     8B 4C 24 04        mov  ecx, [esp+4]      ; 4 bytes — fmt
+//     8D 44 24 08        lea  eax, [esp+8]      ; 4 bytes — &va_list
+//
+// We MUST splice 8 (not 5) — splicing 5 would cut the second instruction
+// mid-SIB-byte and the trampoline would jump into garbage. 8 covers two
+// clean instructions; both are stack-relative, neither contains a rel32,
+// so the trampoline can replay them verbatim then JMP to (target+8).
+//
+// Trampoline = 8 saved bytes + 5-byte JMP rel32 back to (target+8).
+//
+// The wrapper formats the va_list itself and then calls the trampoline as
+// `original("%s", formatted)` — safe because the formatted string is the
+// single %s argument and any stray '%' in user content is not re-interpreted.
 //
 // Capture state lives in main-thread-local globals; the Begin/EndCapture
-// helpers in this file are the ONLY callers. Concurrency story: HandleExec
-// runs on the main thread via the WndProc-subclass queue, RunScriptLine is
-// synchronous, the main thread is the only thread that prints — so there
-// is no race window for the buffer.
+// helpers below are the ONLY callers. Concurrency: HandleExec runs on the
+// main thread via the WndProc-subclass queue, RunScriptLine is synchronous,
+// the main thread is the only thread that prints — no race on the buffer.
 // ---------------------------------------------------------------------------
 constexpr uintptr_t kConsolePrintAddr = 0x00579B9B;
+constexpr size_t    kSpliceLen        = 8;
+constexpr size_t    kTrampolineLen    = kSpliceLen + 5;  // 8 saved + 5-byte JMP back
 constexpr size_t    kCapture_MaxLines = 1024;
 constexpr size_t    kCapture_MaxBytes = 256 * 1024;
 
@@ -669,35 +681,40 @@ void InstallConsolePrintHook() {
 
     uint8_t* target = reinterpret_cast<uint8_t*>(kConsolePrintAddr);
 
-    // Sanity: refuse to splice if the first 5 bytes look like a relative
-    // CALL/JMP — we'd need to relocate them in the trampoline. The Console_Print
-    // prologue at 0x00579B9B is a normal function entry, but verify defensively.
-    uint8_t op0 = target[0];
-    if (op0 == 0xE8 || op0 == 0xE9 || op0 == 0xEB ||
-        (op0 >= 0x70 && op0 <= 0x7F)) {
-        G5_LOG("hook: Console_Print head opcode %02X is relative — refusing to splice",
-               op0);
+    // Sanity check: verify the 8 bytes at the splice site are exactly the two
+    // expected instructions. If they differ (different Oblivion build, runtime
+    // patch, etc.), refuse to splice rather than corrupt the engine.
+    static const uint8_t kExpectedHead[kSpliceLen] = {
+        0x8B, 0x4C, 0x24, 0x04,  // mov ecx, [esp+4]
+        0x8D, 0x44, 0x24, 0x08,  // lea eax, [esp+8]
+    };
+    if (memcmp(target, kExpectedHead, kSpliceLen) != 0) {
+        G5_LOG("hook: Console_Print head bytes mismatch — refusing to splice "
+               "(got %02X %02X %02X %02X %02X %02X %02X %02X)",
+               target[0], target[1], target[2], target[3],
+               target[4], target[5], target[6], target[7]);
         return;
     }
 
-    // Allocate the trampoline: 5 saved bytes + 5-byte JMP rel32 back to (target+5).
+    // Allocate the trampoline: 8 saved bytes + 5-byte JMP rel32 back to (target+8).
     g_consolePrintTrampoline = reinterpret_cast<uint8_t*>(
-        VirtualAlloc(nullptr, 16, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE));
+        VirtualAlloc(nullptr, kTrampolineLen, MEM_COMMIT | MEM_RESERVE,
+                     PAGE_EXECUTE_READWRITE));
     if (!g_consolePrintTrampoline) {
         G5_LOG("hook: VirtualAlloc(trampoline) failed (err=%u)", GetLastError());
         return;
     }
-    memcpy(g_consolePrintTrampoline, target, 5);
-    g_consolePrintTrampoline[5] = 0xE9;  // JMP rel32
+    memcpy(g_consolePrintTrampoline, target, kSpliceLen);
+    g_consolePrintTrampoline[kSpliceLen] = 0xE9;  // JMP rel32
     int32_t jmpBackRel = static_cast<int32_t>(
-        (kConsolePrintAddr + 5) -
-        (reinterpret_cast<uintptr_t>(g_consolePrintTrampoline) + 5 + 5));
-    *reinterpret_cast<int32_t*>(g_consolePrintTrampoline + 6) = jmpBackRel;
-    FlushInstructionCache(GetCurrentProcess(), g_consolePrintTrampoline, 16);
+        (kConsolePrintAddr + kSpliceLen) -
+        (reinterpret_cast<uintptr_t>(g_consolePrintTrampoline) + kSpliceLen + 5));
+    *reinterpret_cast<int32_t*>(g_consolePrintTrampoline + kSpliceLen + 1) = jmpBackRel;
+    FlushInstructionCache(GetCurrentProcess(), g_consolePrintTrampoline, kTrampolineLen);
 
-    // Splice the head: E9 rel32 to Wrap_Console_Print.
+    // Splice the head: E9 rel32 to Wrap_Console_Print, padded with NOPs to cover 8.
     DWORD oldProtect = 0;
-    if (!VirtualProtect(target, 5, PAGE_EXECUTE_READWRITE, &oldProtect)) {
+    if (!VirtualProtect(target, kSpliceLen, PAGE_EXECUTE_READWRITE, &oldProtect)) {
         G5_LOG("hook: VirtualProtect(Console_Print) failed (err=%u)", GetLastError());
         VirtualFree(g_consolePrintTrampoline, 0, MEM_RELEASE);
         g_consolePrintTrampoline = nullptr;
@@ -707,15 +724,18 @@ void InstallConsolePrintHook() {
     int32_t spliceRel = static_cast<int32_t>(
         reinterpret_cast<uintptr_t>(&Wrap_Console_Print) - (kConsolePrintAddr + 5));
     *reinterpret_cast<int32_t*>(target + 1) = spliceRel;
+    target[5] = 0x90;  // NOP padding
+    target[6] = 0x90;
+    target[7] = 0x90;
 
     DWORD tmp = 0;
-    VirtualProtect(target, 5, oldProtect, &tmp);
-    FlushInstructionCache(GetCurrentProcess(), target, 5);
+    VirtualProtect(target, kSpliceLen, oldProtect, &tmp);
+    FlushInstructionCache(GetCurrentProcess(), target, kSpliceLen);
 
     g_consolePrintHookInstalled.store(true, std::memory_order_release);
-    G5_LOG("hook: InstallConsolePrintHook OK (target=%08X wrapper=%p trampoline=%p)",
+    G5_LOG("hook: InstallConsolePrintHook OK (target=%08X wrapper=%p trampoline=%p splice=%zu)",
            (unsigned)kConsolePrintAddr, (void*)&Wrap_Console_Print,
-           (void*)g_consolePrintTrampoline);
+           (void*)g_consolePrintTrampoline, kSpliceLen);
 }
 
 void BeginCapture() {
