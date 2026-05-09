@@ -24,13 +24,21 @@ class G5Driver:
         if not resp.get("ok"):
             raise RuntimeError(f"coc failed: {resp}")
 
-    async def exec_console(self, line: str) -> None:
+    async def exec_console(self, line: str) -> list[str]:
         """Send a raw console command line to Oblivion via OBSE RunScriptLine.
-        The bool return is unreliable (per the plugin source comment); we trust
-        the side effect rather than the response."""
+        Returns the lines printed to the console during the command's execution
+        (empty list if nothing printed). The plugin's underlying bool return
+        is unreliable (per the plugin source comment); we trust the side effect
+        and the captured output rather than the bool."""
         resp = await self.proto.send_command({"cmd": "exec", "line": line})
         if not resp.get("ok"):
             raise RuntimeError(f"exec failed: {resp}")
+        return resp.get("lines", [])
+
+    async def query(self, line: str) -> list[str]:
+        """Sugar alias for exec_console — reads better at call sites that
+        consume the captured output (getstage, getrace, sqv, ...)."""
+        return await self.exec_console(line)
 
     async def player_add_item(self, form_id: int, count: int = 1) -> None:
         await self.exec_console(f"Player.AddItem {form_id:08X} {count}")

@@ -35,6 +35,21 @@ Walks `TESContainer` + `ExtraContainerChanges` and returns the merged inventory.
 **Resp:** `{"ok": true}`
 Effect: `prid <fid>; disable; markfordelete`.
 
+### `exec`
+**Req:** `{"cmd": "exec", "line": "getstage MS40"}`
+**Resp:** `{"ok": true, "lines": ["Stage = 50.00"]}`
+Runs an arbitrary console command via `OBSEConsoleInterface::RunScriptLine`
+and returns whatever the engine printed to the console during the call.
+
+- `lines` is always present on `ok=true` responses (`[]` if nothing printed).
+- One entry per `Console_Print` call, except: if a single call's formatted
+  string contains embedded `\n`, it is split so each visual line is its own
+  entry. A single trailing empty entry from a terminal `\n` is dropped, and
+  any trailing `\r` per line is stripped.
+- Cap: **1024 entries OR 256 KiB total** per `exec`, whichever hits first.
+  On overflow, `"...truncated..."` is appended as the final entry and the
+  rest of the captured output is silently dropped.
+
 ### `quit`
 **Req:** `{"cmd": "quit"}`
 **Resp:** `{"ok": true, "msg": "quitting"}`

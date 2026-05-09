@@ -3,7 +3,11 @@
 #include "log.h"
 #include <Windows.h>
 #include <atomic>
+#include <cstdarg>
 #include <cstdint>
+#include <cstdio>
+#include <cstring>
+#include <string>
 #include <unordered_map>
 #include <vector>
 
@@ -540,6 +544,195 @@ InventoryResult InspectInventory(uint32_t ref_id) {
     return result;
 }
 
+
+// ---------------------------------------------------------------------------
+// Console_Print hook (T-cap-1).
+//
+// xOBSE GameAPI.cpp:107: `const _Console_Print Console_Print = (_Console_Print)0x00579B9B;`
+// Signature: `void __cdecl Console_Print(const char* fmt, ...)`.
+// This is the single funnel for every line printed to the on-screen console
+// — every xOBSE plugin that wants to print calls this address, and the
+// engine itself calls it directly for getstage/getrace/sqv/etc. output.
+//
+// Approach: head-splice with a 5-byte JMP rel32 to our wrapper. Save the
+// first 5 bytes into a separately-allocated executable trampoline that
+// re-runs them and JMPs to (kConsolePrintAddr + 5). The wrapper formats
+// the va_list itself (so we get the resolved string) then calls the
+// trampoline as `original("%s", formatted)` — which is safe because the
+// wrapper-formatted string is treated as a single %s argument and any
+// stray '%' chars in user-supplied content are not re-interpreted.
+//
+// Capture state lives in main-thread-local globals; the Begin/EndCapture
+// helpers in this file are the ONLY callers. Concurrency story: HandleExec
+// runs on the main thread via the WndProc-subclass queue, RunScriptLine is
+// synchronous, the main thread is the only thread that prints — so there
+// is no race window for the buffer.
+// ---------------------------------------------------------------------------
+constexpr uintptr_t kConsolePrintAddr = 0x00579B9B;
+constexpr size_t    kCapture_MaxLines = 1024;
+constexpr size_t    kCapture_MaxBytes = 256 * 1024;
+
+thread_local bool                     g_capturing       = false;
+thread_local size_t                   g_captureBytes    = 0;
+thread_local bool                     g_captureTrunced  = false;
+thread_local std::vector<std::string> g_captureBuf;
+
+uint8_t* g_consolePrintTrampoline = nullptr;
+std::atomic<bool> g_consolePrintHookInstalled{false};
+
+static void AppendCaptured(const char* s) {
+    if (!s || !g_capturing) return;
+
+    auto markTruncated = [&]() {
+        if (!g_captureTrunced) {
+            g_captureBuf.emplace_back("...truncated...");
+            g_captureTrunced = true;
+        }
+    };
+
+    size_t origCount = g_captureBuf.size();
+    const char* p = s;
+    bool endedWithNewline = false;
+
+    while (*p) {
+        const char* nl = strchr(p, '\n');
+        size_t segLen = nl ? static_cast<size_t>(nl - p) : strlen(p);
+        if (segLen > 0 && p[segLen - 1] == '\r') segLen--;
+
+        if (g_captureTrunced) return;
+        if (g_captureBuf.size() >= kCapture_MaxLines ||
+            g_captureBytes + segLen > kCapture_MaxBytes) {
+            markTruncated();
+            return;
+        }
+
+        g_captureBuf.emplace_back(p, segLen);
+        g_captureBytes += segLen;
+
+        if (!nl) { endedWithNewline = false; break; }
+        endedWithNewline = (*(nl + 1) == '\0');
+        p = nl + 1;
+    }
+
+    // Drop a single trailing empty entry caused by a terminal '\n'.
+    if (endedWithNewline &&
+        g_captureBuf.size() > origCount &&
+        g_captureBuf.back().empty()) {
+        g_captureBuf.pop_back();
+    }
+}
+
+void __cdecl Wrap_Console_Print(const char* fmt, ...) {
+    typedef void (__cdecl *Fn)(const char*, ...);
+    Fn original = reinterpret_cast<Fn>(g_consolePrintTrampoline);
+
+    if (!fmt) {
+        if (original) original("%s", "(g5: null fmt)");
+        return;
+    }
+
+    va_list va;
+    va_start(va, fmt);
+    int len = _vscprintf(fmt, va);
+    va_end(va);
+
+    if (len < 0) {
+        // Format failure — forward the raw fmt string verbatim, do not capture.
+        if (original) original("%s", fmt);
+        return;
+    }
+
+    char  stackBuf[1024];
+    char* buf = stackBuf;
+    std::string heapBuf;
+    if (static_cast<size_t>(len) + 1 > sizeof(stackBuf)) {
+        heapBuf.resize(static_cast<size_t>(len));
+        buf = heapBuf.empty() ? stackBuf : &heapBuf[0];
+    }
+
+    va_start(va, fmt);
+    vsnprintf(buf, static_cast<size_t>(len) + 1, fmt, va);
+    va_end(va);
+
+    if (g_capturing) {
+        AppendCaptured(buf);
+    }
+
+    if (original) original("%s", buf);
+}
+
+void InstallConsolePrintHook() {
+    if (g_consolePrintHookInstalled.load(std::memory_order_acquire)) {
+        G5_LOG("hook: InstallConsolePrintHook already installed — no-op");
+        return;
+    }
+
+    uint8_t* target = reinterpret_cast<uint8_t*>(kConsolePrintAddr);
+
+    // Sanity: refuse to splice if the first 5 bytes look like a relative
+    // CALL/JMP — we'd need to relocate them in the trampoline. The Console_Print
+    // prologue at 0x00579B9B is a normal function entry, but verify defensively.
+    uint8_t op0 = target[0];
+    if (op0 == 0xE8 || op0 == 0xE9 || op0 == 0xEB ||
+        (op0 >= 0x70 && op0 <= 0x7F)) {
+        G5_LOG("hook: Console_Print head opcode %02X is relative — refusing to splice",
+               op0);
+        return;
+    }
+
+    // Allocate the trampoline: 5 saved bytes + 5-byte JMP rel32 back to (target+5).
+    g_consolePrintTrampoline = reinterpret_cast<uint8_t*>(
+        VirtualAlloc(nullptr, 16, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE));
+    if (!g_consolePrintTrampoline) {
+        G5_LOG("hook: VirtualAlloc(trampoline) failed (err=%u)", GetLastError());
+        return;
+    }
+    memcpy(g_consolePrintTrampoline, target, 5);
+    g_consolePrintTrampoline[5] = 0xE9;  // JMP rel32
+    int32_t jmpBackRel = static_cast<int32_t>(
+        (kConsolePrintAddr + 5) -
+        (reinterpret_cast<uintptr_t>(g_consolePrintTrampoline) + 5 + 5));
+    *reinterpret_cast<int32_t*>(g_consolePrintTrampoline + 6) = jmpBackRel;
+    FlushInstructionCache(GetCurrentProcess(), g_consolePrintTrampoline, 16);
+
+    // Splice the head: E9 rel32 to Wrap_Console_Print.
+    DWORD oldProtect = 0;
+    if (!VirtualProtect(target, 5, PAGE_EXECUTE_READWRITE, &oldProtect)) {
+        G5_LOG("hook: VirtualProtect(Console_Print) failed (err=%u)", GetLastError());
+        VirtualFree(g_consolePrintTrampoline, 0, MEM_RELEASE);
+        g_consolePrintTrampoline = nullptr;
+        return;
+    }
+    target[0] = 0xE9;
+    int32_t spliceRel = static_cast<int32_t>(
+        reinterpret_cast<uintptr_t>(&Wrap_Console_Print) - (kConsolePrintAddr + 5));
+    *reinterpret_cast<int32_t*>(target + 1) = spliceRel;
+
+    DWORD tmp = 0;
+    VirtualProtect(target, 5, oldProtect, &tmp);
+    FlushInstructionCache(GetCurrentProcess(), target, 5);
+
+    g_consolePrintHookInstalled.store(true, std::memory_order_release);
+    G5_LOG("hook: InstallConsolePrintHook OK (target=%08X wrapper=%p trampoline=%p)",
+           (unsigned)kConsolePrintAddr, (void*)&Wrap_Console_Print,
+           (void*)g_consolePrintTrampoline);
+}
+
+void BeginCapture() {
+    g_captureBuf.clear();
+    g_captureBytes   = 0;
+    g_captureTrunced = false;
+    g_capturing      = true;
+}
+
+std::vector<std::string> EndCapture() {
+    g_capturing = false;
+    std::vector<std::string> out;
+    out.swap(g_captureBuf);
+    g_captureBytes   = 0;
+    g_captureTrunced = false;
+    return out;
+}
 
 bool DeleteRef(uint32_t ref_id) {
     if (!g_consoleIntfc || !g_consoleIntfc->RunScriptLine2) {

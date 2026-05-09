@@ -24,6 +24,7 @@ DWORD WINAPI WaitForWindowAndInit(LPVOID) {
     Sleep(2000);  // let the engine finish startup hooks
 
     g5::engine::InstallSpawnHook();
+    g5::engine::InstallConsolePrintHook();
     g5::InitCommandQueue(hwnd, &g5::commands::Dispatch);
     return 0;
 }

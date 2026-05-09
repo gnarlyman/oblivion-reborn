@@ -93,8 +93,12 @@ json HandleExec(const json& req) {
         return {{"ok", false}, {"error", "missing_line"}};
     }
     std::string line = req["line"];
+    engine::BeginCapture();
     bool ok = engine::ExecuteConsoleCommand(line);
-    return {{"ok", ok}};
+    auto lines = engine::EndCapture();
+    json arr = json::array();
+    for (auto& s : lines) arr.push_back(std::move(s));
+    return {{"ok", ok}, {"lines", arr}};
 }
 
 }  // namespace

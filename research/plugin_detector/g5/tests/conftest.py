@@ -45,6 +45,8 @@ class MockPlugin:
                 elif cmd == "delete":
                     self.spawned_inventory.pop(req.get("ref_id"), None)
                     resp = {"ok": True}
+                elif cmd == "exec":
+                    resp = {"ok": True, "lines": []}
                 elif cmd == "quit":
                     resp = {"ok": True}
                 else:

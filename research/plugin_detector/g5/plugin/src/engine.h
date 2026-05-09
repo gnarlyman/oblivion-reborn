@@ -55,4 +55,18 @@ InventoryResult InspectInventory(uint32_t ref_id);
 // Returns true if all three console commands were accepted.
 bool DeleteRef(uint32_t ref_id);
 
+// Splice the engine's Console_Print (cdecl vararg @ 0x00579B9B) so every
+// printed line passes through our wrapper. Idempotent. Run once on the
+// init worker thread alongside InstallSpawnHook.
+void InstallConsolePrintHook();
+
+// Begin/end a console-output capture window. Both calls MUST run on the
+// main thread (same thread that runs RunScriptLine), otherwise no output
+// will be captured. EndCapture returns the lines printed since BeginCapture
+// and clears the buffer. Splits on '\n', strips trailing '\r', drops a
+// single trailing empty line caused by a terminal '\n'. Caps at 1024 lines
+// or 256 KiB total — overflow produces "...truncated..." as the final entry.
+void BeginCapture();
+std::vector<std::string> EndCapture();
+
 }}
