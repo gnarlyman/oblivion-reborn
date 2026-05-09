@@ -584,6 +584,28 @@ constexpr size_t    kTrampolineLen    = kSpliceLen + 5;  // 8 saved + 5-byte JMP
 constexpr size_t    kCapture_MaxLines = 1024;
 constexpr size_t    kCapture_MaxBytes = 256 * 1024;
 
+// Two engine globals gate whether print attempts reach our hook:
+//   0x00B361AC = g_bConsoleMode (xOBSE GameAPI.cpp:122) — checked at the
+//                COMMAND level: vanilla commands like GetStage do
+//                   if (g_bConsoleMode) Console_Print("GetStage >> %.2f", x);
+//                so when invoked via RunScriptLine (g_bConsoleMode=0) the
+//                Console_Print call is skipped entirely at the call site.
+//   0x00B3B908 = inner guard inside FUN_00579b60 — once Console_Print is
+//                actually called, the function still has its own gate:
+//                   if (scriptStateObj.byte31 > 0 || DAT_00b3b908 != 0) print();
+//                The xOBSE-known 0x00579B9B entry is the post-guard tail; engine
+//                internal callers go through the function start with guards.
+//
+// During BeginCapture we save both bytes, force them to 1, capture, then
+// restore on EndCapture. Side-effect window is the single synchronous
+// RunScriptLine call — microseconds — so the verbose-AI-debug spam that
+// 0x00B3B908 would normally produce has no chance to fire.
+constexpr uintptr_t kAddr_g_bConsoleMode = 0x00B361AC;
+constexpr uintptr_t kAddr_PrintInnerGate = 0x00B3B908;
+
+thread_local uint8_t g_savedConsoleMode = 0;
+thread_local uint8_t g_savedInnerGate   = 0;
+
 thread_local bool                     g_capturing       = false;
 thread_local size_t                   g_captureBytes    = 0;
 thread_local bool                     g_captureTrunced  = false;
@@ -743,9 +765,23 @@ void BeginCapture() {
     g_captureBytes   = 0;
     g_captureTrunced = false;
     g_capturing      = true;
+
+    // Force the two engine guards open so vanilla commands' Console_Print
+    // calls actually fire. Save originals to restore in EndCapture.
+    auto* mode = reinterpret_cast<uint8_t*>(kAddr_g_bConsoleMode);
+    auto* gate = reinterpret_cast<uint8_t*>(kAddr_PrintInnerGate);
+    g_savedConsoleMode = *mode;
+    g_savedInnerGate   = *gate;
+    *mode = 1;
+    *gate = 1;
 }
 
 std::vector<std::string> EndCapture() {
+    auto* mode = reinterpret_cast<uint8_t*>(kAddr_g_bConsoleMode);
+    auto* gate = reinterpret_cast<uint8_t*>(kAddr_PrintInnerGate);
+    *mode = g_savedConsoleMode;
+    *gate = g_savedInnerGate;
+
     g_capturing = false;
     std::vector<std::string> out;
     out.swap(g_captureBuf);
