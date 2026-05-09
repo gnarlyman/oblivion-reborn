@@ -126,6 +126,8 @@ def extract_paths(body: bytes, record_sig: str) -> list[tuple[str, str]]:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--profile", default="Reborn-OOO")
+    ap.add_argument("--profile-dir", type=Path, default=None,
+                    help="explicit profile dir (overrides default Reborn/profiles/<--profile>)")
     ap.add_argument("--data-dir", default=r"D:\Modlists\Reborn\Stock Game\Data", type=Path)
     ap.add_argument("--mods-dir", default=r"D:\Modlists\Reborn\mods", type=Path)
     ap.add_argument("--mods", nargs="*",
@@ -138,7 +140,7 @@ def main() -> int:
                     help=f"record signatures to scan (default: {sorted(SCAN_SIGNATURES)})")
     args = ap.parse_args()
 
-    profile_dir = Path(r"D:\Modlists\Reborn\profiles") / args.profile
+    profile_dir = args.profile_dir or Path(r"D:\Modlists\Reborn\profiles") / args.profile
     print(f"loading load order from {profile_dir}")
     lo = build_load_order(profile_dir=profile_dir, data_dir=args.data_dir)
     print(f"  {len(lo.plugins)} active plugins")
