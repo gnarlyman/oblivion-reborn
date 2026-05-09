@@ -30,6 +30,7 @@ Usage:
         [--report report.md]
 """
 import argparse
+import hashlib
 import json
 import sys
 from collections import defaultdict
@@ -63,7 +64,14 @@ def attribute_to_mod(provider_path: Path, mods_dir: Path, data_dir: Path) -> str
 
 
 def extract_paths(body: bytes) -> list[tuple[str, str]]:
-    """Walk a record body, return list of (subrec_sig, path) for path-bearing subrecs."""
+    """Walk a record body, return list of (subrec_sig, path) for path-bearing subrecs.
+
+    Path normalization to engine convention:
+      - MODL/MOD2/MOD3/MOD4 → relative to meshes/
+      - ICON → relative to textures/menus/icons/  (NOT textures/ — Oblivion's
+        engine rule for inventory-icon DDS files; records store the
+        relative-to-icons path)
+    """
     out = []
     for ssig, ssub in parse_subrecords(body):
         if ssig not in PATH_SUBRECORDS:
@@ -71,14 +79,17 @@ def extract_paths(body: bytes) -> list[tuple[str, str]]:
         s = cstr(ssub)
         if not s:
             continue
-        # Normalize: lowercase, forward slashes
         v = s.lower().replace("\\", "/")
         if ssig in ("MODL", "MOD2", "MOD3", "MOD4"):
             if not v.startswith("meshes/"):
                 v = "meshes/" + v
         elif ssig == "ICON":
-            if not v.startswith("textures/"):
-                v = "textures/" + v
+            if v.startswith("textures/menus/icons/"):
+                pass
+            elif v.startswith("textures/"):
+                v = "textures/menus/icons/" + v[len("textures/"):]
+            else:
+                v = "textures/menus/icons/" + v
         out.append((ssig, v))
     return out
 
@@ -192,6 +203,70 @@ def main() -> int:
           f"resolved {total_paths_resolved}, "
           f"missing {len(missing_paths)}")
 
+    # Substitution-suspect detection via content hashing.
+    # If multiple distinct virtual paths resolve to physical files with
+    # identical content, a fallback/nullify mod is likely shipping the same
+    # placeholder bytes at many target paths to make broken refs "resolve."
+    # We hash only LOOSE files; BSA-resident paths share their BSA's path so
+    # would false-positive if hashed at the archive level.
+    print("hashing provider files for substitution detection (loose only)...")
+    hash_cache: dict[str, str] = {}
+    for mod, refs in refs_by_mod.items():
+        for r in refs:
+            provider = r["provider"]
+            if provider in hash_cache:
+                continue
+            ppath = Path(provider)
+            if ppath.suffix.lower() == ".bsa":
+                continue  # BSAs hold many files; archive-level hash isn't useful here
+            try:
+                h = hashlib.sha1()
+                with ppath.open("rb") as f:
+                    for chunk in iter(lambda: f.read(8192), b""):
+                        h.update(chunk)
+                hash_cache[provider] = h.hexdigest()
+            except Exception:
+                hash_cache[provider] = ""
+    print(f"  hashed {sum(1 for v in hash_cache.values() if v)} loose files")
+
+    # Group refs by content hash. Hash → set of distinct virtual paths + the records.
+    hash_paths: dict[str, set] = defaultdict(set)
+    hash_records: dict[str, list] = defaultdict(list)
+    for mod, refs in refs_by_mod.items():
+        for r in refs:
+            h = hash_cache.get(r["provider"])
+            if not h:
+                continue
+            hash_paths[h].add(r["path"])
+            hash_records[h].append(r)
+
+    substitution_groups: list[dict] = []
+    for h, paths in hash_paths.items():
+        if len(paths) <= 1:
+            continue
+        # Skip groups whose paths all share the same parent directory and only
+        # differ by suffix variant (likely vanilla shared meshes), to reduce noise.
+        # We DO still want to flag cases like "5 distinct armor paths under
+        # different parent dirs all share one hash" — that's the substitution
+        # pattern.
+        parents = {p.rsplit("/", 1)[0] for p in paths}
+        substitution_groups.append({
+            "hash": h,
+            "n_paths": len(paths),
+            "n_parents": len(parents),
+            "n_records": len(hash_records[h]),
+            "sample_paths": sorted(paths)[:6],
+            "all_paths": sorted(paths),
+            "sample_records": hash_records[h][:6],
+        })
+    substitution_groups.sort(key=lambda g: (-g["n_paths"], -g["n_records"]))
+
+    # Build a quick lookup: which records are in any substitution group.
+    substituted_record_ids: set = set()
+    for g in substitution_groups:
+        for r in hash_records[g["hash"]]:
+            substituted_record_ids.add((r["fid"], r["subrec"], r["path"]))
+
     # Per-mod summary (resource-only only).
     summary: list[dict] = []
     for mod_name in resource_only_mods:
@@ -212,15 +287,24 @@ def main() -> int:
             for r in other_refs:
                 if r["path"] in files_in_mod:
                     shadowed_refs.append({**r, "winner_mod": other_mod})
+        # Of this mod's exclusive_refs, how many are substituted (provider's
+        # content hash collides with that of another distinct virtual path)?
+        substituted_refs = sum(
+            1 for r in refs
+            if (r["fid"], r["subrec"], r["path"]) in substituted_record_ids
+        )
         summary.append({
             "mod": mod_name,
             "total_files_loose": len(files_in_mod),
             "exclusive_refs": len(refs),
+            "substituted_refs": substituted_refs,
             "shadowed_refs": len(shadowed_refs),
             "verdict": (
-                "NEEDED (exclusive refs)" if refs
-                else ("SHADOWED (same files in higher-priority mod)" if shadowed_refs
-                      else "NOT REFERENCED by record-scan")
+                "NEEDED (exclusive refs)" if refs and substituted_refs < len(refs)
+                else ("SUBSTITUTION-ONLY (all refs are content-shared placeholders)"
+                      if refs and substituted_refs == len(refs)
+                      else ("SHADOWED (same files in higher-priority mod)" if shadowed_refs
+                            else "NOT REFERENCED by record-scan"))
             ),
         })
 
@@ -250,15 +334,27 @@ def main() -> int:
                       f"shadowed_refs={s['shadowed_refs']}")
             print()
 
-    print(f"{'mod':<55s} {'verdict':<45s} {'refs':>6s}  {'shad':>5s}  {'files':>6s}")
-    print(f"{'-'*55} {'-'*45} {'-'*6}  {'-'*5}  {'-'*6}")
+    print(f"{'mod':<55s} {'verdict':<55s} {'refs':>6s} {'subst':>6s} {'shad':>5s} {'files':>6s}")
+    print(f"{'-'*55} {'-'*55} {'-'*6} {'-'*6} {'-'*5} {'-'*6}")
     for s in summary:
-        print(f"{s['mod']:<55s} {s['verdict']:<45s} "
-              f"{s['exclusive_refs']:>6d}  {s['shadowed_refs']:>5d}  {s['total_files_loose']:>6d}")
+        print(f"{s['mod']:<55s} {s['verdict']:<55s} "
+              f"{s['exclusive_refs']:>6d} {s['substituted_refs']:>6d} "
+              f"{s['shadowed_refs']:>5d} {s['total_files_loose']:>6d}")
+
+    # Top substitution groups
+    if substitution_groups:
+        print()
+        print(f"Top substitution suspects (content shared across distinct paths):")
+        for g in substitution_groups[:15]:
+            print(f"  hash {g['hash'][:12]}... -> {g['n_paths']} distinct paths "
+                  f"({g['n_parents']} distinct parent dirs), {g['n_records']} record refs")
+            for p in g["sample_paths"]:
+                print(f"    {p}")
 
     # Write reports.
     if args.report:
         write_report(args.report, summary, refs_by_mod, missing_paths,
+                     substitution_groups,
                      args.profile, total_paths_scanned, total_paths_resolved,
                      focus=args.mods or [])
         print(f"\nwrote markdown report to {args.report}")
@@ -269,10 +365,12 @@ def main() -> int:
             "summary": summary,
             "refs_by_mod": {m: refs_by_mod[m] for m in resource_only_mods},
             "missing_paths": missing_paths,
+            "substitution_groups": substitution_groups,
             "totals": {
                 "paths_scanned": total_paths_scanned,
                 "paths_resolved": total_paths_resolved,
                 "paths_missing": len(missing_paths),
+                "substitution_groups": len(substitution_groups),
             },
         }
         args.evidence_json.write_text(json.dumps(evidence, indent=2), encoding="utf-8")
@@ -281,7 +379,8 @@ def main() -> int:
     return 0
 
 
-def write_report(path: Path, summary, refs_by_mod, missing_paths, profile,
+def write_report(path: Path, summary, refs_by_mod, missing_paths,
+                 substitution_groups, profile,
                  paths_scanned, paths_resolved, focus: list[str]) -> None:
     lines = [
         f"# Resource-mod usage audit — {profile}",
@@ -306,6 +405,16 @@ def write_report(path: Path, summary, refs_by_mod, missing_paths, profile,
         "mod provides. Either the mod's content is engine-implicit (skeleton, "
         "body, UI), referenced via NIF-internal textures (out of scope), "
         "or simply not used by the active load.",
+        "- **SUBSTITUTION-ONLY** — every ref this mod wins resolves to a "
+        "physical file whose content is shared with other distinct paths "
+        "(i.e. the mod is a fallback/nullify provider, not real assets).",
+        "",
+        "## Per-mod substituted_refs",
+        "",
+        "Within each NEEDED mod's `exclusive_refs`, the `substituted_refs` "
+        "column counts refs whose provider's content hash is shared with "
+        "another distinct virtual path. High values indicate the mod is "
+        "shipping placeholder/fallback content rather than unique assets.",
         "",
     ]
     if focus:
@@ -331,12 +440,34 @@ def write_report(path: Path, summary, refs_by_mod, missing_paths, profile,
 
     lines.append("## Full table")
     lines.append("")
-    lines.append("| mod | verdict | exclusive | shadowed | total files |")
-    lines.append("|---|---|---:|---:|---:|")
+    lines.append("| mod | verdict | exclusive | substituted | shadowed | total files |")
+    lines.append("|---|---|---:|---:|---:|---:|")
     for s in summary:
         lines.append(f"| {s['mod']} | {s['verdict']} | "
-                     f"{s['exclusive_refs']} | {s['shadowed_refs']} | "
+                     f"{s['exclusive_refs']} | {s['substituted_refs']} | "
+                     f"{s['shadowed_refs']} | "
                      f"{s['total_files_loose']} |")
+
+    if substitution_groups:
+        lines.append("")
+        lines.append(f"## Substitution suspects "
+                     f"({len(substitution_groups)} content-hash groups)")
+        lines.append("")
+        lines.append("Groups where one physical file's content is shared with N "
+                     "distinct virtual paths. The most likely Mesh-Nullify-style "
+                     "fallback patterns.")
+        lines.append("")
+        for g in substitution_groups[:30]:
+            lines.append(f"### hash `{g['hash'][:12]}...` "
+                         f"— {g['n_paths']} paths, "
+                         f"{g['n_parents']} parent dirs, "
+                         f"{g['n_records']} record refs")
+            lines.append("")
+            for p in g["all_paths"][:20]:
+                lines.append(f"- `{p}`")
+            if len(g["all_paths"]) > 20:
+                lines.append(f"- ... and {len(g['all_paths']) - 20} more")
+            lines.append("")
 
     if missing_paths:
         lines.append("")
