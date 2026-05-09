@@ -33,7 +33,7 @@ import argparse
 import hashlib
 import json
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -234,6 +234,40 @@ def main() -> int:
           f"resolved {total_paths_resolved}, "
           f"missing {len(missing_paths)}")
 
+    # Tier classification per record.
+    # Tier 1 — MODL broken      (invisible when worn / shown as world ref)
+    # Tier 2 — MOD2 broken only (invisible when dropped / displayed)
+    # Tier 2b — MOD3/MOD4 only  (invisible for female biped slot)
+    # Tier 3 — ICON only        (inventory icon missing, no model issue)
+    record_broken_subrecs: dict[tuple, set] = defaultdict(set)
+    record_meta: dict[tuple, dict] = {}
+    for r in missing_paths:
+        key = (r["fid"], r["edid"], r["sig"])
+        record_broken_subrecs[key].add(r["subrec"])
+        if key not in record_meta:
+            record_meta[key] = {"winner_plugin": r["winner_plugin"]}
+
+    def classify_tier(broken: set[str]) -> str:
+        if "MODL" in broken:
+            return "1"
+        if "MOD2" in broken:
+            return "2"
+        if "MOD3" in broken or "MOD4" in broken:
+            return "2b"
+        if "ICON" in broken:
+            return "3"
+        return "?"
+
+    record_tiers: dict[tuple, str] = {
+        k: classify_tier(v) for k, v in record_broken_subrecs.items()
+    }
+    tier_counts: Counter = Counter(record_tiers.values())
+    # Tier x plugin for cluster-level visibility
+    tier_by_plugin: dict[str, Counter] = defaultdict(Counter)
+    for key, tier in record_tiers.items():
+        plugin = record_meta[key]["winner_plugin"]
+        tier_by_plugin[plugin][tier] += 1
+
     # Substitution-suspect detection via content hashing.
     # If multiple distinct virtual paths resolve to physical files with
     # identical content, a fallback/nullify mod is likely shipping the same
@@ -372,6 +406,31 @@ def main() -> int:
               f"{s['exclusive_refs']:>6d} {s['substituted_refs']:>6d} "
               f"{s['shadowed_refs']:>5d} {s['total_files_loose']:>6d}")
 
+    # Tier breakdown
+    print()
+    print(f"{'='*80}")
+    print(f"Broken-record tier breakdown ({sum(tier_counts.values())} distinct records)")
+    print(f"{'='*80}")
+    tier_labels = {
+        "1":  "Tier 1 — MODL broken (invisible when worn/shown)",
+        "2":  "Tier 2 — MOD2 broken only (invisible when dropped)",
+        "2b": "Tier 2b — MOD3/MOD4 only (invisible for female biped)",
+        "3":  "Tier 3 — ICON only (inventory icon missing)",
+        "?":  "Tier ? — unclassified",
+    }
+    for t in ("1", "2", "2b", "3", "?"):
+        n = tier_counts.get(t, 0)
+        if n == 0:
+            continue
+        print(f"  {tier_labels[t]:60s} {n:4d}")
+
+    print()
+    print(f"Tier breakdown by winning plugin:")
+    for plugin, c in sorted(tier_by_plugin.items(), key=lambda x: -sum(x[1].values())):
+        total = sum(c.values())
+        parts = ", ".join(f"T{t}={c[t]}" for t in ("1", "2", "2b", "3") if c.get(t))
+        print(f"  {plugin:55s} {total:4d}  {parts}")
+
     # Top substitution groups
     if substitution_groups:
         print()
@@ -385,7 +444,8 @@ def main() -> int:
     # Write reports.
     if args.report:
         write_report(args.report, summary, refs_by_mod, missing_paths,
-                     substitution_groups,
+                     substitution_groups, tier_counts, tier_by_plugin,
+                     record_tiers, record_meta,
                      args.profile, total_paths_scanned, total_paths_resolved,
                      focus=args.mods or [])
         print(f"\nwrote markdown report to {args.report}")
@@ -397,11 +457,20 @@ def main() -> int:
             "refs_by_mod": {m: refs_by_mod[m] for m in resource_only_mods},
             "missing_paths": missing_paths,
             "substitution_groups": substitution_groups,
+            "tier_counts": dict(tier_counts),
+            "tier_by_plugin": {p: dict(c) for p, c in tier_by_plugin.items()},
+            "record_tiers": [
+                {"fid": k[0], "edid": k[1], "sig": k[2], "tier": v,
+                 "winner_plugin": record_meta[k]["winner_plugin"],
+                 "broken_subrecs": sorted(record_broken_subrecs[k])}
+                for k, v in record_tiers.items()
+            ],
             "totals": {
                 "paths_scanned": total_paths_scanned,
                 "paths_resolved": total_paths_resolved,
                 "paths_missing": len(missing_paths),
                 "substitution_groups": len(substitution_groups),
+                "distinct_broken_records": sum(tier_counts.values()),
             },
         }
         args.evidence_json.write_text(json.dumps(evidence, indent=2), encoding="utf-8")
@@ -411,7 +480,9 @@ def main() -> int:
 
 
 def write_report(path: Path, summary, refs_by_mod, missing_paths,
-                 substitution_groups, profile,
+                 substitution_groups, tier_counts, tier_by_plugin,
+                 record_tiers, record_meta,
+                 profile,
                  paths_scanned, paths_resolved, focus: list[str]) -> None:
     lines = [
         f"# Resource-mod usage audit — {profile}",
@@ -447,7 +518,31 @@ def write_report(path: Path, summary, refs_by_mod, missing_paths,
         "another distinct virtual path. High values indicate the mod is "
         "shipping placeholder/fallback content rather than unique assets.",
         "",
+        "## Broken-record tier breakdown",
+        "",
+        f"Total distinct broken records: **{sum(tier_counts.values())}**",
+        "",
+        "| tier | impact | distinct records |",
+        "|---|---|---:|",
+        f"| **Tier 1** | MODL broken — invisible when worn / shown | {tier_counts.get('1', 0)} |",
+        f"| **Tier 2** | only MOD2 broken — invisible when dropped/displayed | {tier_counts.get('2', 0)} |",
+        f"| **Tier 2b** | only MOD3/MOD4 broken — invisible for female biped | {tier_counts.get('2b', 0)} |",
+        f"| **Tier 3** | only ICON broken — inventory icon missing | {tier_counts.get('3', 0)} |",
+        "",
+        "**Tier-1 are the user-impactful bugs.** Tier-2 and Tier-3 are visible "
+        "less often — Tier-2 only when items lie on the ground or display in "
+        "vendor menus, Tier-3 only as a missing icon in the inventory panel.",
+        "",
+        "### Tier breakdown by winning plugin",
+        "",
+        "| plugin | total | T1 | T2 | T2b | T3 |",
+        "|---|---:|---:|---:|---:|---:|",
     ]
+    for plugin, c in sorted(tier_by_plugin.items(), key=lambda x: -sum(x[1].values())):
+        total = sum(c.values())
+        lines.append(f"| {plugin} | {total} | {c.get('1', 0)} | {c.get('2', 0)} | "
+                     f"{c.get('2b', 0)} | {c.get('3', 0)} |")
+    lines.append("")
     if focus:
         lines.append("## Focused mods")
         lines.append("")
