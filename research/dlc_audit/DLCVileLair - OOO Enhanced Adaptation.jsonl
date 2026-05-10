@@ -1,0 +1,66 @@
+{"sig":"SCPT","edid":"DeepscornTrapGate","fid":"30002350","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator05","fid":"0D00B972","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator10","fid":"0D00B974","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator15","fid":"0D00B976","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator20","fid":"0D00B978","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator25","fid":"0D00B97A","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator30","fid":"0D00B97C","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar01","fid":"0D00BE6B","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar05","fid":"0D00BE6C","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar10","fid":"0D00BE6F","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar15","fid":"0D00BE71","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar20","fid":"0D00BE73","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScar25","fid":"0D00BE75","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnEviscerator01","fid":"0D00B970","master":"DLCVileLair.esp"}
+{"sig":"ENCH","edid":"LairVileEnRaimentScarGloves","fid":"30003EA9","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"SPEL","edid":"LairVileShrineBlessing03","fid":"0D00A5D0","master":"DLCVileLair.esp"}
+{"sig":"ARMO","edid":"LairVileCrimsonScarGloves","fid":"30003EA7","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"ARMO","edid":"LairVileCrimsonScarBoots","fid":"30003EA8","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"ARMO","edid":"LairVileCrimsonScarRaiment25","fid":"0D00BE6A","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornStorageReceipt","fid":"0D0046B1","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornMinionReceipt","fid":"0D0046B2","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornDiningReceipt","fid":"0D0046AF","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornCellReceipt","fid":"0D0046B3","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornBedroomReceipt","fid":"0D0046AE","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornHollowNote","fid":"0D00DC0A","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornVenomgrowthReceipt","fid":"0D004B9C","master":"DLCVileLair.esp"}
+{"sig":"BOOK","edid":"DeepscornStudyReceipt","fid":"0D0046B0","master":"DLCVileLair.esp"}
+{"sig":"CONT","edid":"LairVileArmoire","fid":"0D0060B3","master":"DLCVileLair.esp"}
+{"sig":"DOOR","edid":"HTBTrapDoor01","fid":"1D00180B","master":"OOO Enhanced.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator05","fid":"0D00B97E","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator01","fid":"0D0060B6","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator10","fid":"0D0060B9","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator15","fid":"0D0060BA","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator20","fid":"0D0060BB","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator25","fid":"0D0060BC","master":"DLCVileLair.esp"}
+{"sig":"WEAP","edid":"LairVileEviscerator30","fid":"0D0060BD","master":"DLCVileLair.esp"}
+{"sig":"NPC_","edid":"RowleyEardwulf","fid":"0D003286","master":"DLCVileLair.esp"}
+{"sig":"NPC_","edid":"LairVilePrisoner","fid":"0D000DB1","master":"DLCVileLair.esp"}
+{"sig":"NPC_","edid":"LairVileMinion","fid":"0D000E1B","master":"DLCVileLair.esp"}
+{"sig":"LVLI","edid":"LairVileRewardsGoldLeveledList","fid":"0D007E63","master":"DLCVileLair.esp"}
+{"sig":"LVLI","edid":"LairVileEvisceratorLvl100","fid":"0D0060C2","master":"DLCVileLair.esp"}
+{"sig":"LVLI","edid":"LairVileRaimentLvl100","fid":"0D00C35D","master":"DLCVileLair.esp"}
+{"sig":"LVLI","edid":"LairVileModifiedLL2LootJewelryMagic100","fid":"0D014CE3","master":"DLCVileLair.esp"}
+{"sig":"CELL","edid":"LairVile01","fid":"0D000CE6","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"3000234F","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"0D000D65","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C8","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C7","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037CA","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C5","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C6","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C9","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037A4","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037A1","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037A3","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037C4","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0014F5","master":"DLCVileLair.esp"}
+{"sig":"REFR","edid":"","fid":"0D0037A2","master":"DLCVileLair.esp"}
+{"sig":"CELL","edid":"sOOOSpeluncaCruoris04","fid":"1D102B48","master":"OOO Enhanced.esp"}
+{"sig":"REFR","edid":"","fid":"300015A6","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"WRLD","edid":"Tamriel","fid":"0000003C","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"","fid":"00023777","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"3000234E","master":"DLCVileLair - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"DeepScornHollowExterior","fid":"0000627B","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0D001319","master":"DLCVileLair.esp"}
+{"sig":"QUST","edid":"DLCDeepscorn","fid":"0D0041C4","master":"DLCVileLair.esp"}

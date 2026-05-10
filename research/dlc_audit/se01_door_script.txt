@@ -1,0 +1,348 @@
+overrides=2
+---- MASTER ----
+scn SE01DoorScript
+
+short doOnce
+short doOnce2
+short startday
+
+short BelmyneStart
+short BelmyneDead
+float timer
+short gatespeechVAR
+
+short goAway
+float timer2
+short metroOnce
+
+short weatherOnce
+float weathertimer
+
+Begin GameMode
+
+	;this times the weather transition
+	if ( weatheronce == 1 )
+		set weathertimer to ( weathertimer + GetSecondsPassed )
+		if ( weathertimer >= 3 )
+			sw SEClearTrans
+			set weatheronce to 2
+		endif
+	endif
+
+	;this section sets a journal to let the player know a door has appeared to the Shivering Isles
+	if ( GetStageDone MQ01 90 == 1 )
+		if ( doOnce2 == 0 )
+			set startday to GameDaysPassed
+			set doOnce2 to 1
+		endif
+	endif
+
+	if ( doOnce2 == 1 )
+		if ( GameDaysPassed >= ( startday + 1 ) )
+			if ( GetStage SE01Door == 0 )
+				SetStage SE01Door 10
+			endif
+		endif
+	endif
+
+
+	if ( GetStage SE01Door == 40 )
+		if ( Player.GetDistance SE01DoorMarkerREF <= 512 )
+			;SetStage SE01Door 200
+		endif
+	endif
+
+	; this section handles Belmyne coming out of the door and attacking the guard
+	if ( BelmyneStart == 1 )
+		if ( SEBelmyneDrelethREF.GetDisabled == 1 )
+			SEBelmyneDrelethREF.Enable
+			set BelmyneStart to 2
+		endif
+	endif
+
+	;this section handles the gate speech and variables
+	if ( BelmyneDead == 1 )
+		set timer to ( timer - getsecondspassed )
+		if ( timer <= 0 )
+			if ( gatespeechVAR == 0 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 1
+			elseif ( gatespeechVAR == 1 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 2
+			elseif ( gatespeechVAR == 2 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 3
+			elseif (gatespeechVAR == 3 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 4
+				set BelmyneDead to 2
+			endif
+		endif
+	endif
+
+	;this section handles the Waiting Room disappearing
+	if ( SEHaskillREF.leavevar == 2 ) && ( goAway == 0 )
+		;SE01WaitingRoomREF.playgroup forward 1
+		SE01MetronomeREF.playgroup forward 4
+		SE01MetronomeSoundREF.Disable
+		set weatheronce to 1
+		set goAway to 1
+	endif
+
+	if ( goAway == 1 )
+		set timer2 to ( timer2 + GetSecondsPassed )
+		if ( timer2 >= 5 ) && ( metroOnce == 0 )
+			SE01WaitingRoomREF.playgroup forward 1
+			set metroOnce to 1
+		endif
+		if ( timer2 >= 23 )
+			EnablePlayerControls
+			SetStage SE01Door 201
+			; SetStage SE02 5
+			set goAway to 3
+		endif
+	endif
+
+	If GetStage SE01Door == 201 && GetStage SE02 < 5
+		If Player.GetSitting == 0
+			SetStage SE02 5
+		EndIf
+	EndIf
+End
+
+---- OVERRIDE 0 OOOShiveringIsles.esp ----
+scn SE01DoorScript
+
+short doOnce
+short doOnce2
+short startday
+
+short BelmyneStart
+short BelmyneDead
+float timer
+short gatespeechVAR
+
+short goAway
+float timer2
+short metroOnce
+
+short weatherOnce
+float weathertimer
+
+short spoken
+
+Begin GameMode
+
+	;this times the weather transition
+	if ( weatheronce == 1 )
+		set weathertimer to ( weathertimer + GetSecondsPassed )
+		if ( weathertimer >= 3 )
+			sw SEClearTrans
+			set weatheronce to 2
+		endif
+	endif
+
+	;this section sets a journal to let the player know a door has appeared to the Shivering Isles
+	if ( GetStageDone MQ01 90 == 1 )
+		if ( doOnce2 == 0 )
+			set startday to GameDaysPassed
+			set doOnce2 to 1
+			;AddTopic SEDoorRumor
+		endif
+	endif
+
+	; this section handles Belmyne coming out of the door and attacking the guard
+	if BelmyneStart == 1
+		if SEBelmyneDrelethREF.GetDisabled
+			SEBelmyneDrelethREF.Enable
+			SEBelmyneDrelethREF.moveto OOOSE01DunmerPlaceREF
+			set BelmyneStart to 2
+		endif
+	endif
+
+	;this section handles the gate speech and variables
+	if ( BelmyneDead == 1 )
+		set timer to ( timer - getsecondspassed )
+		if ( timer <= 0 )
+			if ( gatespeechVAR == 0 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 1
+			elseif ( gatespeechVAR == 1 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 2
+			elseif ( gatespeechVAR == 2 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 3
+			elseif (gatespeechVAR == 3 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 4
+				set BelmyneDead to 2
+			endif
+		endif
+	endif
+
+	;this section handles the Waiting Room disappearing
+	if ( SEHaskillREF.leavevar == 2 ) && ( goAway == 0 )
+		;SE01WaitingRoomREF.playgroup forward 1
+		SE01MetronomeREF.playgroup forward 4
+		SE01MetronomeSoundREF.Disable
+		set weatheronce to 1
+		set goAway to 1
+	endif
+
+	if ( goAway == 1 )
+		set timer2 to ( timer2 + GetSecondsPassed )
+		if ( timer2 >= 5 ) && ( metroOnce == 0 )
+			SE01WaitingRoomREF.playgroup forward 1
+			set metroOnce to 1
+		endif
+		if ( timer2 >= 23 )
+			EnablePlayerControls
+			SetStage SE01Door 201
+			; SetStage SE02 5
+			set goAway to 3
+		endif
+	endif
+
+	If GetStage SE01Door == 201 && GetStage SE02 < 5
+		If Player.GetSitting == 0
+			SetStage SE02 5
+		EndIf
+	EndIf
+End
+
+---- OVERRIDE 1 Delay DLC Start.esp ----
+scn SE01DoorScript
+
+short doOnce
+short doOnce2
+short startday
+
+short BelmyneStart
+short BelmyneDead
+float timer
+short gatespeechVAR
+
+short goAway
+float timer2
+short metroOnce
+
+short weatherOnce
+float weathertimer
+
+short SE01DoorJournalVar ; *** Added so the right log entry is added. SE01Door1Ref.journalVAR was always 0.
+float StartHour ; *** To get 24 hour delay.
+
+Begin GameMode
+
+	;this times the weather transition
+	if ( weatheronce == 1 )
+		set weathertimer to ( weathertimer + GetSecondsPassed )
+		if ( weathertimer >= 3 )
+			sw SEClearTrans
+			set weatheronce to 2
+		endif
+	endif
+
+	;this section sets a journal to let the player know a door has appeared to the Shivering Isles
+	; *** Note this script is not running until the Delay DLC conditions are met OR you find the door.
+	if ( GetStageDone MQ01 90 == 1 )
+		if ( doOnce2 == 0 )
+			set startday to GameDaysPassed
+			Set StartHour to GameHour ; *** Added for allow 24 hours to pass.
+			set doOnce2 to 1
+		endif
+	endif
+
+	if ( doOnce2 == 1 )
+		; *** Check for 24 hour delay if location check is skipped. Otherwise, skip the delay.
+		if DelayDLCStartCM.ShiveringCheckLocation == 0
+			if GameDaysPassed >= StartDay + 2 ; *** No need to check for hour.
+				if ( GetStage SE01Door == 0 )
+					SetStage SE01Door 10
+				endif
+				Set DoOnce2 to 2
+			elseif ( GameDaysPassed >= ( startday + 1 ) ) && GameHour >= StartHour
+				if ( GetStage SE01Door == 0 )
+					SetStage SE01Door 10
+				endif
+				; *** Set variable to new value to skip processing this block.
+				Set DoOnce2 to 2
+			endif
+		else ; *** DelayDLCStartCM.ShiveringCheckLocation == 1
+			if ( GameDaysPassed >= ( startday + 0 ) )
+				if ( GetStage SE01Door == 0 )
+					SetStage SE01Door 10
+				endif
+				; *** Set variable to new value to skip processing this block.
+				Set DoOnce2 to 2
+			endif
+		endif
+	endif
+
+	if ( GetStage SE01Door == 40 )
+		if ( Player.GetDistance SE01DoorMarkerREF <= 512 )
+			;SetStage SE01Door 200
+		endif
+	endif
+
+	; this section handles Belmyne coming out of the door and attacking the guard
+	if ( BelmyneStart == 1 )
+		if ( SEBelmyneDrelethREF.GetDisabled == 1 )
+			SEBelmyneDrelethREF.Enable
+			set BelmyneStart to 2
+		endif
+	endif
+
+	;this section handles the gate speech and variables
+	if ( BelmyneDead == 1 )
+		set timer to ( timer - getsecondspassed )
+		if ( timer <= 0 )
+			if ( gatespeechVAR == 0 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 1
+			elseif ( gatespeechVAR == 1 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 2
+			elseif ( gatespeechVAR == 2 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 3
+			elseif (gatespeechVAR == 3 )
+				set timer to DAClavicusDogStatueREF.say SE01GateSpeech 1 SE01GateVoice1 1
+				set gatespeechVAR to 4
+				set BelmyneDead to 2
+			endif
+		endif
+	endif
+
+	;this section handles the Waiting Room disappearing
+	if ( SEHaskillREF.leavevar == 2 ) && ( goAway == 0 )
+		;SE01WaitingRoomREF.playgroup forward 1
+		SE01MetronomeREF.playgroup forward 4
+		SE01MetronomeSoundREF.Disable
+		set weatheronce to 1
+		set goAway to 1
+	endif
+
+	if ( goAway == 1 )
+		set timer2 to ( timer2 + GetSecondsPassed )
+		if ( timer2 >= 5 ) && ( metroOnce == 0 )
+			SE01WaitingRoomREF.playgroup forward 1
+			set metroOnce to 1
+		endif
+		if ( timer2 >= 23 )
+			EnablePlayerControls
+			SetStage SE01Door 201
+			; SetStage SE02 5
+			set goAway to 3
+		endif
+	endif
+
+	If GetStage SE01Door == 201 && GetStage SE02 < 5
+		If Player.GetSitting == 0
+			SetStage SE02 5
+		EndIf
+	EndIf
+End
+

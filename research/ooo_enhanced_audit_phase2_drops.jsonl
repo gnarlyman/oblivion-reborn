@@ -1,0 +1,21 @@
+{"sig": "ALCH", "records_with_drops": 2, "total_overrides": 10, "drops_by_subrecord": {"EFID": 2, "EFIT": 2}}
+{"sig": "AMMO", "records_with_drops": 39, "total_overrides": 66, "drops_by_subrecord": {"ANAM": 39}}
+{"sig": "ARMO", "records_with_drops": 54, "total_overrides": 934, "drops_by_subrecord": {"MOD3": 34, "MO3B": 34, "MO3T": 17, "MOD4": 35, "MO4B": 35, "MO4T": 23, "ICO2": 29, "ANAM": 4, "SCRI": 7}}
+{"sig": "CELL", "records_with_drops": 15, "total_overrides": 904, "drops_by_subrecord": {"XCLW": 7, "XCWT": 6, "XOWN": 2}}
+{"sig": "CLOT", "records_with_drops": 17, "total_overrides": 87, "drops_by_subrecord": {"MOD3": 5, "MO3B": 5, "MO3T": 2, "ANAM": 5, "MOD4": 9, "MO4B": 9, "MO4T": 1, "ICO2": 7, "ENAM": 3}}
+{"sig": "CONT", "records_with_drops": 107, "total_overrides": 172, "drops_by_subrecord": {"SNAM": 97, "QNAM": 99, "CNTO": 22, "SCRI": 1}}
+{"sig": "CREA", "records_with_drops": 58, "total_overrides": 881, "drops_by_subrecord": {"CNTO": 18, "SNAM": 5, "SPLO": 12, "PKID": 4, "NAM0": 12, "SCRI": 7}}
+{"sig": "ENCH", "records_with_drops": 6, "total_overrides": 515, "drops_by_subrecord": {"EFID": 6, "EFIT": 6}}
+{"sig": "INFO", "records_with_drops": 4, "total_overrides": 128, "drops_by_subrecord": {"SCDA": 3, "SCTX": 3, "SCRO": 3, "CTDA": 1}}
+{"sig": "LAND", "records_with_drops": 2, "total_overrides": 68, "drops_by_subrecord": {"ATXT": 2, "VTXT": 2}}
+{"sig": "LVLC", "records_with_drops": 106, "total_overrides": 275, "drops_by_subrecord": {"LVLO": 106}}
+{"sig": "LVLI", "records_with_drops": 307, "total_overrides": 828, "drops_by_subrecord": {"LVLO": 305, "DATA": 9}}
+{"sig": "LVSP", "records_with_drops": 3, "total_overrides": 8, "drops_by_subrecord": {"LVLO": 3}}
+{"sig": "MISC", "records_with_drops": 1, "total_overrides": 37, "drops_by_subrecord": {"SCRI": 1}}
+{"sig": "NPC_", "records_with_drops": 410, "total_overrides": 2404, "drops_by_subrecord": {"PKID": 46, "CNTO": 265, "SNAM": 17, "SCRI": 22, "ENAM": 8, "SPLO": 70, "HNAM": 5, "LNAM": 5}}
+{"sig": "PACK", "records_with_drops": 6, "total_overrides": 24, "drops_by_subrecord": {"CTDA": 6}}
+{"sig": "QUST", "records_with_drops": 2, "total_overrides": 47, "drops_by_subrecord": {"SCRO": 1, "CTDA": 1}}
+{"sig": "SCPT", "records_with_drops": 16, "total_overrides": 84, "drops_by_subrecord": {"SLSD": 13, "SCVR": 13, "SCRO": 2, "SCRV": 10}}
+{"sig": "SPEL", "records_with_drops": 6, "total_overrides": 192, "drops_by_subrecord": {"EFID": 6, "EFIT": 6}}
+{"sig": "WEAP", "records_with_drops": 16, "total_overrides": 1062, "drops_by_subrecord": {"SCRI": 16}}
+{"sig": "WRLD", "records_with_drops": 16, "total_overrides": 17, "drops_by_subrecord": {"OFST": 16}}

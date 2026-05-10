@@ -1,0 +1,152 @@
+absorbed candidates: 228
+
+  <no-edid>      13438  sigs=[REFR:13229,ACHR:68,INFO:61]
+                 ex: <noedid 1E961253> | <noedid 1E961255> | <noedid 24001064>
+                 hint: CELL/REFR/ACHR (no EDID): worldspace clutter, navmesh, references — no EDID-based attribution
+  ReznodMann       295  sigs=[ACHR:256,SCPT:10,REFR:9]
+                 ex: ReznodMannequinWoodM031 | ReznodMannequinWoodM032 | ReznodMannequinWoodM024
+                 hint: ?
+  FortRoebec        48  sigs=[PACK:14,NPC_:12,CELL:5]
+                 ex: FortRoebeckManor | FortRoebeckManorAntechamber | FortRoebeckTowerSW
+                 hint: ?
+  RandomRuin        46  sigs=[STAT:37,BOOK:3,DOOR:3]
+                 ex: RandomRuinsMarukhScroll1 | RandomRuinsMarukhScroll2 | RandomRuinsMarukhScroll3
+                 hint: ?
+  FortIstiru        45  sigs=[PACK:15,NPC_:13,REFR:4]
+                 ex: FortIstirusGranary | FortIstirusNobilityEatMarker | FortIstirusQuest
+                 hint: ?
+  CloudRuler        45  sigs=[PACK:37,REFR:8]
+                 ex: CloudRulerBladeNovice2CastDestruction0x4 | CloudRulerBladeNovice1Practice4x4 | CloudRulerBladeNovice3Train20x4
+                 hint: ?
+  FortDirich        44  sigs=[PACK:13,NPC_:8,REFR:5]
+                 ex: FortDirichChapel | FortDirichKeep02 | FortDirichBaronChairREF
+                 hint: ?
+  FortDouble        42  sigs=[PACK:15,NPC_:8,SCPT:5]
+                 ex: FortDoublecrossKnightFralavCatiotus | FortDoublecrossKnightFralavCatiotusREF | FortDoublecrossKnightOtiusVanin
+                 hint: ?
+  FortBlackB        35  sigs=[NPC_:12,CELL:7,PACK:7]
+                 ex: FortBlackBootBravilGuardCaptain01 | FortBlackBootFaction | FortBlackBootStorageArea
+                 hint: ?
+  wWayshrine        29  sigs=[REFR:29]
+                 ex: wWayshrineAltarAkatosh03MapMarker | wWayshrineAltarArkay02MapMarker | wWayshrineAltarDibella03MapMarker
+                 hint: Wayshrine Map Markers - Redux
+  TG                21  sigs=[PACK:13,LVLI:4,ACHR:2]
+                 ex: TG11Footpad1Ref | TG11Footpad2Ref | TG11FootpadGauntletsLvl100
+                 hint: Bounty Quests / TG-prefixed Thieves Guild fixes
+  FGD               20  sigs=[PACK:12,ACHR:4,NPC_:4]
+                 ex: FGD09Apprentice2Ref | FGD09Apprentice1Ref | FGD09Apprentice4Ref
+                 hint: Improved Fighters Guild (FGD09 = quest packages)
+  FortNasoCh        18  sigs=[PACK:8,NPC_:4,ACHR:4]
+                 ex: FortNasoCheydinhalSoldier01 | FortNasoCheydinhalCaptain01 | FortNasoCheydinhalCaptain01REF
+                 hint: ?
+  FortNasoDa        18  sigs=[PACK:10,REFR:8]
+                 ex: FortNasoDayGuardGate03Marker | FortNasoDayGuardGate01Marker | FortNasoDayGuardGate01DELETE
+                 hint: ?
+  KRP               18  sigs=[PACK:15,REFR:3]
+                 ex: KRP1MeniensBed | KRP2MeniensBed | KRP3MeniensBed
+                 hint: Knights / Knights Rebuilt patrol packages? (KRP1/KRP2/KRP3)
+  FortOntusI        16  sigs=[NPC_:9,PACK:7]
+                 ex: FortOntusImperialGuardDay01 | FortOntusImperialGuardDaySleep22x8 | FortOntusImperialGuardDayEat6x2
+                 hint: ?
+  FortVlasta        14  sigs=[CELL:7,ACTI:2,REFR:2]
+                 ex: FortVlastarusKeepUpper | FortVlastarusKeepMiddle | FortVlastarusKeepLower
+                 hint: ?
+  CoffeeArgH        14  sigs=[HAIR:14]
+                 ex: CoffeeArgHorns | CoffeeArgHornsF1 | CoffeeArgHornsF2
+                 hint: ?
+  FortNasoGu        13  sigs=[NPC_:12,SCPT:1]
+                 ex: FortNasoGuardDay01 | FortNasoGuardDay02 | FortNasoGuardDay03
+                 hint: ?
+  FortRedman        13  sigs=[REFR:4,SCPT:4,ACTI:3]
+                 ex: FortRedmanKeep | FortRedmanInteriorExteriorDoorREF | FortRedmanQuest
+                 hint: ?
+  s                 12  sigs=[EFSH:12]
+                 ex: s6o6tFlameEffectSkin | s6o6tShockEffectSkin | s6o6tGhostEffect
+                 hint: ?
+  BladeNovic        12  sigs=[NPC_:4,ACHR:4,SCPT:2]
+                 ex: BladeNovice2 | BladeNovice1 | BladeNovice3
+                 hint: ?
+  FortFacian        11  sigs=[CELL:6,SCPT:2,ACTI:1]
+                 ex: FortFacianStageActivator | FortFacianStageActivatorREF | FortFacianStageActivatorScript
+                 hint: ?
+  FortNasoNi         9  sigs=[PACK:9]
+                 ex: FortNasoNightGuardGate04 | FortNasoNightEat01 | FortNasoNightEat02
+                 hint: ?
+  kartKhajii         9  sigs=[HAIR:9]
+                 ex: kartKhajiitWispsCOPY0000 | kartKhajiitManeCOPY0000 | kartKhajiitJeweledCOPY0000
+                 hint: ?
+  Rubish             9  sigs=[STAT:9]
+                 ex: Rubish | Rubish2 | Rubish3
+                 hint: Falling Rubbish Bravil
+  TGFootpadC         9  sigs=[DIAL:5,QUST:2,SCPT:2]
+                 ex: TGFootpadControl | TGFootpadControlScript | TGFootpadChoice1A
+                 hint: ?
+  WiCImperia         9  sigs=[STAT:9]
+                 ex: WiCImperialHero1 | WiCImperialHero2 | WiCImperialHero3
+                 hint: ?
+  FortTelema         8  sigs=[CELL:4,STAT:2,QUST:1]
+                 ex: FortTelemanTowerSE02 | FortTelemanTowerSE01 | FortTelemanBarracks
+                 hint: ?
+  CBMSarcoph         8  sigs=[CONT:8]
+                 ex: CBMSarcophagus01 | CBMSarcophagus02 | CBMSarcophagus03
+                 hint: ?
+  FortHastre         7  sigs=[CELL:3,REFR:2,KEYM:1]
+                 ex: FortHastrelKeep01 | FortHastrelKey | FortHastrelMarauderMasterMarker
+                 hint: ?
+  WSawFishAI         7  sigs=[PACK:7]
+                 ex: WSawFishAI150 | WSawFishAIContainers | WSawFishAIActivators
+                 hint: ?
+  DLCOrreryO         7  sigs=[NPC_:7]
+                 ex: DLCOrreryOOOBandit | DLCOrreryOOOBandit2 | DLCOrreryOOOBandit3
+                 hint: ?
+  LL                 7  sigs=[LVLI:7]
+                 ex: LL0sDLCGoldenSunBoots | LL0sDLCGoldenSunCuirass | LL0sDLCGoldenSunGreaves
+                 hint: Living Oblivion or LL-tagged leveled lists
+  FGApprenti         7  sigs=[DIAL:4,SCPT:2,QUST:1]
+                 ex: FGApprenticeControl | FGApprenticeControlScript | FGApprenticeScript
+                 hint: ?
+  aaDuck             6  sigs=[ACTI:6]
+                 ex: aaDuck01a | aaDuck01b | aaDuck02b
+                 hint: Ducks and Swans for Cyrodiil
+  Aurora             6  sigs=[REFR:6]
+                 ex: Aurora2Ref | Aurora3Ref | Aurora4Ref
+                 hint: Realistic Aurora in motion (BrumasNorthernLights)
+  LSAFortify         6  sigs=[SPEL:2,ACTI:2,SCPT:2]
+                 ex: LSAFortifyAttributes | LSAFortifyStats | LSAFortifyStatsAltar
+                 hint: ?
+  CastleWall         5  sigs=[STAT:5]
+                 ex: CastleWallCorner01 | CastleWallCorner01 | CastleWallCorner01
+                 hint: ?
+  CoffeeArgS         5  sigs=[HAIR:5]
+                 ex: CoffeeArgSpikes | CoffeeArgSpikesF1 | CoffeeArgSpikesF2
+                 hint: ?
+  BANOblivif         5  sigs=[REFR:5]
+                 ex: BANOblivifallLMRStendarrDonationCollectorMarker | BANOblivifallLMRStendarrPotionSellerMarker | BANOblivifallLMRStendarrPotionMakerMarker
+                 hint: ?
+  BBF                5  sigs=[STAT:5]
+                 ex: BBF2 | BBF3 | BBF1
+                 hint: ?
+  aaDuckFami         5  sigs=[ACTI:5]
+                 ex: aaDuckFamilyA | aaDuckFamilyB | aaDuckFamilyNestA
+                 hint: ?
+  DCpaperlan         5  sigs=[STAT:5]
+                 ex: DCpaperlantern01 | DCpaperlantern02 | DCpaperlantern02blue
+                 hint: ?
+  DCvase             5  sigs=[STAT:5]
+                 ex: DCvase01 | DCvase02 | DCvase03
+                 hint: ?
+  cidwwhelmb         5  sigs=[ARMO:5]
+                 ex: cidwwhelmblackgreendead | cidwwhelmblackreddead | cidwwhelmblackwhitedead
+                 hint: ?
+  FortNasoTo         4  sigs=[CELL:4]
+                 ex: FortNasoTowerNE01 | FortNasoTowerE01 | FortNasoTowerS01
+                 hint: ?
+  DragonSp           4  sigs=[SPEL:4]
+                 ex: DragonSp1 | DragonSp2 | DragonSp3
+                 hint: ?
+  WsawLog            4  sigs=[STAT:4]
+                 ex: WsawLog1 | WsawLog2 | WsawLog3
+                 hint: ?
+  Effectsadd         4  sigs=[STAT:4]
+                 ex: Effectsadditionalweathereffectssnowblown | Effectsadditionalweathereffectssnowflurry | Effectsadditionalweathereffectssnowblown
+                 hint: ?

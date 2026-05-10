@@ -1,0 +1,53 @@
+{"sig":"SPEL","edid":"DLCOrreryPower1","fid":"0B11DC5F","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower2","fid":"0B11DC60","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower3","fid":"0B11DC62","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower4","fid":"0B11DC64","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower5","fid":"0B11DC66","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower6","fid":"0B11DC68","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower7","fid":"0B11DC6A","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"DLCOrreryPower8","fid":"0B11DC6C","master":"DLCOrrery.esp"}
+{"sig":"SPEL","edid":"sOOODLCOrreryGoldenSunAura","fid":"320015AD","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryBandit5","fid":"0B11C3D8","master":"DLCOrrery.esp"}
+{"sig":"NPC_","edid":"DLCOrreyBandit1","fid":"0B11C3D1","master":"DLCOrrery.esp"}
+{"sig":"NPC_","edid":"DLCOrreyBandit4","fid":"0B11C3D7","master":"DLCOrrery.esp"}
+{"sig":"NPC_","edid":"DLCOrreyBandit2","fid":"0B11C3D4","master":"DLCOrrery.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit","fid":"320015A6","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit2","fid":"320015A7","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit3","fid":"320015A8","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit4","fid":"320015A9","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit5","fid":"320015AA","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit6","fid":"320015AB","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryOOOBandit7","fid":"320015AC","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"NPC_","edid":"DLCOrreryBandit3","fid":"0B11C3D5","master":"DLCOrrery.esp"}
+{"sig":"LVLC","edid":"DLCOrrerySOOOGoldenSun","fid":"320015AE","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunBoots","fid":"320015BB","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunCuirass","fid":"320015BC","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunGreaves","fid":"320015BD","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunHelmet","fid":"320015BE","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunGauntlets","fid":"320015BF","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"LVLI","edid":"LL0NPCArmorLightShield100","fid":"00034522","master":"Oblivion.esm"}
+{"sig":"LVLI","edid":"LL0sDLCGoldenSunShield","fid":"320015C0","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"WRLD","edid":"Tamriel","fid":"0000003C","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"VarusCamp","fid":"0000A7A0","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"320015BA","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"320015B8","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"00094C61","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"00094C62","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"BodeanCamp","fid":"0000A842","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"320015B3","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"0009F8ED","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0009F8EE","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"","fid":"00031D53","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"320015B0","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"CELL","edid":"CampAles","fid":"00031D55","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"320015B1","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"0017D0DA","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0009F8B0","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"DagnysCamp","fid":"00007D13","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0009F900","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0009F8F2","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"BrotchCamp","fid":"00007C4E","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"320015B6","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"320015B5","master":"DLCOrrery - OOO Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"00094C6C","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"00094C6A","master":"Oblivion.esm"}

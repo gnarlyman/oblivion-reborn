@@ -1,0 +1,45 @@
+{"sig":"SCPT","edid":"sOOODLC6Book","fid":"310030F6","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"SCPT","edid":"DLC06ThievesDenQuestScript","fid":"12003E85","master":"DLCThievesDen.esp"}
+{"sig":"SCPT","edid":"ThievesDenDoor","fid":"310037CA","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"SPEL","edid":"DLCSkeletonArmor","fid":"3100456B","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"SPEL","edid":"DLCSkeletonArmorBoss","fid":"3100456C","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenSecurityUpgrade","fid":"12006FE1","master":"DLCThievesDen.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenFletcherUpgrade","fid":"12006FDF","master":"DLCThievesDen.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenFenceUpgrade","fid":"12006FE2","master":"DLCThievesDen.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenCaptainsQtrUpgrade","fid":"1200BF4F","master":"DLCThievesDen.esp"}
+{"sig":"BOOK","edid":"sOOODLC06ThievesDenStart","fid":"310030F5","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenSupplierUpgrade","fid":"12006FE3","master":"DLCThievesDen.esp"}
+{"sig":"BOOK","edid":"DLC06ThievesDenStealthUpgrade","fid":"12006FE0","master":"DLCThievesDen.esp"}
+{"sig":"CONT","edid":"sOOOTGChestFenceOrrinDL6","fid":"310030F3","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"DOOR","edid":"CDoor02DLCsOOO","fid":"310037CC","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"WEAP","edid":"WeapSteelCutlassSuperb","fid":"12011AE2","master":"DLCThievesDen.esp"}
+{"sig":"WEAP","edid":"WeapSteelCutlassMaster","fid":"12011AE1","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06Fence","fid":"1200348F","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06Supplier","fid":"12003492","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06FirstMate","fid":"1200398B","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06Pirate01","fid":"1200398E","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06Pirate02","fid":"1200398F","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06Pirate03","fid":"12011AD6","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"CaptainBaszonePatneim","fid":"00094BE8","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"DLC06Fletcher","fid":"12002F9F","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06StealthTrainer","fid":"12002FA1","master":"DLCThievesDen.esp"}
+{"sig":"NPC_","edid":"DLC06SecurityTrainer","fid":"1200348B","master":"DLCThievesDen.esp"}
+{"sig":"CREA","edid":"DLC06CreatureSkeleton4Champion","fid":"12011ADE","master":"DLCThievesDen.esp"}
+{"sig":"CREA","edid":"DLCBoar","fid":"12003E8F","master":"DLCThievesDen.esp"}
+{"sig":"CREA","edid":"DLC06CreatureSkeleton1","fid":"12011AD8","master":"DLCThievesDen.esp"}
+{"sig":"CREA","edid":"DLC06CreatureSkeleton2","fid":"12011ADA","master":"DLCThievesDen.esp"}
+{"sig":"CREA","edid":"DLC06CreatureSkeleton3Hero","fid":"12011ADC","master":"DLCThievesDen.esp"}
+{"sig":"LVLC","edid":"DLC06UndeadPirate100","fid":"12011AE0","master":"DLCThievesDen.esp"}
+{"sig":"KEYM","edid":"sOOODLCDunbarrowKey","fid":"310030F2","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DLC06SkeletonWeapons","fid":"12013DC2","master":"DLCThievesDen.esp"}
+{"sig":"CELL","edid":"AnvilCastleBlacksmithQuarters","fid":"0003D312","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"310030F4","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"AnvilCastleSmugglersCave","fid":"0002C37E","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"310037D7","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"0002C54C","master":"Oblivion.esm"}
+{"sig":"WRLD","edid":"Tamriel","fid":"0000003C","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"","fid":"00023777","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"310037D1","master":"DLCThievesDen - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"DLC06DunbarrowDoorRef","fid":"0002C385","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"AnvilExteriorCastle02","fid":"0000AC69","master":"Oblivion.esm"}
+{"sig":"QUST","edid":"DLC06ThievesDen","fid":"12003E84","master":"DLCThievesDen.esp"}

@@ -1,0 +1,68 @@
+=== Aggregated APW diff character ===
+
+[ACHR] changed=1 unchanged=1
+   Cell              1
+   XESP              1
+
+[ACTI] changed=3 unchanged=1
+   SCRI              3
+
+[ARMO] changed=0 unchanged=3
+
+[CELL] changed=0 unchanged=25
+
+[CLOT] changed=0 unchanged=7
+
+[CREA] changed=9 unchanged=16
+   RNAM              8
+   CNTO              1
+
+[DIAL] changed=25 unchanged=0
+   FULL             25
+   INOM             24
+   INOA             24
+
+[GMST] changed=0 unchanged=25
+
+[INFO] changed=25 unchanged=0
+   PNAM             25
+   Topic             9
+   CTDA              2
+   TPIC              1
+
+[LAND] changed=10 unchanged=15
+   Cell              6
+   VCLR              4
+   VNML              2
+   VHGT              1
+
+[LIGH] changed=1 unchanged=0
+   SNAM              1
+
+[LVLI] changed=1 unchanged=24
+   LVLD              1
+
+[NPC_] changed=23 unchanged=2
+   HNAM             17
+   FNAM              7
+   LNAM              5
+   CNAM              4
+   ENAM              2
+
+[PACK] changed=0 unchanged=14
+
+[QUST] changed=25 unchanged=0
+   ICON             25
+
+[REFR] changed=4 unchanged=21
+   Cell              3
+   XESP              1
+
+[SCPT] changed=16 unchanged=0
+   SCDA             16
+   SCTX             16
+
+[SPEL] changed=1 unchanged=24
+   FULL              1
+
+[STAT] changed=0 unchanged=6

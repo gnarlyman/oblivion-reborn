@@ -1,0 +1,331 @@
+00024E3B	ACHR	JeeliusRef	APW Merge.esp
+0008677C	ACHR	MG17Necro1b	APW Merge 2.esp
+000699F0	ACTI	ARWellGrate01	APW Merge.esp
+00066CC2	ACTI	ACTRuneStoneExt02Glyph01	APW - Conflict Resolution.esp
+0006A8E0	ACTI	ACTRuneStoneExt01Glyph01b	APW - Conflict Resolution.esp
+0017D40B	ACTI	ACTRuneStoneExt01Glyph01a	APW - Conflict Resolution.esp
+0000A308	ARMO	DAUmbraCuirass9	APW Merge.esp
+00045E02	ARMO	SEEnchIronGreavesResistFire	APW Merge.esp
+000C560B	ARMO	ReplicaGlassCuirass	APW Merge.esp
+00003C4A	CELL		APW Merge.esp
+00004121	CELL		APW Merge.esp
+00004161	CELL		APW Merge.esp
+00004428	CELL		APW Merge.esp
+00004444	CELL		APW Merge.esp
+00004465	CELL		APW Merge.esp
+00004484	CELL		APW Merge.esp
+00004485	CELL		APW Merge.esp
+00004486	CELL		APW Merge.esp
+000044A4	CELL		APW Merge.esp
+00005E69	CELL		APW Merge.esp
+00006235	CELL		APW Merge.esp
+00006238	CELL		APW Merge.esp
+00006239	CELL		APW Merge.esp
+00006253	CELL		APW Merge.esp
+00006271	CELL		APW Merge.esp
+00006272	CELL		APW Merge.esp
+00006295	CELL		APW Merge.esp
+00006296	CELL		APW Merge.esp
+000062BB	CELL		APW Merge.esp
+000065A7	CELL		APW Merge.esp
+000065E6	CELL		APW Merge.esp
+00006605	CELL		APW Merge.esp
+00006644	CELL		APW Merge.esp
+0000665F	CELL		APW Merge.esp
+000250A0	CLOT	AmuletofKings	APW - Conflict Resolution.esp
+0002E5AC	CLOT	MG02RingofBurden	APW - Conflict Resolution.esp
+00038017	CLOT	JewelryRing1Brass1Pearl	APW - Conflict Resolution.esp
+00038018	CLOT	JewelryRing1Brass2Topaz	APW - Conflict Resolution.esp
+00038019	CLOT	JewelryRing2Copper1Pearl	APW - Conflict Resolution.esp
+0003801A	CLOT	JewelryRing2Copper2Topaz	APW - Conflict Resolution.esp
+0003801B	CLOT	JewelryRing2Copper3Ruby	APW - Conflict Resolution.esp
+0000A3B8	CREA	DAHircineMinotaurWeak	APW Merge.esp
+0000A3B9	CREA	DAHircineMinotaurLesser	APW Merge.esp
+0000A3BA	CREA	DAHircineMinotaurStandard	APW Merge.esp
+0000C4B3	CREA	OblivionSiegeTarget	APW Merge.esp
+00014F8C	CREA	SummonBoar	APW Merge.esp
+0001E437	CREA	SE04FelldewElytraSPECIAL	APW Merge.esp
+0001E5EE	CREA	xxxCreatureZombie	APW Merge.esp
+0003D799	CREA	ICArenaBear	APW Merge.esp
+0003D79C	CREA	ICArenaMountainLion	APW Merge.esp
+0003D79D	CREA	ICArenaDog	APW Merge.esp
+000435A6	CREA	SE09GatekeeperHeadSword	APW Merge.esp
+000435A7	CREA	SE09GatekeeperHeadAxe	APW Merge.esp
+000435A8	CREA	SE09GatekeeperHeadMace	APW Merge.esp
+000435A9	CREA	SE09GatekeeperHelmSword	APW Merge.esp
+000435AA	CREA	SE09GatekeeperHelmAxe	APW Merge.esp
+000435AB	CREA	SE09GatekeeperHelmMace	APW Merge.esp
+0004408A	CREA	SE09DeadHound01	APW Merge.esp
+0004A98D	CREA	TG01RohssansDog	APW Merge.esp
+000698BF	CREA	SECreatureBaliwog1Dead	APW Merge.esp
+0006C46C	CREA	DarkPerenniaDog	APW Merge.esp
+00071F52	CREA	DogCheydinhalFG	APW Merge.esp
+0007329F	CREA	DogCheydinhalKnights	APW Merge.esp
+00078C38	CREA	SE09SkeletalHound01	APW Merge.esp
+00078C54	CREA	SE09SkeletalHound02	APW Merge.esp
+00085739	CREA	DogICTempleDistrictSalomonsGeonette	APW Merge.esp
+00000C8D	DIAL	VampireVicente	APW Merge.esp
+000024D0	DIAL	goblins	APW Merge.esp
+00002529	DIAL	lightthedragonfires	APW Merge.esp
+000025A5	DIAL	AmuletofKingsTopic	APW Merge.esp
+00002D9D	DIAL	Dark11Choice4C	APW Merge.esp
+00002DA0	DIAL	Dark11Choice3C	APW Merge.esp
+00002DA3	DIAL	Dark11Choice2C	APW Merge.esp
+00002DA6	DIAL	Dark11Choice1C	APW Merge.esp
+00002DBF	DIAL	TarMeenaTopic	APW Merge.esp
+00002E3C	DIAL	Daedricshrine	APW Merge.esp
+00002E3E	DIAL	ElanteTOPIC	APW Merge.esp
+000038B9	DIAL	CastleResidents	APW Merge.esp
+000038C8	DIAL	CountessValga	APW Merge.esp
+0000391C	DIAL	SedorTOPIC	APW Merge.esp
+0000391E	DIAL	bandits	APW Merge.esp
+0000391F	DIAL	StoneofStAlessiaTOPIC	APW Merge.esp
+00003991	DIAL	BloodcrustCavernTopic	APW Merge.esp
+00003992	DIAL	vampirehunters	APW Merge.esp
+00003A58	DIAL	Manor	APW Merge.esp
+00007DF9	DIAL	TG01AmantiusAllectus	APW Merge.esp
+000091B8	DIAL	Debt	APW Merge.esp
+00009221	DIAL	MannimarcoTopic	APW Merge.esp
+0000929B	DIAL	TGInformation	APW Merge.esp
+00009700	DIAL	MQ15GaiarAlataTopic	APW Merge.esp
+0000A871	DIAL	MS46GoblinWar	APW Merge.esp
+0004F654	GMST	sAttributeDescEndurance	APW Merge.esp
+0004F658	GMST	sAttributeDescSpeed	APW Merge.esp
+0004F659	GMST	sAttributeDescStrength	APW Merge.esp
+00007E8B	GMST	fSneakSleepBonus	APW Merge 3.esp
+0003C175	GMST	fSneakBootWeightBase	APW Merge 3.esp
+0003C176	GMST	fSneakBootWeightMult	APW Merge 3.esp
+0003C395	GMST	fSneakTargetAttackBonus	APW Merge 3.esp
+0003FD40	GMST	iDeathDropWeaponChance	APW Merge 3.esp
+0004CE36	GMST	fSneakBaseValue	APW Merge 3.esp
+0004CE38	GMST	fSneakSkillMult	APW Merge 3.esp
+00002333	GMST	fBarterSellBase	APW - Conflict Resolution.esp
+0000AA92	GMST	fPickPocketMaxChance	APW - Conflict Resolution.esp
+000104CC	GMST	fMoveRunMult	APW - Conflict Resolution.esp
+00010554	GMST	fActorStrengthEncumbranceMult	APW - Conflict Resolution.esp
+00016593	GMST	fMoveSneakMult	APW - Conflict Resolution.esp
+000287A3	GMST	fCombatHitConeAngle	APW - Conflict Resolution.esp
+0002BE94	GMST	iCrimeAlarmRecDistance	APW - Conflict Resolution.esp
+0004B6DA	GMST	sDerivedAttributeDescHealth	APW - Conflict Resolution.esp
+0004F653	GMST	sAttributeDescAgility	APW - Conflict Resolution.esp
+0004F655	GMST	sAttributeDescIntelligence	APW - Conflict Resolution.esp
+0004F656	GMST	sAttributeDescLuck	APW - Conflict Resolution.esp
+0004F657	GMST	sAttributeDescPersonality	APW - Conflict Resolution.esp
+0004F65A	GMST	sAttributeDescWillpower	APW - Conflict Resolution.esp
+0005C06C	GMST	fSpellmakingGoldMult	APW - Conflict Resolution.esp
+00067C4D	GMST	sCombatDescription	APW - Conflict Resolution.esp
+0001C46E	INFO		APW Merge.esp
+0001E74B	INFO		APW Merge.esp
+0001FE86	INFO		APW Merge.esp
+000223E4	INFO		APW Merge.esp
+00023C0C	INFO		APW Merge.esp
+000242F2	INFO		APW Merge.esp
+000242F8	INFO		APW Merge.esp
+00027FC7	INFO		APW Merge.esp
+000281A4	INFO		APW Merge.esp
+000281A6	INFO		APW Merge.esp
+000281B9	INFO		APW Merge.esp
+00028CE7	INFO		APW Merge.esp
+0002AD7D	INFO		APW Merge.esp
+0002D726	INFO		APW Merge.esp
+0003003A	INFO		APW Merge.esp
+00031613	INFO		APW Merge.esp
+0003161B	INFO		APW Merge.esp
+00033FC8	INFO		APW Merge.esp
+00034078	INFO		APW Merge.esp
+00034079	INFO		APW Merge.esp
+00037834	INFO		APW Merge.esp
+0003AB34	INFO		APW Merge.esp
+0003C15D	INFO		APW Merge.esp
+0003C169	INFO		APW Merge.esp
+0003C1EE	INFO		APW Merge.esp
+000045DB	LAND		APW Merge.esp
+000045DC	LAND		APW Merge.esp
+000045FB	LAND		APW Merge.esp
+00006C9A	LAND		APW Merge.esp
+00006E6E	LAND		APW Merge.esp
+0000753D	LAND		APW Merge.esp
+0000763B	LAND		APW Merge.esp
+00008BD4	LAND		APW Merge.esp
+00008BF5	LAND		APW Merge.esp
+00008D0A	LAND		APW Merge.esp
+00008D95	LAND		APW Merge.esp
+0000B144	LAND		APW Merge.esp
+0000B14A	LAND		APW Merge.esp
+0000B29D	LAND		APW Merge.esp
+0000B2F7	LAND		APW Merge.esp
+0000B2F8	LAND		APW Merge.esp
+0000B2F9	LAND		APW Merge.esp
+0000B2FC	LAND		APW Merge.esp
+0000B5C4	LAND		APW Merge.esp
+0000B5C5	LAND		APW Merge.esp
+0000B5C6	LAND		APW Merge.esp
+0000E137	LAND		APW Merge.esp
+0000E138	LAND		APW Merge.esp
+0000E139	LAND		APW Merge.esp
+0000E13A	LAND		APW Merge.esp
+00069230	LIGH	ARDesatGreenIntense800	APW - Conflict Resolution.esp
+0000844F	LVLI	LL0LootIngredientConjurer100	APW Merge.esp
+00053246	LVLI	LL0FoodMiddleClass100	APW Merge.esp
+00053247	LVLI	LL0FoodUpperClass100	APW Merge.esp
+00053248	LVLI	LL0FoodLowerClass100	APW Merge.esp
+00053D90	LVLI	LL0LootIngredientConjurerDEL	APW Merge.esp
+00053D91	LVLI	LL0LootIngredientVampire100	APW Merge.esp
+00053D94	LVLI	LL0LootIngredientTomb100	APW Merge.esp
+00053F26	LVLI	LL0FoodLowerClass75	APW Merge.esp
+00053F27	LVLI	LL0FoodMiddleClass75	APW Merge.esp
+00053F28	LVLI	LL0FoodUpperClass75	APW Merge.esp
+0006FEBD	LVLI	LL0LootIngredientVampire25	APW Merge.esp
+0007CFE2	LVLI	SEVendorIngredients100	APW Merge.esp
+0007CFE5	LVLI	SEVendorIngredients50	APW Merge.esp
+000805AE	LVLI	SELL0LootGrummiteMageIngredients50	APW Merge.esp
+00081E70	LVLI	SE38ItemList98	APW Merge.esp
+00082731	LVLI	SELL0LootIngredients75	APW Merge.esp
+00082732	LVLI	SELL0Food75	APW Merge.esp
+00082735	LVLI	SELL0Food100	APW Merge.esp
+000A2E9E	LVLI	LL0Ingredients4RareMonster100	APW Merge.esp
+000A2E9F	LVLI	LL0Ingredients0Food100	APW Merge.esp
+000A2EA0	LVLI	LL0Ingredients1Common100	APW Merge.esp
+000A2EA1	LVLI	LL0Ingredients2Uncommon100	APW Merge.esp
+000A2EA2	LVLI	LL0Ingredients1Common75	APW Merge.esp
+000A2EA3	LVLI	LL0Ingredients1Common50	APW Merge.esp
+000A2EA4	LVLI	LL0Ingredients1Common25	APW Merge.esp
+0000089A	NPC_	TestToddMan	APW Merge.esp
+000034CE	NPC_	Raqanar	APW Merge.esp
+0000B50A	NPC_	TESTVampireMage	APW Merge.esp
+0000B50E	NPC_	TESTVampireMage7	APW Merge.esp
+0000B50F	NPC_	TESTVampireMage14	APW Merge.esp
+0000B510	NPC_	TESTVampireMage21	APW Merge.esp
+0000C1D4	NPC_	Ormil	APW Merge.esp
+00011F9E	NPC_	SE02OrcCaptain	APW Merge.esp
+00012087	NPC_	SERendilDrarara	APW Merge.esp
+00014686	NPC_	KvatchCastleWallDremoraArcherDead	APW Merge.esp
+0001559C	NPC_	SECaldanaMonrius	APW Merge.esp
+000155A3	NPC_	SEHirrusClutumnus	APW Merge.esp
+0001584C	NPC_	TestJoelPawn01	APW Merge.esp
+00015E9E	NPC_	Thoronir	APW Merge.esp
+00015EA0	NPC_	HamlofRedTooth	APW Merge.esp
+00015EA1	NPC_	RisFralmoton	APW Merge.esp
+00015EAB	NPC_	ClaudettePerrick	APW Merge.esp
+000165ED	NPC_	BeggarICWaterfrontAncus	APW Merge.esp
+00017060	NPC_	TestJoelPawnKnight01	APW Merge.esp
+00017061	NPC_	TestJoelKnight02	APW Merge.esp
+00017062	NPC_	TestJoelPawnKnight03	APW Merge.esp
+00018C65	NPC_	SEGrommokgroBarak	APW Merge.esp
+00018FD8	NPC_	SE02OrcAdventurer4	APW Merge.esp
+00018FD9	NPC_	SE02OrcAdventurer3	APW Merge.esp
+00018FDA	NPC_	SE02OrcAdventurer2	APW Merge.esp
+0001E761	PACK	ICMarketDistrictTTh13x7	APW - Conflict Resolution.esp
+0001FC6D	PACK	ICMarketDistrictWed16x4	APW - Conflict Resolution.esp
+0001FC7E	PACK	ICMarketDistrictSu8x4	APW - Conflict Resolution.esp
+0001FC82	PACK	ICMarketDistrictMTWTF16x4	APW - Conflict Resolution.esp
+0001FDEA	PACK	ICMarketDistrictMTWTF18x2	APW - Conflict Resolution.esp
+0001FDF2	PACK	ICMarketDistrictSun12x8	APW - Conflict Resolution.esp
+0001FDF6	PACK	ICMarketDistrictTTh8x4	APW - Conflict Resolution.esp
+0001FDFC	PACK	ICMarketDistrictMTWTF14x3	APW - Conflict Resolution.esp
+0001FE0B	PACK	ICMarketDistrictTTh10x6	APW - Conflict Resolution.esp
+000221B9	PACK	ICMarketDistrictMTWTF8x4	APW - Conflict Resolution.esp
+000221BD	PACK	ICMarketDistrictTTh9x6	APW - Conflict Resolution.esp
+000221E6	PACK	ICMarketDistrictMon16x4	APW - Conflict Resolution.esp
+00095020	PACK	aaaDefaultHomeResident	APW - Conflict Resolution.esp
+00189043	PACK	ICMarketDistrictSS12x6	APW - Conflict Resolution.esp
+00013643	QUST	SE11b	APW - Conflict Resolution.esp
+00013A5D	QUST	SE05Conversations	APW - Conflict Resolution.esp
+000165E6	QUST	TGInfo	APW - Conflict Resolution.esp
+00018E8C	QUST	SE00	APW - Conflict Resolution.esp
+00019516	QUST	SE06Battle	APW - Conflict Resolution.esp
+00019D65	QUST	SE02Conv	APW - Conflict Resolution.esp
+0001DA86	QUST	SE08Xed	APW - Conflict Resolution.esp
+0001E641	QUST	ArenaAnnouncer	APW - Conflict Resolution.esp
+0001E642	QUST	ArenaAggression	APW - Conflict Resolution.esp
+0001E691	QUST	ArenaSpectatorCombatant	APW - Conflict Resolution.esp
+0001E868	QUST	TGExpelled	APW - Conflict Resolution.esp
+00022D43	QUST	ArenaDisqualification	APW - Conflict Resolution.esp
+000232D4	QUST	Dark03AccidentsFIN	APW - Conflict Resolution.esp
+00023DD6	QUST	Dark01KnifeFIN	APW - Conflict Resolution.esp
+00023DD7	QUST	Dark04ExecutionFIN	APW - Conflict Resolution.esp
+00023DD9	QUST	Dark00General	APW - Conflict Resolution.esp
+000242BF	QUST	MG05FIN	APW - Conflict Resolution.esp
+000251E5	QUST	Dark01KnifePost	APW - Conflict Resolution.esp
+000251E6	QUST	Dark00GeneralNPC	APW - Conflict Resolution.esp
+0002529D	QUST	Dark03AccidentsPost	APW - Conflict Resolution.esp
+000253BA	QUST	Dark05AssassinatedFIN	APW - Conflict Resolution.esp
+000253BC	QUST	Dark06WandererFIN	APW - Conflict Resolution.esp
+000253BE	QUST	Dark07MedicineFIN	APW - Conflict Resolution.esp
+000253C0	QUST	Dark08WhodunitFIN	APW - Conflict Resolution.esp
+00026AD4	QUST	DAConversations	APW - Conflict Resolution.esp
+00003A13	REFR		APW Merge.esp
+00003A14	REFR		APW Merge.esp
+00003A15	REFR		APW Merge.esp
+00003A16	REFR		APW Merge.esp
+000094BF	REFR		APW Merge.esp
+00009A51	REFR		APW Merge.esp
+00009A53	REFR		APW Merge.esp
+00009A57	REFR		APW Merge.esp
+00009A5B	REFR		APW Merge.esp
+00009A92	REFR		APW Merge.esp
+00009A93	REFR		APW Merge.esp
+00009A94	REFR		APW Merge.esp
+00009A97	REFR		APW Merge.esp
+00009A98	REFR		APW Merge.esp
+00009A99	REFR		APW Merge.esp
+00009A9A	REFR		APW Merge.esp
+0000BE27	REFR		APW Merge.esp
+0000BE28	REFR		APW Merge.esp
+0000BE29	REFR		APW Merge.esp
+0000BE2A	REFR		APW Merge.esp
+0000BE2B	REFR		APW Merge.esp
+0000BE2C	REFR		APW Merge.esp
+0000BE2D	REFR		APW Merge.esp
+0000BE32	REFR		APW Merge.esp
+0000BE33	REFR		APW Merge.esp
+00022C88	SCPT	SpiddalCloudPlantSCRIPT	Harvest xOBSE.esp
+00066707	SCPT	HarradaGroundtAttack	Harvest xOBSE.esp
+0001E643	SCPT	ArenaAggressionScript	APW Merge.esp
+0008E542	SCPT	SEDoorLightBeamScript	APW Merge.esp
+0018AE40	SCPT	SQ06Script	APW Merge.esp
+0018BC26	SCPT	SQ07JournalScript	APW Merge.esp
+0018BC28	SCPT	SQ07Script	APW Merge.esp
+0018D933	SCPT	SQ08Script	APW Merge.esp
+0001EBE7	SCPT	DAAzuraStatueScript	APW Merge 2.esp
+0001EF7B	SCPT	DAHermaeusStatueScript	APW - Conflict Resolution.esp
+000236E6	SCPT	MG05BookScript	APW - Conflict Resolution.esp
+00024FEF	SCPT	ArenaRedRoomDoorScript	APW - Conflict Resolution.esp
+00027589	SCPT	AmuletofKingsSCRIPT	APW - Conflict Resolution.esp
+0004985A	SCPT	MG10ClueTabletText01	APW - Conflict Resolution.esp
+0004985B	SCPT	MG10ClueTabletText02	APW - Conflict Resolution.esp
+0004985C	SCPT	MG10ClueTabletText03	APW - Conflict Resolution.esp
+0004985D	SCPT	MG10ClueTabletText04	APW - Conflict Resolution.esp
+0006B6B9	SCPT	DoomstoneNirnScript	APW - Conflict Resolution.esp
+00000136	SPEL	DefaultPlayerSpell	APW Merge.esp
+00014720	SPEL	DelphineJendEnemiesExplode	APW Merge.esp
+0001C4AD	SPEL	MG03Charm	APW Merge.esp
+0001EF7F	SPEL	MG01Fireball	APW Merge.esp
+0001FBB4	SPEL	MG02Buoyancy	APW Merge.esp
+0002F863	SPEL	MS47Invisibility	APW Merge.esp
+0006D678	SPEL	DarkChameleon	APW Merge.esp
+0006D67A	SPEL	DarkHeal	APW Merge.esp
+0006D67B	SPEL	DarkNightEyes	APW Merge.esp
+0006D67C	SPEL	DarkIce	APW Merge.esp
+0006D67D	SPEL	DarkIceStorm	APW Merge.esp
+0006D67F	SPEL	DarkDetectPulse	APW Merge.esp
+0006D680	SPEL	DarkDetectSuperior	APW Merge.esp
+0006D7AF	SPEL	StandardRestoreHealthTarget2Apprentice	APW Merge.esp
+000A9368	SPEL	StandardAbsorbHealth2Apprentice	APW Merge.esp
+000A9369	SPEL	StandardAbsorbHealth3Journeyman	APW Merge.esp
+000A936A	SPEL	StandardAbsorbHealth4Expert	APW Merge.esp
+000A936B	SPEL	StandardAbsorbFatigue1Novice	APW Merge.esp
+000A936C	SPEL	StandardAbsorbMagicka1Novice	APW Merge.esp
+000A97B4	SPEL	StandardBoundArmorBootsNovice	APW Merge.esp
+000A97B6	SPEL	StandardBoundArmorCuriassJourneyman	APW Merge.esp
+000A97B7	SPEL	StandardBoundDaggerNovice	APW Merge.esp
+000A97B8	SPEL	StandardBoundArmorGauntletsNovice	APW Merge.esp
+000A97B9	SPEL	StandardBoundArmorGreavesApprentice	APW Merge.esp
+000A97BA	SPEL	StandardBoundArmorHelmetNovice	APW Merge.esp
+000984C0	STAT	LandscapeCypressKneeCluster01	APW Merge.esp
+000984C1	STAT	CypressKnee01	APW Merge.esp
+000984C2	STAT	CypressKnee02	APW Merge.esp
+000984C3	STAT	CypressKneeCluster01	APW Merge.esp
+000984C4	STAT	CypressKneeCluster02	APW Merge.esp
+000984C5	STAT	CypressKneeCluster03	APW Merge.esp
+00097CDA	WRLD	E3Kvatch	LandMagicPatch.esp

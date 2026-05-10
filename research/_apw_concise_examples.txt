@@ -1,0 +1,160 @@
+
+## DIAL
+  - `00000C8D` `VampireVicente` [FULL]
+      FULL: `Vampire` -> `How did you become a vampire?`
+  - `000024D0` `goblins` [FULL]
+      FULL: `Goblins` -> `About goblins...`
+  - `00002529` `lightthedragonfires` [FULL]
+      FULL: `Light the dragonfires` -> `So, what exactly are the Dragonfires?`
+  - `000025A5` `AmuletofKingsTopic` [FULL]
+      FULL: `Amulet of Kings` -> `The Amulet of Kings...`
+  - `00002D9D` `Dark11Choice4C` [FULL]
+      FULL: `<Say nothing.>` -> `...`
+  - `00002DA0` `Dark11Choice3C` [FULL]
+      FULL: `<Say nothing.>` -> `...`
+  - `00002DA3` `Dark11Choice2C` [FULL]
+      FULL: `<Say nothing.>` -> `...`
+  - `00002DA6` `Dark11Choice1C` [FULL]
+      FULL: `<Say nothing.>` -> `...`
+
+## INFO
+  - `0001C46E` `(no edid)` [PNAM]
+      PNAM: `<absent>` -> `[INFO:0001C46D] (''Crime don't pay. My cells is full of fool`
+  - `0001E74B` `(no edid)` [Topic,PNAM]
+      Topic: `MQ02JauffreC1 "Tell the emperor's last words." [DIAL:0001E74` -> `MQ02JauffreC1 "The Emperor told me to give you the amulet." `
+  - `0001FE86` `(no edid)` [Topic,PNAM]
+      Topic: `ChorrolTopic "Chorrol" [DIAL:000299C1]` -> `ChorrolTopic "What can you tell me about Chorrol?" [DIAL:000`
+  - `000223E4` `(no edid)` [Topic,PNAM]
+      Topic: `lightthedragonfires "Light the dragonfires" [DIAL:00002529]` -> `lightthedragonfires "So, what exactly are the Dragonfires?" `
+  - `00023C0C` `(no edid)` [PNAM,CTDA]
+      PNAM: `<absent>` -> `NULL - Null Reference [00000000]`
+  - `000242F2` `(no edid)` [PNAM,CTDA]
+      PNAM: `<absent>` -> `[INFO:00023F5C] (''I'll hack you to pieces!'' in Attack "Att`
+  - `000242F8` `(no edid)` [PNAM]
+      PNAM: `<absent>` -> `[INFO:0018BD71] (''You do realize I've been holding back?'' `
+  - `00027FC7` `(no edid)` [PNAM]
+      PNAM: `<absent>` -> `[INFO:000711BA] (''You decided to turn yourself in? Good. Yo`
+
+## NPC_
+  - `0000089A` `TestToddMan` [ENAM]
+      ENAM: `<absent>` -> ``
+  - `000034CE` `Raqanar` [LNAM,FNAM]
+      LNAM: `0.000000` -> `0.369000`
+  - `0000B50A` `TESTVampireMage` [CNAM,HNAM]
+      CNAM: `Sorcerer "Sorcerer" [CLAS:000237AC]` -> `Sorcerer "Battlemage" [CLAS:000237AC]`
+  - `0000B50E` `TESTVampireMage7` [CNAM,HNAM]
+      CNAM: `Sorcerer "Sorcerer" [CLAS:000237AC]` -> `Sorcerer "Battlemage" [CLAS:000237AC]`
+  - `0000B50F` `TESTVampireMage14` [CNAM,HNAM]
+      CNAM: `Sorcerer "Sorcerer" [CLAS:000237AC]` -> `Sorcerer "Battlemage" [CLAS:000237AC]`
+  - `0000B510` `TESTVampireMage21` [CNAM,HNAM]
+      CNAM: `Sorcerer "Sorcerer" [CLAS:000237AC]` -> `Sorcerer "Battlemage" [CLAS:000237AC]`
+  - `0000C1D4` `Ormil` [HNAM,ENAM]
+      HNAM: `HighElfPeak "High Style" [HAIR:000690C0]` -> `HighElfPeak "Summerset Flow" [HAIR:000690C0]`
+  - `00011F9E` `SE02OrcCaptain` [LNAM,FNAM]
+      LNAM: `1.000000` -> `0.578200`
+
+## SCPT
+  - `0001E643` `ArenaAggressionScript` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 06 00 00 00 18 06 00 00 16 00 10 00 0E 00 ` -> `1D 00 00 00 10 00 06 00 00 00 4B 06 00 00 16 00 10 00 0E 00 `
+  - `0008E542` `SEDoorLightBeamScript` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 08 00 02 00 9E 00 00 00 00 00 16 00 14 00 ` -> `1D 00 00 00 10 00 08 00 02 00 8E 00 00 00 00 00 16 00 14 00 `
+  - `0018AE40` `SQ06Script` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 06 00 00 00 1F 02 00 00 16 00 14 00 01 00 ` -> `1D 00 00 00 10 00 06 00 00 00 68 02 00 00 16 00 14 00 01 00 `
+  - `0018BC26` `SQ07JournalScript` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 08 00 02 00 67 00 00 00 00 00 16 00 3B 00 ` -> `1D 00 00 00 10 00 08 00 02 00 7E 00 00 00 00 00 16 00 3A 00 `
+  - `0018BC28` `SQ07Script` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 06 00 00 00 A4 00 00 00 16 00 2C 00 01 00 ` -> `1D 00 00 00 10 00 06 00 00 00 62 00 00 00 16 00 3D 00 02 00 `
+  - `0018D933` `SQ08Script` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 06 00 00 00 C3 00 00 00 16 00 20 00 01 00 ` -> `1D 00 00 00 10 00 06 00 00 00 FF 00 00 00 16 00 0C 00 04 00 `
+  - `0001EBE7` `DAAzuraStatueScript` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 06 00 00 00 F4 00 00 00 16 00 24 00 01 00 ` -> `1D 00 00 00 10 00 06 00 00 00 F4 00 00 00 16 00 24 00 01 00 `
+  - `0001EF7B` `DAHermaeusStatueScript` [SCDA,SCTX]
+      SCDA: `1D 00 00 00 10 00 08 00 02 00 D9 00 00 00 00 00 16 00 14 00 ` -> `1D 00 00 00 10 00 08 00 02 00 DB 00 00 00 00 00 16 00 14 00 `
+
+## QUST
+  - `00013643` `SE11b` [ICON]
+      ICON: `Quests\iconSE11.dds` -> `Quests\eoo_shivering\si_eye.dds`
+  - `00013A5D` `SE05Conversations` [ICON]
+      ICON: `Quests\iconSE05.dds` -> `Quests\eoo_shivering\si_irondoor.dds`
+  - `000165E6` `TGInfo` [ICON]
+      ICON: `Quest\icon_thieves_guild.dds` -> `Quests\eoo_guilds\tg_thief.dds`
+  - `00018E8C` `SE00` [ICON]
+      ICON: `Quests\iconSE01.dds` -> `Quests\eoo_shivering\si_door.dds`
+  - `00019516` `SE06Battle` [ICON]
+      ICON: `Quests\iconSE06.dds` -> `Quests\eoo_shivering\si_fire.dds`
+  - `00019D65` `SE02Conv` [ICON]
+      ICON: `Quests\iconSE02.dds` -> `Quests\eoo_shivering\si_flesh.dds`
+  - `0001DA86` `SE08Xed` [ICON]
+      ICON: `Quests\iconSE08.dds` -> `Quests\eoo_shivering\si_tower.dds`
+  - `0001E641` `ArenaAnnouncer` [ICON]
+      ICON: `Quest\icon_arena.dds` -> `Quests\eoo_others\arena.dds`
+
+## CREA
+  - `0000C4B3` `OblivionSiegeTarget` [RNAM]
+      RNAM: `32` -> `68`
+  - `00014F8C` `SummonBoar` [RNAM]
+      RNAM: `28` -> `50`
+  - `0001E5EE` `xxxCreatureZombie` [RNAM]
+      RNAM: `60` -> `70`
+  - `0003D79C` `ICArenaMountainLion` [RNAM]
+      RNAM: `55` -> `60`
+  - `0003D79D` `ICArenaDog` [RNAM]
+      RNAM: `50` -> `58`
+  - `0004408A` `SE09DeadHound01` [RNAM]
+      RNAM: `50` -> `58`
+  - `000698BF` `SECreatureBaliwog1Dead` [CNTO]
+      CNTO: `<absent>` -> ``
+  - `00078C38` `SE09SkeletalHound01` [RNAM]
+      RNAM: `50` -> `58`
+
+## LAND
+  - `000045DB` `(no edid)` [Cell]
+      Cell: `[CELL:00004548] (in Tamriel [WRLD:0000003C] at 3,34)` -> `AAZFG01SkoomaCamp [CELL:00004548] (in Tamriel [WRLD:0000003C`
+  - `000045DC` `(no edid)` [Cell]
+      Cell: `[CELL:00004547] (in Tamriel [WRLD:0000003C] at 2,34)` -> `AAZFG01SkoomaCampD [CELL:00004547] (in Tamriel [WRLD:0000003`
+  - `000045FB` `(no edid)` [Cell,VNML,VHGT,VCLR]
+      Cell: `[CELL:00004528] (in Tamriel [WRLD:0000003C] at 2,35)` -> `AAZFG01SkoomaCampC [CELL:00004528] (in Tamriel [WRLD:0000003`
+  - `00006E6E` `(no edid)` [VNML]
+      VNML: `FC FE 7E FD 00 7E 00 00 7F FD FD 7E FE 00 7E 00 00 7F 00 00 ` -> `FC FE 7E FD 00 7E 00 00 7F FD FD 7E FE 00 7E 00 00 7F 00 00 `
+  - `00008BF5` `(no edid)` [Cell]
+      Cell: `[CELL:00007D69] (in Tamriel [WRLD:0000003C] at -9,2)` -> `FortVlastarusExterior02 [CELL:00007D69] (in Tamriel [WRLD:00`
+  - `0000B144` `(no edid)` [Cell]
+      Cell: `[CELL:0000ACE9] (in Tamriel [WRLD:0000003C] at -46,-15)` -> `Wreck3 [CELL:0000ACE9] (in Tamriel [WRLD:0000003C] at -46,-1`
+  - `0000B14A` `(no edid)` [Cell]
+      Cell: `[CELL:0000ACE3] (in Tamriel [WRLD:0000003C] at -52,-15)` -> `Wreck2 [CELL:0000ACE3] (in Tamriel [WRLD:0000003C] at -52,-1`
+  - `0000B2F8` `(no edid)` [VCLR]
+      VCLR: `FE FE FE FE FE FE FE FE FE E4 E4 E4 E6 E6 E6 F5 F5 F5 C2 C2 ` -> `FE FE FE FE FE FE FE FE FE EE EE EE E6 E6 E6 F5 F5 F5 FE FE `
+
+## REFR
+  - `000094BF` `(no edid)` [XESP]
+      XESP: `<absent>` -> ``
+  - `00009A92` `(no edid)` [Cell]
+      Cell: `[CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)` -> `FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000`
+  - `00009A93` `(no edid)` [Cell]
+      Cell: `[CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)` -> `FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000`
+  - `00009A94` `(no edid)` [Cell]
+      Cell: `[CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)` -> `FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000`
+
+## LIGH
+  - `00069230` `ARDesatGreenIntense800` [SNAM]
+      SNAM: `<absent>` -> `AMBAyleidWellLP [SOUN:000BEE28]`
+
+## LVLI
+  - `00081E70` `SE38ItemList98` [LVLD]
+      LVLD: `98` -> `100`
+
+## SPEL
+  - `00000136` `DefaultPlayerSpell` [FULL]
+      FULL: `Heal Minor Wounds` -> `Basic Healing`
+
+## ACHR
+  - `0008677C` `MG17Necro1b` [Cell,XESP]
+      Cell: `[CELL:00023777] (in Tamriel [WRLD:0000003C])` -> `SilornExterior [CELL:000080E5] (in Tamriel [WRLD:0000003C] a`
+
+## ACTI
+  - `00066CC2` `ACTRuneStoneExt02Glyph01` [SCRI]
+      SCRI: `RunestoneSidriAshak [SCPT:0006A8DF]` -> `BoonStoneGiveGloom [SCPT:90002A68]`
+  - `0006A8E0` `ACTRuneStoneExt01Glyph01b` [SCRI]
+      SCRI: `RunestoneHestra [SCPT:0006A8DD]` -> `BoonStoneGiveEnergy [SCPT:90002A65]`
+  - `0017D40B` `ACTRuneStoneExt01Glyph01a` [SCRI]
+      SCRI: `RunestoneReman [SCPT:0006A8DE]` -> `BoonStoneGiveCrush [SCPT:90002A66]`

@@ -1,0 +1,178 @@
+{"sig":"ENCH","edid":"DL9enDrothanHood05","fid":"0F005FCC","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanHood01","fid":"0F005FC3","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanHood04","fid":"0F005FCA","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanRobe05","fid":"0F005FD4","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanRobe04","fid":"0F005FD2","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanHood03","fid":"0F005FC8","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enDrothanHood02","fid":"0F005FC6","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enMTongCuirass05","fid":"0F001B6A","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enMTongCuirass04","fid":"0F001B68","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9enMTongCuirass03","fid":"0F001B66","master":"DLCMehrunesRazor.esp"}
+{"sig":"ENCH","edid":"DL9ForgeAmulet03","fid":"0F002740","master":"DLCMehrunesRazor.esp"}
+{"sig":"SPEL","edid":"DL9DisPrion","fid":"0F002729","master":"DLCMehrunesRazor.esp"}
+{"sig":"SPEL","edid":"DL9AbChampFX","fid":"0F001A25","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGreaves05","fid":"0F0020A6","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGreaves03","fid":"0F002092","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongBoots03","fid":"0F00208F","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongBoots04","fid":"0F002099","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongBoots05","fid":"0F0020A3","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongCuirass03","fid":"0F002090","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongCuirass04","fid":"0F00209A","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongCuirass05","fid":"0F0020A4","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGloves03","fid":"0F002091","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGloves04","fid":"0F00209B","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGloves05","fid":"0F0020A5","master":"DLCMehrunesRazor.esp"}
+{"sig":"ARMO","edid":"DL9MTongGreaves04","fid":"0F00209C","master":"DLCMehrunesRazor.esp"}
+{"sig":"CLOT","edid":"DL9DrothanHood05","fid":"0F005FDC","master":"DLCMehrunesRazor.esp"}
+{"sig":"CLOT","edid":"DL9TongHood05","fid":"0F0020A2","master":"DLCMehrunesRazor.esp"}
+{"sig":"CLOT","edid":"DL9DrothmeriTunicSoldier","fid":"0F0014CB","master":"DLCMehrunesRazor.esp"}
+{"sig":"CLOT","edid":"DL9DrothanRobe05","fid":"0F005FE0","master":"DLCMehrunesRazor.esp"}
+{"sig":"CLOT","edid":"DL9DrothmeriPantsSoldier","fid":"26001C8D","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor06","fid":"0F005FBC","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor07","fid":"0F005FBD","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor08","fid":"0F005FBE","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor01","fid":"0F001AB0","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9ChampAxe08","fid":"0F002735","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor02","fid":"0F005FB8","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor03","fid":"0F005FB9","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor04","fid":"0F005FBA","master":"DLCMehrunesRazor.esp"}
+{"sig":"WEAP","edid":"DL9MehrunesRazor05","fid":"0F005FBB","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol08","fid":"0F003503","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol09","fid":"0F003508","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol10","fid":"0F00350E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerCustom02","fid":"0F003510","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol11","fid":"0F003516","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerCustom03","fid":"0F00351F","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerCustom04","fid":"0F003526","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol12","fid":"0F00352E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol13","fid":"0F003549","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol14","fid":"0F00354E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Apprentice01","fid":"0F003A2C","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Apprentice02","fid":"0F003A2F","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9SleepyRecruit","fid":"0F004AD6","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9SoldierNoPackage01","fid":"0F005542","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9SoldierNoPackage02","fid":"0F005544","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Steward","fid":"0F005FAD","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Soldier04","fid":"0F005FB0","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Recruit04","fid":"0F005FB1","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9ArgonianGardener","fid":"0F000D5E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol03","fid":"0F000D71","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol04","fid":"0F000D7E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Recruit02","fid":"0F000D83","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9TraineeArchery","fid":"0F000D84","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Recruit03","fid":"0F000D85","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Veteran02","fid":"0F000D86","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Veteran03","fid":"0F000D87","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol05","fid":"0F000D98","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Soldier01","fid":"0F0014AE","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Recruit01","fid":"0F0014CE","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Veteran01","fid":"0F0014CF","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Trainee01","fid":"0F0014DF","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Trainee02","fid":"0F0014E1","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Trainee03","fid":"0F0014E3","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Trainer01","fid":"0F0014E7","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol01","fid":"0F00158B","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Champion1","fid":"0F001982","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerKhajiit01","fid":"0F0019FA","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9BossCommander","fid":"0F001A07","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9MoragTongAssassin","fid":"0F001AAD","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Soldier02","fid":"0F001ADB","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Soldier03","fid":"0F001ADD","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol02","fid":"0F001B35","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol06","fid":"0F001B8E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Patrol07","fid":"0F001B94","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerCustom01","fid":"0F001B9C","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9FrathenDrothan","fid":"0F00218E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9ForgeMaster","fid":"0F00272E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerKhajiit02","fid":"0F00274D","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerKhajiit03","fid":"0F00274E","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerArgonian01","fid":"0F00274F","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerArgonian02","fid":"0F002750","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9LaborerArgonian03","fid":"0F002751","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Actor01","fid":"0F002D0F","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Actor02","fid":"0F002D16","master":"DLCMehrunesRazor.esp"}
+{"sig":"NPC_","edid":"DL9Actor03","fid":"0F002D17","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9ForgeSmocks","fid":"0F002748","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MTongBootsList","fid":"0F0020AA","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MTongCuirassList","fid":"0F0020A8","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MTongGlovesList","fid":"0F0020A9","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MTongHoodList","fid":"0F0020A7","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MTongGreavesList","fid":"0F0020AB","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9MehrunesRazor","fid":"0F005FBF","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9ChampAxeList","fid":"0F002737","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9DrothanHoodList","fid":"0F005FE2","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriShield30","fid":"260015A6","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriHelmet40","fid":"260015A7","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriGauntlets40","fid":"260015A8","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriBoots60","fid":"260015A9","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriArrows","fid":"260015AA","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriBow","fid":"260015AB","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriSword","fid":"260015AC","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriCuirassEn","fid":"260015AD","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriVeteranCuirass","fid":"260015AE","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriShieldVeteran75","fid":"260015AF","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriHelmetVeteran80","fid":"260015B0","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriGauntletsVeteran85","fid":"260015B1","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriBootsVeteran100","fid":"260015B2","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriSwordVeteran","fid":"260015B3","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriCuirassRecruit","fid":"260015B4","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriGreavesRecruit70","fid":"260015B5","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriBootsRecruit50","fid":"260015B6","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriSwordRecruit","fid":"260015B7","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriGauntletsRecruit","fid":"260015B8","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothmeriHelmetRecruit25","fid":"260015B9","master":"DLCMehrunesRazor - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLI","edid":"DL9DrothanRobeList","fid":"0F005FE1","master":"DLCMehrunesRazor.esp"}
+{"sig":"LVLI","edid":"DL9ForgeAmulets","fid":"0F002747","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c02","fid":"0F000EC4","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0069FE","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0069FF","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F006A00","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F006A02","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F006A03","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F006A04","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c08","fid":"0F000ECE","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0027E8","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F002E59","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F005548","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F002001","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001FED","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c06","fid":"0F000ECA","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00155B","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001557","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001556","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001555","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001554","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F001551","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00154F","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003419","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003418","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003417","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003416","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003415","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003414","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003413","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003412","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003411","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00330A","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003309","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003308","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003307","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0032DE","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0032DD","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F0032DC","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00155D","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c06tent","fid":"0F000ED4","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00566D","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F00566E","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F005672","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c08house3","fid":"0F00385C","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F004045","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c08house1","fid":"0F003438","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F003FBE","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F000EEE","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F000EEF","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c03","fid":"0F000EC2","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F005422","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"DL9c07","fid":"0F000ECC","master":"DLCMehrunesRazor.esp"}
+{"sig":"REFR","edid":"","fid":"0F004562","master":"DLCMehrunesRazor.esp"}
+{"sig":"CELL","edid":"TestingHall","fid":"000231AD","master":"Oblivion.esm"}

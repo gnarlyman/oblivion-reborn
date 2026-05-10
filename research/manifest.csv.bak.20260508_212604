@@ -1,0 +1,795 @@
+apw_name,notes,status,mo2_order,section,nexus_category,mod_kind,loose_files,bash_mergeable,apw_merged,apw_cr,apw_enabled,nexus_url
+Cleaned Game Files,,installed,11,BASE GAME FILES,,esm+esp,0,DLCFrostcrag.esp=no:has new records | DLCHorseArmor.esp=no:has new records | DLCMehrunesRazor.esp=no:has new records | DLCOrrery.esp=no:has new records | DLCShiveringIsles.esp=no:empty | DLCSpellTomes.esp=no:has new records | DLCThievesDen.esp=no:has new records | DLCVileLair.esp=no:has new records | Knights.esp=no:has new records,no,yes,yes,
+Oblivion Script Extender (OBSE xOBSE),Chapter 0 foundation mod,installed,12,UTILITIES,Utilities,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/37952
+MenuQue - OBSE Plugin,Chapter 0 foundation mod,installed,13,UTILITIES,Patches,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/32200
+4gb Ram Patcher,Chapter 0 foundation mod,installed,14,UTILITIES,Utilities,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/45576
+SkyBSA,Chapter 0 foundation mod,installed,15,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49568
+OBL Mod Limit Fix,Chapter 0 foundation mod,installed,16,UTILITIES,Bug Fixes,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/50066
+EngineBugFixes,Chapter 0 foundation mod,installed,17,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/47085
+Blockhead,Chapter 0 foundation mod,installed,18,UTILITIES,Patches,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/43752
+ConScribe,Chapter 0 foundation mod,installed,19,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/26510
+RuntimeEditorIDs,,installed,20,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/40132
+LINK Plus Plus,,installed,21,UTILITIES,User Interface,esp+textures,17,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53352
+AddActorValues,,installed,22,UTILITIES,Gameplay Effects,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/33248
+ConsoleCommands,,installed,23,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/47637
+MessageLogger,,installed,24,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/45870
+''I HAVE NO GREETING'' Fix,,installed,25,UTILITIES,Patches,esp+bsa,0,no:has BSA; has new records,yes:IHaveNoGreetingFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/49115
+Base Object Swapper,,installed,26,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/53872
+Base Object Swapper Integrations,,installed,27,UTILITIES,Items and Objects,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/53877
+Cobl,"Phase OOO 2026-04-30: enabled Cobl Tweaks - OOO.esp + Cobl Tweaks - OOO Mergeable.esp; Wrye Bash absorbed BOTH into Bashed Patch (Cobl Tweaks - OOO.esp wasn't intended-mergeable but WB detected it as safe; quest scripts still fire from bash). Cobl Tweaks - OOO.esp version-check expects legacy OOO 1.34 not OOO Updated 1.7 -> in-game popup, OOO-Cobl tweaks skip but graceful degrade. Fix deferred.",installed,28,UTILITIES,Patches,esm+esp+meshes+textures+sound,1872,yes,yes:Cobl Filter Late MERGE ONLY.esp;Cobl Tweaks - OOO Mergeable.esp;Cobl Tweaks - OOO.esp;Cobl Tweaks - SI.esp;Cobl Tweaks - Vanilla.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/21104
+Console Ignores Player,,installed,29,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/52721
+Crash Logger Improved,Chapter 0 foundation mod,installed,30,UTILITIES,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/54527
+TES4Edit,to do,skipped,31,UTILITIES,,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/11536
+Oblivion Construction Set - Non-installer version,,installed,32,UTILITIES,,obse-plugin+meshes,12,,,,yes,https://www.nexusmods.com/oblivion/mods/48493
+AV Uncapper,Superseded by Ultimate Leveling — UL has its own attribute/skill cap logic; running both fights for OBSE caps. Disabled in MO2 2026-04-26.,skipped,33,UTILITIES,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/34841
+AV Uncapper Settings - Fixed,"Companion ESP for AV Uncapper, also superseded by Ultimate Leveling.",skipped,34,UTILITIES,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/48252
+Oblivion Display Tweaks,Chapter 0 foundation mod,installed,35,UTILITIES,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/50348
+No Refraction Spells,,installed,36,BUG FIXES & QOL,Models and Textures,meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/6948
+DeParallaxer mod,Big mesh replacer; confirm APW actually needs parallax fixes before pulling,skipped,37,BUG FIXES & QOL,,meshes,651,,,,yes,https://www.nexusmods.com/oblivion/mods/3209
+Unofficial Oblivion Patch,"  it in (it's heavy for a ""QoL"" slot)",installed,38,BUG FIXES & QOL,Bug Fixes,obse-plugin+esp+meshes+textures+sound,3364,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/5296
+Unofficial Shivering Isles Patch,Chapter 0 foundation mod,installed,39,BUG FIXES & QOL,Bug Fixes,esp+bsa+meshes+textures+sound,330,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/10739
+Unofficial Oblivion DLC Patches,Chapter 0 foundation mod,installed,40,BUG FIXES & QOL,Bug Fixes,esp+meshes+textures+sound,97,DLCHorseArmor - Unofficial Patch.esp=no:has new records | DLCMehrunesRazor - Unofficial Patch.esp=no:has new records | DLCOrrery - Unofficial Patch.esp=no:has Sound\Voice; has new records | DLCSpellTomes - Unofficial Patch.esp=yes | DLCThievesDen - Unofficial Patch - SSSB.esp=no:has new records | DLCThievesDen - Unofficial Patch.esp=no:has new records | DLCVileLair - Unofficial Patch.esp=no:has new records | Knights - Unofficial Patch.esp=no:has new records,partial:DLCSpellTomes - Unofficial Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/9969
+Collection of Fixes by Lazaro,"do we need this, should it wait till the req mods are installed",inquery,41,BUG FIXES & QOL,Patches,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
+Blue's Engine Fixes,Chapter 0 foundation mod,installed,42,BUG FIXES & QOL,Bug Fixes,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/52700
+Faster Sleep Wait (OBSE),i don't really like this mod,skipped,43,BUG FIXES & QOL,Gameplay Effects,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/50517
+Unicorn Stay - Good Boy,,installed,44,BUG FIXES & QOL,Animals and Creatures,esp,0,yes,yes:Stay Unicorn.esp,,yes,https://www.nexusmods.com/oblivion/mods/52699
+Shambles Crash Fix,Chapter 0 foundation mod,installed,45,BUG FIXES & QOL,Bug Fixes,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/47592
+Migck's Miscellaneous fixes tweaks and additions,,installed,46,BUG FIXES & QOL,Gameplay Effects,esp,1,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/42658
+Console Paste Support,,installed,47,BUG FIXES & QOL,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49104
+Consistent Beggar Voices,not important,skipped,48,BUG FIXES & QOL,Bug Fixes,esp+sound,473,no:has Sound\Voice; has new records,yes:Consistent Beggar Voices.esp,,yes,https://www.nexusmods.com/oblivion/mods/48336
+Guard Infamy Greeting Fix,,installed,49,BUG FIXES & QOL,Bug Fixes,esp,0,yes,yes:GuardInfamyGreetingFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/52249
+Clickable Magic Gate,,installed,50,BUG FIXES & QOL,Models and Textures,meshes+textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/51375
+No Annoying Conjurer Attack (Spell Tomes DLC fix),,installed,51,BUG FIXES & QOL,Gameplay Effects,esp,0,yes,yes:DLCSpellTomes-No Attack.esp,,yes,https://www.nexusmods.com/oblivion/mods/47452
+Less Maddening Shivering Isles Fetch Quests,,installed,52,BUG FIXES & QOL,Gameplay Effects,esp,0,no:has new records,yes:LessMaddeningShiveringIsles.esp,,yes,https://www.nexusmods.com/oblivion/mods/52621
+UOP Talos Bridge Collision Fix,,installed,53,BUG FIXES & QOL,Bug Fixes,esp,0,yes,yes:UOPTalosBridgeCollisionFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/53283
+AveSithis Engine Fixes,Chapter 0 foundation mod,installed,54,BUG FIXES & QOL,Bug Fixes,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/53911
+Ayleid Well Map Markers,may be redundant with map marker overhaul,skipped,55,BUG FIXES & QOL,Gameplay Effects,esp,0,no:has new records,yes:AyleidWellMapMarkers.esp,,yes,https://www.nexusmods.com/oblivion/mods/54433
+GPEngineFixes,Chapter 0 foundation mod,installed,56,BUG FIXES & QOL,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/55890
+Icons for Alchemy Apparatus,,installed,57,BUG FIXES & QOL,Models and Textures,esp+textures,48,yes,yes:ApparatusIcons.esp,,yes,https://www.nexusmods.com/oblivion/mods/43782
+OB gate partner bug fix,not important,skipped,58,BUG FIXES & QOL,Bug Fixes (legacy),esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/21926
+Menu Alt-Tab Crash Fix,Chapter 0 foundation mod,installed,59,BUG FIXES & QOL,Bug Fixes,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/47954
+SB Weapon Drop Fix,,installed,60,BUG FIXES & QOL,Gameplay Effects,esp,0,SB_WeaponDropFix_OOOFilterPatch.esp=yes | SB_WeaponDropFix.esp=no:has new records,yes:SB_WeaponDropFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/50223
+Inius Colus Gives Speechcraft Training Quest,"this requires a bunch of mods, does it require all of them or will it work with whatever is installed.",inquery,61,BUG FIXES & QOL,Audio - Voice,esp+sound,6,yes,yes:Inius Colus Gives Speechcraft Training Quest.esp,,yes,https://www.nexusmods.com/oblivion/mods/52772
+Armored Shadowmere Fix,,installed,62,BUG FIXES & QOL,Animals and Creatures,esp,0,no:has new records,yes:ArmoredShadowmereFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/54831
+Slow Down M'aiq,,skipped,63,BUG FIXES & QOL,,esp,0,yes,yes:Slow Down M'aiq.esp,,yes,https://www.nexusmods.com/oblivion/mods/52242
+FractionalMagicDamage,,installed,64,BUG FIXES & QOL,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/37717
+Ayleid Ruins Fixed - Mesh Replacer and Modder Resource,,installed,65,BUG FIXES & QOL,,meshes,32,,,,yes,https://www.nexusmods.com/oblivion/mods/50875
+Wayshrine Map Markers - Redux,"maybe, but not important",skipped,66,BUG FIXES & QOL,,esp,0,no:has new records,yes:WayshrineMapMarkers.esp,,yes,https://www.nexusmods.com/oblivion/mods/48729
+Aleswell No Refraction Fix,,installed,67,BUG FIXES & QOL,,esp,0,yes,yes:AleswellNoRefractFix.esp,,yes,https://www.nexusmods.com/oblivion/mods/17968
+Book Tracker Updated,,installed,68,BUG FIXES & QOL,,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49195
+Grip of Steel - No Player Disarm,,installed,69,BUG FIXES & QOL,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/54294
+Spirit Stones,,installed,70,BUG FIXES & QOL,,esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55251
+Fewer Random Oblivion gates,"matter of taste, unsure",skipped,71,BUG FIXES & QOL,,esp,0,yes,yes:FewerOBGates.esp,,yes,https://www.nexusmods.com/oblivion/mods/3586
+Better Enemy Health,"maybe, its buggy with MOO, and is a lot of info to give the player about enemies",installed,72,USER INTERFACE,User Interface,esp+textures,24,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53605
+Follower Status,"not a big priority, maybe",skipped,73,USER INTERFACE,User Interface,esp+textures,10,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53074
+World Maps For All Worldspaces,,installed,74,USER INTERFACE,Models and Textures,esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/48914
+DarNified UI Image Small Changes,"not important, changes breathing hud to bubbles lol, changes colors of some things in the UI, buttons and stuff.",skipped,75,USER INTERFACE,User Interface,textures,76,,,,yes,https://www.nexusmods.com/oblivion/mods/50021
+Class portraits diversified,"just changes the class portait art, very low importance.",skipped,76,USER INTERFACE,User Interface,textures,43,,,,yes,https://www.nexusmods.com/oblivion/mods/51935
+Doomstone and Runestone Map Markers,,skipped,77,USER INTERFACE,Gameplay Effects,esp,0,no:has new records,yes:StoneMarkers.esp,,yes,https://www.nexusmods.com/oblivion/mods/48667
+DarNified UI,,installed,78,USER INTERFACE,User Interface,meshes+textures,155,,,,yes,https://www.nexusmods.com/oblivion/mods/10763
+Main Menu 2K (English),not important,skipped,79,USER INTERFACE,,textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/54020
+Colored Quests Light,marginally useful,skipped,80,USER INTERFACE,User Interface,textures,33,,,,yes,https://www.nexusmods.com/oblivion/mods/53241
+Extended UI,"modifies save functionality, may conflict with another mod above, can't remember which one",installed,81,USER INTERFACE,User Interface,esp+textures,10,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50135
+Item Description Framework for Maskar's Oblivion Overhaul and WEPON,needs MOO,skipped,82,USER INTERFACE,User Interface,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/50670
+Custom Spell Icons Updated,"cluster fuck of a mod, no thanks",skipped,83,USER INTERFACE,Magic - Spells,textures,336,,,,yes,https://www.nexusmods.com/oblivion/mods/43709
+Display Skill Perk Effects,,installed,84,USER INTERFACE,User Interface,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50127
+Display Stats,"its buggy, can z fight with other ui elements",skipped,85,USER INTERFACE,User Interface,esp+textures,31,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/31855
+Cartographers Map of Oblivion,not sure we need this with Dynamic Map,skipped,86,USER INTERFACE,,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/55237
+Dynamic Map,,installed,87,USER INTERFACE,User Interface,esp+textures,125,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/35969
+Colored Map Markers,the colors are kinda weird and unfitting,skipped,88,USER INTERFACE,Models and Textures,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/2537
+Vanilla Style Loading Screens Addon,"maybe merged, but not standalone",skipped,89,USER INTERFACE,,esp,0,yes,yes:lVanilla Style Loading Screens Addon.esp,,yes,https://www.nexusmods.com/oblivion/mods/50014
+Upscaled Vanilla Style Loading Screens and MOO Themed Loading Screens - 4k and 2k versions,"4K/2K loading screens, visual-only",skipped,90,USER INTERFACE,User Interface,textures,341,,,,yes,https://www.nexusmods.com/oblivion/mods/51109
+New Eye and Crosshair for UI,not really sure what this does,skipped,91,USER INTERFACE,User Interface,textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/43978
+Display Stats - bug fix(kind of),"ah, its confirmed that Display Stats is what causes ui z fighting",skipped,92,USER INTERFACE,User Interface,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50392
+Upscaled Vanilla Loading Screens plus Shivering Isles - 4k,"4K loading screens, visual-only",skipped,93,USER INTERFACE,User Interface,textures,50,,,,yes,https://www.nexusmods.com/oblivion/mods/51126
+Simple Compass Retexture,,installed,94,USER INTERFACE,User Interface,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/53095
+Better Oblivion Cursor,,installed,95,USER INTERFACE,User Interface,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/51733
+Enhanced Hotkeys,,installed,96,USER INTERFACE,User Interface,esp+textures,45,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/34735
+Status Bars for Needs,unneeded ui clutter,skipped,97,USER INTERFACE,,esp+textures,16,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53229
+Status Bars for Needs - Vanilla and Darn Retexture,unneeded ui clutter,skipped,98,USER INTERFACE,,textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/55675
+Loot Menu,,installed,99,USER INTERFACE,,obse-plugin+esp+textures,13,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/48027
+Extended UI - Vanilla and Darn Boss Bar Retexture,working,installed,100,USER INTERFACE,,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/55677
+My Universal Fonts,needs to be copied from APW,installed,101,USER INTERFACE,,config,8,,,,yes,https://www.nexusmods.com/oblivion/mods/53605
+QZ Easy Menus Update,,installed,102,USER INTERFACE,,esp,0,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/23404
+Horse HUD Bars - Standalone,maybe later,skipped,103,USER INTERFACE,,esp+textures,2,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55274
+Faster Dungeon Doors,,installed,104,SKELETON & ANIMATION,Dungeons,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/46889
+Two-handed weapon swing fix for First Person View (Tick Fix),,installed,105,SKELETON & ANIMATION,Bug Fixes,meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/53555
+NPC Idle Animation Restoration and Additions,,installed,106,SKELETON & ANIMATION,Animation,esp+meshes,2,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53184
+WalkBlessed OBSE Plugin (diagonal move),,installed,107,SKELETON & ANIMATION,,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49067
+Nirnroot Quest Revised,,skipped,108,QUESTS,Quests,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52744
+Vampire Hunting - Order of the Virtuous Blood,,skipped,109,QUESTS,Guilds/Factions,meshes+textures+sound,2876,,,,yes,https://www.nexusmods.com/oblivion/mods/30568
+Knights of the Nine Revelation,,skipped,110,QUESTS,Quests,esm+bsa+meshes+textures+sound,5474,,,,yes,https://www.nexusmods.com/oblivion/mods/42490
+Hackdirt Alive,,skipped,111,QUESTS,Immersion,esp+meshes+textures,76,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/42948
+Hackdirt The Deep Ones,,skipped,112,QUESTS,Quests,esp+bsa+meshes+textures+sound,98,no:has BSA; has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/36224
+Oblivion Content Restoration Project,,skipped,113,QUESTS,Gameplay Effects,esp+meshes+textures+sound,1026,Oblivion Content Restoration Project -- Knights.esp=yes | Oblivion Content Restoration Project.esp=no:has Sound\Voice; has Textures\Faces; has new records,partial:Oblivion Content Restoration Project -- Knights.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/45909
+Thieves Guild HQ - Unhealthy Competition,,skipped,114,QUESTS,Quests,meshes+textures+sound,758,,,,yes,https://www.nexusmods.com/oblivion/mods/34465
+Bruma Mages Guild Restored,,skipped,115,QUESTS,Guilds/Factions,esp+sound,4,BrumaMGRestored-Frostcrag.esp=no:has new records | BrumaMGRestored.esp=no:has Sound\Voice; has new records,partial:BrumaMGRestored-Frostcrag.esp,,yes,https://www.nexusmods.com/oblivion/mods/12732
+Immersive Quest Marker Overhaul,,skipped,116,QUESTS,Gameplay Effects,esp,0,Immersive Quest Markers Overhaul.esp=no:has new records | IQMO - BC Full Patch.esp=yes | IQMO - OOO Patch.esp=yes | IQMO - OOO SI Patch.esp=yes,partial:IQMO - BC Full Patch.esp;IQMO - OOO Patch.esp;IQMO - OOO SI Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/54007
+Rescue Menien From the Kvatch Oblivion Gate (Fully Voiced),,skipped,117,QUESTS,Quests,esp+sound,36,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/48385
+Better Kvatch Rebuilt (Submod),,skipped,118,QUESTS,Towns and Villages,esp+meshes,5,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/54202
+More Artifacts For Martin,,skipped,119,QUESTS,Patches,esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49113
+Sinderion's Serendipity - Nirnroot Quest Reward,,skipped,120,QUESTS,Gameplay Effects,esp+textures,1,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50129
+Initial Quest Popups Begone,"Phase 1.5 dev-test QoL: removes startup quest popups (""find a sword"" etc.). Phase OOO 2026-04-30: Wrye Bash now absorbs into Bashed Patch (matches APW's behavior).",installed,121,QUESTS,Quests,esp,0,yes,yes:Initial Quest Popups Begone.esp,,yes,https://www.nexusmods.com/oblivion/mods/53160
+Colored Quests - Updated,,skipped,122,QUESTS,User Interface,textures,36,,,,yes,https://www.nexusmods.com/oblivion/mods/49966
+Companion Vilja,,skipped,123,QUESTS,Companions,esp+bsa,0,1em_Vilja.esp=no:has BSA; has new records | 1em_Vilja_OCOV2.esp=yes,partial:1em_Vilja_OCOV2.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/28977
+Knights of the Nine - Revelation - Reasonable Flavor,,skipped,124,QUESTS,Bug Fixes,esp+meshes+textures,43,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53934
+The Ayleid Steps,,skipped,125,QUESTS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/16316
+Bounty Quests Fixed and Polished,,skipped,126,QUESTS,Quests,esp+bsa,0,Bounty Quests OOO Patch.esp=no:has new records | Bounty Quests.esp=no:has BSA; has new records,partial:Bounty Quests OOO Patch.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/48330
+The Ayleid Steps - Compatibility Patches,,skipped,127,QUESTS,Bug Fixes,esp,0,yes,yes:The Ayleid Steps - Patches.esp,,yes,https://www.nexusmods.com/oblivion/mods/47142
+PrinceShroob Main Quest Delayer (Oblivion),Phase 1.5: main quest stays dormant until player triggers it. Pairs with Skip Intro alt-start. Activated PSMainQuestDelayer.esp only (Knights variant skipped — not using Knights Infamy mod).,installed,128,QUESTS,Gameplay Effects,esp+bsa,0,PSMainQuestDelayer -- Knights.esp=no:has new records | PSMainQuestDelayer.esp=no:has BSA; has new records,partial:PSMainQuestDelayer -- Knights.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/45890
+Mudwater,,skipped,129,QUESTS,Towns and Villages,bsa,0,,,,yes,https://www.nexusmods.com/oblivion/mods/35434
+Thievery in the Imperial City - Tweaks and Fixes,,skipped,130,QUESTS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52785
+Render Unto Them Their Desert - An Inn of Ill Omen Overhaul,,skipped,131,QUESTS,Quests,esp+meshes+textures+sound,250,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54579
+The Well of Minlorada,,skipped,132,QUESTS,Quests,esp+meshes+textures+sound,86,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/38816
+Fame Based Daedric Quest Requirements,,skipped,133,QUESTS,Gameplay Effects,esp,0,yes,yes:DaedricRequirements.esp;DaedricRequirementsEASY.esp,,yes,https://www.nexusmods.com/oblivion/mods/42614
+Quests make friends,,skipped,134,QUESTS,Immersion,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/51792
+Into The Void,,skipped,135,QUESTS,Quests,esp+meshes+textures+sound,47,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52365
+Elsweyr the Deserts of Anequina,,skipped,136,QUESTS,Locations - Cyrodiil Expansion,esp+meshes+textures+sound,7806,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/25023
+Delay DLC Start,"Phase 1.5: prevents DLC tutorial popups from auto-firing on new game (KOTN, Mehrunes Razor, Frostcrag, Vile Lair, Thieves Den, Battlehorn, Orrery, Spell Tomes).",installed,137,QUESTS,Quests,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52871
+Journal-Based Quest Directions,,skipped,138,QUESTS,Immersion,esp,0,yes,yes:QuestDirections.esp,,yes,https://www.nexusmods.com/oblivion/mods/52593
+Frostcrag Reborn,,skipped,139,QUESTS,,esp+meshes+textures+sound+music,2248,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/9769
+Tales of Cyrodiil,,skipped,140,QUESTS,Quests,esp+meshes+textures,20,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/48792
+Integration - The Stranded Light,,skipped,141,QUESTS,Quests,esp+bsa+meshes+textures+sound,4697,no:has BSA; has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/22320
+Join the Order of the Black Worm,,skipped,142,QUESTS,Guilds/Factions,esp+textures+sound,130,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54847
+Infinitum - Compendium,,skipped,143,QUESTS,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55242
+Tales from Elsweyr Anequina-Rev's Redo,,skipped,144,QUESTS,,esp+meshes+textures+sound,3233,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49374
+The Forgotten Isles - A Large Shivering Isles Expansion,,skipped,145,QUESTS,,esp+meshes+textures+sound,7071,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55718
+Shroud Over Stalrous Manor,,skipped,146,QUESTS,,esp+meshes+textures+sound,4763,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52408
+Kragenirs Death Quest,,skipped,147,QUESTS,,esp+meshes+textures,89,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/26219
+Orden des Drachen,,skipped,148,QUESTS,,esp+bsa+meshes+textures+sound+music,47,Orden des Drachen.esp=no:has BSA; has Sound\Voice; has new records | Orden des Drachen.esp=no:has BSA; has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/46786
+Order of the Dragon EV,,skipped,149,QUESTS,,esp,3,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/45258
+Join the Blackwood Company,,skipped,150,QUESTS,,esp+meshes+textures+sound,370,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55285
+Join the Mythic Dawn,,skipped,151,QUESTS,,esp+meshes+sound,254,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55756
+Join the Morag Tong,,skipped,152,QUESTS,,esp+meshes+textures+sound,82,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55771
+DTS - Downsides To Shields,,skipped,153,COMBAT,Gameplay Effects,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49429
+Rivalrys Shield Unequipper,,skipped,154,COMBAT,Gameplay Effects,esp,0,no:has new records,yes:Rivalry's Shield Unequipper.esp,,yes,https://www.nexusmods.com/oblivion/mods/27733
+Combat Stance Reanimation,,skipped,155,COMBAT,,meshes,99,,,,yes,https://www.nexusmods.com/oblivion/mods/43695
+RCB - Realistic Combat Behaviour,,skipped,156,COMBAT,Combat,esp,0,yes,yes:RCB - Vanilla Oscuro's MERGE.esp,,yes,https://www.nexusmods.com/oblivion/mods/51422
+Character Based Attack Speed,,skipped,157,COMBAT,Combat,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/49255
+SB - Arrow Master,,skipped,158,COMBAT,Gameplay Effects,esp+textures,3,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50953
+Combat Reshoveled,,skipped,159,COMBAT,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54863
+Combat Stance Reanimation - a custom preset,,skipped,160,COMBAT,,meshes,106,,,,yes,https://www.nexusmods.com/oblivion/mods/55643
+Elden Ring-Inspired Dodge Animations - Vanilla Conversion,,skipped,161,COMBAT,,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/55537
+Combat Additions,,skipped,162,COMBAT,,meshes,40,,,,yes,https://www.nexusmods.com/oblivion/mods/49939
+Better recoil and stagger,,skipped,163,COMBAT,Animation,meshes,33,,,,yes,https://www.nexusmods.com/oblivion/mods/37187
+Archery Focus,,skipped,164,COMBAT,,esp+sound,1,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55380
+Av Latta Magicka - Oblivion Magic Overhaul,,skipped,165,MAGIC,Magic - Gameplay,esm+esp+bsa,0,Av Latta Magicka - Rebalance Complete.esp=yes | Av Latta Magicka.esp=no:has BSA; has new records,partial:Av Latta Magicka - Rebalance Complete.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/49096
+Magic Visuals Overhaul - OBME Patch,,skipped,166,MAGIC,Magic - Gameplay,esp,0,yes,yes:Magic Visuals Overhaul - OBME Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49096
+Truly No Default Starting Spells,,skipped,167,MAGIC,Immersion,esp,0,no:has new records,yes:No Starting Spells True.esp,,yes,https://www.nexusmods.com/oblivion/mods/50056
+Oblivion Magic Extender,Chapter 0 foundation mod,installed,168,MAGIC,Magic - Gameplay,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/31981
+Av Latta Magicka - Sun Magic Additions,,skipped,169,MAGIC,Magic - Spells,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53889
+Better Summon Undead Effect,,skipped,170,MAGIC,Models and Textures,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/10418
+Varied Spell Sounds,,skipped,171,MAGIC,Audio - Voice,esp+sound,14,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/14799
+Restore All Attributes Spell,,skipped,172,MAGIC,Magic - Spells,esp,0,no:has new records,yes:RestoreAllAttributesSpell.esp,,yes,https://www.nexusmods.com/oblivion/mods/36537
+Mercers Ingredient Effect Overhaul,Phase 1.5: activated MercerIngredientsMaskarsOO.esp for MOO integration. Phase OOO 2026-04-30: also activated MercerIngredientsOOO.esp now that OOO is loaded.,installed,173,MAGIC,Magic - Alchemy,esp+meshes+textures,400,MercerIngredientsBC.esp=yes | MercerIngredientsCore.esp=no:has new records | MercerIngredientsOOO.esp=yes,partial:MercerIngredientsBC.esp;MercerIngredientsOOO.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/27610
+Magic Revised - Mysticism,,skipped,174,MAGIC,Magic - Gameplay,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/47897
+Quieter Varied Spell Sounds,,skipped,175,MAGIC,Audio - Voice,sound,44,,,,yes,https://www.nexusmods.com/oblivion/mods/15563
+Necromancy and Lichdom,,skipped,176,MAGIC,Magic - Gameplay,esp+meshes+textures,1482,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49700
+Available Arcane Enchanters,,skipped,177,MAGIC,Magic - Spells,esp,0,no:has new records,yes:Available Arcane Enchanters.esp,,yes,https://www.nexusmods.com/oblivion/mods/49701
+Magic Visuals Overhaul - Fire laser fix,,skipped,178,MAGIC,,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/54947
+Better Bound Items,,skipped,179,MAGIC,,esp,0,no:has new records,yes:BetterBoundItems.esp,,yes,https://www.nexusmods.com/oblivion/mods/55108
+Mysticism Recharges Weapons 5x Bug Fix and Message Addition,,skipped,180,MAGIC,,esp,0,no:has new records,yes:MysticismAutoRechargesWeapons500percent.esp,,yes,https://www.nexusmods.com/oblivion/mods/53897
+Magicka-based enchantment limits,,skipped,181,MAGIC,,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/41528
+Supreme Magicka Update,,skipped,182,MAGIC,,esp+meshes+textures+sound,177,no:has INI; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/12466
+Mothy Moth Cult,,skipped,183,IMMERSION,Immersion,esp+meshes+textures,6,no:has new records,yes:Mothy Moth Cult.esp,,yes,https://www.nexusmods.com/oblivion/mods/47357
+Walk through Oblivion Gates,,skipped,184,IMMERSION,Patches,esp,0,no:has new records,yes:Walk through Oblivion Gates.esp,,yes,https://www.nexusmods.com/oblivion/mods/54076
+Ancestor Moths Expanded,,skipped,185,IMMERSION,Buildings and Camps,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50222
+Kaizits Animated Ingredients,,skipped,186,IMMERSION,Models and Textures,meshes+textures,44,,,,yes,https://www.nexusmods.com/oblivion/mods/46962
+Kaizits Animated Ingredients - No Shadows,,skipped,187,IMMERSION,,meshes,6,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
+Lava Does Fire Damage,,skipped,188,IMMERSION,Gameplay Effects,esp,0,no:has new records,yes:Lava Does Fire Damage.esp,,yes,https://www.nexusmods.com/oblivion/mods/43046
+Radiant AI - NPCs Alive - Cyrodiil - Beta,"thinking no, probably script heavy, Analyze to see",skipped,189,IMMERSION,NPC,esp+meshes,6,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49610
+Simple Shield on Back,,skipped,190,IMMERSION,Gameplay Effects,esp+meshes,161,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/15392
+Better Letters,,skipped,191,IMMERSION,Patches,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/5392
+Progress Tracker - Quest Completionist's Companion,,skipped,192,IMMERSION,User Interface,esp,15,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53328
+Progress Tracker Ini Mod Compendium,,skipped,193,IMMERSION,,textures,26,,,,yes,https://www.nexusmods.com/oblivion/mods/53942
+Progress Tracker - Even more Quest INIs,,skipped,194,IMMERSION,,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/54885
+Quest INIs for Progress Tracker,,skipped,195,IMMERSION,User Interface,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/53886
+From Rivers to the Deadlands - The Pits,,skipped,196,IMMERSION,Buildings and Camps,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53478
+Blankets of Cyrodiil,,skipped,197,IMMERSION,Immersion,esp+meshes+textures,44,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/47884
+Falling Stars,,skipped,198,IMMERSION,Environment,esp+meshes+textures,2,no:has new records,yes:PTFallingStars.esp,,yes,https://www.nexusmods.com/oblivion/mods/35593
+More Butterflies,,skipped,199,IMMERSION,Environment,esp+meshes+textures,15,no:has new records,yes:BettysButterflies.esp,,yes,https://www.nexusmods.com/oblivion/mods/46785
+Local Guards Features,,skipped,200,IMMERSION,NPC,esp+meshes+textures,217,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/45517
+Crime has witnesses,,skipped,201,IMMERSION,Gameplay Effects,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/22894
+Crime Has Witnesses - Responsibility Tweak,,skipped,202,IMMERSION,Gameplay Effects,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/33682
+Reznod Mannequins,,skipped,203,IMMERSION,Patches,esp+textures,20,no:has new records,yes:Reznod_Mannequin.esp,,yes,https://www.nexusmods.com/oblivion/mods/2055
+Dunmerized Cheydinhal,,skipped,204,IMMERSION,Immersion,esp+bsa,0,no:has BSA; has new records,yes:Dunmerized Cheydinhal.esp,,yes,https://www.nexusmods.com/oblivion/mods/47418
+Tricks of the Trade,,skipped,205,IMMERSION,Gameplay Effects,esp,0,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52648
+Worship in Cyrodiil,,skipped,206,IMMERSION,Items and Objects,esp+bsa,0,no:has BSA; has new records,yes:Worship in Cyrodiil v1.2.esp,,yes,https://www.nexusmods.com/oblivion/mods/45591
+Lost Sorceries of the Ayleids,,skipped,207,IMMERSION,Magic - Spells,esp,0,Lost Sorceries of the Ayleids.esp=no:has new records | LostSorceries_UOP_Patch.esp=yes,yes:Lost Sorceries of the Ayleids.esp;LostSorceries_UOP_Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49038
+Properly Equipped Vampire Hunters,,skipped,208,IMMERSION,Armour,esp+meshes+textures,15,OBVE and PEVH patch.esp=no:has new records | Properly Equipped Vampire Hunters.esp=no:has new records,partial:OBVE and PEVH patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/48130
+Ayleid Artifacts,,skipped,209,IMMERSION,Items and Objects,esp+meshes+textures,14,no:has new records,yes:Ayleid Artifacts.esp,,yes,https://www.nexusmods.com/oblivion/mods/46556
+Skooma Refining & Addiction Enhanced,,skipped,210,IMMERSION,Gameplay Effects,esp+meshes+textures+sound,19,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/17159
+Useful Farm Animals for COBL ver 2,,skipped,211,IMMERSION,,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/42640
+More Fences,,skipped,212,IMMERSION,,esp,0,yes,yes:MoreFences.esp,,yes,https://www.nexusmods.com/oblivion/mods/50327
+Take or Equip,,skipped,213,IMMERSION,,esp,1,no:has new records,yes:Take or Equip.esp,,yes,https://www.nexusmods.com/oblivion/mods/52733
+Better Oblivion Crisis - Cultists Replace Conjurers,,skipped,214,IMMERSION,,esp,0,yes,yes:Better Oblivion Crisis - Cultists Replace Conjurers.esp,,yes,https://www.nexusmods.com/oblivion/mods/55086
+Productive Mines,,skipped,215,IMMERSION,,esp+meshes,4,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/47722
+Reaction,,skipped,216,IMMERSION,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/46676
+DLC Integration - Legacy Edition,,skipped,217,IMMERSION,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55269
+Simple Inheritance,,skipped,218,IMMERSION,,esp,0,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55684
+Diseased Bedrolls,,skipped,219,IMMERSION,,esp,0,no:has new records,yes:Filthy Bedroll.esp,,yes,https://www.nexusmods.com/oblivion/mods/4343
+Smoking Firesources BETA - Project Ambience,,skipped,220,IMMERSION,,meshes+textures,20,,,,yes,https://www.nexusmods.com/oblivion/mods/46476
+Beggars Blessing,,skipped,221,IMMERSION,,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/4258
+All Natural - Real Lights,,skipped,222,IMMERSION,,esm+esp+meshes+textures+sound,334,All Natural - Real Lights.esp=no:has new records | All Natural - SI.esp=no:has new records | All Natural.esp=no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/18305
+Switchable Lightsources,,skipped,223,IMMERSION,,esp+meshes,37,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55271
+Living Oblivion,,skipped,224,IMMERSION,,esm+esp+meshes+textures,145,LivingOblivionDungeons.esp=no:has new records | LivingOblivionOverworlds.esp=no:has new records,yes:LivingOblivionDungeons.esp;LivingOblivionOverworlds.esp,,yes,https://www.nexusmods.com/oblivion/mods/55176
+Expanded Greetings,,skipped,225,DIALOGUE,Bug Fixes,esp,0,yes,yes:ExpandedGreetings.esp,,yes,https://www.nexusmods.com/oblivion/mods/33979
+More Generic Dialogue Restored,,skipped,226,DIALOGUE,Bug Fixes,esp+sound,80,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49664
+Dialogue Tweaks Fixes and Restorations,,skipped,227,DIALOGUE,Bug Fixes,esp,0,no:has new records,yes:DialogTweaks.esp,,yes,https://www.nexusmods.com/oblivion/mods/44862
+Immersive Character and Dialogue Expansion,,skipped,228,DIALOGUE,NPC,esp+sound,474,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52953
+Realistic Player Dialogue Overhaul,,skipped,229,DIALOGUE,NPC,esp+sound,2,yes,yes:00 Realistic Player Speech.esp,,yes,https://www.nexusmods.com/oblivion/mods/46243
+Star's Extended Dialogue,,skipped,230,DIALOGUE,Immersion,esp+sound,9344,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54198
+Shivering Isles Player Dialogue Overhaul,,skipped,231,DIALOGUE,Immersion,esp,0,yes,yes:SI Player Dialogue Overhaul.esp,,yes,https://www.nexusmods.com/oblivion/mods/52757
+No Anachronistic Main Quest Comments,,skipped,232,DIALOGUE,Immersion,esp,0,yes,yes:No Anachronistic MQ Comments.esp,,yes,https://www.nexusmods.com/oblivion/mods/48728
+Lore Dialogue 300 Updated,,skipped,233,DIALOGUE,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/25091
+Realistic Player Dialogue Overhaul - Remastered,,skipped,234,DIALOGUE,,esp,0,yes,yes:Realistic Player Speech Remastered.esp,,yes,https://www.nexusmods.com/oblivion/mods/4909
+COCC - Classes,,skipped,235,GAMEPLAY,Skills and Leveling,esp,0,yes,yes:COCCclass.esp,,yes,https://www.nexusmods.com/oblivion/mods/53209
+SupreMe Overhaul,,skipped,236,GAMEPLAY,Gameplay Effects,esp+sound,3234,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51073
+Knights of the Nine - Improved Infamy System,,skipped,237,GAMEPLAY,Gameplay Effects,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50195
+Races Reshoveled,,skipped,238,GAMEPLAY,Skills and Leveling,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54033
+Simple Horse Utilities,,skipped,239,GAMEPLAY,Animals and Creatures,esp+meshes+textures,18,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51197
+Better Unique Merchant Items,,skipped,240,GAMEPLAY,Gameplay Effects,esp,0,yes,yes:Better Merchant Items.esp,,yes,https://www.nexusmods.com/oblivion/mods/53000
+De Rerum Dirennis - Alchemy Overhaul,,skipped,241,GAMEPLAY,Magic - Alchemy,esp,5,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53020
+Constant Orrery Effects - Halved,,skipped,242,GAMEPLAY,,esp,0,yes,yes:Constant Orrery Effects Halved.esp,,yes,https://www.nexusmods.com/oblivion/mods/54149
+Put it in its Place - Enhanced Grabbing,,skipped,243,GAMEPLAY,Immersion,esp+bsa,0,no:has INI; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/19847
+Oblivifall - Losing My Religion,,skipped,244,GAMEPLAY,Guilds/Factions,esm+esp+meshes+textures+sound,411,Oblivifall - Losing My Religion BC Bravil B&M.esp=yes | Oblivifall - Losing My Religion BC Bravil B&M.esp=yes | Oblivifall - Losing My Religion BC Bruma.esp=no:has new records | Oblivifall - Losing My Religion BC Bruma.esp=no:has new records | Oblivifall - Losing My Religion BC Full.esp=no:has new records | Oblivifall - Losing My Religion BC Full.esp=no:has new records | Oblivifall - Losing My Religion BC Full B&M.esp=no:has new records | Oblivifall - Losing My Religion BC Full B&M.esp=no:has new records | Oblivifall - Losing My Religion BC Anvil.esp=yes | Oblivifall - Losing My Religion BC Bravil.esp=yes | Oblivifall - Losing My Religion BC Cheydinhal.esp=yes | Oblivifall - Losing My Religion BC Chorrol.esp=yes | Oblivifall - Losing My Religion BC Leyawiin.esp=yes | Oblivifall - Losing My Religion BC Skingrad.esp=yes | Oblivifall - Losing My Religion Blood&Mud.esp=yes | Oblivifall - Losing My Religion Blood&Mud.esp=yes | Oblivifall - Losing My Religion Sutch Reborn.esp=no:has new records | Oblivifall - Losing My Religion_HOTD_Patch.esp=no:has new records | Oblivifall - Losing My Religion KOTN.esp=no:has new records | Oblivifall - Losing My Religion Kvatch Rebuilt.esp=no:has new records | Oblivifall - Losing My Religion.esp=no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/31668
+Oblivifall - Losing My Religion Patch - AWLS,,skipped,245,GAMEPLAY,Guilds/Factions,meshes,9,,,,yes,https://www.nexusmods.com/oblivion/mods/31668
+Oblivifall - Losing My Religion Patch - Knights of the Nine DLC,,skipped,246,GAMEPLAY,Guilds/Factions,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/31668
+Oblivifall - Losing My Religion - No Golden Gods Replacer,,skipped,247,GAMEPLAY,Models and Textures,meshes,9,,,,yes,https://www.nexusmods.com/oblivion/mods/49148
+Oblivifall - Losing My Religion - Cyrodiil Chapel Update,,skipped,248,GAMEPLAY,Bug Fixes,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52860
+Ayleid Wells Revamped - More Useful Ayleid Well Mod,,skipped,249,GAMEPLAY,Gameplay Effects,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/39926
+OOO - Oscuro's Oblivion Overhaul - Updated,"Phase OOO 2026-04-30. v1.7.0.0. Bundled archives in one MO2 mod folder: OOO Esps + OOO BSA + OOO KotN Patch + OOO Voice Files + OOO Custom Golem Meshes.",installed,250,GAMEPLAY,Overhauls,esm+esp+bsa+meshes+textures+sound,5919,Oscuro's_Oblivion_Overhaul.esm=no:has BSA; has Sound\Voice; has new records | Oscuro's_Oblivion_Overhaul.esp=yes:LVLI/CONT auto-merge | Oscuro's_Oblivion_Overhaul - Knights of Nine.esp=no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/46199
+OOO - Oscuro's Oblivion Overhaul - Updated (Unofficial patch),Phase OOO 2026-04-30. v2b. Kept despite OOO 1.5.16 absorbing some script fixes; has additional gem mesh fixes and INI tweaks.,installed,251,GAMEPLAY,Bug Fixes,esp+meshes+textures,42,OOO_Unoficial-Patch.esp=yes,yes:OOO_Unoficial-Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/54069
+OOO Shivering Isles,"Phase OOO 2026-04-30. V3.4. OOOShiveringIsles_Optional_CrucibleEdits.esp also enabled (adds SI city edits; conflicts with SI Better Cities only, which Reborn doesn't load).",installed,252,GAMEPLAY,Overhauls,esp+bsa+textures,304,OOOShiveringIsles.esp=no:has BSA; has new records | OOOShiveringIsles_Optional_CrucibleEdits.esp=no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/46508
+ef's Fishing Mod,,skipped,253,GAMEPLAY,Gameplay Effects,esp+meshes+textures+sound,109,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52101
+Stats Checker,,skipped,254,GAMEPLAY,Utilities,esp,1,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/44844
+Oblivifall - Losing My Blurriness. A texture upscale for LMR,,skipped,255,GAMEPLAY,Models and Textures,textures,494,,,,yes,https://www.nexusmods.com/oblivion/mods/50130
+New Detection Oblivion (sneak and stealth rebalance),,skipped,256,GAMEPLAY,Gameplay Effects,esp,0,no:has new records,yes:Detection.esp,,yes,https://www.nexusmods.com/oblivion/mods/54302
+OCRAFT - Oblivion Crafting Framework,,skipped,257,GAMEPLAY,Gameplay Effects,esp+bsa,2,OCRAFT - Integration.esp=no:has new records | OCRAFT.esp=no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51796
+OCRAFT - Compatibility Settings,,skipped,258,GAMEPLAY,Bug Fixes,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53220
+OCRAFT - Cobl Glue,,skipped,259,GAMEPLAY,,esp+meshes+textures,34,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/54430
+OCRAFT - Stations for Sale,,skipped,260,GAMEPLAY,Gameplay Effects,esp+meshes+textures,540,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54541
+Simple Primary Needs,,skipped,261,GAMEPLAY,Immersion,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51822
+Birthsigns Reshoveled,,skipped,262,GAMEPLAY,Skills and Leveling,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53910
+Vampires Reshoveled,,skipped,263,GAMEPLAY,Gameplay Effects,esp+meshes+textures,5,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53902
+Boon Stones,,skipped,264,GAMEPLAY,Gameplay Effects,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52966
+Class Skill Perk,,skipped,265,GAMEPLAY,Skills and Leveling,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53615
+Gamblers of Cyrodiil,,skipped,266,GAMEPLAY,NPC,esp+meshes+textures,3,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/4170
+Apophis Armory of the Silver Dragon,,skipped,267,GAMEPLAY,,meshes+textures,551,,,,yes,https://www.nexusmods.com/oblivion/mods/8440
+Maskars Oblivion Overhaul,"Phase 1 base overhaul. v5.0.5. Bevilex baseline tweaks (add_veins=0, add_vampires=0, ability_heal=0) applied via Reborn Configs; dungeon_light=2 already default in 5.x; levelscaling_npc_overridden split into 3 sub-settings in 5.x and intentionally not changed (Bevilex's value would re-enable vanilla scaling).",installed,268,GAMEPLAY,,esp+bsa,0,no:has INI; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/42780
+Modern Security Overhaul,,skipped,269,GAMEPLAY,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54846
+OOO Enhanced,,skipped,270,GAMEPLAY,Overhauls,esp+meshes+textures+sound,966,DLCBattlehornCastle - OOO Enhanced Adaptation.esp=no:has new records | DLCFrostcrag - OOO Adaptation.esp=no:has new records | DLCHorseArmor - OOO Adaptation.esp=yes | DLCMehrunesRazor - OOO Enhanced Adaptation.esp=no:has new records | DLCOrrery - OOO Adaptation.esp=no:has new records | DLCThievesDen - OOO Enhanced Adaptation.esp=no:has new records | DLCVileLair - OOO Enhanced Adaptation.esp=no:has new records | Knights of Nine - OOO Enhanced Adaptation.esp=no:has new records | OOO Enhanced.esp=no:has new records,partial:DLCBattlehornCastle - OOO Enhanced Adaptation.esp;DLCFrostcrag - OOO Adaptation.esp;DLCHorseArmor - OOO Adaptation.esp;DLCMehrunesRazor - OOO Enhanced Adaptation.esp;DLCOrrery - OOO Adaptation.esp;DLCThievesDen - OOO Enhanced Adaptation.esp;DLCVileLair - OOO Enhanced Adaptation.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/47187
+OOO Enhanced - Resources,,skipped,271,GAMEPLAY,,meshes+textures+sound,14642,,,,yes,https://www.nexusmods.com/oblivion/mods/47187
+Devotion - Blessings Remastered,,skipped,272,GAMEPLAY,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/4682
+Realistic Sprint and Gallop Fixed and Polished,,skipped,273,GAMEPLAY,,esp+meshes,3,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53404
+Oblivion Collectible Cards,,skipped,274,GAMEPLAY,,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/19140
+Skill Specialization,,skipped,275,GAMEPLAY,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/18858
+Twohanded Sneak Attacks,,skipped,276,GAMEPLAY,,esp,0,no:has new records,yes:Toaster's Brutal Stealth.esp,,yes,https://www.nexusmods.com/oblivion/mods/4550
+Priory of the Nine Improved,,skipped,277,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,yes:Priory of the Nine Improved.esp,,yes,https://www.nexusmods.com/oblivion/mods/52377
+Unique Landscapes Compilation,,skipped,278,WORLDSPACE EDITS,New Lands,esp+bsa,3,Unique Landscapes.esp=no:has BSA; has new records | xulChorrolHinterland-BC6.esp=no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/19370
+Kvatch Rebuilt,,skipped,279,WORLDSPACE EDITS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/15412
+Cloud Ruler Temple Alive,,skipped,280,WORLDSPACE EDITS,Immersion,meshes+textures,404,,,,yes,https://www.nexusmods.com/oblivion/mods/42929
+MTC-Expanded Villages Updated,,skipped,281,WORLDSPACE EDITS,Towns and Villages,esp+meshes+textures,666,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/48312
+Improved Fighters Guild ENG,,skipped,282,WORLDSPACE EDITS,Guilds/Factions,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53987
+Weynon Priory Alive,,skipped,283,WORLDSPACE EDITS,Immersion,esp+meshes+textures,296,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/43004
+Meos Settlement - Resource,,skipped,284,WORLDSPACE EDITS,Modders Resources,meshes+textures,179,,,,yes,https://www.nexusmods.com/oblivion/mods/20641
+Better Cities,,skipped,285,WORLDSPACE EDITS,,obse-plugin+esm+esp+meshes+textures+sound,30222,Better Cities - IC Imperial Isle.esp=no:has new records | Better Cities - MOBS.esp=yes | Better Cities - MTCExpanded patch.esp=no:has new records | Better Cities - Oblivion Collectible Cards.esp=no:has new records | Better Cities - Order of the Dragon.esp=no:has new records | Better Cities - Thievery.esp=no:has new records | Better Cities .esp=no:has new records | Better Cities Chorrol - Knights of the Nine.esp=no:has new records | Better Cities Chorrol - Oblivifall Losing My Religion.esp=no:has new records | Better Cities Chorrol - ODD patch.esp=no:has new records | Better Cities Full - OOO.esp=no:has new records | Better Cities Full.esp=no:has new records | Better Cities IC - Kragenir's Death Quest.esp=no:has new records | Better Cities Leyawiin - Oblivifall Losing My Religion.esp=yes | Better Cities Leyawiin - Unofficial Oblivion Patch.esp=yes | Better Cities Skingrad - Oblivifall Losing My Religion.esp=no:has new records | Better Imperial City.esp=no:has new records | Oblivifall - Losing My Religion BC Bravil.esp=yes | Oblivifall - Losing My Religion BC Bruma.esp=no:has new records,partial:Better Cities - MOBS.esp;Better Cities - MTCExpanded patch.esp;Better Cities - Thievery.esp;Better Cities Chorrol - Knights of the Nine.esp;Better Cities Chorrol - Oblivifall Losing My Religion.esp;Better Cities Leyawiin - Oblivifall Losing My Religion.esp;Better Cities Leyawiin - Unofficial Oblivion Patch.esp;Oblivifall - Losing My Religion BC Bravil.esp;Oblivifall - Losing My Religion BC Bruma.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/16513
+Deadlands,,skipped,286,WORLDSPACE EDITS,New Lands,meshes+textures,20,,,,yes,https://www.nexusmods.com/oblivion/mods/50437
+Add some flavor - Roadside inns,,skipped,287,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53257
+Add some flavor - priories,,skipped,288,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53149
+Add some flavor - Bridges,,skipped,289,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53888
+Add some flavor - Talos Bridge,,skipped,290,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52658
+Add some flavor - Wayshrines and AyleidWells,,skipped,291,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54238
+More Magical Mages Guild Halls,,skipped,292,WORLDSPACE EDITS,Guilds/Factions,esp+meshes+textures,92,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49989
+Minotaur Encampments,,skipped,293,WORLDSPACE EDITS,Immersion,esp+bsa+meshes+textures,153,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/47226
+Glenmoril Covens,,skipped,294,WORLDSPACE EDITS,Immersion,esp+meshes+textures,97,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/46020
+Random Ruins of the First Era,,skipped,295,WORLDSPACE EDITS,Locations - Other,esp+meshes,33,no:has new records,yes:Random Ruins of the First Era.esp,,yes,https://www.nexusmods.com/oblivion/mods/49279
+The Well Diver,,skipped,296,WORLDSPACE EDITS,Dungeons - New,esp+meshes+textures,532,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/30271
+Better Dark Brotherhood Sanctuary,,skipped,297,WORLDSPACE EDITS,Guilds/Factions,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/22135
+Better Campsites,,skipped,298,WORLDSPACE EDITS,Buildings and Camps,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54203
+Living Imperial Palace,,skipped,299,WORLDSPACE EDITS,Immersion,esp+meshes+textures,120,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49546
+Arena Alive Plus,,skipped,300,WORLDSPACE EDITS,Immersion,esp+meshes+textures+sound,206,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51903
+Temple of the One Altars,,skipped,301,WORLDSPACE EDITS,Towns and Villages,esp,0,no:has new records,yes:Temple of the One Altars.esp,,yes,https://www.nexusmods.com/oblivion/mods/41460
+SI Unmarked Locations,,skipped,302,WORLDSPACE EDITS,Locations - Other,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51169
+SI Cities Expanded,,skipped,303,WORLDSPACE EDITS,Towns and Villages,esp+meshes+textures,41,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/51075
+LOD Palms for Elsweyr Anequina,,skipped,304,WORLDSPACE EDITS,Models and Textures,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/38736
+Elsweyr Anequina Hala Tree Replacer,,skipped,305,WORLDSPACE EDITS,Models and Textures,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/54100
+AI Enhanced - Elsweyr Desert of Anequina,,skipped,306,WORLDSPACE EDITS,Models and Textures,textures,243,,,,yes,https://www.nexusmods.com/oblivion/mods/52131
+Elsweyr City Extension,,skipped,307,WORLDSPACE EDITS,Towns and Villages,esp+meshes+textures,140,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/42349
+HD Elsweyr - Road Signs,,skipped,308,WORLDSPACE EDITS,Models and Textures,textures,24,,,,yes,https://www.nexusmods.com/oblivion/mods/44033
+ElsweyrPalmTrees Updated,,skipped,309,WORLDSPACE EDITS,Models and Textures,meshes+textures,10,,,,yes,https://www.nexusmods.com/oblivion/mods/45141
+Elsweyr Palm Trees Reduced,,skipped,310,WORLDSPACE EDITS,Visuals and Graphics,meshes,6,,,,yes,https://www.nexusmods.com/oblivion/mods/34939
+Elsweyr Mysteries,,skipped,311,WORLDSPACE EDITS,Quests,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51655
+ElsweyrOptionalFiles,,skipped,312,WORLDSPACE EDITS,Locations - Cyrodiil Expansion,meshes+textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/25023
+Battlehorn Castle Edited,,skipped,313,WORLDSPACE EDITS,Castles and Mansions,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/45020
+Arcane University Mystic Archives Classrooms,,skipped,314,WORLDSPACE EDITS,Towns and Villages,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/41497
+Falling Rubbish Bravil - Project Ambience,,skipped,315,WORLDSPACE EDITS,Immersion,esp+meshes+textures,18,no:has new records,yes:Falling Rubbish Bravil.esp,,yes,https://www.nexusmods.com/oblivion/mods/46467
+Unofficial Oblivion Tree Patch - UOTP,,skipped,316,WORLDSPACE EDITS,Bug Fixes,config,113,,,,yes,https://www.nexusmods.com/oblivion/mods/53079
+Wanderer's Wharf,,skipped,317,WORLDSPACE EDITS,Buildings and Camps,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54881
+Welkynd and Varla Stones Glow,,skipped,318,WORLDSPACE EDITS,,esp+meshes,19,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/55534
+Doomstones Glow,,skipped,319,WORLDSPACE EDITS,,esp+meshes,10,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55532
+Ayleid Wells Glow,,skipped,320,WORLDSPACE EDITS,,esp,0,yes,yes:DFTG_GlowingWells.esp,,yes,https://www.nexusmods.com/oblivion/mods/55535
+John Cyrodiil's beef soup (upscale dump),"AI-upscale texture dump flagged by author as dump; visual-only, ~3437 loose DDS",skipped,321,BASE TEXTURES,,meshes+textures,4832,,,,yes,https://www.nexusmods.com/oblivion/mods/54362
+Magic and Enchantment Effects Overhaul,,skipped,322,BASE TEXTURES,Visuals and Graphics,esp+meshes+textures,75,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/48128
+Magic Visuals Overhaul,,skipped,323,BASE TEXTURES,Visuals and Graphics,esp+meshes+textures,61,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49300
+Magic Visuals Overhaul - Balls Remover (Patch),,skipped,324,BASE TEXTURES,Visuals and Graphics,meshes,19,,,,yes,https://www.nexusmods.com/oblivion/mods/53653
+Magic Visuals Overhaul - Destruction particle fix,,skipped,325,BASE TEXTURES,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/54946
+Better Blood,,skipped,326,BASE TEXTURES,,meshes+textures,13,,,,yes,https://www.nexusmods.com/oblivion/mods/24448
+Bloody Spray,,skipped,327,BASE TEXTURES,Gameplay Effects,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/50330
+Detailed Terrain (2x),,skipped,328,BASE TEXTURES,Models and Textures,textures,109,,,,yes,https://www.nexusmods.com/oblivion/mods/54362
+2020 Retexture Project - Landscapes and Rocks,,skipped,329,BASE TEXTURES,Models and Textures,meshes+textures,284,,,,yes,https://www.nexusmods.com/oblivion/mods/49933
+Nice Ice a.k.a. The Hills Have Ice,,skipped,330,BASE TEXTURES,Models and Textures,meshes+textures,25,,,,yes,https://www.nexusmods.com/oblivion/mods/45342
+HD jerall ice texture with transparency,,skipped,331,BASE TEXTURES,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/44741
+Momos Crate Resource,,skipped,332,BASE TEXTURES,Modders Resources,meshes+textures,64,,,,yes,https://www.nexusmods.com/oblivion/mods/37103
+DT Texture Pack - Unique Landscapes,,skipped,333,BASE TEXTURES,Models and Textures,textures,28,,,,yes,https://www.nexusmods.com/oblivion/mods/15245
+Diverse Liches (Modders Resource),,skipped,334,BASE TEXTURES,,meshes+textures,366,,,,yes,https://www.nexusmods.com/oblivion/mods/51265
+Race Balancing Project,,skipped,335,NPC & CREATURES,,meshes+textures,1647,,,,yes,https://www.nexusmods.com/oblivion/mods/22124
+Oblivion Character Overhaul,,skipped,336,NPC & CREATURES,Models and Textures,esp+meshes+textures,5480,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/44676
+Better Necks for OCOv2,,skipped,337,NPC & CREATURES,Models and Textures,textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/45760
+Seamless OCOV2,,skipped,338,NPC & CREATURES,Overhauls,esp+meshes+textures,742,EVE_KnightsoftheNine.esp=yes | EVE_ShiveringIslesEasterEggs.esp=no:has new records,yes:EVE_KnightsoftheNine.esp;EVE_ShiveringIslesEasterEggs.esp,,yes,https://www.nexusmods.com/oblivion/mods/45859
+Orsimer Overhaul for Oblivion Character Overhaul version 2,,skipped,339,NPC & CREATURES,,meshes,53,,,,yes,https://www.nexusmods.com/oblivion/mods/44728
+Brutish Male Orcs for OCOv2,,skipped,340,NPC & CREATURES,,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/47818
+OCOv2 Enhanced Beast Races patch,,skipped,341,NPC & CREATURES,Models and Textures,esp+meshes+textures,30,yes,yes:OCOv2 Beast Races Enhanced.esp,,yes,https://www.nexusmods.com/oblivion/mods/47866
+Detailed Mouth for OCOv2,,skipped,342,NPC & CREATURES,Models and Textures,meshes+textures,35,,,,yes,https://www.nexusmods.com/oblivion/mods/47463
+New Brows for OCO,,skipped,343,NPC & CREATURES,Models and Textures,textures,15,,,,yes,https://www.nexusmods.com/oblivion/mods/48199
+Better OCOv2 Agemaps,,skipped,344,NPC & CREATURES,,textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/53487
+Redguardians - WIP,,skipped,345,NPC & CREATURES,,esp+meshes+textures,18,yes,yes:OCO2 - redguard patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49859
+Replacers for Redguardians and Better Looking Redguards,,skipped,346,NPC & CREATURES,,esp+textures,36,yes,yes:OCO2 - redguard patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/51682
+Oblivion Character Overhaul v2 - DLC Addon,,skipped,347,NPC & CREATURES,NPC,esp,0,yes,yes:OCOv2 - DLC Addon.esp,,yes,https://www.nexusmods.com/oblivion/mods/52405
+OCOv2 Eyelash Mesh Fix,,skipped,348,NPC & CREATURES,"Body, Face, Hair",meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/53752
+Oblivion Character Overhaul - Advanced Edition,,skipped,349,NPC & CREATURES,NPC,esp,0,Oblivion_Character_Overhaul.esp=no:has new records | Oblivion_Character_Overhaul_Faces.esp=yes,partial:Oblivion_Character_Overhaul_Faces.esp,,yes,https://www.nexusmods.com/oblivion/mods/52010
+Warpaints scars and face markings for OCO2,,skipped,350,NPC & CREATURES,"Body, Face, Hair",textures,322,,,,yes,https://www.nexusmods.com/oblivion/mods/51511
+Beards in Tamriel,,skipped,351,NPC & CREATURES,Immersion,meshes+textures,799,,,,yes,https://www.nexusmods.com/oblivion/mods/47071
+Beards in Tamriel - Optimised Meshes,,skipped,352,NPC & CREATURES,Bug Fixes,meshes,33,,,,yes,https://www.nexusmods.com/oblivion/mods/49861
+OCOv2 Male Beard,,skipped,353,NPC & CREATURES,"Body, Face, Hair",textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/48816
+OCOv2 Male Beard Extended,,skipped,354,NPC & CREATURES,"Body, Face, Hair",textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/52238
+Improved NPC Faces for OCOv2,,skipped,355,NPC & CREATURES,NPC,esp+meshes+textures,5,yes,yes:Improved NPC Faces for OCOv2.esp,,yes,https://www.nexusmods.com/oblivion/mods/51971
+New Eyes for OCOv2,,skipped,356,NPC & CREATURES,Models and Textures,textures,38,,,,yes,https://www.nexusmods.com/oblivion/mods/46995
+Improved Vanilla Hairs,,skipped,357,NPC & CREATURES,Models and Textures,meshes+textures,32,,,,yes,https://www.nexusmods.com/oblivion/mods/49078
+Faction Followers,,skipped,358,NPC & CREATURES,Guilds/Factions,esp+bsa,0,no:has BSA; has new records,yes:Faction Followers.esp,,yes,https://www.nexusmods.com/oblivion/mods/47173
+Mythic Animals,,skipped,359,NPC & CREATURES,Models and Textures,textures,8,,,,yes,https://www.nexusmods.com/oblivion/mods/29638
+Mythic Madness,,skipped,360,NPC & CREATURES,Models and Textures,meshes+textures,37,,,,yes,https://www.nexusmods.com/oblivion/mods/38251
+Improved Frost Atronachs,,skipped,361,NPC & CREATURES,Animals and Creatures,meshes+textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/49520
+Big Liz's Big Textures for Big Lizards (Clannfear and Daedroth),,skipped,362,NPC & CREATURES,Models and Textures,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/54407
+Ducks and Swans for Cyrodiil,,skipped,363,NPC & CREATURES,Environment,meshes+textures+sound,45,,,,yes,https://www.nexusmods.com/oblivion/mods/45275
+Mannimarco Revisited,,skipped,364,NPC & CREATURES,Quests,esp+meshes+textures+sound,141,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/14200
+Mannimarco Revisited Rebalance,,skipped,365,NPC & CREATURES,Gameplay Effects,esp,0,yes,yes:Mannimarco Revisited Rebalance.esp,,yes,https://www.nexusmods.com/oblivion/mods/51515
+Mannimarco Revisited UOP Patch,,skipped,366,NPC & CREATURES,Bug Fixes,esp,0,yes,yes:MannimarcoRevisited UOP Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49272
+Khajiit Hair Colors,,skipped,367,NPC & CREATURES,"Body, Face, Hair",meshes+textures,30,,,,yes,https://www.nexusmods.com/oblivion/mods/49656
+NPC Hair Matches Beard - Updated,,skipped,368,NPC & CREATURES,Bug Fixes,esp+meshes+textures,10,yes,yes:NPC Hair Matches Beard.esp,,yes,https://www.nexusmods.com/oblivion/mods/49861
+NPC AI Improvements - Search Distance,,skipped,369,NPC & CREATURES,Gameplay Effects,esp,0,no:has new records,yes:Oblivion AI Improvement - Search Distance.esp,,yes,https://www.nexusmods.com/oblivion/mods/53562
+Better minotaurs,,skipped,370,NPC & CREATURES,Animals and Creatures,esp,0,yes,yes:Better minotaurs.esp,,yes,https://www.nexusmods.com/oblivion/mods/49425
+Coop's MOO and Vanilla Wolf Remesh,,skipped,371,NPC & CREATURES,Animals and Creatures,textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/53384
+OCOv2 Uses Merged Teeth,,skipped,372,NPC & CREATURES,Bug Fixes,esp+meshes+textures,3,yes,yes:OCO uses merged teeth.esp,,yes,https://www.nexusmods.com/oblivion/mods/48378
+Better Teeth Texture and Mesh for OCOv2 Uses Merged Teeth,,skipped,373,NPC & CREATURES,"Body, Face, Hair",meshes+textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/52671
+Character Customization Expanded,,skipped,374,NPC & CREATURES,"Body, Face, Hair",esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53860
+Unique Dog Retextures,,skipped,375,NPC & CREATURES,Models and Textures,esp+meshes+textures,30,yes,yes:Unique Dog Retextures.esp,,yes,https://www.nexusmods.com/oblivion/mods/53013
+Xivilaization Revolution,,skipped,376,NPC & CREATURES,Models and Textures,meshes+textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/54392
+Unique Liches,,skipped,377,NPC & CREATURES,Models and Textures,esp,0,yes,yes:BattlehornLich.esp;KingofMisc.esp,,yes,https://www.nexusmods.com/oblivion/mods/54384
+Horse Turning Fixed,,skipped,378,NPC & CREATURES,Gameplay Effects,esp,0,no:has new records,yes:HorseTurnFixed.esp,,yes,https://www.nexusmods.com/oblivion/mods/48212
+Wraiths without faces,,skipped,379,NPC & CREATURES,Gameplay Effects,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/28666
+MOO - katkat's TW 3 Wolves Patch,,skipped,380,NPC & CREATURES,Animals and Creatures,meshes+textures,25,,,,yes,https://www.nexusmods.com/oblivion/mods/53454
+Pogscamps (Scamp Retexture),,skipped,381,NPC & CREATURES,Models and Textures,textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/54445
+Countess,,skipped,382,NPC & CREATURES,NPC,meshes+textures,73,,,,yes,https://www.nexusmods.com/oblivion/mods/49602
+Natural Vanilla Horses,,skipped,383,NPC & CREATURES,Animals and Creatures,textures,22,,,,yes,https://www.nexusmods.com/oblivion/mods/51610
+Akatosh Retexture by themythofstrider,,skipped,384,NPC & CREATURES,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/29321
+Espless Slofs Horse Replacer,,skipped,385,NPC & CREATURES,Animals and Creatures,meshes,37,,,,yes,https://www.nexusmods.com/oblivion/mods/27675
+Slof's Oblivion Horses,,skipped,386,NPC & CREATURES,Animals and Creatures,meshes+textures,230,,,,yes,https://www.nexusmods.com/oblivion/mods/48925
+Gentleman Burz gro-Khash,,skipped,387,NPC & CREATURES,NPC,esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/49207
+Hill Giant Eye Fix - Loreless Creatures - MOO,,skipped,388,NPC & CREATURES,Models and Textures,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/54664
+Slightly more Serious Mehrunes Dagon,,skipped,389,NPC & CREATURES,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/54698
+Tree-Like Spriggans,,skipped,390,NPC & CREATURES,Animals and Creatures,meshes+textures,7,,,,yes,https://www.nexusmods.com/oblivion/mods/54828
+Improved Flame Atronach,,skipped,391,NPC & CREATURES,Models and Textures,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/53418
+Boof's Skinned Hound Retex,,skipped,392,NPC & CREATURES,Models and Textures,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/45370
+Imperial Horse Armor,,skipped,393,NPC & CREATURES,Patches,esp,0,yes,yes:Imperial Horse Armor.esp,,yes,https://www.nexusmods.com/oblivion/mods/3352
+Coops Deer and Mountain Lion Revamp,,skipped,394,NPC & CREATURES,Animals and Creatures,meshes+textures,29,,,,yes,https://www.nexusmods.com/oblivion/mods/53640
+Water Beasts - Lamia Makeover,,skipped,395,NPC & CREATURES,,meshes+textures,8,,,,yes,https://www.nexusmods.com/oblivion/mods/53491
+Marcus' Skyrim and Daggerfall Skeletons,,skipped,396,NPC & CREATURES,,meshes+textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/50928
+BAF - Beast Argonians Forever Early Version,,skipped,397,NPC & CREATURES,,esp+meshes+textures,26,BAF - Beast Argonians Froever NPC KOTN Patch.esp=yes | BAF - Beast Argonians Froever NPC.esp=yes | BAF - Beast Argonians Froever.esp=no:has new records,yes:BAF - Beast Argonians Froever NPC KOTN Patch.esp;BAF - Beast Argonians Froever NPC.esp;BAF - Beast Argonians Froever.esp,,yes,https://www.nexusmods.com/oblivion/mods/50726
+Katkat TW3 Bears,,skipped,398,NPC & CREATURES,,meshes+textures,16,,,,yes,
+s6o6t LORE - Oblivion Anymore - Creatures Overhaul v1.6,,skipped,399,NPC & CREATURES,,esp+meshes+textures,1824,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55782
+Improved Trees and Flora,,skipped,400,FLORA,Models and Textures,textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/8500
+Enhanced Vegetation,,skipped,401,FLORA,Environment,esp+textures,107,no:has new records,yes:Enhanced Vegetation [110%].esp,,yes,https://www.nexusmods.com/oblivion/mods/23783
+Enhanced Vegetation - Darker trunks version by Xtudo,,skipped,402,FLORA,,textures,107,,,,yes,https://www.nexusmods.com/oblivion/mods/36411
+Enhanced Vegetation SI,,skipped,403,FLORA,Environment,esp,0,yes,yes:Enhanced Vegetation SI.esp,,yes,https://www.nexusmods.com/oblivion/mods/47535
+Let there be Flowers,,skipped,404,FLORA,Environment,esp+meshes+textures,9,yes,yes:lLet there be Flowers.esp,,yes,https://www.nexusmods.com/oblivion/mods/49616
+2020 Retexture Project - Grasses,,skipped,405,FLORA,,meshes+textures,76,,,,yes,https://www.nexusmods.com/oblivion/mods/49933
+Improved Doors and Flora,,skipped,406,FLORA,Models and Textures,meshes+textures,23,,,,yes,https://www.nexusmods.com/oblivion/mods/8298
+Improved Trees and Flora 2,,skipped,407,FLORA,Models and Textures,meshes+textures,85,,,,yes,https://www.nexusmods.com/oblivion/mods/11891
+Tree Bark HD Reduced,,skipped,408,FLORA,Models and Textures,textures,96,,,,yes,https://www.nexusmods.com/oblivion/mods/43504
+Flora display fix,,skipped,409,FLORA,Patches,meshes,75,,,,yes,https://www.nexusmods.com/oblivion/mods/47403
+HD Photorealistic Ivy by greenback12 for Oblivion,,skipped,410,FLORA,,meshes+textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/54754
+Simple Shivering Isle Trees,,skipped,411,FLORA,Overhauls,config,26,,,,yes,https://www.nexusmods.com/oblivion/mods/53109
+Nirnroot retexture,,skipped,412,FLORA,Models and Textures,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/45018
+Harvest Flora,,skipped,413,FLORA,,meshes+textures,160,,,,yes,https://www.nexusmods.com/oblivion/mods/2037
+TreeOPT,,skipped,414,FLORA,Bug Fixes,meshes,12,,,,yes,https://www.nexusmods.com/oblivion/mods/49150
+Groundcover for no grass textures,,skipped,415,FLORA,,esp+meshes+textures,6,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/45589
+Far Cry inspired Grass - Expanded,,skipped,416,FLORA,Environment,meshes+textures,18,,,,yes,https://www.nexusmods.com/oblivion/mods/49615
+Falling Leaves,,skipped,417,FLORA,Immersion,esp+meshes+textures,12,no:has new records,yes:Falling Leaves.esp,,yes,https://www.nexusmods.com/oblivion/mods/44257
+Blackwood Jungle,,skipped,418,FLORA,Environment,esp+meshes+textures,37,no:has new records,yes:BlackwoodJungle.esp,,yes,https://www.nexusmods.com/oblivion/mods/47043
+Palm Trees Update10,,skipped,419,FLORA,Overhauls,meshes+textures,48,,,,yes,https://www.nexusmods.com/oblivion/mods/46118
+Ivy replacer,,skipped,420,FLORA,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/47162
+TD Mushroom High-poly Replacer,,skipped,421,FLORA,Models and Textures,meshes+textures,74,,,,yes,https://www.nexusmods.com/oblivion/mods/54878
+2020 Retexture Project - Trees and Shrubs,,skipped,422,FLORA,,textures,57,,,,yes,https://www.nexusmods.com/oblivion/mods/49933
+The Hist Rebodied by ATD,,skipped,423,FLORA,,esp+meshes+textures,8,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55979
+Better Blood skin decal fix,,skipped,424,CLUTTER,,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/46344
+Normal Map for Better Blood,,skipped,425,CLUTTER,,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/50547
+Glowing Fractured Soulgems,,skipped,426,CLUTTER,Models and Textures,esp+meshes+textures,20,yes,yes:Glowing Fractured Soulgems.esp,,yes,https://www.nexusmods.com/oblivion/mods/49962
+Improved Signs,,skipped,427,CLUTTER,Models and Textures,esp+meshes+textures,47,no:has new records,yes:ImprovedSigns.esp,,yes,https://www.nexusmods.com/oblivion/mods/9498
+EGO - Beverages and Bottles Replacer,,skipped,428,CLUTTER,Models and Textures,esp+meshes+textures,36,yes,yes:EGO - Beverages and Bottles Replacer.esp,,yes,https://www.nexusmods.com/oblivion/mods/53297
+Retextured Potions,,skipped,429,CLUTTER,Models and Textures,esp+meshes+textures,381,yes,yes:PotionReplacer.esp,,yes,https://www.nexusmods.com/oblivion/mods/49068
+Darooz Upperclass clutter,,skipped,430,CLUTTER,Models and Textures,textures,20,,,,yes,https://www.nexusmods.com/oblivion/mods/41108
+TD Watercolor - Oblivion paintings replacer,,skipped,431,CLUTTER,Models and Textures,meshes+textures,128,,,,yes,https://www.nexusmods.com/oblivion/mods/49856
+Kinda Actually Decent Environment Map,,skipped,432,CLUTTER,Visuals and Graphics,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/48856
+Ayleid Well Crystals,,skipped,433,CLUTTER,Models and Textures,meshes+textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/46474
+Azuras Star retexture,,skipped,434,CLUTTER,Models and Textures,meshes+textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/50362
+Tamrielic Tapestries- Retexture,,skipped,435,CLUTTER,Models and Textures,textures,154,,,,yes,https://www.nexusmods.com/oblivion/mods/53065
+Colovian Carpets - A rug and mat retexture,,skipped,436,CLUTTER,Models and Textures,textures,35,,,,yes,https://www.nexusmods.com/oblivion/mods/52995
+Improved Fruits Vegetables and Meats,,skipped,437,CLUTTER,Models and Textures,textures,68,,,,yes,https://www.nexusmods.com/oblivion/mods/10487
+Improved Chests,,skipped,438,CLUTTER,Models and Textures,esp+meshes+textures+sound,60,no:has new records,yes:Improved Chests.esp,,yes,https://www.nexusmods.com/oblivion/mods/51815
+Harvest Containers xOBSE,,skipped,439,CLUTTER,,esp+meshes+textures,118,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52317
+Improved Chests for Harvest Containers xOBSE,,skipped,440,CLUTTER,,meshes+textures+sound,68,,,,yes,https://www.nexusmods.com/oblivion/mods/51815
+Clear Display Cases,,skipped,441,CLUTTER,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/54420
+Better Window Reflections,,skipped,442,CLUTTER,Visuals and Graphics,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/46774
+Better Scroll Background,,skipped,443,CLUTTER,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/27882
+HD Cobwebs,,skipped,444,CLUTTER,Models and Textures,meshes+textures,28,,,,yes,https://www.nexusmods.com/oblivion/mods/50488
+Particled Ayleid Stones,,skipped,445,CLUTTER,Models and Textures,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/47245
+Distinct Ayleid Boss Chests,,skipped,446,CLUTTER,Models and Textures,esp+meshes+textures,5,yes,yes:DistinctAyleidBossChests.esp,,yes,https://www.nexusmods.com/oblivion/mods/49483
+2x HiRez Daedric Shrines,,skipped,447,CLUTTER,Models and Textures,textures,38,,,,yes,https://www.nexusmods.com/oblivion/mods/54362
+Book Jackets Oblivion Merged,,skipped,448,CLUTTER,Models and Textures,esp+meshes+textures,54,yes,yes:Knights - Book Jackets.esp,,yes,https://www.nexusmods.com/oblivion/mods/49307
+Improved Fires and Flames,,skipped,449,CLUTTER,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/38061
+Refined fires,,skipped,450,CLUTTER,Visuals and Graphics,textures,222,,,,yes,https://www.nexusmods.com/oblivion/mods/35355
+The Good China - Retexture,,skipped,451,CLUTTER,Models and Textures,textures,78,,,,yes,https://www.nexusmods.com/oblivion/mods/54636
+Got Wood - Retexture,,skipped,452,CLUTTER,Models and Textures,textures,251,,,,yes,https://www.nexusmods.com/oblivion/mods/54680
+Thieves Guild HQ - Lore Friendly Big Tony's Deli Sign,,skipped,453,CLUTTER,Visuals and Graphics,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/51800
+Reb's Average Containers,,skipped,454,CLUTTER,Models and Textures,textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/53591
+Alluring Wine Bottles with Real Glass,,skipped,455,CLUTTER,Models and Textures,esp+meshes+textures,26,yes,yes:Alluring Wine Bottles.esp,,yes,https://www.nexusmods.com/oblivion/mods/46789
+Alluring Wine Bottles with Real Glass - Loose Files Patch for Mods,,skipped,456,CLUTTER,Models and Textures,meshes+textures,25,,,,yes,https://www.nexusmods.com/oblivion/mods/52171
+English Signboard primarily for Katkat's Ships,,skipped,457,CLUTTER,,meshes+textures,7,,,,yes,https://www.nexusmods.com/oblivion/mods/54888
+TD_Premium Meat,,skipped,458,CLUTTER,,textures,20,,,,yes,https://www.nexusmods.com/oblivion/mods/54889
+Fire retexture and ENB box remover for Shivering Isles,,skipped,459,CLUTTER,,meshes+textures,267,,,,yes,https://www.nexusmods.com/oblivion/mods/51045
+VKVII Oblivion ANVIL,,skipped,460,ARCHITECTURE,,meshes+textures,153,,,,yes,https://www.nexusmods.com/oblivion/mods/50247
+VKVII Oblivion Imperial City,,skipped,461,ARCHITECTURE,,meshes+textures,225,,,,yes,https://www.nexusmods.com/oblivion/mods/50255
+Statues HD,,skipped,462,ARCHITECTURE,,textures,139,,,,yes,https://www.nexusmods.com/oblivion/mods/43104
+Unique Signs,,skipped,463,ARCHITECTURE,Models and Textures,textures,103,,,,yes,https://www.nexusmods.com/oblivion/mods/25314
+Arena Poster,,skipped,464,ARCHITECTURE,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/25367
+Animated Window Lighting System and Chimneys - AWLS,,skipped,465,ARCHITECTURE,Visuals and Graphics,esp+meshes+textures,610,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/19628
+2020 Retexture Project - Farmhouses (AWLS),,skipped,466,ARCHITECTURE,Models and Textures,meshes+textures,10,,,,yes,https://www.nexusmods.com/oblivion/mods/49933
+Improved Bruma,,skipped,467,ARCHITECTURE,Models and Textures,textures,52,,,,yes,https://www.nexusmods.com/oblivion/mods/8954
+TD_Hutor - Oblivion farms retexture,,skipped,468,ARCHITECTURE,Models and Textures,meshes+textures,76,,,,yes,https://www.nexusmods.com/oblivion/mods/48613
+TD and AWLS patch,,skipped,469,ARCHITECTURE,Bug Fixes,meshes,3,,,,yes,https://www.nexusmods.com/oblivion/mods/50490
+Improved Middle and Upper Class Architecture,,skipped,470,ARCHITECTURE,Modders Resources,meshes,8,,,,yes,https://www.nexusmods.com/oblivion/mods/46079
+Leyawiin Woodland,,skipped,471,ARCHITECTURE,Models and Textures,meshes+textures,114,,,,yes,https://www.nexusmods.com/oblivion/mods/46628
+Leyawiin Woodland floor fix,,skipped,472,ARCHITECTURE,Models and Textures,meshes,7,,,,yes,https://www.nexusmods.com/oblivion/mods/48759
+Improved Bravil,,skipped,473,ARCHITECTURE,Models and Textures,textures,96,,,,yes,https://www.nexusmods.com/oblivion/mods/10383
+Improved Chorrol,,skipped,474,ARCHITECTURE,Models and Textures,meshes+textures,130,,,,yes,https://www.nexusmods.com/oblivion/mods/9500
+Improved Skulls and Bones and Ironwork,,skipped,475,ARCHITECTURE,Models and Textures,textures,8,,,,yes,https://www.nexusmods.com/oblivion/mods/36075
+Give Me Some Skingrad - Retexture,,skipped,476,ARCHITECTURE,Models and Textures,textures,58,,,,yes,https://www.nexusmods.com/oblivion/mods/53041
+Cheery Cheydinhal - Retexture,,skipped,477,ARCHITECTURE,Models and Textures,textures,69,,,,yes,https://www.nexusmods.com/oblivion/mods/53049
+Arena Of Awe - Retexture,,skipped,478,ARCHITECTURE,Models and Textures,textures,27,,,,yes,https://www.nexusmods.com/oblivion/mods/53052
+Cathedral HD,,skipped,479,ARCHITECTURE,Models and Textures,textures,60,,,,yes,https://www.nexusmods.com/oblivion/mods/44001
+Regal Imperial City,,skipped,480,ARCHITECTURE,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/7500
+VKVII Oblivion Sidewalk Stonewall,,skipped,481,ARCHITECTURE,,textures,24,,,,yes,https://www.nexusmods.com/oblivion/mods/50248
+Cloud Ruler Temple HD,,skipped,482,ARCHITECTURE,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/42928
+xrayys better cloud ruler temple,,skipped,483,ARCHITECTURE,Models and Textures,meshes+textures,83,,,,yes,https://www.nexusmods.com/oblivion/mods/45117
+Strand Magic - A Mage Guild Theme,,skipped,484,ARCHITECTURE,Models and Textures,meshes+textures,34,,,,yes,https://www.nexusmods.com/oblivion/mods/48460
+Arena Ascended - Retexture,,skipped,485,ARCHITECTURE,,textures,160,,,,yes,https://www.nexusmods.com/oblivion/mods/54988
+Imperial City IcDoor02 Remastered,,skipped,486,ARCHITECTURE,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/56024
+Skingrad_skcastledoorlarge Remastered,,skipped,487,ARCHITECTURE,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/56021
+ImperialCity_icdoor04 Remastered,,skipped,488,ARCHITECTURE,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/56018
+Anvil Castle Door Remastered,,skipped,489,ARCHITECTURE,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/56015
+Gecko's Imperial Dungeon Textures - 2K Parallax,,skipped,490,DUNGEONS,Models and Textures,meshes+textures,419,,,,yes,https://www.nexusmods.com/oblivion/mods/46864
+Visually Relistic Lava,,skipped,491,DUNGEONS,Models and Textures,esp+textures,1,yes,yes:Visually Realistic Lava.esp,,yes,https://www.nexusmods.com/oblivion/mods/9820
+Bettys Sewer Textures,,skipped,492,DUNGEONS,Models and Textures,meshes+textures,120,,,,yes,https://www.nexusmods.com/oblivion/mods/47316
+Oblivion Realm HD,,skipped,493,DUNGEONS,Models and Textures,textures,292,,,,yes,https://www.nexusmods.com/oblivion/mods/43100
+HiRes Oblivion Textures,,skipped,494,DUNGEONS,Models and Textures,textures,55,,,,yes,https://www.nexusmods.com/oblivion/mods/27887
+AI Powered Oblivion Landscape Retexture,,skipped,495,DUNGEONS,Models and Textures,textures,22,,,,yes,https://www.nexusmods.com/oblivion/mods/53855
+sams lava tex,,skipped,496,DUNGEONS,Quests,textures,9,,,,yes,https://www.nexusmods.com/oblivion/mods/53952
+High-Res Varla and Welkynd Texture Replacer,,skipped,497,DUNGEONS,Models and Textures,meshes+textures,31,,,,yes,https://www.nexusmods.com/oblivion/mods/36814
+CDEP FanaCeya Updated,,skipped,498,DUNGEONS,Dungeons,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/43005
+Better dungeons,,skipped,499,DUNGEONS,Dungeons,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/40392
+Dungeons of Tamriel Updated,,skipped,500,DUNGEONS,Dungeons - New,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52835
+Strotis new dungeon meshes,,skipped,501,DUNGEONS,Modders Resources,meshes,61,,,,yes,https://www.nexusmods.com/oblivion/mods/41376
+ARO - Ayleid Ruins Overhaul,,skipped,502,DUNGEONS,Dungeons,esp+meshes+textures+sound,3650,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/50727
+Better Fort Magia,,skipped,503,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Magia.esp,,yes,https://www.nexusmods.com/oblivion/mods/51742
+Better Fort Roebeck,,skipped,504,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Roebeck.esp,,yes,https://www.nexusmods.com/oblivion/mods/51709
+Better Fort Teleman,,skipped,505,DUNGEONS,Locations - Vanilla,esp+meshes+textures,10,no:has new records,yes:Unique Forts Fort Teleman.esp,,yes,https://www.nexusmods.com/oblivion/mods/51594
+Better Fort Facian,,skipped,506,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Facian.esp,,yes,https://www.nexusmods.com/oblivion/mods/51464
+Better Fort Redman,,skipped,507,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Redman.esp,,yes,https://www.nexusmods.com/oblivion/mods/51444
+Better Fort Dirich,,skipped,508,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Dirich.esp,,yes,https://www.nexusmods.com/oblivion/mods/51430
+Better Fort Black Boot,,skipped,509,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Black Boot.esp,,yes,https://www.nexusmods.com/oblivion/mods/51373
+Better Fort Doublecross,,skipped,510,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Doublecross.esp,,yes,https://www.nexusmods.com/oblivion/mods/51325
+Better Fort Ontus,,skipped,511,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Ontus.esp,,yes,https://www.nexusmods.com/oblivion/mods/51262
+Better Fort Rayles,,skipped,512,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Rayles.esp,,yes,https://www.nexusmods.com/oblivion/mods/51148
+Better Fort Carmala,,skipped,513,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Carmala.esp,,yes,https://www.nexusmods.com/oblivion/mods/51011
+Better Fort Istirus,,skipped,514,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Istirus.esp,,yes,https://www.nexusmods.com/oblivion/mods/50653
+Better Fort Vlastarus,,skipped,515,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Vlastarus.esp,,yes,https://www.nexusmods.com/oblivion/mods/52603
+Better Fort Naso,,skipped,516,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Naso.esp,,yes,https://www.nexusmods.com/oblivion/mods/50586
+Better Fort Hastrel,,skipped,517,DUNGEONS,Locations - Vanilla,esp,0,no:has new records,yes:Unique Forts Fort Hastrel.esp,,yes,https://www.nexusmods.com/oblivion/mods/50538
+Better Forts - Voiced Addon BSA,,skipped,518,DUNGEONS,Audio - Voice,sound,40,,,,yes,https://www.nexusmods.com/oblivion/mods/52772
+Gecko's Ayleid Ruins Textures,,skipped,519,DUNGEONS,Models and Textures,textures,62,,,,yes,https://www.nexusmods.com/oblivion/mods/46023
+Gecko's Fort Interior Textures,,skipped,520,DUNGEONS,Models and Textures,textures,71,,,,yes,https://www.nexusmods.com/oblivion/mods/45996
+Ayleid Statues - Retextured,,skipped,521,DUNGEONS,,textures,10,,,,yes,https://www.nexusmods.com/oblivion/mods/54989
+AI Enhanced - Ruined Ruins,,skipped,522,DUNGEONS,,textures,31,,,,yes,https://www.nexusmods.com/oblivion/mods/52851
+High Fantasy Cyrodiil Caves,,skipped,523,DUNGEONS,,meshes+textures,135,,,,yes,https://www.nexusmods.com/oblivion/mods/50017
+FleshyPod Retextured,,skipped,524,DUNGEONS,,textures,13,,,,yes,https://www.nexusmods.com/oblivion/mods/55860
+MOO - Non-Elder Scrolls Franchise Recolors,,skipped,525,WEAPONS & ARMOR,Models and Textures,meshes+textures,113,,,,yes,https://www.nexusmods.com/oblivion/mods/54665
+Clothes - Color Correction,,skipped,526,WEAPONS & ARMOR,Models and Textures,textures,158,,,,yes,https://www.nexusmods.com/oblivion/mods/53516
+No muddy dresses (and vomited rugs),,skipped,527,WEAPONS & ARMOR,Models and Textures,textures,12,,,,yes,https://www.nexusmods.com/oblivion/mods/50124
+SI Clothes - Color Correction,,skipped,528,WEAPONS & ARMOR,Models and Textures,textures,55,,,,yes,https://www.nexusmods.com/oblivion/mods/53516
+Classic Sword Replacers,,skipped,529,WEAPONS & ARMOR,Models and Textures,textures,51,,,,yes,https://www.nexusmods.com/oblivion/mods/11451
+Classic Sword Replacer Expansion,,skipped,530,WEAPONS & ARMOR,Weapons,meshes+textures,12,,,,yes,https://www.nexusmods.com/oblivion/mods/47041
+Weapon Improvement Project,,skipped,531,WEAPONS & ARMOR,Models and Textures,esp,0,yes,yes:Weapon Improvement Project.esp,,yes,https://www.nexusmods.com/oblivion/mods/43852
+Artifacts Redone,,skipped,532,WEAPONS & ARMOR,Models and Textures,esp+meshes+textures,928,yes,yes:Artifacts Redone.esp,,yes,https://www.nexusmods.com/oblivion/mods/49277
+Weapon Improvement Project - fixes (NO ESP) v2,,skipped,533,WEAPONS & ARMOR,,meshes+textures,118,,,,yes,
+Proper Blunt Weapons,,skipped,534,WEAPONS & ARMOR,,meshes,40,,,,yes,https://www.nexusmods.com/oblivion/mods/55839
+Snail's Ebony Armory - A Makeover for Ebony Weapons and Shields,,skipped,535,WEAPONS & ARMOR,Models and Textures,meshes+textures,68,,,,yes,https://www.nexusmods.com/oblivion/mods/53868
+Extra Robe Pack v3a,,skipped,536,WEAPONS & ARMOR,Clothing,meshes+textures,121,,,,yes,https://www.nexusmods.com/oblivion/mods/3293
+Dwemer Metal - Armor and Weapons,,skipped,537,WEAPONS & ARMOR,Models and Textures,textures,17,,,,yes,https://www.nexusmods.com/oblivion/mods/52941
+Assorted Protective Female Armors,,skipped,538,WEAPONS & ARMOR,Armour,meshes+textures,17,,,,yes,https://www.nexusmods.com/oblivion/mods/44678
+Assorted Protective Female Armors UV fix,,skipped,539,WEAPONS & ARMOR,Models and Textures,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/53003
+Assorted Protective Female Armors - Refined,,skipped,540,WEAPONS & ARMOR,Armour,esp+meshes,2,yes,yes:APFA_Refined.esp,,yes,https://www.nexusmods.com/oblivion/mods/50806
+Visually Improved Staffs,,skipped,541,WEAPONS & ARMOR,Models and Textures,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/38438
+TIBs Compact Quivers - Arrow of Extrication addon,,skipped,542,WEAPONS & ARMOR,Patches,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
+Lunas Darker Glass Equipment Textures 1.1,,skipped,543,WEAPONS & ARMOR,Models and Textures,textures,12,,,,yes,https://www.nexusmods.com/oblivion/mods/47072
+Imperial Armors - Visual Edits,,skipped,544,WEAPONS & ARMOR,,textures,18,,,,yes,https://www.nexusmods.com/oblivion/mods/52936
+Red Plume for Imperial Legion Helmet,,skipped,545,WEAPONS & ARMOR,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/53001
+Improved Amulets and Rings,,skipped,546,WEAPONS & ARMOR,Models and Textures,meshes+textures,71,,,,yes,https://www.nexusmods.com/oblivion/mods/17147
+Fur and Leather Armor - Visual Edits,,skipped,547,WEAPONS & ARMOR,Models and Textures,textures,20,,,,yes,https://www.nexusmods.com/oblivion/mods/53510
+Weapon Improvement Project - Town Guard Shields Preview (Unique Texture Paths),,skipped,548,WEAPONS & ARMOR,,meshes+textures,9,,,,yes,
+Golden Elven Armor and Weapons,,skipped,549,WEAPONS & ARMOR,Models and Textures,textures,18,,,,yes,https://www.nexusmods.com/oblivion/mods/52876
+Cleaned and Darker Daedric Armor and Weapons,,skipped,550,WEAPONS & ARMOR,Models and Textures,textures,17,,,,yes,https://www.nexusmods.com/oblivion/mods/52887
+Ebony Armor Extended,,skipped,551,WEAPONS & ARMOR,,textures,10,,,,yes,https://www.nexusmods.com/oblivion/mods/52881
+Ebony Helmet Ungoggled,,skipped,552,WEAPONS & ARMOR,Armour,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/53069
+Amelion Helmet Ungoggled,,skipped,553,WEAPONS & ARMOR,Armour,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/53068
+Scabbard For Dwarven Longsword,,skipped,554,WEAPONS & ARMOR,Weapons,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/52228
+Madness Longsword Replacer,,skipped,555,WEAPONS & ARMOR,Weapons,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/52982
+Gray Cowl of Nocturnal Reshaped,,skipped,556,WEAPONS & ARMOR,Armour,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/50545
+Unique Crimson Scar Mantle and Shroud - Vanilla Replacer,,skipped,557,WEAPONS & ARMOR,Armour,esp+meshes+textures,14,yes,yes:Unique Crimson Scar Mantle and Shroud - Vanilla Replacer.esp,,yes,https://www.nexusmods.com/oblivion/mods/53791
+Initial Glow Redux,,skipped,558,WEAPONS & ARMOR,Visuals and Graphics,esp,0,yes,yes:Initial Glow Redux - Creatures.esp;Initial Glow Redux.esp,,yes,https://www.nexusmods.com/oblivion/mods/46961
+Half-off Clavicusvile Mask remodel replacer,,skipped,559,WEAPONS & ARMOR,Armour,meshes+textures,5,,,,yes,https://www.nexusmods.com/oblivion/mods/51113
+Blue Darker Glass - Armor and Weapons,,skipped,560,WEAPONS & ARMOR,Models and Textures,textures,43,,,,yes,https://www.nexusmods.com/oblivion/mods/52978
+Dark Brotherhood Armor Extended,,skipped,561,WEAPONS & ARMOR,Models and Textures,meshes+textures,17,,,,yes,https://www.nexusmods.com/oblivion/mods/52908
+TIBs Compact Quivers - Manual Install,,skipped,562,WEAPONS & ARMOR,,meshes,9,,,,yes,https://www.nexusmods.com/oblivion/mods/45111
+TIBs Compact Quivers - Manual Install - SI,,skipped,563,WEAPONS & ARMOR,,meshes,8,,,,yes,https://www.nexusmods.com/oblivion/mods/45111
+Redressing Cyrodiil - Master File,,skipped,564,WEAPONS & ARMOR,Clothing,esm+meshes+textures,4279,,,yes,yes,https://www.nexusmods.com/oblivion/mods/50909
+Redressing Cyrodiil - Seamless Neck patch,,skipped,565,WEAPONS & ARMOR,Clothing,meshes,459,,,,yes,https://www.nexusmods.com/oblivion/mods/50909
+Redressing Cyrodiil - Nibenay,,skipped,566,WEAPONS & ARMOR,Clothing,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/51527
+Redressing Cyrodiil - Colovia,,skipped,567,WEAPONS & ARMOR,Clothing,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/51081
+Orcish and Daedric armor replacer,,skipped,568,WEAPONS & ARMOR,Armour,meshes+textures,84,,,,yes,https://www.nexusmods.com/oblivion/mods/54774
+Unique Artifacts for Unique People,,skipped,569,WEAPONS & ARMOR,Weapons,esp+bsa,0,Unique Artifacts for Unique People - Distribution.esp=yes | Unique Artifacts for Unique People.esp=no:has BSA; has new records,partial:Unique Artifacts for Unique People - Distribution.esp,,yes,https://www.nexusmods.com/oblivion/mods/49871
+01 Seamless OCOv2 n HGEC Female clothes fixes,,skipped,570,WEAPONS & ARMOR,Clothing,meshes,5,,,,yes,https://www.nexusmods.com/oblivion/mods/51853
+Seamless Equipment - MOO,,skipped,571,WEAPONS & ARMOR,Modders Resources,meshes,59,,,,yes,https://www.nexusmods.com/oblivion/mods/49898
+Knights of the Nine_Weapon Improvement Project Patch,,skipped,572,WEAPONS & ARMOR,Weapons,meshes,2,,,,yes,https://www.nexusmods.com/oblivion/mods/46313
+Smaller MOO Backpacks,,skipped,573,WEAPONS & ARMOR,Models and Textures,meshes,6,,,,yes,https://www.nexusmods.com/oblivion/mods/49858
+Blade of Woe Replacer - Nine Tongues,,skipped,574,WEAPONS & ARMOR,Weapons,meshes+textures,6,,,,yes,https://www.nexusmods.com/oblivion/mods/43129
+Nosferat's Merchant and Loot Additions,,skipped,575,WEAPONS & ARMOR,Mercantiles (Shops/Inns),esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52544
+Vermillion and Silverthorn Robes by Kafei,,skipped,576,WEAPONS & ARMOR,Clothing,meshes+textures,22,,,,yes,https://www.nexusmods.com/oblivion/mods/4072
+Tamrielic Lore,,skipped,577,WEAPONS & ARMOR,Books and Lore,esp+meshes+textures+sound,284,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/40923
+HelBornesSpearSet10,,skipped,578,WEAPONS & ARMOR,Weapons,meshes+textures,54,,,,yes,https://www.nexusmods.com/oblivion/mods/32363
+Phitts Artifacts,,skipped,579,WEAPONS & ARMOR,Items - Player,esp+bsa,0,no:has BSA; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/29931
+Yami's Unique Gear,,skipped,580,WEAPONS & ARMOR,Items - Player,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52301
+Artifacts Remastered,,skipped,581,WEAPONS & ARMOR,Items and Objects,esm+esp+meshes+textures,3123,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/52084
+Artifacts Remastered - Hood Leveled List Fix,,skipped,582,WEAPONS & ARMOR,Patches,esp,0,yes,yes:Artifacts Remastered - Hood Leveled List Fix.esp,,yes,https://www.nexusmods.com/oblivion/mods/52833
+Artifacts Remastered - Compact Quivers Patch,,skipped,583,WEAPONS & ARMOR,Patches,meshes,11,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
+Elven Horse Armor Replacer,,skipped,584,WEAPONS & ARMOR,,meshes+textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/52780
+Insanitys Ebony Sword Replacer,,skipped,585,WEAPONS & ARMOR,,meshes+textures,7,,,,yes,https://www.nexusmods.com/oblivion/mods/43718
+Real Steel Armor Replacer - Morrowind Style Breton Plate,,skipped,586,WEAPONS & ARMOR,,meshes+textures,59,,,,yes,https://www.nexusmods.com/oblivion/mods/53792
+EVE HGEC Eyecandy Variants Expansion,,skipped,587,WEAPONS & ARMOR,,meshes+textures,184,,,,yes,https://www.nexusmods.com/oblivion/mods/24078
+Seamless - Robert Male,,skipped,588,WEAPONS & ARMOR,,meshes,36,,,,yes,https://www.nexusmods.com/oblivion/mods/45864
+Seamless - HGEC Female,,skipped,589,WEAPONS & ARMOR,,meshes,54,,,,yes,https://www.nexusmods.com/oblivion/mods/45858
+Real Steel Armor Replacer Sheen Fix (REQUIRES ORIGINAL),,skipped,590,WEAPONS & ARMOR,,meshes,15,,,,yes,https://www.nexusmods.com/oblivion/mods/55313
+Artifacts Reshoveled,,skipped,591,WEAPONS & ARMOR,,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/54836
+Travelling Equipment - Cloaks and Backpacks,,skipped,592,WEAPONS & ARMOR,,meshes+textures,140,,,,yes,https://www.nexusmods.com/oblivion/mods/50205
+KillerHell Steel Shield Replacer,,skipped,593,WEAPONS & ARMOR,,meshes+textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/43411
+Druid Armors and weapons,,skipped,594,WEAPONS & ARMOR,,meshes+textures,85,,,,yes,https://www.nexusmods.com/oblivion/mods/27275
+Ronnie's Blade of Woe Replacer,,skipped,595,WEAPONS & ARMOR,,esp+meshes+textures,4,yes,yes:Ronnie's Blade Of Woe Replacer.esp,,yes,https://www.nexusmods.com/oblivion/mods/55357
+Rogue Leather Armour for Roberts Female body Replacer,,skipped,596,WEAPONS & ARMOR,,meshes+textures,25,,,,yes,https://www.nexusmods.com/oblivion/mods/17160
+UFF Robert Rogue Leather Armour,,skipped,597,WEAPONS & ARMOR,,meshes+textures,27,,,,yes,https://www.nexusmods.com/oblivion/mods/17523
+Thieves Den Barter for Upgrades,,skipped,598,PLAYER HOMES,DLC Tweaks,esp,0,yes,yes:DLCThievesDen - BarterForUpgrd.esp,,yes,https://www.nexusmods.com/oblivion/mods/48226
+Vile Lair DLC - Tweaks and Fixes,,skipped,599,PLAYER HOMES,DLC Tweaks,esp,0,yes,yes:DLCVileLair - Tweaks.esp,,yes,https://www.nexusmods.com/oblivion/mods/52213
+Home Buying Revised,,skipped,600,PLAYER HOMES,Player Homes,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52743
+Imperial Furniture Renovated,,skipped,601,PLAYER HOMES,Mercantiles (Shops/Inns),esp+bsa+music,3,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/33996
+Traveler's Tent - portable customizable player home,,skipped,602,PLAYER HOMES,Player Homes,esp+bsa,0,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/49654
+Hoarfrost Castle,,skipped,603,PLAYER HOMES,Quests,esp+meshes+textures+sound,45,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/14714
+Highwood,,skipped,604,PLAYER HOMES,Player Homes,esp+meshes+textures+sound,1781,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/40037
+Shadowcrest Vineyard,,skipped,605,PLAYER HOMES,Player Homes,esp+meshes+textures,322,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/22810
+Better Benirus Manor,,skipped,606,PLAYER HOMES,Castles and Mansions,esp+bsa+meshes,8,no:has BSA; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/18054
+Oblivion High Quality Music,,skipped,607,SOUNDS & MUSIC,,music,26,,,,yes,https://www.nexusmods.com/oblivion/mods/55030
+Oblivion Stereo Sound Overhaul,,skipped,608,SOUNDS & MUSIC,Audio - Voice,sound,38,,,,yes,https://www.nexusmods.com/oblivion/mods/5861
+Louder Chapel Bells,,skipped,609,SOUNDS & MUSIC,Audio - Voice,esp,0,yes,yes:Louder Chapel Bells.esp,,yes,https://www.nexusmods.com/oblivion/mods/52468
+Voices for Female Dremora NPCs,,skipped,610,SOUNDS & MUSIC,Audio - Voice,esp+sound,72,yes,yes:Voices for Female Dremora NPCs.esp,,yes,https://www.nexusmods.com/oblivion/mods/52498
+Silent Tracks Expanded,,skipped,611,SOUNDS & MUSIC,Patches,music,24,,,,yes,https://www.nexusmods.com/oblivion/mods/12909
+Symphony of Violence - Combat Sound Enhancement,,skipped,612,SOUNDS & MUSIC,Audio - Voice,esp+sound,5,yes,yes:Symphony of Violence.esp,,yes,https://www.nexusmods.com/oblivion/mods/13987
+GOSH - Gecko's Oblivion Sound overHaul,,skipped,613,SOUNDS & MUSIC,Audio - Voice,esp+sound,469,GOSH Region Ambiance.esp=no:has new records | GOSH.esp=no:has new records,partial:GOSH.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/45214
+Enhanced Sounds Overhaul,,skipped,614,SOUNDS & MUSIC,,sound,2032,,,,yes,https://www.nexusmods.com/oblivion/mods/55487
+Performance Sound,,skipped,615,SOUNDS & MUSIC,,sound,1388,,,,yes,https://www.nexusmods.com/oblivion/mods/50304
+Nightmarish Oblivion Gate Sounds,,skipped,616,SOUNDS & MUSIC,Audio - Voice,sound,1,,,,yes,https://www.nexusmods.com/oblivion/mods/45609
+Quieter Dragon Sounds (For MOO),,skipped,617,SOUNDS & MUSIC,,sound,17,,,,yes,https://www.nexusmods.com/oblivion/mods/54072
+Better Injured and Death Bear Sound,,skipped,618,SOUNDS & MUSIC,,sound,4,,,,yes,https://www.nexusmods.com/oblivion/mods/55162
+Better Kvatch Rebuilt (Submod) An AI Voiced Experience,,skipped,619,VOICE ADDONS,Audio - Voice,sound,848,,,,yes,https://www.nexusmods.com/oblivion/mods/54270
+The Ayleid Steps - Voiced Addon BSA,,skipped,620,VOICE ADDONS,Audio - Voice,esp+bsa,0,yes,yes:The Ayleid Steps - Voiced Addon.esp,,yes,https://www.nexusmods.com/oblivion/mods/52772
+Bounty Quests Fixed and Polished - Voiced Addon BSA,,skipped,621,VOICE ADDONS,Audio - Voice,bsa,0,,,,yes,https://www.nexusmods.com/oblivion/mods/52772
+AI Voice Addon for Mudwater,,skipped,622,VOICE ADDONS,Audio - Voice,esp+sound,388,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53391
+AI Voice Addon for The Well of Minlorada,,skipped,623,VOICE ADDONS,Audio - Voice,sound,176,,,,yes,https://www.nexusmods.com/oblivion/mods/53401
+Voiced Vile Lair DLC Overhaul (with Rowley Eardwulf Follower),,skipped,624,VOICE ADDONS,Overhauls,esp+sound,142,no:has Sound\Voice; has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/52028
+Kvatch Rebuilt An AI Voiced Experience,,skipped,625,VOICE ADDONS,Audio - Voice,sound,1940,,,,yes,https://www.nexusmods.com/oblivion/mods/53387
+Better Dark Brotherhood Sanctuary - Voiced Addon,,skipped,626,VOICE ADDONS,Audio - Voice,sound,4,,,,yes,https://www.nexusmods.com/oblivion/mods/52772
+Thieves Guild HQ - Unhealthy Competition - Voiced (ElevenLabs),,skipped,627,VOICE ADDONS,Audio - Voice,esp+sound,1064,no:has Sound\Voice; has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54633
+(11Labs) Put it in its Place - Enhanced Grabbing - AI Voices Addon,,skipped,628,VOICE ADDONS,Audio - Voice,esp+bsa,0,no:has BSA,yes:Enhanced Grabbing - AI Voices.esp,,yes,https://www.nexusmods.com/oblivion/mods/52893
+MTC Expanded Villages Voices (ElevenLabs),,skipped,629,VOICE ADDONS,Audio - Voice,sound,598,,,,yes,https://www.nexusmods.com/oblivion/mods/54832
+Cyrodiil Transportation Network 2.0 Voices (ElevenLabs),,skipped,630,VOICE ADDONS,Audio - Voice,sound,524,,,,yes,https://www.nexusmods.com/oblivion/mods/54833
+SI Cities Expanded Voices (ElevenLabs),,skipped,631,VOICE ADDONS,,sound,516,,,,yes,https://www.nexusmods.com/oblivion/mods/54915
+Vampire Hunting - Order of the Virtuous Blood Voices (ElevenLabs),,skipped,632,VOICE ADDONS,Audio - Voice,sound,27224,,,,yes,https://www.nexusmods.com/oblivion/mods/54723
+Mannimarco Resurrection Voices (ElevenLabs),,skipped,633,VOICE ADDONS,Audio - Voice,sound,1248,,,,yes,https://www.nexusmods.com/oblivion/mods/54780
+Tales of Cyrodiil Voices (ElevenLabs),,skipped,634,VOICE ADDONS,Audio - Voice,sound,11954,,,,yes,https://www.nexusmods.com/oblivion/mods/54825
+Integration - The Stranded Light Integrated Voices (ElevenLabs),,skipped,635,VOICE ADDONS,Audio - Voice,sound,27538,,,,yes,https://www.nexusmods.com/oblivion/mods/54845
+Oblivifall - Losing My Religion - Elevenlabs AI VOICES,,skipped,636,VOICE ADDONS,Animals and Creatures,bsa,0,,,,yes,https://www.nexusmods.com/oblivion/mods/54769
+Elsweyr the Deserts of Anequina Voices (ElevenLabs),,skipped,637,VOICE ADDONS,Audio - Voice,sound,2868,,,,yes,https://www.nexusmods.com/oblivion/mods/54683
+Hoarfrost Castle Voices (ElevenLabs),,skipped,638,VOICE ADDONS,Audio - Voice,sound,1016,,,,yes,https://www.nexusmods.com/oblivion/mods/54654
+Gamblers of Cyrodiil Voices (ElevenLabs),,skipped,639,VOICE ADDONS,,sound,7152,,,,yes,https://www.nexusmods.com/oblivion/mods/54930
+BrumaGuildReconstructed - AI Voice Files,,skipped,640,VOICE ADDONS,,sound,16,,,,yes,
+Companion Vilja - Non-Companion Voices (ElevenLabs),,skipped,641,VOICE ADDONS,,sound,1198,,,,yes,https://www.nexusmods.com/oblivion/mods/55284
+Elsweyr City Extension Voices (ElevenLabs),,skipped,642,VOICE ADDONS,,sound,64,,,,yes,https://www.nexusmods.com/oblivion/mods/55183
+Infinitum Voiced Addons,,skipped,643,VOICE ADDONS,,sound,176,,,,yes,https://www.nexusmods.com/oblivion/mods/55239
+Star's Extended Dialogue - Roland Jenseric Voice Fix,,skipped,644,VOICE ADDONS,,sound,2,,,,yes,https://www.nexusmods.com/oblivion/mods/55241
+Knights of the Nine Revelation - Unvoiced Voices (ElevenLabs),,skipped,645,VOICE ADDONS,,sound,3202,,,,yes,https://www.nexusmods.com/oblivion/mods/55319
+Reaction Voices (ElevenLabs),,skipped,646,VOICE ADDONS,,sound,31476,,,,yes,https://www.nexusmods.com/oblivion/mods/55165
+Lore Dialogue 300 Updated Voices (ElevenLabs),,skipped,647,VOICE ADDONS,,sound,26804,,,,yes,https://www.nexusmods.com/oblivion/mods/55272
+Tales from Elsweyr Anequina-Rev's Redo Voices (ElevenLabs),,skipped,648,VOICE ADDONS,,sound,2912,,,,yes,https://www.nexusmods.com/oblivion/mods/54976
+Join the Order of the Black Worm Voices (ElevenLabs),,skipped,649,VOICE ADDONS,,sound,874,,,,yes,https://www.nexusmods.com/oblivion/mods/55560
+Oblivion Collectible Cards Voices (ElevenLabs),,skipped,650,VOICE ADDONS,,sound,484,,,,yes,https://www.nexusmods.com/oblivion/mods/55367
+Kragenir's Death Quest Voices (ElevenLabs),,skipped,651,VOICE ADDONS,,sound,15436,,,,yes,https://www.nexusmods.com/oblivion/mods/55038
+Order of the Dragon EV Voices (ElevenLabs),,skipped,652,VOICE ADDONS,,sound,17921,,,,yes,https://www.nexusmods.com/oblivion/mods/55106
+Join the Blackwood Company Voices (ElevenLabs),,skipped,653,VOICE ADDONS,,sound,2070,,,,yes,https://www.nexusmods.com/oblivion/mods/55558
+Join the Mythic Dawn Voices (ElevenLabs),,skipped,654,VOICE ADDONS,,sound,1308,,,,yes,https://www.nexusmods.com/oblivion/mods/55773
+Join the Morag Tong Voices (ElevenLabs),,skipped,655,VOICE ADDONS,,sound,1042,,,,yes,https://www.nexusmods.com/oblivion/mods/55774
+Thievery in the Imperial City Voices (ElevenLabs),,skipped,656,VOICE ADDONS,,sound,436,,,,yes,https://www.nexusmods.com/oblivion/mods/55601
+The Forgotten Isles Voices (ElevenLabs),,skipped,657,VOICE ADDONS,,sound,5186,,,,yes,https://www.nexusmods.com/oblivion/mods/55973
+Realistic Aurora in motion,,skipped,658,WEATHER & LIGHTING,Immersion,esp+meshes+textures,2,no:has new records,yes:BrumasNorthernLights.esp,,yes,https://www.nexusmods.com/oblivion/mods/46917
+Simple Sunglare with Lens Flare,,skipped,659,WEATHER & LIGHTING,,textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/51354
+HDR Sun,,skipped,660,WEATHER & LIGHTING,Visuals and Graphics,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/50082
+Atmos4096,,skipped,661,WEATHER & LIGHTING,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/49978
+DustCloud01,,skipped,662,WEATHER & LIGHTING,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/49978
+GasClouds4096,,skipped,663,WEATHER & LIGHTING,Models and Textures,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/49978
+Improved LightBeam,,skipped,664,WEATHER & LIGHTING,Models and Textures,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/45685
+Light beam and dungeon mist retexture for Cyrodiil ENB,,skipped,665,WEATHER & LIGHTING,Models and Textures,textures,4,,,,yes,https://www.nexusmods.com/oblivion/mods/46976
+Improved Light Beam - Transparency Fix,,skipped,666,WEATHER & LIGHTING,Patches,meshes,4,,,,yes,https://www.nexusmods.com/oblivion/mods/53031
+Night Sky Fire and Ice,,skipped,667,WEATHER & LIGHTING,,textures,19,,,,yes,https://www.nexusmods.com/oblivion/mods/3787
+Additional weather effects,,skipped,668,WEATHER & LIGHTING,Immersion,esp+meshes+textures,4,no:has new records,yes:Atmosphere additional effects.esp,,yes,https://www.nexusmods.com/oblivion/mods/51592
+Snow Gusts,,skipped,669,WEATHER & LIGHTING,Environment,esp+meshes+textures,3,no:has new records,yes:SnowGusts.esp,,yes,https://www.nexusmods.com/oblivion/mods/46543
+Water 17,,skipped,670,WEATHER & LIGHTING,,esp+textures+sound,9,no:has new records,yes:Water17R T1N v4.0.esp,,yes,https://www.nexusmods.com/oblivion/mods/47571
+DOWNPOUR - rain retexture,,skipped,671,WEATHER & LIGHTING,,textures,1,,,,yes,https://www.nexusmods.com/oblivion/mods/45520
+Best Combined Night Sky,,skipped,672,WEATHER & LIGHTING,,textures,3,,,,yes,https://www.nexusmods.com/oblivion/mods/46759
+Land Magic,,skipped,673,LOD RESOURCES,Utilities,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/30519
+slowLODGen - Object LOD Generator,,skipped,674,LOD RESOURCES,Utilities,esm+esp,0,no:empty,,,yes,https://www.nexusmods.com/oblivion/mods/54553
+Bruma Frostcrag Spire LOD,,skipped,675,LOD RESOURCES,Modders Resources,esp,0,yes,yes:Bruma Frostcrag Spire LOD.esp,,yes,https://www.nexusmods.com/oblivion/mods/49898
+Landscape LOD generator 5_15c,,skipped,676,LOD RESOURCES,Visuals and Graphics,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/40549
+Evenstars Colourwheel LOD Update,,skipped,677,LOD RESOURCES,Visuals and Graphics,meshes+textures,1667,,,,yes,https://www.nexusmods.com/oblivion/mods/42190
+Optimized VWD,,skipped,678,LOD RESOURCES,Models and Textures,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/49595
+ULP (Ultimative LOD Pack),,skipped,679,LOD RESOURCES,Immersion,meshes+textures,74,,,,yes,https://www.nexusmods.com/oblivion/mods/54727
+J3 Atlassed VWD 2,,skipped,680,LOD RESOURCES,Models and Textures,meshes+textures,734,,,,yes,https://www.nexusmods.com/oblivion/mods/51732
+J3 Atlassed VWD 2 - Shivering Isles,,skipped,681,LOD RESOURCES,Models and Textures,textures,2,,,,yes,https://www.nexusmods.com/oblivion/mods/51732
+City LOD - Performance Edition WIP,,skipped,682,LOD RESOURCES,,esp+meshes+textures,13,BC Cities LOD.esp=no:has new records | BC_AnvilLOD.esp=no:has new records | BC_ChorrolLOD.esp=no:has new records,yes:BC Cities LOD.esp,,yes,https://www.nexusmods.com/oblivion/mods/54492
+Imperial City LOD - Performance Edition,,skipped,683,LOD RESOURCES,,esp+meshes+textures,43,no:has new records,yes:Better Cities Imperial Isle LOD.esp,,yes,https://www.nexusmods.com/oblivion/mods/54402
+VWD Ships,,skipped,684,LOD RESOURCES,Models and Textures,meshes+textures,13,,,,yes,https://www.nexusmods.com/oblivion/mods/50111
+J3 Atlassed VWD 2 - Shivering Isles - Bomret's Texture Pack for Shivering Isles,,skipped,685,LOD RESOURCES,Models and Textures,meshes+textures,162,,,,yes,https://www.nexusmods.com/oblivion/mods/51732
+J3 Atlassed VWD 2 - Cyrodiil - Qarls Texture Pack III,,skipped,686,LOD RESOURCES,Models and Textures,meshes+textures,617,,,,yes,https://www.nexusmods.com/oblivion/mods/51732
+J3 Atlassed VWD 2 - Cyrodiil - Ruins - ALL - Ruined Ruins (texture mod),,skipped,687,LOD RESOURCES,,meshes+textures,80,,,,yes,https://www.nexusmods.com/oblivion/mods/51732
+SI HM fix for TES4LL and MPGUI,,skipped,688,LOD RESOURCES,,esp,0,no:has new records,yes:SI_HM_fix.esp,,yes,https://www.nexusmods.com/oblivion/mods/49898
+City Settings -- Better Cities - Open Cities Reborn - Vanilla -- FPS optimizer,,skipped,689,PATCHES,Patches,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/53267
+OCOv2 - MOO Patch,,skipped,690,PATCHES,Bug Fixes,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/51379
+Miguick's Dialogue Tweaks Trespassing Tweaked,,skipped,691,PATCHES,Bug Fixes,esp,0,yes,yes:DialogTweaksTweakedTrespassing.esp,,yes,https://www.nexusmods.com/oblivion/mods/50891
+UL Compatibility Patches Compilation WIZBAIN,,skipped,692,PATCHES,New Lands,esp,0,ULE AgainstTheZealotsOfTheNine-JerallGlacier patch.esp=yes | ULE ApachiiHeroesStore-Snowdale patch.esp=yes | ULE Arren-EntiusGorge patch.esp=no:has new records | ULE AyleidRuinsExpanded-JerallGlacier patch.esp=no:has new records | ULE BanditHideouts-SilverfishRiverValley patch.esp=no:has new records | ULE BetterCitiesBravil-PantherRiver patch.esp=yes | ULE Billsburg-CloudtopMountains patch.esp=yes | ULE Billsburg-ColovianHighlands patch.esp=yes | ULE Billsburg-UniqueLandscapes merged patch.esp=yes | ULE Blood&Mud-BravilBarrowfields patch.esp=no:has new records | ULE Blood&Mud-CheydinhalFalls patch.esp=no:has new records | ULE Blood&Mud-PantherRiver patch.esp=yes | ULE Blood&Mud-UniqueLandscapes merged patch.esp=no:has new records | ULE BrenaValleyCreek-BrenaRiverRavine patch.esp=no:has new records | ULE CDMNecromancy-RollingHills patch.esp=no:has new records | ULE ChorrolPlateau-ChorrolHinterland patch.esp=yes | ULE ChorrolPlateau-RiverEthe patch.esp=yes | ULE ChorrolPlateau-UniqueLandscapes merged patch.esp=yes | ULE Clearwater-LushWoodlands patch.esp=yes | ULE CountryHome-ArriusCreek patch.esp=no:has new records | ULE CurseofHircine-JerallGlacier patch.esp=no:has new records | ULE DarkBrotherhoodCemetery-CheydinhalFalls patch.esp=no:has new records | ULE DarkBrotherhoodChronicles-TheHeath patch.esp=no:has new records | ULE DiveRock-JerallGlacier patch.esp=no:has new records | ULE Dschinni-ArriusCreek patch.esp=yes | ULE DungeonsOfIvellon-CheydinhalFalls patch.esp=yes | ULE DwarvenMines-AncientYews patch.esp=yes | ULE DwarvenMines-ColovianHighlands patch.esp=no:has new records | ULE DwarvenMines-LostCoast patch.esp=no:has new records | ULE DwarvenMines-UniqueLandscapes merged patch.esp=no:has new records | ULE EtInArkay-CheydinhalFalls patch.esp=no:has new records | ULE EtInArkay-ColovianHighlands patch.esp=no:has new records | ULE EtInArkay-SilverfishRiverValley patch.esp=yes | ULE FBDarkCrusader2-xulPatch_AY_AC patch.esp=no:has new records | ULE FightersGuildQuests-Snowdale patch.esp=yes | ULE FishermansCottage-LostCoast patch.esp=no:has new records | ULE FiveLanterns-StendarrValley patch.esp=yes | ULE ForgottenTomb-LostCoast patch.esp=no:has new records | ULE FranMWL-TheHeath patch.esp=yes | ULE GiftOfKynareth-CheydinhalFalls patch.esp=yes | ULE GoblinwatchKeep-CloudtopMountains patch.esp=yes | ULE GoldenArrowArcheryShop-RollingHills patch.esp=yes | ULE GoldenCrest-BravilBarrowfields patch.esp=no:has new records | ULE GoldenCrest-CloudtopMountains patch.esp=no:has new records | ULE GoldenCrest-Snowdale patch.esp=no:has new records | ULE GoldenCrest-UniqueLandscapes merged patch.esp=no:has new records | ULE GrowPlants-ChorrolHinterland patch.esp=no:has new records | ULE GuardsOfCyrodiilRedux-SilverfishRiverValley patch.esp=no:has new records | ULE HellLands-CloudtopMountains patch.esp=yes | ULE HellLands-PinePeak-CloudtopMountains patch.esp=no:has new records | ULE KragenirsDeathQuest-CliffsOfAnvil patch.esp=no:has new records | ULE KragenirsDeathQuest-CloudtopMountains patch.esp=yes | ULE KragenirsDeathQuest-EasternPeaks patch.esp=yes | ULE KragenirsDeathQuest-LostCoast patch.esp=no:has new records | ULE KragenirsDeathQuest-RollingHills patch.esp=no:has new records | ULE LevelerCheat-ImperialIsle patch.esp=yes | ULE LostSpires-DarkForest patch.esp=yes | ULE LostSpires-FallenleafEverglade patch.esp=yes | ULE LostSpires-SilverfishRiverValley patch.esp=yes | ULE LostSpires-UniqueLandscapes merged patch.esp=yes | ULE LostSwordoftheAyleids-ArriusCreek patch.esp=yes | ULE MadMagesTower-CloudtopMountains patch.esp=no:has new records | ULE MadMagesTowerBASIC-CloudtopMountains patch.esp=no:has new records | ULE MannimarcoResurrection-CliffsOfAnvil patch.esp=no:has new records | ULE Mimics-CloudtopMountains patch.esp=no:has new records | ULE MMMDungeons-CliffsOfAnvil patch.esp=no:has new records | ULE MTCThievesGrotto-CliffsOfAnvil patch.esp=no:has new records | ULE MTCThievesGrotto-ColovianHighlands patch.esp=no:has new records | ULE MythsAndLegends2-EasternPeaks patch.esp=no:has new records | ULE NewHaven-TheHeath patch.esp=yes | ULE Oaksdale-EntiusGorge patch.esp=no:has new records | ULE OblivionCollectibleCards-AncientYews patch.esp=no:has new records | ULE OblivionCollectibleCards-CheydinhalFalls patch.esp=yes | ULE OblivionJobs-ArriusCreek patch.esp=no:has new records | ULE OblivionUncut-ChorrolHinterland BC6 patch.esp=no:has new records | ULE OblivionUncut-ChorrolHinterland patch.esp=no:has new records | ULE OpenCitiesClassic-ChorrolHinterland patch.esp=no:has new records | ULE OpenCitiesClassic-SkingradOutskirts patch.esp=yes | ULE OrangeMaple-Clearwater-LushWoodlands patch.esp=no:has new records | ULE OrangeMaple-LushWoodlands patch.esp=yes | ULE OrangeMapleCobl-Clearwater-LushWoodlands patch.esp=no:has new records | ULE Oranstad-SkingradOutskirts patch.esp=yes | ULE OscurosOblivionOverhaul-JerallGlacier patch.esp=no:has new records | ULE RealSwordsNord-Snowdale patch.esp=no:has new records | ULE ReapersWaterfront-ImperialIsle patch.esp=yes | ULE ReclaimingSancreTor-SkingradOutskirts patch.esp=yes | ULE RedcourtCastle-AncientYews patch.esp=yes | ULE RedcourtCastle-RollingHills patch.esp=yes | ULE RedcourtCastle-UniqueLandscapes merged patch.esp=yes | ULE RedHeadedGang-CheydinhalFalls patch.esp=no:has new records | ULE RiseOfASamurai-Snowdale patch.esp=no:has new records | ULE ROC+RST+Skingrad Outskirts.esp=yes | ULE RustleHouse-LushWoodlands patch.esp=yes | ULE SeawatchAbode-LostCoast patch.esp=no:has new records | ULE SentientWeaponII-AncientYews patch.esp=yes | ULE ShipwreckHome-LostCoast patch.esp=no:has new records | ULE SideSailingShips-CliffsOfAnvil patch.esp=no:has new records | ULE SideSailingShips-ValenwoodImproved-CliffsOfAnvil patch.esp=no:has new records | ULE SkingradMarket-LostCoast patch.esp=no:has new records | ULE SkingradMarketMoC-LostCoast patch.esp=no:has new records | ULE SkyrimTemple-Snowdale patch.esp=yes | ULE SnowyRoad-JerallGlacier patch.esp=no:has new records | ULE SnowyRoad-Snowdale patch.esp=no:has new records | ULE SutchReborn-TheHeath patch.esp=yes | ULE TearsOfTheFiend-CheydinhalFalls patch.esp=no:has new records | ULE TheElderCouncil-FallenleafEverglade patch.esp=yes | ULE TheNecromancer-EntiusGorge patch.esp=no:has new records | ULE TheNecromancer-JerallGlacier patch.esp=no:has new records | ULE TollingbrookHollowHome-SilverfishRiverValley patch.esp=no:has new records | ULE TonaSimpleDressArmor-BravilBarrowfields patch.esp=yes | ULE TreasureMapsCaptusDemus-RollingHills patch.esp=yes | ULE TWMPSkyrimAlive-Snowdale patch.esp=no:has new records | ULE UnholyCathedral-BlackwoodForest patch.esp=yes | ULE ValleyViewEstate-RiverEthe patch.esp=no:has new records | ULE VillageOfLily-xulPatch_AY_AC patch.esp=no:has new records | ULE WAC-ChorrolHinterland patch.esp=yes | ULE WAC-DarkForest patch.esp=yes | ULE WaldnirsWoods-AncientRedwoods patch.esp=yes | ULE WineOverhaul-RiverEthe patch.esp=no:has new records | ULE WineOverhaulBC-RiverEthe patch.esp=no:has new records | ULE Zedar-AncientYews patch.esp=yes | ULE Zork-AncientYews patch.esp=yes | ULE ZSkeletonHorse-AncientYews patch.esp=yes | ULM AkaviriStronghold-LostCoast patch.esp=no:has new records | ULM Alnwick-AspenWood patch.esp=yes | ULM Amen'thalasWellHouse-UniqueLandscapes patch.esp=no:has new records | ULM AncientDwemerRuins-JerallGlacier patch.esp=no:has new records | ULM AncientSource-ChorrolHinterland patch.esp=no:has new records | ULM AncientTowers-EasternPeaks patch.esp=yes | ULM Atahnoral-EasternPeaks patch.esp=no:has new records | ULM BeldaElysium-RollingHills patch.esp=no:has new records | ULM BergDesKrieger-CloudtopMountains patch.esp=yes | ULM BetterCitiesBravil-BravilBarrowfields patch.esp=yes | ULM BetterCitiesBruma-Snowdale patch.esp=yes | ULM BetterCitiesCheydinhal-CheydinhalFalls patch.esp=no:has new records | ULM BetterCitiesSkingrad-SkingradOutskirts patch.esp=no:has new records | ULM BetterDaedricShrinesFull-UniqueLandscapes patch.esp=yes | ULM BetterDaedricShrinesMeridia-RiverEthe patch.esp=yes | ULM BetterDaedricShrineVaermina-AncientYews patch.esp=yes | ULM BeyondCyrodiilCamps-BrenaRiverRavine patch.esp=no:has new records | ULM BlackCatJewelry-SkingradOutskirts Patch.esp=no:has new records | ULM BlackMarshHall-RiverEthe patch.esp=yes | ULM BlackrockMountain-JerallGlacier patch.esp=yes | ULM BlackscarCitadel-AspenWood patch.esp=no:has new records | ULM BravilBridgeCottage-BravilBarrowfields patch.esp=yes | ULM BravilDocks-BravilBarrowfields patch.esp=yes | ULM Cardac-AspenWood patch.esp=no:has new records | ULM Cardac-ShezriesTowns-AspenWood patch.esp=no:has new records | ULM CastleAlmgardV25-LostCoast patch.esp=no:has new records | ULM CastleDracula-Snowdale patch.esp=yes | ULM CastleEltz-EasternPeaks patch.esp=no:has new records | ULM CastleRavenpride-CheydinhalFalls patch.esp=no:has new records | ULM CastleSeaview-EaglesRest-LostCoast patch.esp=no:has new records | ULM CastleSeaview-LostCoast patch.esp=no:has new records | ULM CastleSeaview-SutchReborn-LostCoast patch.esp=no:has new records | ULM CastleVeyond-BravilBarrowfields patch.esp=yes | ULM Clearwater-KoyoTown-LushWoodlands patch.esp=no:has new records | ULM ColourwheelSexyTavern-ImperialIsle patch.esp=yes | ULM CountySutchOwlsCove-LostCoast patch.esp=yes | ULM Cybiades-LostCoast patch.esp=yes | ULM DaedricShrineRuins-BrenaRiverRavine patch.esp=no:has new records | ULM DaedricShrineRuins-EasternPeaks patch.esp=yes | ULM DarkBrotherhoodChronicles-UniqueLandscapes patch.esp=no:has new records | ULM DepthsOfTheUnderdark-LushWoodlands patch.esp=yes | ULM DibellaTempleWillowLakeVillage-UniqueLandscapes patch.esp=no:has new records | ULM DremoraCompanion-BlackwoodForest patch.esp=yes | ULM DukePatricksFortressOfFear-Snowdale patch.esp=no:has new records | ULM DukePatricksSCACombatArchery-LostCoast patch.esp=yes | ULM DwemerRuins-EasternPeaks patch.esp=no:has new records | ULM EaglesRest-LostCoast patch.esp=yes | ULM Eastbrink-ImpeREALForts-SilverfishRiverValley patch.esp=no:has new records | ULM Eastbrink-SilverfishRiverValley patch.esp=no:has new records | ULM EtInArkay-UniqueLandscapes patch.esp=no:has new records | ULM Feldscar-Snowdale patch.esp=no:has new records | ULM FortFerrion-JerallGlacier patch.esp=no:has new records | ULM FuseSnailRacing-ImperialIsle patch.esp=no:has new records | ULM Gaelendryll-BrenaRiverRavine patch.esp=no:has new records | ULM GatesToAesgaardEp1-JerallGlacier patch.esp=yes | ULM GatesToAesgaardEp2-Snowdale patch.esp=yes | ULM Gilgaliad-BrenaRiverRavine patch.esp=no:has new records | ULM GnollMountain-Snowdale patch.esp=no:has new records | ULM GoblinwatchKeep-UniqueLandscapes patch.esp=yes | ULM GreatForestGorge-LushWoodlands patch.esp=no:has new records | ULM GriffonFortress-EasternPeaks patch.esp=no:has new records | ULM Hammerfell-ColovianHighlands patch.esp=yes | ULM Hammerfell-LostCoast patch.esp=yes | ULM Hammerfell-SutchVillage-LostCoast patch.esp=no:has new records | ULM HauntedHouseQuest-AncientYews patch.esp=no:has new records | ULM HeartoftheDead-ArriusCreek patch.esp=no:has new records | ULM HelmsDeep-ArriusCreek patch.esp=no:has new records | ULM HentaiLovelyHouse2-AncientYews patch.esp=yes | ULM HentaiMania2-LostCoast patch.esp=no:has new records | ULM HerosRetreat-LushWoodlands patch.esp=yes | ULM Hoarfrost-GreatForestGorge-LushWoodland patch.esp=no:has new records | ULM HouseOfHealingAtWeye-EasternPeaks patch.esp=yes | ULM HouseOnTheBluff-LostCoast patch.esp=no:has new records | ULM ImpeREALForts-LostSpires-SilverfishRiverValley patch.esp=yes | ULM ImpeREALForts-SilverfishRiverValley patch.esp=yes | ULM ImperialCitySuburbs-ImperialIsle patch.esp=yes | ULM ImperialManor-ImperialIsle patch.esp=no:has new records | ULM ImprovedImperialInfrastructure-Snowdale patch.esp=no:has new records | ULM IntegrationTheStrandedLight-EasternPeaks patch.esp=yes | ULM IslandPalace-BetterCitiesFull-LostCoast patch.esp=no:has new records | ULM IslandPalace-LostCoast patch.esp=no:has new records | ULM IslandPalace-OpenCitiesReborn-LostCoast patch.esp=no:has new records | ULM KoyoTown-LushWoodlands patch.esp=yes | ULM LegionOccupiedForts-SilverfishRiverValley patch.esp=yes | ULM LegionOutposts-BetterCitiesFull-BlackwoodForest patch.esp=no:has new records | ULM LegionOutposts-BlackwoodForest patch.esp=no:has new records | ULM Lindum-BetterCitiesChorrol-LushWoodlands-AltChorrolHinterland patch.esp=no:has new records | ULM Lindum-BloodRaven-BetterCitiesChorrol-LushWoodlands-AltChorrolHinterland patch.esp=no:has new records | ULM Lindum-BloodRaven-UniqueLandscapes patch.esp=no:has new records | ULM Lindum-UniqueLandscapes patch.esp=no:has new records | ULM LittleSparrow-Hoarfrost-LushWoodlands patch.esp=no:has new records | ULM MannimarcoResurrection-UniqueLandscapes patch.esp=no:has new records | ULM MapleCottage-ImperialIsle patch.esp=yes | ULM Millstone-AncientYews patch.esp=no:has new records | ULM MillstoneCOBL-AncientYews patch.esp=no:has new records | ULM Mimics-ShezriesTowns-CloudtopMountains patch.esp=no:has new records | ULM MOBS-UniqueLandscapes patch.esp=yes | ULM MTCExpandedVillages-Oranstad-AncientRedwoods patch.esp=no:has new records | ULM MTCExpandedVillages-Snowdale patch.esp=yes | ULM MTCRiverShack-BravilBarrowfields patch.esp=no:has new records | ULM MTCThievesGrotto-UniqueLandscapes patch.esp=no:has new records | ULM NicVBetterBeggars-BravilBarrowfields patch.esp=yes | ULM OblivionUncut-AncientYews patch.esp=yes | ULM OblivionUncut-EntiusGorge patch.esp=no:has new records | ULM OblivionWarcryND-UniqueLandscapes patch.esp=no:has new records | ULM OpenCitiesClassic-UniqueLandscapes patch.esp=no:has new records | ULM OpenCitiesReborn-UniqueLandscapes patch.esp=no:has new records | ULM Oranstad-AncientRedwoods patch.esp=no:has new records | ULM OREChristmasMod-Snowdale patch.esp=yes | ULM PineLodge-AncientRedwoods patch.esp=yes | ULM PineLodge2-AncientRedwoods patch.esp=yes | ULM PlayerHomeNaheema-ImperialIsle patch.esp=yes | ULM PoisonSwamp-BlackwoodForest patch.esp=no:has new records | ULM Quelldorf-BravilBarrowfields patch.esp=no:has new records | ULM QuelldorfWithoutShip-BravilBarrowfields patch.esp=no:has new records | ULM ReapersNecomancerTower-CliffsOfAnvil patch.esp=no:has new records | ULM ReapersTheDarkTower-BravilBarrowfields patch.esp=yes | ULM ReclaimingSancreTor-UniqueLandscapes patch.esp=no:has new records | ULM RegionReviveLakeRumare-ImperialIsle patch.esp=no:has new records | ULM ROC+Ancient Redwoods.esp=yes | ULM ROC+UL Skingrad Outskirts Patch.esp=yes | ULM ROC+UL-II Patch.esp=yes | ULM ROC+UL-II+LtPD Patch.esp=yes | ULM ROC+UL-II+LtPD+OCOD Patch.esp=yes | ULM ROC+UL-II+OCOD Patch.esp=yes | ULM ShezriesTowns-AspenWood patch.esp=yes | ULM ShezriesTowns-CloudtopMountains patch.esp=no:has new records | ULM ShiveringStore-BravilBarrowfields patch.esp=yes | ULM SilverfishFalls-SilverfishRiverValley patch.esp=no:has new records | ULM SilverfishFalls-SilverfishRiverValley-IntegrationIntegrated patch.esp=no:has new records | ULM SilverfishFalls-SilverfishRiverValley-IntegrationTheStrandedLight patch.esp=no:has new records | ULM SkyrimTemple-JerallGlacier patch.esp=no:has new records | ULM SkyrimTemple-SmokeTown-JerallGlacier patch.esp=no:has new records | ULM SmokeTown-ArriusCreek patch.esp=no:has new records | ULM SmokeTown-JerallGlacier patch.esp=no:has new records | ULM SnowLineLodge-Snowdale patch.esp=yes | ULM SpookyHouseShadowvaleManor-BlackwoodForest patch.esp=yes | ULM SutchReborn-LostCoast patch.esp=no:has new records | ULM SutchVillage-LostCoast patch.esp=yes | ULM TalesFromElsweyr-BravilBarrowfields patch.esp=no:has new records | ULM TalosGatehouse-ImperialIsle patch.esp=no:has new records | ULM TelValus-EasternPeaks patch.esp=no:has new records | ULM TheOrderofNibenay-Chorrol Hinterland patch.esp=no:has new records | ULM TWMPBlackMarsh-EasternPeaks patch.esp=yes | ULM TWMPSkyrimAlive-JerallGlacier patch.esp=no:has new records | ULM TWMPSkyrimImproved-JerallGlacier patch.esp=no:has new records | ULM Villages-CheydinhalFalls patch.esp=no:has new records | ULM VillagesII-UniqueLandscapes patch.esp=no:has new records | ULM WaterlilyCottage-AncientYews patch.esp=yes | ULM WeinhausKaiserstadt-ImperialIsle patch.esp=no:has new records | ULM WeynonPrioryAlive-ChorrolHinterland patch.esp=yes | ULM WeynonRetreat-ChorrolHinterland patch.esp=no:has new records | ULM WhiteRoseLodge-Snowdale patch.esp=no:has new records | ULM WindspearTower-StendarrValley patch.esp=yes | ULM WolfsBorough-AncientRedwoods patch.esp=yes | ULE Anequina-FallenleafEverglade patch.esp=yes | ULE IntegrationTheStrandedLight-SilverfishRiverValley patch.esp=yes | ULE KragenirsDeathQuest-UniqueLandscapes merged patch.esp=no:has new records | ULE KvatchRebuilt-CheydinhalFalls patch.esp=yes | ULE TamrielicLore-CliffsOfAnvil patch.esp=no:has new records | ULE TamrielicLore-JerallGlacier patch.esp=yes | ULE TheWellOfMinlorada-ColovianHighlands patch.esp=no:has new records | ULE TheWellOfMinlorada-LushWoodlands patch.esp=yes | ULE UnofficialOblivionPatch-CorboloRiver patch.esp=yes | ULM BetterCities-UniqueLandscapes merged patch.esp=no:has new records | ULM FrostcragReborn-Snowdale patch.esp=no:has new records | ULM HoarfrostCastle-LushWoodlands patch.esp=yes | ULM IntegrationIntegratedTheStrandedLight-EasternPeaks patch.esp=yes | ULM MinotaurEncampments-UniqueLandscapes patch.esp=no:has new records | ULM MTCExpandedVillages-UniqueLandscapes patch.esp=yes | ULM OblivionCollectibleCards-UniqueLandscapes patch.esp=no:has new records | ULM OMOBS-UniqueLandscapes patch.esp=yes | ULM OrdenDesDrachen-UniqueLandscapes patch.esp=no:has new records | ULM OscurosOblivionOverhaul-UniqueLandscapes patch.esp=no:has new records | ULM ThievesGuildHQUnhealthyCompetition-BravilBarrowfields patch.esp=yes,partial:ULE Anequina-FallenleafEverglade patch.esp;ULE IntegrationTheStrandedLight-SilverfishRiverValley patch.esp;ULE KvatchRebuilt-CheydinhalFalls patch.esp;ULE TamrielicLore-CliffsOfAnvil patch.esp;ULE TamrielicLore-JerallGlacier patch.esp;ULE TheWellOfMinlorada-ColovianHighlands patch.esp;ULE TheWellOfMinlorada-LushWoodlands patch.esp;ULE UnofficialOblivionPatch-CorboloRiver patch.esp;ULM FrostcragReborn-Snowdale patch.esp;ULM HoarfrostCastle-LushWoodlands patch.esp;ULM IntegrationIntegratedTheStrandedLight-EasternPeaks patch.esp;ULM MTCExpandedVillages-UniqueLandscapes patch.esp;ULM MinotaurEncampments-UniqueLandscapes patch.esp;ULM OMOBS-UniqueLandscapes patch.esp;ULM OrdenDesDrachen-UniqueLandscapes patch.esp;ULM OscurosOblivionOverhaul-UniqueLandscapes patch.esp;ULM ThievesGuildHQUnhealthyCompetition-BravilBarrowfields patch.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/13834
+Various Cleaned Plugins,,skipped,693,PATCHES,Patches,esp+meshes+textures,17,AyleidWellMessage.esp=yes | CRTRenewed.esp=no:has new records | OblivionDeadLands.esp=no:has new records,partial:AyleidWellMessage.esp,yes,yes,https://www.nexusmods.com/oblivion/mods/52833
+OSPS - Better Cities Imperial Isle Compatibility Patches,,skipped,694,PATCHES,Bug Fixes,esp,0,no:has new records,yes:ULM OSPS-BC_IC-II_UL-II_Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/45817
+Visually Improved Staffs for OOO,,skipped,695,PATCHES,Models and Textures,textures,8,,,,yes,https://www.nexusmods.com/oblivion/mods/41477
+Unique Artifacts for Unique People - Patches,,skipped,696,PATCHES,Weapons,esp,1,yes,yes:UAUP - MOBS Patch.esp;UAUP - OMOBS Patch.esp;UAUP - OOO Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49871
+Retextured Potions - OOO Patch,,skipped,697,PATCHES,Bug Fixes,esp,0,yes,yes:PotionReplacer OOO Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/49256
+OOO Flavor Text for Extended UI,,skipped,698,PATCHES,User Interface,config,1,,,,yes,https://www.nexusmods.com/oblivion/mods/51781
+Kvatch Rebuild OOO Adaptation,,skipped,699,PATCHES,Bug Fixes,esp,0,no:has new records,yes:Kvatch Rebuilt - OOO Adaptation.esp,,yes,https://www.nexusmods.com/oblivion/mods/49825
+Better Dark Brotherhood Sanctuary - OOO Patch,,skipped,700,PATCHES,Bug Fixes,esp,0,yes,yes:BDBS - Oscuro's Oblivion Overhaul.esp,,yes,https://www.nexusmods.com/oblivion/mods/48560
+MOBS patch for Maskar's Oblivion Overhaul,,skipped,701,PATCHES,Bug Fixes,config,0,,,,yes,https://www.nexusmods.com/oblivion/mods/47473
+UL - The Dark Forest - Lowpolygrass Patch,,skipped,702,PATCHES,,meshes,1,,,,yes,https://www.nexusmods.com/oblivion/mods/11162
+Kvatch Rebuilt - Pre Invasion Fix,,skipped,703,PATCHES,,esp,0,no:has new records,no,yes,yes,
+OOOOBMESpectralCrashFix,,skipped,704,PATCHES,,esp,0,yes,yes:OOOOBMESpectralCrashFix.esp,,yes,
+Unique Landscapes - OOO Adaptation,,skipped,705,PATCHES,Bug Fixes,esp,0,no:has new records,yes:Unique Landscapes (Merged with BC)  - OOO Adaptation.esp,,yes,https://www.nexusmods.com/oblivion/mods/48463
+UL - Ducks and Swans for Cyrodiil - Patch,,skipped,706,PATCHES,Bug Fixes,esp,0,no:has new records,yes:Ducks and Swans.esp,,yes,https://www.nexusmods.com/oblivion/mods/53764
+Better Cities adapted to OOO,,skipped,707,PATCHES,Bug Fixes,esp+meshes+textures,81,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/47911
+Better Dungeons - Balance Patch,,skipped,708,PATCHES,Bug Fixes,esp,0,yes,yes:Better Dungeons - Balance Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/52558
+OOO golems OBME edition,,skipped,709,PATCHES,Magic - Spells,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50417
+Vampire Hunting - Order of the Virtuous Blood OCO2 NPC FACE FIXES,,skipped,710,PATCHES,NPC,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54706
+Tales from Elsweyr Anequina-Rev's Redo FIXED,,skipped,711,PATCHES,,esp,0,yes,yes:revredofix.esp,,yes,https://www.nexusmods.com/oblivion/mods/55514
+OOO Enhanced Oblivion Content Restoration Patch,,skipped,712,PATCHES,,esp,0,yes,yes:Infiltration Fix for OOO Enhanced and ORP.esp,,yes,https://www.nexusmods.com/oblivion/mods/55402
+Productive Mines - Better Cities Compatibility Patch,,skipped,713,PATCHES,,esp,0,yes,yes:Productive Mines - Better Cities Patch UL.esp,,yes,https://www.nexusmods.com/oblivion/mods/54610
+Productive Mines - Vendors and Productive Mines - Vendors - OCRAFT,,skipped,714,PATCHES,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/54882
+Better Cities Resources - OCRAFT Integration,,skipped,715,PATCHES,,esp+meshes,73,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/55235
+Bash-able Quest Delayers,,skipped,716,PATCHES,,esp,0,yes,yes:HoarfrostCastle v1.2.2 Delayer.esp,,yes,https://www.nexusmods.com/oblivion/mods/25946
+Improved Fighters Guild Patches,,skipped,717,PATCHES,,esp,0,FGRebuild - OOO Patch.esp=yes | FGRebuild - The Ayleid Steps Patch.esp=no:has new records,yes:FGRebuild - OOO Patch.esp;FGRebuild - The Ayleid Steps Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/55427
+Oblivion Collectible Cards - Missing Cards Fix,,skipped,718,PATCHES,,esp,0,no:has new records,no,yes,yes,https://www.nexusmods.com/oblivion/mods/48067
+MTC Expanded Villages - Better Campsites Patch,,skipped,719,PATCHES,,esp,0,yes,yes:MTC Expanded Villages - Better Campsites Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/54990
+OOO Enhanced - Better Dungeons Compatibility Patch,,skipped,720,PATCHES,,esp,0,no:has new records,yes:Better Dungeons - OOO Enhanced Compatibility Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/47187
+Elsweyr Anequina - Khajiit Compatibility,,skipped,721,PATCHES,,meshes,37,,,,yes,https://www.nexusmods.com/oblivion/mods/50273
+Strotis new clutter,,skipped,722,PATCHES,,textures,36,,,,yes,https://www.nexusmods.com/oblivion/mods/34669
+OCO - Elsweyr Deserts of Anequina Patch,,skipped,723,PATCHES,,meshes+textures,62,,,,yes,https://www.nexusmods.com/oblivion/mods/46057
+The Order of the Dragon Patch Series,,skipped,724,PATCHES,,esp,0,no:has new records,yes:BICFull_OotD_Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/45611
+Orden des Drachen Miscellaneous Patches,,skipped,725,PATCHES,,esp,0,yes,yes:ODDFastTravel.esp;ODDMissingCrates.esp;ODDTheMap.esp,,yes,https://www.nexusmods.com/oblivion/mods/51677
+Knights Infamy and Delay DLC patch,,skipped,726,PATCHES,,esp,0,yes,yes:Knigts Infamy Delay DLC patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/53650
+OCOv2 - Filter Patch for Mods,,skipped,727,FILTER PATCHES,Bug Fixes,esp,0,yes,yes:OCOv2 - Filter Patch for Mods.esp,,yes,https://www.nexusmods.com/oblivion/mods/51379
+NPC Names - Filter Patch for Mods,,skipped,728,FILTER PATCHES,Immersion,esp,0,yes,yes:NPC Names - Filter Patch for Mods.esp,,yes,https://www.nexusmods.com/oblivion/mods/53347
+RadiantAI - NPCs Alive - Cyrodiil - Unofficial Patch,,skipped,729,FILTER PATCHES,Bug Fixes,esp,0,yes,yes:RadiantAI - NPCs Alive - Cyrodiil - UOP Factions Patch.esp,,yes,https://www.nexusmods.com/oblivion/mods/52691
+Miscellaneous Patch Collection by Dispensation,,skipped,730,FILTER PATCHES,Bug Fixes,esp,0,yes,yes:DispMiscPatch_AncestorMothsExpanded - AddSomeFlavorPriories Patch.esp;DispMiscPatch_Av Latta Magicka - Migck Misc Poison Fists Patch.esp;DispMiscPatch_NIARA - PTArtifacts Patch.esp;DispMiscPatch_OCOv2 - Adoring Fan No Beard.esp;DispMiscPatch_OCRAFT - Filter Patch for Mods.esp,,yes,https://www.nexusmods.com/oblivion/mods/52874
+MigMaster Script Resources,,skipped,731,FILTER PATCHES,Patches,esm+esp,0,yes,yes:SafeCloningFunction - Filter.esp,,yes,https://www.nexusmods.com/oblivion/mods/45875
+Configuration Items Begone,,skipped,732,FILTER PATCHES,Immersion,esp,3,CIBFilterPatch.esp=yes | CIBLppSupport.esp=no:has new records,partial:CIBFilterPatch.esp,,yes,https://www.nexusmods.com/oblivion/mods/53354
+Log Output,,skipped,733,LATE LOADERS,,config,0,,,,yes,
+Project Optimization Output,,skipped,734,LATE LOADERS,,meshes,63,,,,yes,
+UHD Fonts for Darnified UI,,skipped,735,LATE LOADERS,User Interface,config,7,,,,yes,https://www.nexusmods.com/oblivion/mods/49266
+ReShade Shaders,,skipped,736,LATE LOADERS,,config,0,,,,yes,
+Oblivion Reloaded Combined(ORC) 1.9.3,,skipped,737,LATE LOADERS,,obse-plugin+meshes+textures+music,480,,,,yes,https://www.nexusmods.com/oblivion/mods/51927
+A Painted World Reshade Preset - ORC 1.9.3 Version,,skipped,738,LATE LOADERS,,config,35,,,,yes,https://www.nexusmods.com/oblivion/mods/54215
+Coronerras Maximum Compatibility Skeletons,,skipped,739,LATE LOADERS,Animation,meshes,3,,,,yes,https://www.nexusmods.com/oblivion/mods/27945
+A Painted World Configs,,skipped,740,LATE LOADERS,Visuals and Graphics,esp+meshes+textures+sound,11238,"APW - Conflict Resolution.esp=no:has new records | APW Merge 2.esp=no:has Sound\Voice; has new records | APW Merge 3.esp=no:has Sound\Voice; has new records | APW Merge.esp=no:has Sound\Voice; has new records | Bashed Patch, 0.esp=no:has new records | Harvest xOBSE.esp=no:has INI; has new records | LandMagicPatch.esp=yes",no,yes,yes,https://www.nexusmods.com/oblivion/mods/54215
+Deathb0rns Modified Qarls LOD Normal Maps,,skipped,741,LATE LOADERS,Models and Textures,textures,13,,,,yes,https://www.nexusmods.com/oblivion/mods/32709
+A Painted World - LODs,,skipped,742,LATE LOADERS,Visuals and Graphics,esm+bsa+meshes+textures,162,,,,yes,https://www.nexusmods.com/oblivion/mods/54215
+Mesh Fixes & Recolors,,skipped,743,LATE LOADERS,,meshes+textures,268,,,,yes,
+UW Main Menu 2K Ultrawide,ultrawide (21:9),installed,744,ULTRAWIDE OPTIONALS (21x9),,textures,4,,,,no,https://www.nexusmods.com/oblivion/mods/54020
+UW Black Rectangle Ultrawide Fix,ultrawide (21:9),installed,745,ULTRAWIDE OPTIONALS (21x9),Patches,textures,2,,,,no,https://www.nexusmods.com/oblivion/mods/48351
+UW HUD Config,ultrawide (21:9),installed,746,ULTRAWIDE OPTIONALS (21x9),,config,5,,,,no,
+UW DarNified UI patch for Black Rectangle Ultrawide Fix,ultrawide (21:9),installed,747,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,1,,,,no,https://www.nexusmods.com/oblivion/mods/53882
+UW Ultrawide map border fix for DarNified UI,ultrawide (21:9),installed,748,ULTRAWIDE OPTIONALS (21x9),User Interface,textures,3,,,,no,https://www.nexusmods.com/oblivion/mods/53723
+dxvk,"APW meta.ini flags ""sometimes random crashes""; benefits (Reshade+ORC compatibility) do not apply to Reborn since both are cut. Stability-first = skip.",skipped,749,OPTIONAL MODS,,config,0,,,,yes,
+CPU Affinity,,skipped,750,OPTIONAL MODS,Utilities,obse-plugin,0,,,,yes,https://www.nexusmods.com/oblivion/mods/53118
+Fast Travel Costs,,skipped,751,OPTIONAL MODS,Gameplay Effects,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/50201
+Food and Drink Quotes,,skipped,752,OPTIONAL MODS,Audio - Voice,esp+bsa,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/53203
+A Champions Death,,skipped,753,OPTIONAL MODS,,esp,0,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/42599
+Waterfront FPS Patch,,skipped,754,OPTIONAL MODS,,esp,0,yes,,,no,
+Mark Or Unmark As Quest Item,,skipped,755,OPTIONAL MODS,Gameplay Effects,esp,0,no:has INI; has new records,,,no,https://www.nexusmods.com/oblivion/mods/49181
+Oblivion XP Update,,skipped,756,PICK YOUR LEVELING SYSTEM -- ONLY PICK ONE -- DO NOT SWAP MID SAVE,Gameplay Effects,esp+textures+sound,52,no:has new records,no,,yes,https://www.nexusmods.com/oblivion/mods/51817
+Remastered Attributes,,skipped,757,PICK YOUR LEVELING SYSTEM -- ONLY PICK ONE -- DO NOT SWAP MID SAVE,,esp+textures,3,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/55277
+Levelling through training only,,skipped,758,PICK YOUR LEVELING SYSTEM -- ONLY PICK ONE -- DO NOT SWAP MID SAVE,,esp,0,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/47432
+Remastered Attributes - NorthernUI,controller profile only,skipped,759,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,esp+textures,3,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/55277
+Controller Configs,controller profile only,skipped,760,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,config,5,,,,no,
+Imperial Theme for NorthernUI,controller profile only,skipped,761,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,textures,210,,,,no,https://www.nexusmods.com/oblivion/mods/49848
+LootMenu NorthernUI DPad Menu Navigation Fix,controller profile only,skipped,762,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,esp,0,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/54886
+NorthernUI,controller profile only,skipped,763,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,obse-plugin+meshes+textures,354,,,,no,https://www.nexusmods.com/oblivion/mods/48577
+NorthernUI (Imperial Theme) - Status Bars for Needs,controller profile only,skipped,764,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,textures,5,,,,no,https://www.nexusmods.com/oblivion/mods/55861
+NorthernUI Rumble,controller profile only,skipped,765,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,obse-plugin,0,,,,no,https://www.nexusmods.com/oblivion/mods/52259
+Oblivion XP Update - Controller,controller profile only,skipped,766,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,textures+sound,51,,,,no,https://www.nexusmods.com/oblivion/mods/51817
+Realistic Sprint and Gallop - NorthernUI Gamepad Support,controller profile only,skipped,767,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,esp,0,no:has new records,,yes,no,https://www.nexusmods.com/oblivion/mods/54550
+Scuffed De-Nock Arrows for NorthernUI,controller profile only,skipped,768,DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE,,esp,0,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/53461
+''I HAVE NO GREETING'' Fix for Oblivion,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp+bsa,0,no:has BSA; has new records,,,no,https://www.nexusmods.com/oblivion/mods/49115
+1_Clickable Magic Gate,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,meshes+textures,3,,,,no,https://www.nexusmods.com/oblivion/mods/51375
+1_DarNified UI Ultrawide config preset,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,4,,,,no,https://www.nexusmods.com/oblivion/mods/53723
+1_Dynamic Map,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp+textures,125,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/35969
+1_Extended UI,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp+textures,10,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/50135
+1_ULF DarNified UI patch image file,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,1,,,,no,https://www.nexusmods.com/oblivion/mods/53882
+AleswellNoRefractFix,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,yes,,,no,https://www.nexusmods.com/oblivion/mods/17968
+ArmoredShadowmereFix 1.0,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/54831
+Balanced Unleveled Rewards,"Phase 1.5: pins quest reward items to fixed lore-appropriate tiers (no more level-30 turn-in for the legendary version). PTWB modular tool, no patches needed for MOO/UL.",installed,,UTILITIES (Reborn-added),Gameplay Effects,esp,0,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/51050
+Better Oblivion Cursor File,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,3,,,,no,https://www.nexusmods.com/oblivion/mods/51733
+Console Paste,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,obse-plugin,0,,,,no,https://www.nexusmods.com/oblivion/mods/49104
+CSE Batch Compile,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,obse-plugin,0,,,,no,
+DLCSpellTomes-No Attack,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,yes,,,no,https://www.nexusmods.com/oblivion/mods/47452
+Enhanced Hotkeys 2_3_1,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp+textures,45,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/34735
+Extended UI - Boss Bar Position Fix,"Patch for stock Extended UI BossBar.xml: archive ships <mul>0.75</mul> (boss bar at 75% screen height = lower HUD), APW patches to <mul>0.05</mul> (top of screen). Must load above 1_Extended UI to win the file conflict. Source: copied from APW/mods/Extended UI/menus/prefabs/ExUI/BossBar.xml.",installed,,UTILITIES (Reborn-added),,config,1,,,,no,
+Extended UI Boss Bar Retexture,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,2,,,,no,https://www.nexusmods.com/oblivion/mods/55677
+Grip of Steel,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,obse-plugin,0,,,,no,https://www.nexusmods.com/oblivion/mods/54294
+Inactive Window Scroll Fix,"Reborn-added (not in APW); xOBSE plugin (obl_clipcursor.dll) using Win32 ClipCursor() to confine the mouse to the game window while focused, releasing on alt-tab. Pairs with Oblivion Display Tweaks bBorderless=1 to give borderless-fullscreen + cursor lock on multi-monitor setups (replaces external Cursor Lock wrapper). Misnamed on Nexus (says scroll fix) but it is a general cursor-clip plugin.",installed,,UTILITIES (Reborn-added),Patches,obse-plugin,0,,,,no,https://www.nexusmods.com/oblivion/mods/52508
+Main Menu Ultrawide,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,4,,,,no,https://www.nexusmods.com/oblivion/mods/54020
+Maskars Oblivion Overhaul 5_0_5,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),Overhauls,esp+bsa,0,no:has INI; has new records,,yes,no,https://www.nexusmods.com/oblivion/mods/42780
+MIEO - Parasol Mesh Fix,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,meshes,1,,,,no,
+Migck Miscellaneous,Reborn-added (not in APW) - modifies save functionality,installed,,UTILITIES (Reborn-added),,esp,1,no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/42658
+New icon for Eye and Crosshair,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),User Interface,textures,6,,,,no,https://www.nexusmods.com/oblivion/mods/43978
+Oblivion Stutter Remover (OSR),Chapter 0 foundation mod - NOT in APW; heap replacer enabled (algo 6 ThreadHeap3 @ 450MB) to counter the form-heap fragmentation pattern in APW travel crashes,installed,,UTILITIES (Reborn-added),,missing,,,,,yes,
+PSMainQuestDelayer,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),Gameplay Effects,esp+bsa,0,no:has BSA; has new records,,yes,no,https://www.nexusmods.com/oblivion/mods/45890
+PSMQD - Delay DLC Start Patch,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,yes,,,no,
+QZ Easy Menus,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,no:has INI; has new records,,,no,https://www.nexusmods.com/oblivion/mods/23404
+Reborn - OOO Unofficial Patch CR,"Reborn-added (not in APW). Overrides 14 CONT records the OOO Updated (Unofficial Patch) sets to nonexistent harvest\containers\XMSharvest*HiFi.nif paths and resets each to vanilla MODL (Clutter\LowerClass\LowerCoveredPot01.NIF, Furniture\UpperClass\UpperDesk01.NIF, Furniture\UpperClass\UpperCubboard02.NIF, Clutter\UpperClass\UpperExecDesk01.NIF). Mirrors APW Conflict Resolution.esp's behavior. Loads after OOO_Unoficial-Patch.esp so its overrides win in BP merge.",installed,,UTILITIES (Reborn-added),,esp,0,yes,,,no,
+Reborn Bashed Patch,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,esp,0,no:has new records,,,no,
+Reborn Configs,"Reborn-added central config-overrides mod (mirrors APW's ""A Painted World Configs"" pattern). Holds Reborn-specific INI/setting tweaks for upstream mods. MUST load late (high priority / bottom of MO2 left pane) to win file conflicts. Contents: (1) OBSE/Plugins/oblivion_display_tweaks.ini — bBorderless=1 (borderless windowed); (2) menus/prefabs/dsEnemyHealth/Vanilla/Main.xml — container <y> 30 -> 40 (Better Enemy Health bar dropped 10px to clear the reticle area). Add new tweaks here rather than editing upstream mod archives.",installed,,UTILITIES (Reborn-added),,config,1,,,,no,
+SB_WeaponDropFix,Reborn-added (not in APW). Phase OOO 2026-04-30: SB_WeaponDropFix_OOOFilterPatch.esp relocated from optional/ to mod root and enabled (was previously parked).,installed,,UTILITIES (Reborn-added),,esp,0,SB_WeaponDropFix_OOOFilterPatch.esp=yes | SB_WeaponDropFix.esp=no:has new records,,,no,https://www.nexusmods.com/oblivion/mods/50223
+Skip Intro and Random Start,Phase 1.5 alternate start (active): in-game menu offers Skip Intro / Vanilla / Random Start. Required because skipping prison via console (coc weye) leaves UL/MOO in partially-initialized state. v1.2 by Mixxa77.,installed,,UTILITIES (Reborn-added),,missing,,,,,no,
+TES4Edit 4.1.5f,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),Utilities,config,0,,,,no,https://www.nexusmods.com/oblivion/mods/11536
+Ultimate Leveling,"Phase 1 leveling system. v1.9.5.2. Defaults + rested_mode=2 (XP-based rested bonus, prevents AFK leveling) override in Reborn Configs/Ultimate Leveling for advanced users.ini. Pairs natively with MOO via Maskar same-author auto-detection.",installed,,UTILITIES (Reborn-added),?cat73,esp+bsa,0,no:has BSA; has INI; has new records,,,no,https://www.nexusmods.com/oblivion/mods/49134
+Ultrawide Letterbox Fix,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,textures,2,,,,no,https://www.nexusmods.com/oblivion/mods/48351
+Wrye Bash,Reborn-added (not in APW),installed,,UTILITIES (Reborn-added),,config,0,,,,no,https://www.nexusmods.com/oblivion/mods/591

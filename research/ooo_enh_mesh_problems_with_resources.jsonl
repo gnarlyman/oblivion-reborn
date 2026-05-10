@@ -1,0 +1,289 @@
+{"fid": "0x040014C6", "sig": "ARMO", "edid": "sOOOJojjoDragonClawShield", "subrec": "MODL", "path": "meshes/armor/dragonclawshield/dragonclawshield.nif"}
+{"fid": "0x040014C6", "sig": "ARMO", "edid": "sOOOJojjoDragonClawShield", "subrec": "MOD2", "path": "meshes/armor/dragonclawshield/dragonclawshield.nif"}
+{"fid": "0x040016F0", "sig": "ARMO", "edid": "WeapOffhandIronWarAxeFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x040016F0", "sig": "ARMO", "edid": "WeapOffhandIronWarAxeFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x0400293A", "sig": "ARMO", "edid": "SenTineLArmorAkaviriEmperorArmor", "subrec": "MOD4", "path": "meshes/armor/auroran/ayleid/bluecuirass_gnd.nif"}
+{"fid": "0x04003EB6", "sig": "ARMO", "edid": "LeatherBootsBlue", "subrec": "MODL", "path": "meshes/armor/bleather/m/boots.nif"}
+{"fid": "0x04003EB6", "sig": "ARMO", "edid": "LeatherBootsBlue", "subrec": "MOD2", "path": "meshes/armor/bleather/m/boots_gnd.nif"}
+{"fid": "0x04003EB6", "sig": "ARMO", "edid": "LeatherBootsBlue", "subrec": "MOD3", "path": "meshes/armor/bleather/f/boots.nif"}
+{"fid": "0x04003EB6", "sig": "ARMO", "edid": "LeatherBootsBlue", "subrec": "MOD4", "path": "meshes/armor/bleather/m/boots_gnd.nif"}
+{"fid": "0x04003EB9", "sig": "ARMO", "edid": "LeatherCuirassBlue", "subrec": "MODL", "path": "meshes/armor/bleather/m/cuirass.nif"}
+{"fid": "0x04003EB9", "sig": "ARMO", "edid": "LeatherCuirassBlue", "subrec": "MOD2", "path": "meshes/armor/bleather/m/cuirass_gnd.nif"}
+{"fid": "0x04003EB9", "sig": "ARMO", "edid": "LeatherCuirassBlue", "subrec": "MOD3", "path": "meshes/armor/bleather/f/cuirass.nif"}
+{"fid": "0x04003EB9", "sig": "ARMO", "edid": "LeatherCuirassBlue", "subrec": "MOD4", "path": "meshes/armor/bleather/f/cuirass_gnd.nif"}
+{"fid": "0x04003EBA", "sig": "ARMO", "edid": "LeatherGreavesBlue", "subrec": "MODL", "path": "meshes/armor/bleather/m/greaves.nif"}
+{"fid": "0x04003EBA", "sig": "ARMO", "edid": "LeatherGreavesBlue", "subrec": "MOD2", "path": "meshes/armor/bleather/m/greaves_gnd.nif"}
+{"fid": "0x04003EBA", "sig": "ARMO", "edid": "LeatherGreavesBlue", "subrec": "MOD3", "path": "meshes/armor/bleather/f/greaves.nif"}
+{"fid": "0x04003EBA", "sig": "ARMO", "edid": "LeatherGreavesBlue", "subrec": "MOD4", "path": "meshes/armor/bleather/m/greaves_gnd.nif"}
+{"fid": "0x04003EBB", "sig": "ARMO", "edid": "LeatherHelmetBlue", "subrec": "MODL", "path": "meshes/armor/bleather/helmet.nif"}
+{"fid": "0x04003EBB", "sig": "ARMO", "edid": "LeatherHelmetBlue", "subrec": "MOD2", "path": "meshes/armor/bleather/helmet_gnd.nif"}
+{"fid": "0x04003EBB", "sig": "ARMO", "edid": "LeatherHelmetBlue", "subrec": "MOD3", "path": "meshes/armor/bleather/helmet.nif"}
+{"fid": "0x04003EBB", "sig": "ARMO", "edid": "LeatherHelmetBlue", "subrec": "MOD4", "path": "meshes/armor/bleather/helmet_gnd.nif"}
+{"fid": "0x04003EBC", "sig": "ARMO", "edid": "LeatherGauntletsBlue", "subrec": "MODL", "path": "meshes/armor/bleather/m/gauntlets.nif"}
+{"fid": "0x04003EBC", "sig": "ARMO", "edid": "LeatherGauntletsBlue", "subrec": "MOD2", "path": "meshes/armor/bleather/m/gauntlets_gnd.nif"}
+{"fid": "0x04003EBC", "sig": "ARMO", "edid": "LeatherGauntletsBlue", "subrec": "MOD3", "path": "meshes/armor/bleather/f/gauntlets.nif"}
+{"fid": "0x04003EBC", "sig": "ARMO", "edid": "LeatherGauntletsBlue", "subrec": "MOD4", "path": "meshes/armor/bleather/m/gauntlets_gnd.nif"}
+{"fid": "0x04005B7A", "sig": "ARMO", "edid": "00SilverDragonBattleMageRobe", "subrec": "MODL", "path": "meshes/armor/silverdragon/battlemage/m/robe.nif"}
+{"fid": "0x04005B7A", "sig": "ARMO", "edid": "00SilverDragonBattleMageRobe", "subrec": "MOD2", "path": "meshes/armor/silverdragon/battlemage/m/robe_gnd.nif"}
+{"fid": "0x04005B7B", "sig": "ARMO", "edid": "00SilverDragonBattleMageHood", "subrec": "MODL", "path": "meshes/armor/silverdragon/battlemage/hood.nif"}
+{"fid": "0x04005B7B", "sig": "ARMO", "edid": "00SilverDragonBattleMageHood", "subrec": "MOD2", "path": "meshes/armor/silverdragon/battlemage/hood_gnd.nif"}
+{"fid": "0x04006065", "sig": "ARMO", "edid": "00SilverDragonBattleMageGauntlets", "subrec": "MODL", "path": "meshes/armor/silverdragon/battlemage/m/gauntlets.nif"}
+{"fid": "0x04006065", "sig": "ARMO", "edid": "00SilverDragonBattleMageGauntlets", "subrec": "MOD2", "path": "meshes/armor/silverdragon/battlemage/m/gauntlets_gnd.nif"}
+{"fid": "0x04006065", "sig": "ARMO", "edid": "00SilverDragonBattleMageGauntlets", "subrec": "MOD3", "path": "meshes/armor/silverdragon/battlemage/f/gauntlets.nif"}
+{"fid": "0x04006066", "sig": "ARMO", "edid": "00SilverDragonBattleMageBoots", "subrec": "MODL", "path": "meshes/armor/silverdragon/battlemage/m/boots.nif"}
+{"fid": "0x04006066", "sig": "ARMO", "edid": "00SilverDragonBattleMageBoots", "subrec": "MOD2", "path": "meshes/armor/silverdragon/battlemage/m/boots_gnd.nif"}
+{"fid": "0x04006067", "sig": "ARMO", "edid": "00SilverDragonBattleMageMask", "subrec": "MODL", "path": "meshes/armor/silverdragon/battlemage/mask.nif"}
+{"fid": "0x04006067", "sig": "ARMO", "edid": "00SilverDragonBattleMageMask", "subrec": "MOD2", "path": "meshes/armor/silverdragon/battlemage/mask_gnd.nif"}
+{"fid": "0x04008C63", "sig": "ARMO", "edid": "AdonnayHardenedLeatherCoat", "subrec": "MODL", "path": "meshes/armor/rangerarmor/m/rangerarmor.nif"}
+{"fid": "0x04008C63", "sig": "ARMO", "edid": "AdonnayHardenedLeatherCoat", "subrec": "MOD2", "path": "meshes/armor/rangerarmor/m/rangerarmor_gnd.nif"}
+{"fid": "0x04008C63", "sig": "ARMO", "edid": "AdonnayHardenedLeatherCoat", "subrec": "MOD3", "path": "meshes/armor/rangerarmor/f/rangerarmor.nif"}
+{"fid": "0x04008C63", "sig": "ARMO", "edid": "AdonnayHardenedLeatherCoat", "subrec": "MOD4", "path": "meshes/armor/rangerarmor/f/rangerarmor_gnd.nif"}
+{"fid": "0x04008C65", "sig": "ARMO", "edid": "AdonnayHardenedLeatherGauntlets", "subrec": "MODL", "path": "meshes/armor/rangerarmor/m/gauntlets.nif"}
+{"fid": "0x04008C65", "sig": "ARMO", "edid": "AdonnayHardenedLeatherGauntlets", "subrec": "MOD2", "path": "meshes/armor/rangerarmor/m/gauntlets_gnd.nif"}
+{"fid": "0x0400DAF9", "sig": "ARMO", "edid": "sOOOSilverDragonKnightBoots", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/m/boots.nif"}
+{"fid": "0x0400DAF9", "sig": "ARMO", "edid": "sOOOSilverDragonKnightBoots", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/m/boots_gnd.nif"}
+{"fid": "0x0400DAF9", "sig": "ARMO", "edid": "sOOOSilverDragonKnightBoots", "subrec": "MOD3", "path": "meshes/armor/silverdragon/knight/f/boots.nif"}
+{"fid": "0x0400DAFA", "sig": "ARMO", "edid": "sOOOSilverDragonKnightCuirass", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/m/cuirass.nif"}
+{"fid": "0x0400DAFA", "sig": "ARMO", "edid": "sOOOSilverDragonKnightCuirass", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/m/cuirass_gnd.nif"}
+{"fid": "0x0400DAFA", "sig": "ARMO", "edid": "sOOOSilverDragonKnightCuirass", "subrec": "MOD3", "path": "meshes/armor/silverdragon/knight/f/cuirass.nif"}
+{"fid": "0x0400DAFB", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGauntlets", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/m/gauntlets.nif"}
+{"fid": "0x0400DAFB", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGauntlets", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/m/gauntlets_gnd.nif"}
+{"fid": "0x0400DAFB", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGauntlets", "subrec": "MOD3", "path": "meshes/armor/silverdragon/knight/f/gauntlets.nif"}
+{"fid": "0x0400DAFC", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGreaves", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/m/greaves.nif"}
+{"fid": "0x0400DAFC", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGreaves", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/m/greaves_gnd.nif"}
+{"fid": "0x0400DAFC", "sig": "ARMO", "edid": "sOOOSilverDragonKnightGreaves", "subrec": "MOD3", "path": "meshes/armor/silverdragon/knight/f/greaves.nif"}
+{"fid": "0x0400DAFD", "sig": "ARMO", "edid": "sOOOSilverDragonKnightHelmet", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/helmet.nif"}
+{"fid": "0x0400DAFD", "sig": "ARMO", "edid": "sOOOSilverDragonKnightHelmet", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/helmet_gnd.nif"}
+{"fid": "0x0400E4CD", "sig": "ARMO", "edid": "sOOOSilverDragonKnightShieldAlt", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/shieldknight.nif"}
+{"fid": "0x0400E4CD", "sig": "ARMO", "edid": "sOOOSilverDragonKnightShieldAlt", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/shieldknight.nif"}
+{"fid": "0x04011FA5", "sig": "ARMO", "edid": "sOOOSilverDragonKnightHelmetSallet", "subrec": "MODL", "path": "meshes/armor/silverdragon/knight/helmetsallet.nif"}
+{"fid": "0x04011FA5", "sig": "ARMO", "edid": "sOOOSilverDragonKnightHelmetSallet", "subrec": "MOD2", "path": "meshes/armor/silverdragon/knight/helmetsallet_gnd.nif"}
+{"fid": "0x04026484", "sig": "ARMO", "edid": "NLfancypants", "subrec": "MOD3", "path": "meshes/unrepentantarcher/armor/suedegreavesf.nif"}
+{"fid": "0x04101001", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnBoots01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_boots.nif"}
+{"fid": "0x04101001", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnBoots01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif"}
+{"fid": "0x04101002", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnCuirass01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_bra.nif"}
+{"fid": "0x04101002", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnCuirass01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif"}
+{"fid": "0x04101003", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGauntlets01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_gloves.nif"}
+{"fid": "0x04101003", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGauntlets01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif"}
+{"fid": "0x04101004", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGreaves01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_panties2.nif"}
+{"fid": "0x04101004", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGreaves01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif"}
+{"fid": "0x04101005", "sig": "ARMO", "edid": "sOOOAmazonEmeraldCuirass", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif"}
+{"fid": "0x04101005", "sig": "ARMO", "edid": "sOOOAmazonEmeraldCuirass", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_bra.nif"}
+{"fid": "0x04101006", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGreaves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif"}
+{"fid": "0x04101006", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGreaves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_panties2.nif"}
+{"fid": "0x04101007", "sig": "ARMO", "edid": "sOOOAmazonEmeraldBoots", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif"}
+{"fid": "0x04101007", "sig": "ARMO", "edid": "sOOOAmazonEmeraldBoots", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_boots.nif"}
+{"fid": "0x04101008", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGloves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif"}
+{"fid": "0x04101008", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGloves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_gloves.nif"}
+{"fid": "0x04101095", "sig": "ARMO", "edid": "0XnmJBPlipocuirass", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif"}
+{"fid": "0x04101095", "sig": "ARMO", "edid": "0XnmJBPlipocuirass", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif"}
+{"fid": "0x04101096", "sig": "ARMO", "edid": "0XnmOpPlipogreaves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif"}
+{"fid": "0x04101096", "sig": "ARMO", "edid": "0XnmOpPlipogreaves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif"}
+{"fid": "0x04101097", "sig": "ARMO", "edid": "0XnmOpPlipoboots", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif"}
+{"fid": "0x04101097", "sig": "ARMO", "edid": "0XnmOpPlipoboots", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif"}
+{"fid": "0x04101098", "sig": "ARMO", "edid": "0XnmOpPlipogloves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif"}
+{"fid": "0x04101098", "sig": "ARMO", "edid": "0XnmOpPlipogloves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif"}
+{"fid": "0x04102ACF", "sig": "ARMO", "edid": "WeapOffhandAkaviriLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/akaviri weapon/longsword (offhand).nif"}
+{"fid": "0x04102ACF", "sig": "ARMO", "edid": "WeapOffhandAkaviriLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/akaviri weapon/longsword (offhand).nif"}
+{"fid": "0x04102AD0", "sig": "ARMO", "edid": "WeapOffhandClub", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/club/club (offhand).nif"}
+{"fid": "0x04102AD0", "sig": "ARMO", "edid": "WeapOffhandClub", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/club/club (offhand).nif"}
+{"fid": "0x04102AD1", "sig": "ARMO", "edid": "WeapOffhandSteelCutlass", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/cutlass/cutlass (offhand).nif"}
+{"fid": "0x04102AD1", "sig": "ARMO", "edid": "WeapOffhandSteelCutlass", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/cutlass/cutlass (offhand).nif"}
+{"fid": "0x04102AD3", "sig": "ARMO", "edid": "WeapOffhandDaedricLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/daedric/longsword (offhand).nif"}
+{"fid": "0x04102AD3", "sig": "ARMO", "edid": "WeapOffhandDaedricLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/daedric/longsword (offhand).nif"}
+{"fid": "0x04102AD4", "sig": "ARMO", "edid": "WeapOffhandDaedricMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/daedric/mace (offhand).nif"}
+{"fid": "0x04102AD4", "sig": "ARMO", "edid": "WeapOffhandDaedricMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/daedric/mace (offhand).nif"}
+{"fid": "0x04102AD6", "sig": "ARMO", "edid": "WeapOffhandDaedricWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/daedric/waraxe (offhand).nif"}
+{"fid": "0x04102AD6", "sig": "ARMO", "edid": "WeapOffhandDaedricWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/daedric/waraxe (offhand).nif"}
+{"fid": "0x04102AD7", "sig": "ARMO", "edid": "WeapOffhandDwarvenDagger", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/dwarven/dagger (offhand).nif"}
+{"fid": "0x04102AD8", "sig": "ARMO", "edid": "WeapOffhandDwarvenLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/dwarven/longsword (offhand).nif"}
+{"fid": "0x04102AD8", "sig": "ARMO", "edid": "WeapOffhandDwarvenLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/dwarven/longsword (offhand).nif"}
+{"fid": "0x04102AD9", "sig": "ARMO", "edid": "WeapOffhandDwarvenMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/dwarven/mace (offhand).nif"}
+{"fid": "0x04102AD9", "sig": "ARMO", "edid": "WeapOffhandDwarvenMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/dwarven/mace (offhand).nif"}
+{"fid": "0x04102ADA", "sig": "ARMO", "edid": "WeapOffhandDwarvenShortSword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/dwarven/shortsword (offhand).nif"}
+{"fid": "0x04102ADB", "sig": "ARMO", "edid": "WeapOffhandDwarvenWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/dwarven/waraxe (offhand).nif"}
+{"fid": "0x04102ADB", "sig": "ARMO", "edid": "WeapOffhandDwarvenWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/dwarven/waraxe (offhand).nif"}
+{"fid": "0x04102ADD", "sig": "ARMO", "edid": "WeapOffhandEbonyLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/ebony/longsword (offhand).nif"}
+{"fid": "0x04102ADD", "sig": "ARMO", "edid": "WeapOffhandEbonyLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/ebony/longsword (offhand).nif"}
+{"fid": "0x04102ADE", "sig": "ARMO", "edid": "WeapOffhandEbonyMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/ebony/mace (offhand).nif"}
+{"fid": "0x04102ADE", "sig": "ARMO", "edid": "WeapOffhandEbonyMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/ebony/mace (offhand).nif"}
+{"fid": "0x04102AE0", "sig": "ARMO", "edid": "WeapOffhandEbonyWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/ebony/waraxe (offhand).nif"}
+{"fid": "0x04102AE0", "sig": "ARMO", "edid": "WeapOffhandEbonyWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/ebony/waraxe (offhand).nif"}
+{"fid": "0x04102AE1", "sig": "ARMO", "edid": "WeapOffhandElvenDagger", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/elven/dagger (offhand).nif"}
+{"fid": "0x04102AE2", "sig": "ARMO", "edid": "WeapOffhandElvenLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/elven/longsword (offhand).nif"}
+{"fid": "0x04102AE2", "sig": "ARMO", "edid": "WeapOffhandElvenLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/elven/longsword (offhand).nif"}
+{"fid": "0x04102AE3", "sig": "ARMO", "edid": "WeapOffhandElvenMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/elven/mace (offhand).nif"}
+{"fid": "0x04102AE3", "sig": "ARMO", "edid": "WeapOffhandElvenMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/elven/mace (offhand).nif"}
+{"fid": "0x04102AE5", "sig": "ARMO", "edid": "WeapOffhandElvenWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/elven/waraxe (offhand).nif"}
+{"fid": "0x04102AE5", "sig": "ARMO", "edid": "WeapOffhandElvenWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/elven/waraxe (offhand).nif"}
+{"fid": "0x04102AE7", "sig": "ARMO", "edid": "WeapOffhandGlassLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/glass/longsword (offhand).nif"}
+{"fid": "0x04102AE7", "sig": "ARMO", "edid": "WeapOffhandGlassLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/glass/longsword (offhand).nif"}
+{"fid": "0x04102AE8", "sig": "ARMO", "edid": "WeapOffhandGlassMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/glass/mace (offhand).nif"}
+{"fid": "0x04102AE8", "sig": "ARMO", "edid": "WeapOffhandGlassMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/glass/mace (offhand).nif"}
+{"fid": "0x04102AEA", "sig": "ARMO", "edid": "WeapOffhandGlassWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/glass/waraxe (offhand).nif"}
+{"fid": "0x04102AEA", "sig": "ARMO", "edid": "WeapOffhandGlassWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/glass/waraxe (offhand).nif"}
+{"fid": "0x04102AEB", "sig": "ARMO", "edid": "WeapOffhandIronDagger", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/dagger (offhand).nif"}
+{"fid": "0x04102AEC", "sig": "ARMO", "edid": "WeapOffhandIronLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/longsword (offhand).nif"}
+{"fid": "0x04102AEC", "sig": "ARMO", "edid": "WeapOffhandIronLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/longsword (offhand).nif"}
+{"fid": "0x04102AED", "sig": "ARMO", "edid": "WeapOffhandIronMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AED", "sig": "ARMO", "edid": "WeapOffhandIronMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AEE", "sig": "ARMO", "edid": "WeapOffhandIronShortSword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/shortsword (offhand).nif"}
+{"fid": "0x04102AEF", "sig": "ARMO", "edid": "WeapOffhandIronWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x04102AEF", "sig": "ARMO", "edid": "WeapOffhandIronWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x04102AF0", "sig": "ARMO", "edid": "WeapOffhandIronDaggerFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/dagger (offhand).nif"}
+{"fid": "0x04102AF0", "sig": "ARMO", "edid": "WeapOffhandIronDaggerFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/dagger (offhand).nif"}
+{"fid": "0x04102AF1", "sig": "ARMO", "edid": "WeapOffhandIronDaggerRusty", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/dagger (offhand).nif"}
+{"fid": "0x04102AF1", "sig": "ARMO", "edid": "WeapOffhandIronDaggerRusty", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/dagger (offhand).nif"}
+{"fid": "0x04102AF2", "sig": "ARMO", "edid": "WeapOffhandIronLongswordFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/longsword (offhand).nif"}
+{"fid": "0x04102AF2", "sig": "ARMO", "edid": "WeapOffhandIronLongswordFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/longsword (offhand).nif"}
+{"fid": "0x04102AF3", "sig": "ARMO", "edid": "WeapOffhandIronMaceFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AF3", "sig": "ARMO", "edid": "WeapOffhandIronMaceFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AF4", "sig": "ARMO", "edid": "WeapOffhandIronShortSwordFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/shortsword (offhand).nif"}
+{"fid": "0x04102AF4", "sig": "ARMO", "edid": "WeapOffhandIronShortSwordFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/shortsword (offhand).nif"}
+{"fid": "0x04102AF5", "sig": "ARMO", "edid": "WeapOffhandIronMaceRusty", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AF5", "sig": "ARMO", "edid": "WeapOffhandIronMaceRusty", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/mace (offhand).nif"}
+{"fid": "0x04102AF6", "sig": "ARMO", "edid": "WeapOffhandIronShortSwordRusty", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/shortsword (offhand).nif"}
+{"fid": "0x04102AF6", "sig": "ARMO", "edid": "WeapOffhandIronShortSwordRusty", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/shortsword (offhand).nif"}
+{"fid": "0x04102AF7", "sig": "ARMO", "edid": "WeapOffhandIronWarAxeRusty", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x04102AF7", "sig": "ARMO", "edid": "WeapOffhandIronWarAxeRusty", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/iron/waraxe (offhand).nif"}
+{"fid": "0x04102AF8", "sig": "ARMO", "edid": "WeapOffhandSilverDagger", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/silver/dagger (offhand).nif"}
+{"fid": "0x04102AF9", "sig": "ARMO", "edid": "WeapOffhandSilverLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/silver/longsword (offhand).nif"}
+{"fid": "0x04102AF9", "sig": "ARMO", "edid": "WeapOffhandSilverLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/silver/longsword (offhand).nif"}
+{"fid": "0x04102AFA", "sig": "ARMO", "edid": "WeapOffhandSilverMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/silver/mace (offhand).nif"}
+{"fid": "0x04102AFA", "sig": "ARMO", "edid": "WeapOffhandSilverMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/silver/mace (offhand).nif"}
+{"fid": "0x04102AFB", "sig": "ARMO", "edid": "WeapOffhandSilverShortSword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/silver/shortsword (offhand).nif"}
+{"fid": "0x04102AFC", "sig": "ARMO", "edid": "WeapOffhandSilverWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/silver/waraxe (offhand).nif"}
+{"fid": "0x04102AFC", "sig": "ARMO", "edid": "WeapOffhandSilverWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/silver/waraxe (offhand).nif"}
+{"fid": "0x04102AFD", "sig": "ARMO", "edid": "WeapOffhandSteelDagger", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/dagger (offhand).nif"}
+{"fid": "0x04102AFE", "sig": "ARMO", "edid": "WeapOffhandSteelDaggerFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/daggerfine (offhand).nif"}
+{"fid": "0x04102AFE", "sig": "ARMO", "edid": "WeapOffhandSteelDaggerFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/daggerfine (offhand).nif"}
+{"fid": "0x04102AFF", "sig": "ARMO", "edid": "WeapOffhandSteelLongsword", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/longsword (offhand).nif"}
+{"fid": "0x04102AFF", "sig": "ARMO", "edid": "WeapOffhandSteelLongsword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/longsword (offhand).nif"}
+{"fid": "0x04102B00", "sig": "ARMO", "edid": "WeapOffhandSteelLongswordFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/longswordfine (offhand).nif"}
+{"fid": "0x04102B00", "sig": "ARMO", "edid": "WeapOffhandSteelLongswordFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/longswordfine (offhand).nif"}
+{"fid": "0x04102B01", "sig": "ARMO", "edid": "WeapOffhandSteelMace", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/mace (offhand).nif"}
+{"fid": "0x04102B01", "sig": "ARMO", "edid": "WeapOffhandSteelMace", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/mace (offhand).nif"}
+{"fid": "0x04102B02", "sig": "ARMO", "edid": "WeapOffhandSteelMaceFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/macefine (offhand).nif"}
+{"fid": "0x04102B02", "sig": "ARMO", "edid": "WeapOffhandSteelMaceFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/macefine (offhand).nif"}
+{"fid": "0x04102B03", "sig": "ARMO", "edid": "WeapOffhandSteelShortSword", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/shortsword (offhand).nif"}
+{"fid": "0x04102B04", "sig": "ARMO", "edid": "WeapOffhandSteelShortSwordFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/shortswordfine (offhand).nif"}
+{"fid": "0x04102B04", "sig": "ARMO", "edid": "WeapOffhandSteelShortSwordFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/shortswordfine (offhand).nif"}
+{"fid": "0x04102B05", "sig": "ARMO", "edid": "WeapOffhandSteelWarAxe", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/waraxe (offhand).nif"}
+{"fid": "0x04102B05", "sig": "ARMO", "edid": "WeapOffhandSteelWarAxe", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/waraxe (offhand).nif"}
+{"fid": "0x04102B06", "sig": "ARMO", "edid": "WeapOffhandSteelWarAxeFine", "subrec": "MODL", "path": "meshes/weapons/offhand weapons/steel/waraxefine (offhand).nif"}
+{"fid": "0x04102B06", "sig": "ARMO", "edid": "WeapOffhandSteelWarAxeFine", "subrec": "MOD2", "path": "meshes/weapons/offhand weapons/steel/waraxefine (offhand).nif"}
+{"fid": "0x04007DD8", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShoes", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/m/shoes.nif"}
+{"fid": "0x04007DD8", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShoes", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/m/shoes_gnd.nif"}
+{"fid": "0x04007DD8", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShoes", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/common/f/shoes.nif"}
+{"fid": "0x04007DD8", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShoes", "subrec": "MOD4", "path": "meshes/clothes/silverdragon/common/f/shoes_gnd.nif"}
+{"fid": "0x04007DD9", "sig": "CLOT", "edid": "00SilverDragonGlovesLeather", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/m/glovesleather.nif"}
+{"fid": "0x04007DD9", "sig": "CLOT", "edid": "00SilverDragonGlovesLeather", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/m/glovesleather_gnd.nif"}
+{"fid": "0x04007DD9", "sig": "CLOT", "edid": "00SilverDragonGlovesLeather", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/common/f/glovesleather.nif"}
+{"fid": "0x04007DDB", "sig": "CLOT", "edid": "sOOOSilverDragonRingRuby", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/ringruby.nif"}
+{"fid": "0x04007DDB", "sig": "CLOT", "edid": "sOOOSilverDragonRingRuby", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/ringruby.nif"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/accesoires uni/silvring.nif"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvcirclet_gnd.nif"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/accesoires uni/silvring.nif"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvcirclet_gnd.nif"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/accesoires uni/vermring.nif"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermcirclet_gnd.nif"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/accesoires uni/vermring.nif"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermcirclet_gnd.nif"}
+{"fid": "0x0400990D", "sig": "CLOT", "edid": "HTBKDVermillionRobe", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermrobe.nif"}
+{"fid": "0x0400990D", "sig": "CLOT", "edid": "HTBKDVermillionRobe", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400990D", "sig": "CLOT", "edid": "HTBKDVermillionRobe", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermrobe.nif"}
+{"fid": "0x0400990D", "sig": "CLOT", "edid": "HTBKDVermillionRobe", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400990E", "sig": "CLOT", "edid": "HTBKDVermillionGloves", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermgloves.nif"}
+{"fid": "0x0400990E", "sig": "CLOT", "edid": "HTBKDVermillionGloves", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermgloves_gnd.nif"}
+{"fid": "0x0400990E", "sig": "CLOT", "edid": "HTBKDVermillionGloves", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermgloves.nif"}
+{"fid": "0x0400990E", "sig": "CLOT", "edid": "HTBKDVermillionGloves", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermgloves_gnd.nif"}
+{"fid": "0x0400990F", "sig": "CLOT", "edid": "HTBKDVermillionHood", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermhood.nif"}
+{"fid": "0x0400990F", "sig": "CLOT", "edid": "HTBKDVermillionHood", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermhood_gnd.nif"}
+{"fid": "0x0400990F", "sig": "CLOT", "edid": "HTBKDVermillionHood", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermhood.nif"}
+{"fid": "0x0400990F", "sig": "CLOT", "edid": "HTBKDVermillionHood", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermhood_gnd.nif"}
+{"fid": "0x0400A08F", "sig": "CLOT", "edid": "HTBKDVermillionShoes", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermshoes.nif"}
+{"fid": "0x0400A08F", "sig": "CLOT", "edid": "HTBKDVermillionShoes", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400A08F", "sig": "CLOT", "edid": "HTBKDVermillionShoes", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermshoes.nif"}
+{"fid": "0x0400A08F", "sig": "CLOT", "edid": "HTBKDVermillionShoes", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400A090", "sig": "CLOT", "edid": "HTBKDSilverthornRobe", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvrobe.nif"}
+{"fid": "0x0400A090", "sig": "CLOT", "edid": "HTBKDSilverthornRobe", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400A090", "sig": "CLOT", "edid": "HTBKDSilverthornRobe", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvrobe.nif"}
+{"fid": "0x0400A090", "sig": "CLOT", "edid": "HTBKDSilverthornRobe", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400A091", "sig": "CLOT", "edid": "HTBKDSilverthornHood", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvhood.nif"}
+{"fid": "0x0400A091", "sig": "CLOT", "edid": "HTBKDSilverthornHood", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvhood_gnd.nif"}
+{"fid": "0x0400A091", "sig": "CLOT", "edid": "HTBKDSilverthornHood", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvhood.nif"}
+{"fid": "0x0400A091", "sig": "CLOT", "edid": "HTBKDSilverthornHood", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvhood_gnd.nif"}
+{"fid": "0x0400A092", "sig": "CLOT", "edid": "HTBKDSilverthornGloves", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvgloves.nif"}
+{"fid": "0x0400A092", "sig": "CLOT", "edid": "HTBKDSilverthornGloves", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvgloves_gnd.nif"}
+{"fid": "0x0400A092", "sig": "CLOT", "edid": "HTBKDSilverthornGloves", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvgloves.nif"}
+{"fid": "0x0400A092", "sig": "CLOT", "edid": "HTBKDSilverthornGloves", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvgloves_gnd.nif"}
+{"fid": "0x0400A093", "sig": "CLOT", "edid": "HTBKDSilverthornShoes", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvshoes.nif"}
+{"fid": "0x0400A093", "sig": "CLOT", "edid": "HTBKDSilverthornShoes", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400A093", "sig": "CLOT", "edid": "HTBKDSilverthornShoes", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvshoes.nif"}
+{"fid": "0x0400A093", "sig": "CLOT", "edid": "HTBKDSilverthornShoes", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400AF06", "sig": "CLOT", "edid": "HTBVSVermillionOutfit01", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermoutfit01.nif"}
+{"fid": "0x0400AF06", "sig": "CLOT", "edid": "HTBVSVermillionOutfit01", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400AF06", "sig": "CLOT", "edid": "HTBVSVermillionOutfit01", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermoutfit01.nif"}
+{"fid": "0x0400AF06", "sig": "CLOT", "edid": "HTBVSVermillionOutfit01", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x0400AF07", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit01", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvoutfit01.nif"}
+{"fid": "0x0400AF07", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit01", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400AF07", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit01", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvoutfit01.nif"}
+{"fid": "0x0400AF07", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit01", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x0400E4D5", "sig": "CLOT", "edid": "00SilverDragonKnightRobe", "subrec": "MODL", "path": "meshes/clothes/silverdragon/knight/m/robe.nif"}
+{"fid": "0x0400E4D5", "sig": "CLOT", "edid": "00SilverDragonKnightRobe", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/knight/m/robe_gnd.nif"}
+{"fid": "0x0400E4D5", "sig": "CLOT", "edid": "00SilverDragonKnightRobe", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/knight/f/robe.nif"}
+{"fid": "0x0400E4D5", "sig": "CLOT", "edid": "00SilverDragonKnightRobe", "subrec": "MOD4", "path": "meshes/clothes/silverdragon/knight/f/robe_gnd.nif"}
+{"fid": "0x04010C09", "sig": "CLOT", "edid": "sOOOSilverDragonGlovesSilver", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/m/glovessilver.nif"}
+{"fid": "0x04010C09", "sig": "CLOT", "edid": "sOOOSilverDragonGlovesSilver", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/m/glovessilver_gnd.nif"}
+{"fid": "0x04010C09", "sig": "CLOT", "edid": "sOOOSilverDragonGlovesSilver", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/common/f/glovessilver.nif"}
+{"fid": "0x04100FAC", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShirt", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/m/shirt.nif"}
+{"fid": "0x04100FAC", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShirt", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/m/shirt_gnd.nif"}
+{"fid": "0x04100FAC", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShirt", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/common/f/shirt.nif"}
+{"fid": "0x04100FAC", "sig": "CLOT", "edid": "sOOOSilverDragonElegantShirt", "subrec": "MOD4", "path": "meshes/clothes/silverdragon/common/f/shirt_gnd.nif"}
+{"fid": "0x04100FAD", "sig": "CLOT", "edid": "sOOOSilverDragonElegantPants", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/m/pants.nif"}
+{"fid": "0x04100FAD", "sig": "CLOT", "edid": "sOOOSilverDragonElegantPants", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/m/pants_gnd.nif"}
+{"fid": "0x04100FAD", "sig": "CLOT", "edid": "sOOOSilverDragonElegantPants", "subrec": "MOD3", "path": "meshes/clothes/silverdragon/common/f/pants.nif"}
+{"fid": "0x04100FAD", "sig": "CLOT", "edid": "sOOOSilverDragonElegantPants", "subrec": "MOD4", "path": "meshes/clothes/silverdragon/common/f/pants_gnd.nif"}
+{"fid": "0x04100FAE", "sig": "CLOT", "edid": "sOOOSilverDragonAmulet", "subrec": "MODL", "path": "meshes/clothes/silverdragon/common/amulet.nif"}
+{"fid": "0x04100FAE", "sig": "CLOT", "edid": "sOOOSilverDragonAmulet", "subrec": "MOD2", "path": "meshes/clothes/silverdragon/common/amulet_gnd.nif"}
+{"fid": "0x041010B1", "sig": "CLOT", "edid": "HTBVSVermillionOutfit02", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/m/vermoutfit02.nif"}
+{"fid": "0x041010B1", "sig": "CLOT", "edid": "HTBVSVermillionOutfit02", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x041010B1", "sig": "CLOT", "edid": "HTBVSVermillionOutfit02", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/f/vermoutfit02.nif"}
+{"fid": "0x041010B1", "sig": "CLOT", "edid": "HTBVSVermillionOutfit02", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermrobe_gnd.nif"}
+{"fid": "0x041010B2", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit02", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/m/silvoutfit02.nif"}
+{"fid": "0x041010B2", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit02", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x041010B2", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit02", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/f/silvoutfit02.nif"}
+{"fid": "0x041010B2", "sig": "CLOT", "edid": "HTBVSSilverthornOutfit02", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvrobe_gnd.nif"}
+{"fid": "0x040133B2", "sig": "CLOT", "edid": "AA1SkaerbaekTalisman", "subrec": "MODL", "path": "meshes/soooequipment/clothing/darnorasb.nif"}
+{"fid": "0x040133B2", "sig": "CLOT", "edid": "AA1SkaerbaekTalisman", "subrec": "MOD3", "path": "meshes/clothes/amulet/darnorasb.nif"}
+{"fid": "0x0400C609", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton02", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_blue.nif"}
+{"fid": "0x0400C60A", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton03", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_pink.nif"}
+{"fid": "0x0400C60B", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton04", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_red.nif"}
+{"fid": "0x0400CD79", "sig": "STAT", "edid": "HTBStrotiAFStatueSmall02", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/misc/arstatuesmall01newaranmathi.nif"}
+{"fid": "0x04013332", "sig": "STAT", "edid": "AVAIcrystalplanter", "subrec": "MODL", "path": "meshes/meo/clutter/ayleid/ayleidplanter.nif"}
+{"fid": "0x04102DBF", "sig": "STAT", "edid": "AVAIbravilpostED", "subrec": "MODL", "path": "meshes/architecture/bravil/bravilposted.nif"}
+{"fid": "0x04013338", "sig": "STAT", "edid": "AVAICauldron02ST", "subrec": "MODL", "path": "meshes/clutter/kalcauldrons/emptyar.nif"}
+{"fid": "0x04013A0D", "sig": "STAT", "edid": "AVAIcounterend01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arcounterend01.nif"}
+{"fid": "0x04102DC0", "sig": "STAT", "edid": "AVAIcountermiddle01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arcountermiddle01.nif"}
+{"fid": "0x04013A17", "sig": "STAT", "edid": "AVAIwallshelf01empty", "subrec": "MODL", "path": "meshes/kalcustom/bookshelves/ar/arwallshelf01empty.nif"}
+{"fid": "0x0400EF4A", "sig": "STAT", "edid": "AVAIWaterCircle512", "subrec": "MODL", "path": "meshes/architecture/water/avairiiwatercircle512.nif"}
+{"fid": "0x04014900", "sig": "STAT", "edid": "AVAItable01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/artable01test.nif"}
+{"fid": "0x04014901", "sig": "STAT", "edid": "AVAIsquare01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arsquare01.nif"}
+{"fid": "0x04014903", "sig": "STAT", "edid": "AVAIstool01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arstool01.nif"}
+{"fid": "0x04001113", "sig": "WEAP", "edid": "WeapHeavenFuryLongswordOld", "subrec": "MODL", "path": "meshes/weapons/lpotd/wrath/longsword.nif"}
+{"fid": "0x040014C0", "sig": "WEAP", "edid": "sOOOJojjoDragonClaw", "subrec": "MODL", "path": "meshes/weapons/dragonclaw/dragonclawsword.nif"}
+{"fid": "0x0400271A", "sig": "WEAP", "edid": "RSLegendMother", "subrec": "MODL", "path": "meshes/realswords/nord/mothersword.nif"}
+{"fid": "0x040034FB", "sig": "WEAP", "edid": "BluntAdamantiumHandAxeWaraxe", "subrec": "MODL", "path": "meshes/realswords/orc/handaxe02.nif"}
+{"fid": "0x04003501", "sig": "WEAP", "edid": "RSOrcBluntAdamantiumHexMace2HWarhammer", "subrec": "MODL", "path": "meshes/blunt set/hexmace012horc.nif"}
+{"fid": "0x04008C57", "sig": "WEAP", "edid": "WeaponSabreUniqueBlackSilver", "subrec": "MODL", "path": "meshes/weapons/adonnay/longblades/blacksilver_sabre_2h.nif"}
+{"fid": "0x04008C58", "sig": "WEAP", "edid": "WeaponSabreUniqueBlueSilver", "subrec": "MODL", "path": "meshes/weapons/adonnay/warblades/bluesilver_1h.nif"}
+{"fid": "0x04008C60", "sig": "WEAP", "edid": "WeaponSabreUniqueRanger", "subrec": "MODL", "path": "meshes/weapons/adonnay/warblades/greensilver_1h.nif"}
+{"fid": "0x04008C61", "sig": "WEAP", "edid": "WeaponSabreUniqueWarden", "subrec": "MODL", "path": "meshes/weapons/adonnay/scimitar2/darkwoodgold.nif"}
+{"fid": "0x04008C62", "sig": "WEAP", "edid": "WeaponSabreUniqueCourtBrightwood", "subrec": "MODL", "path": "meshes/weapons/adonnay/courtblades/tree_2h.nif"}
+{"fid": "0x0400AEE3", "sig": "WEAP", "edid": "AOHWLongswordFlame", "subrec": "MODL", "path": "meshes/weapons/lpotd/wrath/longswordflame.nif"}
+{"fid": "0x0401016F", "sig": "WEAP", "edid": "WACPickAxe", "subrec": "MODL", "path": "meshes/wac/pickaxe.nif"}
+{"fid": "0x04017537", "sig": "WEAP", "edid": "sOOORSNorseVolkothMAL", "subrec": "MODL", "path": "meshes/realswords/orc/mvolkoth.nif"}
+{"fid": "0x041010AA", "sig": "WEAP", "edid": "aaNicosToAsingle", "subrec": "MODL", "path": "meshes/realswords/imperial/toa single.nif"}
+{"fid": "0x0410469A", "sig": "WEAP", "edid": "aaAbyss", "subrec": "MODL", "path": "meshes/weapons/crystal/abyss.nif"}
+{"fid": "0x04000EE9", "sig": "CREA", "edid": "OOOCreatureWaterPlant", "subrec": "MODL", "path": "meshes/creatures/lbwaterdragon/skeleton.nif"}
+{"fid": "0x0410469F", "sig": "CREA", "edid": "aaReaper", "subrec": "MODL", "path": "meshes/creatures/reaper/skeleton.nif"}

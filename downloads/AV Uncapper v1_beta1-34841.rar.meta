@@ -1,6 +1,7 @@
 [General]
-installed = true
-gameName = oblivion
-modID = 34841
-fileID = 69002
-removed = true
+installed=true
+gameName=oblivion
+modID=34841
+fileID=69002
+removed=true
+uninstalled=true

@@ -1,0 +1,494 @@
+{"sig":"SCPT","edid":"NDBrellinSCRIPT","fid":"19000D36","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDGukimirSCRIPT","fid":"19000D57","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDLathonSCRIPT","fid":"19000D58","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDSirThedretSCRIPT","fid":"19000D59","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDAreldurSCRIPT","fid":"19000D5A","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDAvitaVesniaSCRIPT","fid":"19000D63","master":"Knights.esp"}
+{"sig":"SCPT","edid":"NDCarodusOholinSCRIPT","fid":"19000D87","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace8","fid":"19000DCE","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace7","fid":"19000DCF","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword8","fid":"19000DD3","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword7","fid":"19000DD4","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorShield5","fid":"19000DD8","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorShield4","fid":"19000DD9","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorBoots5","fid":"19000DDD","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorBoots4","fid":"19000DDE","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorGreaves5","fid":"19000DE2","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorGreaves4","fid":"19000DE3","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorCuirass5","fid":"19000DE7","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorCuirass4","fid":"19000DE8","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorHelmet5","fid":"19000DEC","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorHelmet4","fid":"19000DED","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorGauntlets5","fid":"19000DF1","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchArmorGauntlets4","fid":"19000DF2","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace2","fid":"19000DC4","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace3","fid":"19000DC5","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace4","fid":"19000DD2","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace5","fid":"19000DD1","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponMace6","fid":"19000DD0","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword2","fid":"19000DC2","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword3","fid":"19000DC3","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword4","fid":"19000DD7","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword5","fid":"19000DD6","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchWeaponSword6","fid":"19000DD5","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchUmarilSword8","fid":"19000DC7","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchUmarilSword7","fid":"19000DC8","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchUmarilSword6","fid":"19000DC9","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchAuroranAxe8","fid":"19000DBB","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchAuroranAxe7","fid":"19000DBC","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchAuroranAxe6","fid":"19000DBD","master":"Knights.esp"}
+{"sig":"ENCH","edid":"NDEnchAuroranAxe5","fid":"19000DBE","master":"Knights.esp"}
+{"sig":"SPEL","edid":"sOOOReflect","fid":"24000ED4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"SPEL","edid":"NDAbGhostResist","fid":"19000DF6","master":"Knights.esp"}
+{"sig":"SPEL","edid":"ND06Curse","fid":"19000E26","master":"Knights.esp"}
+{"sig":"SPEL","edid":"NDAbArmorCumulative","fid":"19000E01","master":"Knights.esp"}
+{"sig":"SPEL","edid":"NDAbUmarilResist","fid":"19000E15","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyGauntlets5","fid":"19000EB3","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyCuirass5","fid":"19000EB4","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyBoots5","fid":"19000EB5","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyHelmet4","fid":"19000EB7","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyGauntlets4","fid":"19000EB9","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyCuirass4","fid":"19000EBA","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyBoots4","fid":"19000EBB","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyShield5","fid":"19000EB0","master":"Knights.esp"}
+{"sig":"ARMO","edid":"NDArmorHeavyHelmet5","fid":"19000EB1","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe2Steel","fid":"19000F2D","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe5Elven","fid":"19000F2E","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword2","fid":"19000F30","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword3","fid":"19000F31","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace2","fid":"19000F32","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace3","fid":"19000F33","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword7","fid":"19000F3D","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword6","fid":"19000F3E","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword5","fid":"19000F3F","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace6","fid":"19000F40","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace5","fid":"19000F41","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace4","fid":"19000F42","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword4","fid":"19000F43","master":"Knights.esp"}
+{"sig":"WEAP","edid":"ND08WeaponSword4","fid":"19000F44","master":"Knights.esp"}
+{"sig":"WEAP","edid":"ND08WeaponSword3","fid":"19000F45","master":"Knights.esp"}
+{"sig":"WEAP","edid":"ND08WeaponSword2","fid":"19000F46","master":"Knights.esp"}
+{"sig":"WEAP","edid":"ND08WeaponSword1","fid":"19000F47","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace7","fid":"19000F48","master":"Knights.esp"}
+{"sig":"WEAP","edid":"ND08WeaponSword5","fid":"19000F49","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponSword8","fid":"19000F4A","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDWeaponMace8","fid":"19000F4B","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymoreReward6","fid":"19000F21","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymoreReward7","fid":"19000F22","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymoreReward8","fid":"19000F23","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymore8","fid":"19000F35","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymore7","fid":"19000F36","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDUmarilClaymore6","fid":"19000F37","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe8Daedric","fid":"19000F28","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe7Ebony","fid":"19000F29","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe6Glass","fid":"19000F2A","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe4Dwarven","fid":"19000F2B","master":"Knights.esp"}
+{"sig":"WEAP","edid":"NDAuroranBattleAxe3Silver","fid":"19000F2C","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDJesper","fid":"19000F7A","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDCarodusOholin","fid":"19000F7B","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirCaius","fid":"19000F7C","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDProphet","fid":"19000F7D","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirGregory","fid":"19000F7E","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirRoderic","fid":"19000F7F","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirCasimir","fid":"19000F80","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirRalvas","fid":"19000F81","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirHenrik","fid":"19000F82","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirTorolf","fid":"19000F83","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDLathon","fid":"19000F84","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDAvitaVesnia","fid":"19000F85","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirJuncan","fid":"19000F86","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirAmiel","fid":"19000F87","master":"Knights.esp"}
+{"sig":"NPC_","edid":"ND01PelinalGhost","fid":"19000F88","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSeleneDuronia","fid":"19000F63","master":"Knights.esp"}
+{"sig":"NPC_","edid":"UlfgarFogEye","fid":"0000A27B","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"Maelona","fid":"0000A2A2","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"AnvilGuardCityPostDay02","fid":"0000BFFB","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"AnvilGuardCityPostNight02","fid":"0000BFFC","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"AvrusAdas","fid":"00034E6A","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"Aenvir","fid":"00035726","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"Gogan","fid":"0003AF03","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"BanditHighwayman03","fid":"000C5229","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"AnvilGuardCityPostDay02Fem","fid":"0100FACA","master":"Oscuro's_Oblivion_Overhaul.esm"}
+{"sig":"NPC_","edid":"NDSergiusTurrianus","fid":"19000F4C","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight8Generic","fid":"19000F54","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight7Generic","fid":"19000F55","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight6Generic","fid":"19000F56","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight5Generic","fid":"19000F57","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight4Generic","fid":"19000F58","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight3Generic","fid":"19000F59","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight2Generic","fid":"19000F5A","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKnight1Generic","fid":"19000F5B","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDAronVerethi","fid":"19000F5C","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDIniusColus","fid":"19000F5D","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDEsbern","fid":"19000F5E","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKinther","fid":"19000F5F","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDBeemKiurz","fid":"19000F60","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDErisSenim","fid":"19000F61","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDAmragor","fid":"19000F62","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDBrellin","fid":"19000F67","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirBerich","fid":"19000F6A","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDGukimir","fid":"19000F6B","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDGeimund","fid":"19000F6C","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDAreldur","fid":"19000F6D","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDKellen","fid":"19000F6E","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDSirThedret","fid":"19000F76","master":"Knights.esp"}
+{"sig":"NPC_","edid":"ND05ConjurerExterior","fid":"19000F78","master":"Knights.esp"}
+{"sig":"NPC_","edid":"NDStanet","fid":"19000F79","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Auroran4","fid":"19000F8F","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Auroran3","fid":"19000F90","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Auroran2","fid":"19000F91","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Wraith5","fid":"19000F96","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Wraith4","fid":"19000F97","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Wraith3","fid":"19000F98","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Wraith2","fid":"19000F99","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril8","fid":"19000F9B","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril7","fid":"19000F9C","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril6","fid":"19000F9D","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril5","fid":"19000F9E","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril4","fid":"19000F9F","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril3","fid":"19000FA0","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDUmaril2","fid":"19000FA1","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDAuroran5","fid":"19000FA2","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDAuroran4","fid":"19000FA3","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDAuroran3","fid":"19000FA4","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDAuroran2","fid":"19000FA6","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDPrioryHorsePaint","fid":"19000FA7","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDPrioryHorseBay","fid":"19000FA8","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDPrioryHorseChestnut","fid":"19000FA9","master":"Knights.esp"}
+{"sig":"CREA","edid":"NDKynarethSpriggan","fid":"19000FAD","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND03Bear","fid":"19000FB0","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Wraith1","fid":"19000FB2","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND04Auroran5","fid":"19000F89","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND04Auroran4","fid":"19000F8A","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND04Auroran3","fid":"19000F8B","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND04Auroran2","fid":"19000F8C","master":"Knights.esp"}
+{"sig":"CREA","edid":"ND08Auroran5","fid":"19000F8E","master":"Knights.esp"}
+{"sig":"LVLC","edid":"NDLL1AuroranLvl100","fid":"19000FBD","master":"Knights.esp"}
+{"sig":"LVLC","edid":"NDLL1Auroran100","fid":"19000FBE","master":"Knights.esp"}
+{"sig":"LVLC","edid":"NDLL1UmarilSpiritLvl100","fid":"19000FB5","master":"Knights.esp"}
+{"sig":"LVLC","edid":"sOOOKUndeadBossVanua","fid":"240037CC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLC","edid":"sOOOKUndeadVanua","fid":"240037CD","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"LVLC","edid":"ND10LLAuroranLieutenant","fid":"19000FB6","master":"Knights.esp"}
+{"sig":"LVLC","edid":"ND10LLAuroranOrbStay","fid":"19000FB7","master":"Knights.esp"}
+{"sig":"LVLC","edid":"ND10LLAuroranOrbRun","fid":"19000FB8","master":"Knights.esp"}
+{"sig":"LVLC","edid":"ND10LLAuroranBattle","fid":"19000FB9","master":"Knights.esp"}
+{"sig":"LVLC","edid":"NDLL1UmarilRealLvl100","fid":"19000FBC","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDUmarilSwordReward100","fid":"19000FC3","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyGreaves","fid":"19000FCD","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyHelmet","fid":"19000FCC","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyShield","fid":"19000FCB","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyCuirass","fid":"19000FCF","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyBoots","fid":"19000FD0","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorHeavyGauntlets","fid":"19000FCE","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightBoots","fid":"19000FD2","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightCuirass","fid":"19000FC5","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightGauntlets","fid":"19000FC8","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightGreaves","fid":"19000FC7","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightHelmet","fid":"19000FC6","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0ArmorLightShield","fid":"19000FD1","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0AuroranWeapon100","fid":"19000FC4","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0LootGems25","fid":"19000FC2","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0WeaponMaceLvl100","fid":"19000FC9","master":"Knights.esp"}
+{"sig":"LVLI","edid":"NDLL0WeaponSwordLvl100","fid":"19000FCA","master":"Knights.esp"}
+{"sig":"CELL","edid":"NDFortBulwark02","fid":"19001432","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900163E","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900163F","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001640","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001641","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001642","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"24000ED8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EDA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EDD","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24002367","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240037CF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240037D0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400467B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"UnderpallCave05","fid":"0003E22F","master":"Oblivion.esm"}
+{"sig":"ACRE","edid":"ND08Wraith5REF","fid":"19001205","master":"Knights.esp"}
+{"sig":"ACRE","edid":"ND08Wraith4REF","fid":"19001206","master":"Knights.esp"}
+{"sig":"ACRE","edid":"ND08Wraith3REF","fid":"19001207","master":"Knights.esp"}
+{"sig":"ACRE","edid":"ND08Wraith2REF","fid":"19001208","master":"Knights.esp"}
+{"sig":"REFR","edid":"ND08WeaponSword5REF","fid":"19001209","master":"Knights.esp"}
+{"sig":"REFR","edid":"ND08WeaponSword4REF","fid":"1900120A","master":"Knights.esp"}
+{"sig":"REFR","edid":"ND08WeaponSword3REF","fid":"1900120B","master":"Knights.esp"}
+{"sig":"REFR","edid":"ND08WeaponSword2REF","fid":"1900120C","master":"Knights.esp"}
+{"sig":"REFR","edid":"ND08WeaponSword1REF","fid":"1900120D","master":"Knights.esp"}
+{"sig":"ACRE","edid":"ND08Wraith1REF","fid":"1900120E","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"0004CDC2","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"0004CB68","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"UnderpallCave02","fid":"0003E231","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"NDVanua","fid":"19001850","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900185A","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900185B","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900190B","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900190C","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900190D","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900190E","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900190F","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001910","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001911","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19001912","master":"Knights.esp"}
+{"sig":"CELL","edid":"NDKynarethCave","fid":"19002214","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"24001C92","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"NDFortBulwark","fid":"19000FD6","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19000FF7","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190011E8","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190011E9","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190011EA","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190011EC","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"24000EDE","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EDF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240037D3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240037D5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24004677","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24004678","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24004679","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400467A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"NDVanua02","fid":"19001E1A","master":"Knights.esp"}
+{"sig":"REFR","edid":"NDVanuabaddy02REF","fid":"19001E2E","master":"Knights.esp"}
+{"sig":"REFR","edid":"NDVanuabaddy03REF","fid":"19001E2F","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900209F","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190020A0","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190020A1","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190020A2","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190020A3","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"190020CE","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002177","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002178","master":"Knights.esp"}
+{"sig":"CELL","edid":"NDVanua01","fid":"190024BE","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"24000ED6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000ED5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"190024CC","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002564","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002565","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002566","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002628","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"19002629","master":"Knights.esp"}
+{"sig":"CELL","edid":"UnderpallCrypt2","fid":"24003562","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"ACRE","edid":"VlindrelNEW","fid":"24000EEB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003564","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"CrusaderSwordNew3","fid":"240015C2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"CrusaderSwordNew2","fid":"240015C1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"CrusaderSwordNew","fid":"240015C0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"CrusaderSwordNew4","fid":"240015C3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"CrusaderSwordNew5","fid":"240015C4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400368D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400368C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400368A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003688","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003687","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003684","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003680","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400362E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400362D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400362C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400362A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003629","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003628","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003627","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003626","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003625","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003624","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003623","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003622","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003621","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003620","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400361A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003619","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003618","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003617","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003616","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003615","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003614","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003611","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003608","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003603","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035ED","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035EC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035EB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035EA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035E0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DE","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DD","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035DA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D7","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035D1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035CF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035CE","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B7","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035B0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AE","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AD","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035AA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A7","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240035A4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400359F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400359E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400359D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400359C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003591","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003590","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400358F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400358E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003589","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003588","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400357F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400357D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003579","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003578","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003576","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003570","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003568","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003567","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003566","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400362B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003565","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003696","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003695","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003693","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003691","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400368F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"PGRD","edid":"","fid":"240036BB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"UnderpallCave04","fid":"0003E22B","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"24000EE6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EE5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"0009704A","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"NDGarlasMalatar01","fid":"19001215","master":"Knights.esp"}
+{"sig":"REFR","edid":"","fid":"1900125B","master":"Knights.esp"}
+{"sig":"CELL","edid":"UnderpallCrypt","fid":"24003489","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EE3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034F8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003526","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000ED7","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400348A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400348C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400348E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003493","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003494","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003495","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A6","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034A9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034AA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034AC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034AD","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034AE","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B2","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B3","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B4","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B5","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B7","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B8","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034B9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034BB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034BC","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034BF","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034C0","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034C1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034CA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034CB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034F9","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034FA","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"240034FB","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003522","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003525","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003527","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003528","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003529","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400352A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400352B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400352C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400352D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003532","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003533","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003534","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400353B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400353C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400353D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400353E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400353F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003540","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003541","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003544","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003545","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003546","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003547","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003548","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003549","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354B","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354D","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400354F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003550","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003551","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003552","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003553","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003555","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003556","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003557","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003558","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003559","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400355A","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400355C","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003538","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003535","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003536","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003537","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003645","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003646","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003647","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003648","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003649","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400364E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003650","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003652","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003654","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003657","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400365E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2400365F","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003660","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003661","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24003662","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"24000EE1","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"PGRD","edid":"","fid":"2400355E","master":"Knights of Nine - OOO Enhanced Adaptation.esp"}
+{"sig":"QUST","edid":"ND08","fid":"19002D39","master":"Knights.esp"}

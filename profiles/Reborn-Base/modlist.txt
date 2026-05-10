@@ -16,7 +16,7 @@
 -Reborn - APW PACK Overrides
 -Reborn - APW CSTY Rebalances
 -OOO Enhanced OCRP
--OOO Enhanced
+-OOO Enhanced OLD
 -OCOv2 Orsimer Overhaul
 -OCOv2 Eyelash Mesh Fix
 -OCOv2 - Advanced Edition (Vanilla Hairstyles)

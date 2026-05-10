@@ -1,0 +1,61 @@
+{"phase": "3a_summary", "new_npcs_total": 151, "new_npcs_no_cnto_at_all": 1, "new_npcs_no_gear": 0}
+{"fid": "0x0400293A", "sig": "ARMO", "edid": "SenTineLArmorAkaviriEmperorArmor", "subrec": "MOD4", "path": "meshes/armor/auroran/ayleid/bluecuirass_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019104", "sig": "ARMO", "edid": "DaedricBootsVAUnp", "subrec": "MODL", "path": "meshes/soooequipment/daedricblue/m/boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019104", "sig": "ARMO", "edid": "DaedricBootsVAUnp", "subrec": "MOD2", "path": "meshes/soooequipment/daedricblue/m/boots_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019106", "sig": "ARMO", "edid": "DaedricHelmetVAUn", "subrec": "MOD2", "path": "meshes/soooequipment/daedricblue/m/helmet_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019107", "sig": "ARMO", "edid": "DaedricGreavesVAUn", "subrec": "MOD2", "path": "meshes/soooequipment/daedricblue/m/greaves_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019107", "sig": "ARMO", "edid": "DaedricGreavesVAUn", "subrec": "MOD3", "path": "meshes/soooequipment/daedricblue/f/greaves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019107", "sig": "ARMO", "edid": "DaedricGreavesVAUn", "subrec": "MOD4", "path": "meshes/soooequipment/daedricblue/f/greaves_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04019109", "sig": "ARMO", "edid": "DaedricCuirassVAUn", "subrec": "MOD2", "path": "meshes/soooequipment/daedricblue/m/cuirass_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101001", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnBoots01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101001", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnBoots01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101002", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnCuirass01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_bra.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101002", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnCuirass01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101003", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGauntlets01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_gloves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101003", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGauntlets01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101004", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGreaves01", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hellspawnarmor/xnm_cloudpli_panties2.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101004", "sig": "ARMO", "edid": "sOOOAmazonHellSpawnGreaves01", "subrec": "MOD2", "path": "meshes/exnem/femaleeyecandy/armor/hpmp_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101005", "sig": "ARMO", "edid": "sOOOAmazonEmeraldCuirass", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101005", "sig": "ARMO", "edid": "sOOOAmazonEmeraldCuirass", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_bra.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101006", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGreaves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101006", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGreaves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_panties2.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101007", "sig": "ARMO", "edid": "sOOOAmazonEmeraldBoots", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101007", "sig": "ARMO", "edid": "sOOOAmazonEmeraldBoots", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101008", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGloves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101008", "sig": "ARMO", "edid": "sOOOAmazonEmeraldGloves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/zenman/zen_cloudpli_gloves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101095", "sig": "ARMO", "edid": "0XnmJBPlipocuirass", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101095", "sig": "ARMO", "edid": "0XnmJBPlipocuirass", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_bra.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101096", "sig": "ARMO", "edid": "0XnmOpPlipogreaves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101096", "sig": "ARMO", "edid": "0XnmOpPlipogreaves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_panties2.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101097", "sig": "ARMO", "edid": "0XnmOpPlipoboots", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101097", "sig": "ARMO", "edid": "0XnmOpPlipoboots", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_boots.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101098", "sig": "ARMO", "edid": "0XnmOpPlipogloves", "subrec": "MODL", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04101098", "sig": "ARMO", "edid": "0XnmOpPlipogloves", "subrec": "MOD3", "path": "meshes/exnem/femaleeyecandy/armor/hollyarmor/xnm_cloudpli_gloves.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/accesoires uni/silvring.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvcirclet_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/accesoires uni/silvring.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857D", "sig": "CLOT", "edid": "HTBVSSilverthornRing", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/silverthorn/clothes/gnd/silvcirclet_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MODL", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/accesoires uni/vermring.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD2", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermcirclet_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD3", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/accesoires uni/vermring.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400857E", "sig": "CLOT", "edid": "HTBVSVermillionRing", "subrec": "MOD4", "path": "meshes/htb/vermillionseries/armor & clothing/vermillion/clothes/gnd/vermcirclet_gnd.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x040133B2", "sig": "CLOT", "edid": "AA1SkaerbaekTalisman", "subrec": "MODL", "path": "meshes/soooequipment/clothing/darnorasb.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x040133B2", "sig": "CLOT", "edid": "AA1SkaerbaekTalisman", "subrec": "MOD3", "path": "meshes/clothes/amulet/darnorasb.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400C609", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton02", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_blue.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400C60A", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton03", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_pink.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400C60B", "sig": "STAT", "edid": "HTBStrotiAFSarcophagusSkeleton04", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/container/arskell01_red.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400CD79", "sig": "STAT", "edid": "HTBStrotiAFStatueSmall02", "subrec": "MODL", "path": "meshes/stroti/ayleidfurniture/misc/arstatuesmall01newaranmathi.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04013332", "sig": "STAT", "edid": "AVAIcrystalplanter", "subrec": "MODL", "path": "meshes/meo/clutter/ayleid/ayleidplanter.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04102DBF", "sig": "STAT", "edid": "AVAIbravilpostED", "subrec": "MODL", "path": "meshes/architecture/bravil/bravilposted.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04013338", "sig": "STAT", "edid": "AVAICauldron02ST", "subrec": "MODL", "path": "meshes/clutter/kalcauldrons/emptyar.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04013A0D", "sig": "STAT", "edid": "AVAIcounterend01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arcounterend01.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04102DC0", "sig": "STAT", "edid": "AVAIcountermiddle01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arcountermiddle01.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04013A17", "sig": "STAT", "edid": "AVAIwallshelf01empty", "subrec": "MODL", "path": "meshes/kalcustom/bookshelves/ar/arwallshelf01empty.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0400EF4A", "sig": "STAT", "edid": "AVAIWaterCircle512", "subrec": "MODL", "path": "meshes/architecture/water/avairiiwatercircle512.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04014900", "sig": "STAT", "edid": "AVAItable01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/artable01test.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04014901", "sig": "STAT", "edid": "AVAIsquare01", "subrec": "MODL", "path": "meshes/kalcustom/furniture/ar/arsquare01.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04003501", "sig": "WEAP", "edid": "RSOrcBluntAdamantiumHexMace2HWarhammer", "subrec": "MODL", "path": "meshes/blunt set/hexmace012horc.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0401016F", "sig": "WEAP", "edid": "WACPickAxe", "subrec": "MODL", "path": "meshes/wac/pickaxe.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0410469A", "sig": "WEAP", "edid": "aaAbyss", "subrec": "MODL", "path": "meshes/weapons/crystal/abyss.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x04000EE9", "sig": "CREA", "edid": "OOOCreatureWaterPlant", "subrec": "MODL", "path": "meshes/creatures/lbwaterdragon/skeleton.nif", "phase": "3b_mesh_problem"}
+{"fid": "0x0410469F", "sig": "CREA", "edid": "aaReaper", "subrec": "MODL", "path": "meshes/creatures/reaper/skeleton.nif", "phase": "3b_mesh_problem"}

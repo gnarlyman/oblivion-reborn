@@ -121,3 +121,8 @@ _worktrees/
 # ─── Plugin-detector regenerable outputs ───
 research/plugin_detector/predictions.jsonl
 research/plugin_detector/oracle_winning.jsonl
+
+# ─── Bulk-fetched Nexus mod descriptions ───
+# Regenerable via research/fetch_mod_descriptions.py --all
+research/nexus_cache/
+research/mod_descriptions.txt

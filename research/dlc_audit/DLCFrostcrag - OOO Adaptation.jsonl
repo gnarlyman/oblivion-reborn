@@ -1,0 +1,20 @@
+{"sig":"SCPT","edid":"DLCsOOOFrostcragDeed","fid":"400015A6","master":"DLCFrostcrag - OOO Adaptation.esp"}
+{"sig":"SCPT","edid":"DLCsOOOFalcarScript","fid":"400015A8","master":"DLCFrostcrag - OOO Adaptation.esp"}
+{"sig":"SCPT","edid":"DLCsOOOFrostcragGates","fid":"400015A9","master":"DLCFrostcrag - OOO Adaptation.esp"}
+{"sig":"ENCH","edid":"FrostcragEnAppRingEnch","fid":"17005E37","master":"DLCFrostcrag.esp"}
+{"sig":"BOOK","edid":"FrostcragSpireDeed","fid":"17000D52","master":"DLCFrostcrag.esp"}
+{"sig":"BOOK","edid":"FrostcragApparatusReceipt","fid":"17000D5F","master":"DLCFrostcrag.esp"}
+{"sig":"BOOK","edid":"FrostcragBedroomAreaReceipt","fid":"17000D5A","master":"DLCFrostcrag.esp"}
+{"sig":"BOOK","edid":"FrostcragLibraryAreaReceipt","fid":"17000D5E","master":"DLCFrostcrag.esp"}
+{"sig":"BOOK","edid":"FrostcragVaultAreaReceipt","fid":"17000D5D","master":"DLCFrostcrag.esp"}
+{"sig":"DOOR","edid":"FrostCragSpireDoor01","fid":"17003EF2","master":"DLCFrostcrag.esp"}
+{"sig":"NPC_","edid":"Calindil","fid":"00015EA9","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"Aurelinwae","fid":"17001246","master":"DLCFrostcrag.esp"}
+{"sig":"NPC_","edid":"Falcar","fid":"0002CD21","master":"Oblivion.esm"}
+{"sig":"CREA","edid":"CreatureImpFrostCrag","fid":"17008C40","master":"DLCFrostcrag.esp"}
+{"sig":"CREA","edid":"CreatureClannfearRuntFC","fid":"1700214A","master":"DLCFrostcrag.esp"}
+{"sig":"CREA","edid":"DLCFrostcragAtronachFlame","fid":"17001254","master":"DLCFrostcrag.esp"}
+{"sig":"CREA","edid":"DLCFrostcragAtronachFrost","fid":"17000D26","master":"DLCFrostcrag.esp"}
+{"sig":"CREA","edid":"DLCFrostcragAtronachStorm","fid":"17000D27","master":"DLCFrostcrag.esp"}
+{"sig":"CELL","edid":"Silorn03","fid":"0001662D","master":"Oblivion.esm"}
+{"sig":"QUST","edid":"DLCFrostcragSpire","fid":"17000D53","master":"DLCFrostcrag.esp"}

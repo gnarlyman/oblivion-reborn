@@ -1,0 +1,54 @@
+{"sig": "REFR", "new": 38245, "override": 3852, "override_by_master": {"oscuro's_oblivion_overhaul.esp": 607, "oblivion.esm": 3003, "oscuro's_oblivion_overhaul.esm": 241, "unofficial oblivion patch.esp": 1}}
+{"sig": "NPC_", "new": 151, "override": 2404, "override_by_master": {"oblivion.esm": 1354, "oscuro's_oblivion_overhaul.esm": 1050}}
+{"sig": "WEAP", "new": 1163, "override": 1062, "override_by_master": {"oblivion.esm": 862, "oscuro's_oblivion_overhaul.esm": 200}}
+{"sig": "ARMO", "new": 1050, "override": 934, "override_by_master": {"oblivion.esm": 362, "oscuro's_oblivion_overhaul.esm": 572}}
+{"sig": "CELL", "new": 885, "override": 904, "override_by_master": {"oblivion.esm": 870, "unofficial oblivion patch.esp": 1, "oscuro's_oblivion_overhaul.esm": 33}}
+{"sig": "LVLI", "new": 759, "override": 828, "override_by_master": {"oblivion.esm": 335, "oscuro's_oblivion_overhaul.esm": 492, "unofficial oblivion patch.esp": 1}}
+{"sig": "CREA", "new": 337, "override": 881, "override_by_master": {"oblivion.esm": 317, "oscuro's_oblivion_overhaul.esm": 553, "unofficial oblivion patch.esp": 11}}
+{"sig": "ENCH", "new": 681, "override": 515, "override_by_master": {"oblivion.esm": 444, "oscuro's_oblivion_overhaul.esm": 71}}
+{"sig": "IDLE", "new": 915, "override": 2, "override_by_master": {"oblivion.esm": 2}}
+{"sig": "LAND", "new": 775, "override": 68, "override_by_master": {"oblivion.esm": 68}}
+{"sig": "ACRE", "new": 548, "override": 112, "override_by_master": {"oblivion.esm": 46, "oscuro's_oblivion_overhaul.esm": 15, "oscuro's_oblivion_overhaul.esp": 51}}
+{"sig": "CLOT", "new": 571, "override": 87, "override_by_master": {"oblivion.esm": 46, "oscuro's_oblivion_overhaul.esm": 41}}
+{"sig": "SPEL", "new": 300, "override": 192, "override_by_master": {"oblivion.esm": 95, "oscuro's_oblivion_overhaul.esm": 97}}
+{"sig": "LVLC", "new": 198, "override": 275, "override_by_master": {"oblivion.esm": 134, "oscuro's_oblivion_overhaul.esm": 141}}
+{"sig": "CONT", "new": 218, "override": 172, "override_by_master": {"oblivion.esm": 71, "oscuro's_oblivion_overhaul.esm": 101}}
+{"sig": "SCPT", "new": 303, "override": 84, "override_by_master": {"oblivion.esm": 32, "oscuro's_oblivion_overhaul.esm": 52}}
+{"sig": "STAT", "new": 358, "override": 10, "override_by_master": {"oblivion.esm": 10}}
+{"sig": "INFO", "new": 158, "override": 128, "override_by_master": {"oblivion.esm": 128}}
+{"sig": "ACHR", "new": 215, "override": 43, "override_by_master": {"oblivion.esm": 14, "oscuro's_oblivion_overhaul.esp": 20, "oscuro's_oblivion_overhaul.esm": 9}}
+{"sig": "PGRD", "new": 145, "override": 32, "override_by_master": {"oblivion.esm": 31, "oscuro's_oblivion_overhaul.esm": 1}}
+{"sig": "AMMO", "new": 86, "override": 66, "override_by_master": {"oblivion.esm": 49, "oscuro's_oblivion_overhaul.esm": 17}}
+{"sig": "BOOK", "new": 58, "override": 93, "override_by_master": {"oblivion.esm": 69, "oscuro's_oblivion_overhaul.esm": 24}}
+{"sig": "SGST", "new": 0, "override": 146, "override_by_master": {"oblivion.esm": 146}}
+{"sig": "DIAL", "new": 45, "override": 59, "override_by_master": {"oblivion.esm": 59}}
+{"sig": "MISC", "new": 58, "override": 37, "override_by_master": {"oblivion.esm": 8, "oscuro's_oblivion_overhaul.esm": 29}}
+{"sig": "PACK", "new": 68, "override": 24, "override_by_master": {"oscuro's_oblivion_overhaul.esm": 24}}
+{"sig": "DOOR", "new": 83, "override": 2, "override_by_master": {"oscuro's_oblivion_overhaul.esm": 1, "oblivion.esm": 1}}
+{"sig": "SOUN", "new": 80, "override": 0, "override_by_master": {}}
+{"sig": "FURN", "new": 70, "override": 0, "override_by_master": {}}
+{"sig": "LIGH", "new": 63, "override": 0, "override_by_master": {}}
+{"sig": "ACTI", "new": 58, "override": 3, "override_by_master": {"oblivion.esm": 1, "oscuro's_oblivion_overhaul.esm": 2}}
+{"sig": "QUST", "new": 13, "override": 47, "override_by_master": {"oblivion.esm": 43, "oscuro's_oblivion_overhaul.esm": 4}}
+{"sig": "CSTY", "new": 32, "override": 17, "override_by_master": {"oscuro's_oblivion_overhaul.esm": 16, "oblivion.esm": 1}}
+{"sig": "KEYM", "new": 38, "override": 0, "override_by_master": {}}
+{"sig": "INGR", "new": 14, "override": 12, "override_by_master": {"oscuro's_oblivion_overhaul.esm": 7, "oblivion.esm": 5}}
+{"sig": "MGEF", "new": 0, "override": 25, "override_by_master": {"oblivion.esm": 25}}
+{"sig": "CLAS", "new": 8, "override": 14, "override_by_master": {"oblivion.esm": 9, "oscuro's_oblivion_overhaul.esm": 5}}
+{"sig": "WRLD", "new": 3, "override": 17, "override_by_master": {"oblivion.esm": 17}}
+{"sig": "LVSP", "new": 11, "override": 8, "override_by_master": {"oscuro's_oblivion_overhaul.esm": 3, "oblivion.esm": 5}}
+{"sig": "FACT", "new": 3, "override": 13, "override_by_master": {"oblivion.esm": 5, "oscuro's_oblivion_overhaul.esm": 8}}
+{"sig": "APPA", "new": 0, "override": 16, "override_by_master": {"oblivion.esm": 16}}
+{"sig": "ALCH", "new": 4, "override": 10, "override_by_master": {"oblivion.esm": 10}}
+{"sig": "GMST", "new": 5, "override": 3, "override_by_master": {"oblivion.esm": 3}}
+{"sig": "FLOR", "new": 5, "override": 0, "override_by_master": {}}
+{"sig": "WATR", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "RACE", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "EFSH", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "REGN", "new": 0, "override": 1, "override_by_master": {"oblivion.esm": 1}}
+{"sig": "BSGN", "new": 0, "override": 1, "override_by_master": {"oblivion.esm": 1}}
+{"sig": "GLOB", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "CLMT", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "TREE", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "WTHR", "new": 1, "override": 0, "override_by_master": {}}
+{"sig": "SLGM", "new": 1, "override": 0, "override_by_master": {}}

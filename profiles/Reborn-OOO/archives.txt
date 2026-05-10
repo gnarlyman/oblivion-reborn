@@ -27,3 +27,7 @@ Ultimate Leveling.bsa
 Oscuro's_Oblivion_Overhaul.bsa
 OOOShiveringIsles.bsa
 PSMainQuestDelayer.bsa
+Knights - Revelation.bsa
+Kvatch Rebuilt.bsa
+Artifacts_Remastered.bsa
+Av Latta Magicka.bsa

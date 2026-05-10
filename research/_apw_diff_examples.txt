@@ -1,0 +1,343 @@
+
+=== DIAL EXAMPLES ===
+  FID=00000C8D edid=VampireVicente
+     FULL [APW Merge.esp]
+        master: Vampire
+        apw   : How did you become a vampire?
+  FID=000024D0 edid=goblins
+     FULL [APW Merge.esp]
+        master: Goblins
+        apw   : About goblins...
+  FID=00002529 edid=lightthedragonfires
+     FULL [APW Merge.esp]
+        master: Light the dragonfires
+        apw   : So, what exactly are the Dragonfires?
+  FID=000025A5 edid=AmuletofKingsTopic
+     FULL [APW Merge.esp]
+        master: Amulet of Kings
+        apw   : The Amulet of Kings...
+  FID=00002D9D edid=Dark11Choice4C
+     FULL [APW Merge.esp]
+        master: <Say nothing.>
+        apw   : ...
+
+=== INFO EXAMPLES ===
+  FID=0001C46E edid=
+     PNAM [APW Merge.esp]
+        master: <absent>
+        apw   : [INFO:0001C46D] (''Crime don't pay. My cells is full of fools thinkin' it did. I might just sees ya there soon.'' in GRE...
+  FID=0001E74B edid=
+     Topic [APW Merge.esp]
+        master: MQ02JauffreC1 "Tell the emperor's last words." [DIAL:0001E740]
+        apw   : MQ02JauffreC1 "The Emperor told me to give you the amulet." [DIAL:0001E740]
+     PNAM [APW Merge.esp]
+        master: <absent>
+        apw   : NULL - Null Reference [00000000]
+  FID=0001FE86 edid=
+     Topic [APW Merge.esp]
+        master: ChorrolTopic "Chorrol" [DIAL:000299C1]
+        apw   : ChorrolTopic "What can you tell me about Chorrol?" [DIAL:000299C1]
+     PNAM [APW Merge.esp]
+        master: <absent>
+        apw   : NULL - Null Reference [00000000]
+  FID=000223E4 edid=
+     Topic [APW Merge.esp]
+        master: lightthedragonfires "Light the dragonfires" [DIAL:00002529]
+        apw   : lightthedragonfires "So, what exactly are the Dragonfires?" [DIAL:00002529]
+     PNAM [APW Merge.esp]
+        master: <absent>
+        apw   : NULL - Null Reference [00000000]
+  FID=00023C0C edid=
+     PNAM [APW Merge.esp]
+        master: <absent>
+        apw   : NULL - Null Reference [00000000]
+     CTDA [APW Merge.esp]
+        master: <absent>
+        apw   : 
+
+=== NPC_ EXAMPLES ===
+  FID=0000089A edid=TestToddMan
+     ENAM [APW Merge.esp]
+        master: <absent>
+        apw   : 
+  FID=000034CE edid=Raqanar
+     LNAM [APW Merge.esp]
+        master: 0.000000
+        apw   : 0.369000
+     FNAM [APW Merge.esp]
+        master: 54 5B
+        apw   : B3 63
+  FID=0000B50A edid=TESTVampireMage
+     CNAM [APW Merge.esp]
+        master: Sorcerer "Sorcerer" [CLAS:000237AC]
+        apw   : Sorcerer "Battlemage" [CLAS:000237AC]
+     HNAM [APW Merge.esp]
+        master: ElfBraid "Wind Braids" [HAIR:0001DA83]
+        apw   : ElfBraid "Empire Split" [HAIR:0001DA83]
+  FID=0000B50E edid=TESTVampireMage7
+     CNAM [APW Merge.esp]
+        master: Sorcerer "Sorcerer" [CLAS:000237AC]
+        apw   : Sorcerer "Battlemage" [CLAS:000237AC]
+     HNAM [APW Merge.esp]
+        master: ElfBraid "Wind Braids" [HAIR:0001DA83]
+        apw   : ElfBraid "Empire Split" [HAIR:0001DA83]
+  FID=0000B50F edid=TESTVampireMage14
+     CNAM [APW Merge.esp]
+        master: Sorcerer "Sorcerer" [CLAS:000237AC]
+        apw   : Sorcerer "Battlemage" [CLAS:000237AC]
+     HNAM [APW Merge.esp]
+        master: ElfBraid "Wind Braids" [HAIR:0001DA83]
+        apw   : ElfBraid "Empire Split" [HAIR:0001DA83]
+
+=== CREA EXAMPLES ===
+  FID=0000C4B3 edid=OblivionSiegeTarget
+     RNAM [APW Merge.esp]
+        master: 32
+        apw   : 68
+  FID=00014F8C edid=SummonBoar
+     RNAM [APW Merge.esp]
+        master: 28
+        apw   : 50
+  FID=0001E5EE edid=xxxCreatureZombie
+     RNAM [APW Merge.esp]
+        master: 60
+        apw   : 70
+  FID=0003D79C edid=ICArenaMountainLion
+     RNAM [APW Merge.esp]
+        master: 55
+        apw   : 60
+  FID=0003D79D edid=ICArenaDog
+     RNAM [APW Merge.esp]
+        master: 50
+        apw   : 58
+
+=== SCPT EXAMPLES ===
+  FID=0001E643 edid=ArenaAggressionScript
+     SCDA [APW Merge.esp]
+        master: 1D 00 00 00 10 00 06 00 00 00 18 06 00 00 16 00 10 00 0E 00 0C 00 20 72 06 00 73 0B 00 20 32 20 3D 3D 15 00 0A 00 72 06 ...
+        apw   : 1D 00 00 00 10 00 06 00 00 00 4B 06 00 00 16 00 10 00 0E 00 0C 00 20 72 06 00 73 0B 00 20 32 20 3D 3D 15 00 0A 00 72 06 ...
+     SCTX [APW Merge.esp]
+        master: Scriptname ArenaAggressionScript
+
+short Attack
+short KickedOut
+short PorkChop
+float fQuestDelayTime
+
+; ref variables set...
+        apw   : Scriptname ArenaAggressionScript
+
+short Attack
+short KickedOut
+short PorkChop
+float fQuestDelayTime
+
+; ref variables set...
+  FID=0008E542 edid=SEDoorLightBeamScript
+     SCDA [APW Merge.esp]
+        master: 1D 00 00 00 10 00 08 00 02 00 9E 00 00 00 00 00 16 00 14 00 0D 00 10 00 20 58 69 10 05 00 01 00 72 06 00 20 31 20 3D 3D ...
+        apw   : 1D 00 00 00 10 00 08 00 02 00 8E 00 00 00 00 00 16 00 14 00 0B 00 10 00 20 58 69 10 05 00 01 00 72 05 00 20 31 20 3D 3D ...
+     SCTX [APW Merge.esp]
+        master: scn SEDoorLightBeamScript
+
+;based on time of day, this script will enable/disable lightbeam objects.
+
+Begin OnActivate
+	...
+        apw   : scn SEDoorLightBeamScript
+
+;based on time of day, this script will enable/disable lightbeam objects.
+
+Begin OnActivate
+	...
+  FID=0018AE40 edid=SQ06Script
+     SCDA [APW Merge.esp]
+        master: 1D 00 00 00 10 00 06 00 00 00 1F 02 00 00 16 00 14 00 01 00 10 00 20 58 3A 10 05 00 01 00 72 01 00 20 31 30 20 3C 1E 00 ...
+        apw   : 1D 00 00 00 10 00 06 00 00 00 68 02 00 00 16 00 14 00 01 00 10 00 20 58 3A 10 05 00 01 00 72 01 00 20 31 30 20 3C 1E 00 ...
+     SCTX [APW Merge.esp]
+        master: Scriptname SQ06Script
+
+short FangCount
+float fQuestDelayTime
+
+begin gamemode
+
+if ( GetStage SQ06 < 10 )
+	Return
+endif
+
+i...
+        apw   : Scriptname SQ06Script
+
+short FangCount
+float fQuestDelayTime
+
+begin gamemode
+
+if ( GetStage SQ06 < 10 )
+	Return
+endif
+
+i...
+  FID=0018BC26 edid=SQ07JournalScript
+     SCDA [APW Merge.esp]
+        master: 1D 00 00 00 10 00 08 00 02 00 67 00 00 00 00 00 16 00 3B 00 02 00 37 00 20 58 69 10 05 00 01 00 72 01 00 20 31 20 3D 3D ...
+        apw   : 1D 00 00 00 10 00 08 00 02 00 7E 00 00 00 00 00 16 00 3A 00 05 00 36 00 20 58 69 10 05 00 01 00 72 04 00 20 31 20 3D 3D ...
+     SCTX [APW Merge.esp]
+        master: Scriptname SQ07JournalScript
+
+begin OnActivate
+
+if ( IsActionRef Player == 1 ) && ( GetStage SQ07 >= 10 ) && ( GetStage ...
+        apw   : Scriptname SQ07JournalScript
+
+begin OnActivate
+
+if ( IsActionRef Player == 1 ) && ( GetStage SQ07 >= 0 ) && ( GetStage S...
+  FID=0018BC28 edid=SQ07Script
+     SCDA [APW Merge.esp]
+        master: 1D 00 00 00 10 00 06 00 00 00 A4 00 00 00 16 00 2C 00 01 00 28 00 20 72 01 00 58 01 10 05 00 01 00 72 02 00 20 34 30 30 ...
+        apw   : 1D 00 00 00 10 00 06 00 00 00 62 00 00 00 16 00 3D 00 02 00 39 00 20 72 01 00 58 01 10 05 00 01 00 72 02 00 20 34 30 30 ...
+     SCTX [APW Merge.esp]
+        master: Scriptname SQ07Script
+
+float fQuestDelayTime
+
+begin gamemode
+
+;Trigger for entering empty house
+
+if ( Player.GetDistance...
+        apw   : Scriptname SQ07Script
+
+float fQuestDelayTime
+
+begin gamemode
+
+;Trigger for nearing Slythe's corpse
+
+if ( Player.GetDista...
+
+=== LAND EXAMPLES ===
+  FID=000045DB edid=
+     Cell [APW Merge.esp]
+        master: [CELL:00004548] (in Tamriel [WRLD:0000003C] at 3,34)
+        apw   : AAZFG01SkoomaCamp [CELL:00004548] (in Tamriel [WRLD:0000003C] at 3,34)
+  FID=000045DC edid=
+     Cell [APW Merge.esp]
+        master: [CELL:00004547] (in Tamriel [WRLD:0000003C] at 2,34)
+        apw   : AAZFG01SkoomaCampD [CELL:00004547] (in Tamriel [WRLD:0000003C] at 2,34)
+  FID=000045FB edid=
+     Cell [APW Merge.esp]
+        master: [CELL:00004528] (in Tamriel [WRLD:0000003C] at 2,35)
+        apw   : AAZFG01SkoomaCampC [CELL:00004528] (in Tamriel [WRLD:0000003C] at 2,35)
+     VNML [APW Merge.esp]
+        master: 22 3F 68 09 45 69 FB 48 68 E1 45 65 DC 40 67 E0 3E 69 E2 3C 6B E2 39 6D F4 3B 6F 14 35 71 28 3B 68 39 36 63 50 2B 57 58 ...
+        apw   : 22 3F 68 09 45 69 FB 48 68 E1 45 65 DC 40 67 E0 3E 69 E2 3C 6B E2 39 6D F4 3B 6F 14 35 71 28 3B 68 39 36 63 50 2B 57 58 ...
+     VHGT [APW Merge.esp]
+        master: 00 80 51 45 00 FF FE 03 07 06 04 04 05 01 F9 FA F3 EF EF EE EE F0 F4 F2 ED F0 F3 EF F4 FA FC FE FF 03 08 0B 04 F9 FC FF ...
+        apw   : 00 80 51 45 00 FF FE 03 07 06 04 04 05 01 F9 FA F3 EF EF EE EE F0 F4 F2 ED F0 F3 EF F4 FA FC FE FF 03 08 08 03 F9 FC FF ...
+     VCLR [APW Merge.esp]
+        master: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FE FE FE FE FE FE FE FE FE E8 E8 E8 C8 C8 C8 FF FF FF FF FF FF FE FE FE FE ...
+        apw   : FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FE FE FE FE FE FE FE FE FE E8 E8 E8 C8 C8 C8 FF FF FF FF FF FF FE FE FE FE ...
+  FID=00006E6E edid=
+     VNML [APW Merge.esp]
+        master: FC FE 7E FD 00 7E 00 00 7F FD FD 7E FE 00 7E 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 ...
+        apw   : FC FE 7E FD 00 7E 00 00 7F FD FD 7E FE 00 7E 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 00 7F 00 ...
+  FID=00008BF5 edid=
+     Cell [APW Merge.esp]
+        master: [CELL:00007D69] (in Tamriel [WRLD:0000003C] at -9,2)
+        apw   : FortVlastarusExterior02 [CELL:00007D69] (in Tamriel [WRLD:0000003C] at -9,2)
+
+=== REFR EXAMPLES ===
+  FID=000094BF edid=
+     XESP [APW Merge.esp]
+        master: <absent>
+        apw   : 
+  FID=00009A92 edid=
+     Cell [APW Merge.esp]
+        master: [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+        apw   : FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+  FID=00009A93 edid=
+     Cell [APW Merge.esp]
+        master: [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+        apw   : FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+  FID=00009A94 edid=
+     Cell [APW Merge.esp]
+        master: [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+        apw   : FortCarmalaExterior02 [CELL:0000F3A9] (in Tamriel [WRLD:0000003C] at -16,16)
+
+=== QUST EXAMPLES ===
+  FID=00013643 edid=SE11b
+     ICON [APW - Conflict Resolution.esp]
+        master: Quests\iconSE11.dds
+        apw   : Quests\eoo_shivering\si_eye.dds
+  FID=00013A5D edid=SE05Conversations
+     ICON [APW - Conflict Resolution.esp]
+        master: Quests\iconSE05.dds
+        apw   : Quests\eoo_shivering\si_irondoor.dds
+  FID=000165E6 edid=TGInfo
+     ICON [APW - Conflict Resolution.esp]
+        master: Quest\icon_thieves_guild.dds
+        apw   : Quests\eoo_guilds\tg_thief.dds
+  FID=00018E8C edid=SE00
+     ICON [APW - Conflict Resolution.esp]
+        master: Quests\iconSE01.dds
+        apw   : Quests\eoo_shivering\si_door.dds
+  FID=00019516 edid=SE06Battle
+     ICON [APW - Conflict Resolution.esp]
+        master: Quests\iconSE06.dds
+        apw   : Quests\eoo_shivering\si_fire.dds
+
+=== LIGH EXAMPLES ===
+  FID=00069230 edid=ARDesatGreenIntense800
+     SNAM [APW - Conflict Resolution.esp]
+        master: <absent>
+        apw   : AMBAyleidWellLP [SOUN:000BEE28]
+
+=== LVLI EXAMPLES ===
+  FID=00081E70 edid=SE38ItemList98
+     LVLD [APW Merge.esp]
+        master: 98
+        apw   : 100
+
+=== SPEL EXAMPLES ===
+  FID=00000136 edid=DefaultPlayerSpell
+     FULL [APW Merge.esp]
+        master: Heal Minor Wounds
+        apw   : Basic Healing
+
+=== ACHR EXAMPLES ===
+  FID=0008677C edid=MG17Necro1b
+     Cell [APW Merge 2.esp]
+        master: [CELL:00023777] (in Tamriel [WRLD:0000003C])
+        apw   : SilornExterior [CELL:000080E5] (in Tamriel [WRLD:0000003C] at -12,-4)
+     XESP [APW Merge 2.esp]
+        master: <absent>
+        apw   : 
+
+=== ACTI EXAMPLES ===
+  FID=00066CC2 edid=ACTRuneStoneExt02Glyph01
+     SCRI [APW - Conflict Resolution.esp]
+        master: RunestoneSidriAshak [SCPT:0006A8DF]
+        apw   : BoonStoneGiveGloom [SCPT:90002A68]
+  FID=0006A8E0 edid=ACTRuneStoneExt01Glyph01b
+     SCRI [APW - Conflict Resolution.esp]
+        master: RunestoneHestra [SCPT:0006A8DD]
+        apw   : BoonStoneGiveEnergy [SCPT:90002A65]
+  FID=0017D40B edid=ACTRuneStoneExt01Glyph01a
+     SCRI [APW - Conflict Resolution.esp]
+        master: RunestoneReman [SCPT:0006A8DE]
+        apw   : BoonStoneGiveCrush [SCPT:90002A66]
+
+=== ARMO EXAMPLES ===
+
+=== CELL EXAMPLES ===
+
+=== CLOT EXAMPLES ===
+
+=== GMST EXAMPLES ===
+
+=== PACK EXAMPLES ===
+
+=== STAT EXAMPLES ===

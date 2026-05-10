@@ -1,0 +1,71 @@
+{"sig":"SCPT","edid":"BattlehornCastlePortcullis01SCRIPT","fid":"15010B3D","master":"DLCBattlehornCastle.esp"}
+{"sig":"SCPT","edid":"DLCBattlehornActivate","fid":"2F001C7C","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"SCPT","edid":"DLCBattlehornCastleScript","fid":"1500B08A","master":"DLCBattlehornCastle.esp"}
+{"sig":"SCPT","edid":"DLCBattlehornLordKelvynScript","fid":"2F0015AB","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"ENCH","edid":"DLCBattlehornShieldRewardEnch30","fid":"15011F2B","master":"DLCBattlehornCastle.esp"}
+{"sig":"ENCH","edid":"DLCBattlehornShieldRewardEnch25","fid":"15011F29","master":"DLCBattlehornCastle.esp"}
+{"sig":"SPEL","edid":"sOOODLCSkeletonBossAura","fid":"2F0015A7","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"ARMO","edid":"DLCBattlehornShieldReward30","fid":"15011F1E","master":"DLCBattlehornCastle.esp"}
+{"sig":"ARMO","edid":"DLCBattlehornShieldReward25","fid":"15011F1D","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornChronicleAlternate","fid":"2F002352","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornChronicle","fid":"1500B08C","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornWineCellarReceipt","fid":"1500B09C","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornTrophyHallReceipt","fid":"1500B0A1","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornTrainingRoomReceipt","fid":"1500B09D","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornMenAtArmsReceipt","fid":"1500D42B","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornLibraryReceipt","fid":"1500B098","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornKitchenReceipt","fid":"1500B09A","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornForgeReceipt","fid":"1500B0AC","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornDiningReceipt","fid":"1500B099","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornCaptainReceipt","fid":"1500D42E","master":"DLCBattlehornCastle.esp"}
+{"sig":"BOOK","edid":"DLCBattlehornBedroomAreaReceipt","fid":"1500B097","master":"DLCBattlehornCastle.esp"}
+{"sig":"CONT","edid":"sOOODLCKelvynsChest","fid":"2F0037D2","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"WEAP","edid":"sOOOTokenActivateDLC","fid":"2F001C7D","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"WEAP","edid":"DLCBattlehornDragonsword06","fid":"150147F1","master":"DLCBattlehornCastle.esp"}
+{"sig":"WEAP","edid":"DLCBattlehornDragonsword05","fid":"150147F0","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMarauderMissile","fid":"1501342A","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMerchant","fid":"1500B08E","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornTrainer","fid":"1500B09F","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornTaxidermist","fid":"1500B0A0","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornBlacksmith","fid":"1500C516","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornLordKelvyn","fid":"15013417","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornKnight1","fid":"1500CA2B","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DeadMarauderMeleeMale01","fid":"00065643","master":"Oblivion.esm"}
+{"sig":"NPC_","edid":"DLCBattlehornKnight2","fid":"1500CA3E","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornCaptain","fid":"1500CA40","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornKnight3","fid":"1500CA43","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornKnight4","fid":"1500CA44","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornCaptainReplacement","fid":"1500D42D","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMaid","fid":"1500D441","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornCook","fid":"1500D44B","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornKnightDead","fid":"1501341D","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMarauderBoss","fid":"15013427","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMarauderMelee","fid":"15013428","master":"DLCBattlehornCastle.esp"}
+{"sig":"NPC_","edid":"DLCBattlehornMarauderMage","fid":"15013429","master":"DLCBattlehornCastle.esp"}
+{"sig":"CREA","edid":"DogBattlehorn","fid":"1500C513","master":"DLCBattlehornCastle.esp"}
+{"sig":"CREA","edid":"DLCBattlehornLich","fid":"1500E337","master":"DLCBattlehornCastle.esp"}
+{"sig":"CREA","edid":"DLCBattlehornSkeleton","fid":"1500E824","master":"DLCBattlehornCastle.esp"}
+{"sig":"LVLI","edid":"DLCBattlehornShieldRewardLeveled","fid":"15011F2D","master":"DLCBattlehornCastle.esp"}
+{"sig":"LVLI","edid":"DLCBattlehornDragonswordLL","fid":"15012E14","master":"DLCBattlehornCastle.esp"}
+{"sig":"CELL","edid":"ChorrolFightersGuild","fid":"000235DE","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"BattlehornWillREF","fid":"2F001C7B","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2F001C7E","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"CELL","edid":"sOOOFortValdis","fid":"1D1030A9","master":"OOO Enhanced.esp"}
+{"sig":"ACHR","edid":"LordKelyvnREF","fid":"2F0030FD","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"2F0037D4","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"PGRD","edid":"","fid":"1D1030B6","master":"OOO Enhanced.esp"}
+{"sig":"WRLD","edid":"Tamriel","fid":"0000003C","master":"Oblivion.esm"}
+{"sig":"CELL","edid":"","fid":"00023777","master":"Oblivion.esm"}
+{"sig":"ACHR","edid":"DLCBattlehornMarauderBossREF","fid":"15013423","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"DLCBattlehornMarauderMeleeREF","fid":"15013424","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"","fid":"15013426","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"DLCBattlehornMarauderMissileREF","fid":"15013425","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"DLCBattlehornLordKelvynREF","fid":"1501341B","master":"DLCBattlehornCastle.esp"}
+{"sig":"REFR","edid":"BattlehornCastleMapMarker","fid":"1500B08B","master":"DLCBattlehornCastle.esp"}
+{"sig":"CELL","edid":"","fid":"00007A85","master":"Oblivion.esm"}
+{"sig":"REFR","edid":"","fid":"2F000ED3","master":"DLCBattlehornCastle - OOO Enhanced Adaptation.esp"}
+{"sig":"REFR","edid":"","fid":"1501341C","master":"DLCBattlehornCastle.esp"}
+{"sig":"REFR","edid":"","fid":"15013419","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"","fid":"15013421","master":"DLCBattlehornCastle.esp"}
+{"sig":"ACHR","edid":"","fid":"15013422","master":"DLCBattlehornCastle.esp"}
+{"sig":"QUST","edid":"DLCBattlehornCastle","fid":"1500B089","master":"DLCBattlehornCastle.esp"}
