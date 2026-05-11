@@ -4,6 +4,7 @@ Oscuro's_Oblivion_Overhaul.esm
 Artifacts_Remastered.esm
 Knights - Revelation.esm
 Av Latta Magicka.esm
+CustomSpellIcons - OBME.esm
 Cobl Main.esm
 Cobl Glue.esp
 Cobl Tweaks - Vanilla.esp
@@ -46,7 +47,6 @@ Knights - Revelation.esp
 Artifacts_Remastered.esp
 Vampire Hunting - Order of the Virtuous Blood.esp
 Cobl Tweaks - OOO.esp
-Balanced Unleveled Rewards - Complete.esp
 Improved NPC Faces for OCOv2.esp
 Knights of Nine - OOO Enhanced Adaptation.esp
 DLC Integration.esp
@@ -133,6 +133,13 @@ Kvatch Rebuilt - OOO Adaptation.esp
 DispMiscPatch_OCOv2 - Adoring Fan No Beard.esp
 DispMiscPatch_OCRP - Original Brown Leather Armor Restored.esp
 DispMiscPatch_Av Latta Magicka - Migck Misc Poison Fists Patch.esp
+JCN_AV Uncap.esp
+WayshrineMapMarkers.esp
+AyleidWellMapMarkers.esp
+Consistent Beggar Voices.esp
+StoneMarkers.esp
+RestoreAllAttributesSpell.esp
+Artifacts Remastered - Hood Leveled List Fix.esp
 Cobl Filter Late MERGE ONLY.esp
 OCOv2 - Filter Patch for Mods.esp
 WorldMapsForAllWorldspaces.esp

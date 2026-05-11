@@ -4,6 +4,7 @@ Oscuro's_Oblivion_Overhaul.esm
 Artifacts_Remastered.esm
 Knights - Revelation.esm
 Av Latta Magicka.esm
+CustomSpellIcons - OBME.esm
 Cobl Main.esm
 Cobl Glue.esp
 Unofficial Oblivion Patch.esp
@@ -40,12 +41,12 @@ MercerIngredientsCore.esp
 Knights - Revelation.esp
 Artifacts_Remastered.esp
 Vampire Hunting - Order of the Virtuous Blood.esp
-Balanced Unleveled Rewards - Complete.esp
 Knights of Nine - OOO Enhanced Adaptation.esp
 DLC Integration.esp
 DLCMehrunesRazor - OOO Enhanced Adaptation.esp
 LessMaddeningShiveringIsles.esp
 EVE_ShiveringIslesEasterEggs.esp
+EVE_StockEquipmentReplacer.esp
 PSMainQuestDelayer.esp
 Immersive Quest Markers Overhaul.esp
 Delay DLC Start.esp
@@ -74,6 +75,7 @@ NIARA.esp
 DLCFrostcrag - OOO Adaptation.esp
 FrostcragRebornCobl.esp
 OOO golems OBME edition.esp
+EVE_KhajiitFix.esp
 ArcheryFocus.esp
 Rivalry's Shield Unequipper.esp
 SB_ArrowMaster.esp
@@ -92,7 +94,14 @@ Magic Visuals Overhaul.esp
 Kvatch Rebuilt - OOO Adaptation.esp
 DispMiscPatch_OCOv2 - Adoring Fan No Beard.esp
 DispMiscPatch_OCRP - Original Brown Leather Armor Restored.esp
+JCN_AV Uncap.esp
+WayshrineMapMarkers.esp
+AyleidWellMapMarkers.esp
+Consistent Beggar Voices.esp
+StoneMarkers.esp
+RestoreAllAttributesSpell.esp
 WorldMapsForAllWorldspaces.esp
 Bashed Patch, 0.esp
 Maskar's Oblivion Overhaul.esp
 MercerIngredientsMaskarsOO.esp
+OCOv2 - MOO Patch.esp

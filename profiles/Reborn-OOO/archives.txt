@@ -15,19 +15,19 @@ DLCOrrery.bsa
 DLCHorseArmor.bsa
 DLCFrostcrag.bsa
 DLCBattlehornCastle.bsa
-DLCShiveringIsles - Faces.bsa
 IHaveNoGreetingFix.bsa
+DLCShiveringIsles - Faces.bsa
 Spirit Stones.bsa
 WorldMapsForAllWorldspaces.bsa
+Knights - Revelation.bsa
+PSMainQuestDelayer.bsa
+Av Latta Magicka.bsa
+Oscuro's_Oblivion_Overhaul.bsa
+OOOShiveringIsles.bsa
 Maskar's Oblivion Overhaul - Meshes.bsa
 Maskar's Oblivion Overhaul - Misc.bsa
 Maskar's Oblivion Overhaul - Sounds.bsa
 Maskar's Oblivion Overhaul - Textures.bsa
 Ultimate Leveling.bsa
-Oscuro's_Oblivion_Overhaul.bsa
-OOOShiveringIsles.bsa
-PSMainQuestDelayer.bsa
-Knights - Revelation.bsa
 Kvatch Rebuilt.bsa
 Artifacts_Remastered.bsa
-Av Latta Magicka.bsa

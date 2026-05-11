@@ -1,0 +1,33 @@
+Oblivion - Meshes.bsa
+Oblivion - Textures - Compressed.bsa
+Oblivion - Sounds.bsa
+Oblivion - Voices1.bsa
+Oblivion - Voices2.bsa
+Oblivion - Misc.bsa
+Knights.bsa
+DLCVileLair.bsa
+DLCThievesDen.bsa
+DLCShiveringIsles - Meshes.bsa
+DLCShiveringIsles - Sounds.bsa
+DLCShiveringIsles - Textures.bsa
+DLCShiveringIsles - Voices.bsa
+DLCOrrery.bsa
+DLCHorseArmor.bsa
+DLCFrostcrag.bsa
+DLCBattlehornCastle.bsa
+IHaveNoGreetingFix.bsa
+DLCShiveringIsles - Faces.bsa
+Spirit Stones.bsa
+WorldMapsForAllWorldspaces.bsa
+Knights - Revelation.bsa
+PSMainQuestDelayer.bsa
+Av Latta Magicka.bsa
+Oscuro's_Oblivion_Overhaul.bsa
+OOOShiveringIsles.bsa
+Maskar's Oblivion Overhaul - Meshes.bsa
+Maskar's Oblivion Overhaul - Misc.bsa
+Maskar's Oblivion Overhaul - Sounds.bsa
+Maskar's Oblivion Overhaul - Textures.bsa
+Kvatch Rebuilt.bsa
+Artifacts_Remastered.bsa
+Ultimate Leveling.bsa

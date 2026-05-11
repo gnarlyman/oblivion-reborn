@@ -1,0 +1,886 @@
+
+================================================================================
+[-] DO NOT TOUCH - SWAP TO CONTROLLER PROFILE IF YOU WANT TO USE  (10 mods)
+================================================================================
+  -Scuffed De-Nock Arrows for NorthernUI
+  -Realistic Sprint and Gallop - NorthernUI Gamepad Support
+  -Oblivion XP Update - Controller
+  -NorthernUI Rumble
+  -NorthernUI (Imperial Theme) - Status Bars for Needs
+  -NorthernUI
+  -LootMenu NorthernUI DPad Menu Navigation Fix
+  -Imperial Theme for NorthernUI
+  -Controller Configs
+  -Remastered Attributes - NorthernUI
+
+================================================================================
+[-] PICK YOUR LEVELING SYSTEM -- ONLY PICK ONE -- DO NOT SWAP MID SAVE  (3 mods)
+================================================================================
+  -Levelling through training only
+  -Remastered Attributes
+  +Oblivion XP Update
+
+================================================================================
+[+] OPTIONAL MODS  (7 mods)
+================================================================================
+  -Mark Or Unmark As Quest Item
+  -Waterfront FPS Patch
+  +A Champions Death
+  +Food and Drink Quotes
+  +Fast Travel Costs
+  +CPU Affinity
+  +dxvk
+
+================================================================================
+[-] ULTRAWIDE OPTIONALS (21x9)  (5 mods)
+================================================================================
+  +UW Ultrawide map border fix for DarNified UI
+  +UW DarNified UI patch for Black Rectangle Ultrawide Fix
+  +UW HUD Config
+  +UW Black Rectangle Ultrawide Fix
+  +UW Main Menu 2K Ultrawide
+
+================================================================================
+[-] LATE LOADERS  (11 mods)
+================================================================================
+  +Mesh Fixes & Recolors
+  +A Painted World - LODs
+  +Deathb0rns Modified Qarls LOD Normal Maps
+  +A Painted World Configs
+  +Coronerras Maximum Compatibility Skeletons
+  +A Painted World Reshade Preset - ORC 1.9.3 Version
+  +Oblivion Reloaded Combined(ORC) 1.9.3
+  +ReShade Shaders
+  +UHD Fonts for Darnified UI
+  +Project Optimization Output
+  +Log Output
+
+================================================================================
+[+] FILTER PATCHES  (6 mods)
+================================================================================
+  +Configuration Items Begone
+  +MigMaster Script Resources
+  +Miscellaneous Patch Collection by Dispensation
+  +RadiantAI - NPCs Alive - Cyrodiil - Unofficial Patch
+  +NPC Names - Filter Patch for Mods
+  +OCOv2 - Filter Patch for Mods
+
+================================================================================
+[+] PATCHES  (38 mods)
+================================================================================
+  +Knights Infamy and Delay DLC patch
+  +Orden des Drachen Miscellaneous Patches
+  +The Order of the Dragon Patch Series
+  +OCO - Elsweyr Deserts of Anequina Patch
+  +Strotis new clutter
+  +Elsweyr Anequina - Khajiit Compatibility
+  +OOO Enhanced - Better Dungeons Compatibility Patch
+  +MTC Expanded Villages - Better Campsites Patch
+  +Oblivion Collectible Cards - Missing Cards Fix
+  +Improved Fighters Guild Patches
+  +Bash-able Quest Delayers
+  +Better Cities Resources - OCRAFT Integration
+  +Productive Mines - Vendors and Productive Mines - Vendors - OCRAFT
+  +Productive Mines - Better Cities Compatibility Patch
+  +OOO Enhanced Oblivion Content Restoration Patch
+  +Tales from Elsweyr Anequina-Rev's Redo FIXED
+  +Vampire Hunting - Order of the Virtuous Blood OCO2 NPC FACE FIXES
+  +OOO golems OBME edition
+  +Better Dungeons - Balance Patch
+  +Better Cities adapted to OOO
+  +UL - Ducks and Swans for Cyrodiil - Patch
+  +Unique Landscapes - OOO Adaptation
+  +OOOOBMESpectralCrashFix
+  +Kvatch Rebuilt - Pre Invasion Fix
+  +UL - The Dark Forest - Lowpolygrass Patch
+  +MOBS patch for Maskar's Oblivion Overhaul
+  +Better Dark Brotherhood Sanctuary - OOO Patch
+  +Kvatch Rebuild OOO Adaptation
+  +OOO Flavor Text for Extended UI
+  +Retextured Potions - OOO Patch
+  +Unique Artifacts for Unique People - Patches
+  +Visually Improved Staffs for OOO
+  +OSPS - Better Cities Imperial Isle Compatibility Patches
+  +Various Cleaned Plugins
+  +UL Compatibility Patches Compilation WIZBAIN
+  +Miguick's Dialogue Tweaks Trespassing Tweaked
+  +OCOv2 - MOO Patch
+  +City Settings -- Better Cities - Open Cities Reborn - Vanilla -- FPS optimizer
+
+================================================================================
+[+] LOD RESOURCES  (16 mods)
+================================================================================
+  +SI HM fix for TES4LL and MPGUI
+  +J3 Atlassed VWD 2 - Cyrodiil - Ruins - ALL - Ruined Ruins (texture mod)
+  +J3 Atlassed VWD 2 - Cyrodiil - Qarls Texture Pack III
+  +J3 Atlassed VWD 2 - Shivering Isles - Bomret's Texture Pack for Shivering Isles
+  +VWD Ships
+  +Imperial City LOD - Performance Edition
+  +City LOD - Performance Edition WIP
+  +J3 Atlassed VWD 2 - Shivering Isles
+  +J3 Atlassed VWD 2
+  +ULP (Ultimative LOD Pack)
+  +Optimized VWD
+  +Evenstars Colourwheel LOD Update
+  +Landscape LOD generator 5_15c
+  +Bruma Frostcrag Spire LOD
+  +slowLODGen - Object LOD Generator
+  +Land Magic
+
+================================================================================
+[+] WEATHER & LIGHTING  (15 mods)
+================================================================================
+  +Best Combined Night Sky
+  +DOWNPOUR - rain retexture
+  +Water 17
+  +Snow Gusts
+  +Additional weather effects
+  +Night Sky Fire and Ice
+  +Improved Light Beam - Transparency Fix
+  +Light beam and dungeon mist retexture for Cyrodiil ENB
+  +Improved LightBeam
+  +GasClouds4096
+  +DustCloud01
+  +Atmos4096
+  +HDR Sun
+  +Simple Sunglare with Lens Flare
+  +Realistic Aurora in motion
+
+================================================================================
+[-] VOICE ADDONS  (39 mods)
+================================================================================
+  +The Forgotten Isles Voices (ElevenLabs)
+  +Thievery in the Imperial City Voices (ElevenLabs)
+  +Join the Morag Tong Voices (ElevenLabs)
+  +Join the Mythic Dawn Voices (ElevenLabs)
+  +Join the Blackwood Company Voices (ElevenLabs)
+  +Order of the Dragon EV Voices (ElevenLabs)
+  +Kragenir's Death Quest Voices (ElevenLabs)
+  +Oblivion Collectible Cards Voices (ElevenLabs)
+  +Join the Order of the Black Worm Voices (ElevenLabs)
+  +Tales from Elsweyr Anequina-Rev's Redo Voices (ElevenLabs)
+  +Lore Dialogue 300 Updated Voices (ElevenLabs)
+  +Reaction Voices (ElevenLabs)
+  +Knights of the Nine Revelation - Unvoiced Voices (ElevenLabs)
+  +Star's Extended Dialogue - Roland Jenseric Voice Fix
+  +Infinitum Voiced Addons
+  +Elsweyr City Extension Voices (ElevenLabs)
+  +Companion Vilja - Non-Companion Voices (ElevenLabs)
+  +BrumaGuildReconstructed - AI Voice Files
+  +Gamblers of Cyrodiil Voices (ElevenLabs)
+  +Hoarfrost Castle Voices (ElevenLabs)
+  +Elsweyr the Deserts of Anequina Voices (ElevenLabs)
+  +Oblivifall - Losing My Religion - Elevenlabs AI VOICES
+  +Integration - The Stranded Light Integrated Voices (ElevenLabs)
+  +Tales of Cyrodiil Voices (ElevenLabs)
+  +Mannimarco Resurrection Voices (ElevenLabs)
+  +Vampire Hunting - Order of the Virtuous Blood Voices (ElevenLabs)
+  +SI Cities Expanded Voices (ElevenLabs)
+  +Cyrodiil Transportation Network 2.0 Voices (ElevenLabs)
+  +MTC Expanded Villages Voices (ElevenLabs)
+  +(11Labs) Put it in its Place - Enhanced Grabbing - AI Voices Addon
+  +Thieves Guild HQ - Unhealthy Competition - Voiced (ElevenLabs)
+  +Better Dark Brotherhood Sanctuary - Voiced Addon
+  +Kvatch Rebuilt An AI Voiced Experience
+  +Voiced Vile Lair DLC Overhaul (with Rowley Eardwulf Follower)
+  +AI Voice Addon for The Well of Minlorada
+  +AI Voice Addon for Mudwater
+  +Bounty Quests Fixed and Polished - Voiced Addon BSA
+  +The Ayleid Steps - Voiced Addon BSA
+  +Better Kvatch Rebuilt (Submod) An AI Voiced Experience
+
+================================================================================
+[+] SOUNDS & MUSIC  (12 mods)
+================================================================================
+  +Better Injured and Death Bear Sound
+  +Quieter Dragon Sounds (For MOO)
+  +Nightmarish Oblivion Gate Sounds
+  +Performance Sound
+  +Enhanced Sounds Overhaul
+  +GOSH - Gecko's Oblivion Sound overHaul
+  +Symphony of Violence - Combat Sound Enhancement
+  +Silent Tracks Expanded
+  +Voices for Female Dremora NPCs
+  +Louder Chapel Bells
+  +Oblivion Stereo Sound Overhaul
+  +Oblivion High Quality Music
+
+================================================================================
+[+] PLAYER HOMES  (9 mods)
+================================================================================
+  +Better Benirus Manor
+  +Shadowcrest Vineyard
+  +Highwood
+  +Hoarfrost Castle
+  +Traveler's Tent - portable customizable player home
+  +Imperial Furniture Renovated
+  +Home Buying Revised
+  +Vile Lair DLC - Tweaks and Fixes
+  +Thieves Den Barter for Upgrades
+
+================================================================================
+[+] WEAPONS & ARMOR  (73 mods)
+================================================================================
+  +UFF Robert Rogue Leather Armour
+  +Rogue Leather Armour for Roberts Female body Replacer
+  +Ronnie's Blade of Woe Replacer
+  +Druid Armors and weapons
+  +KillerHell Steel Shield Replacer
+  +Travelling Equipment - Cloaks and Backpacks
+  +Artifacts Reshoveled
+  +Real Steel Armor Replacer Sheen Fix (REQUIRES ORIGINAL)
+  +Seamless - HGEC Female
+  +Seamless - Robert Male
+  +EVE HGEC Eyecandy Variants Expansion
+  +Real Steel Armor Replacer - Morrowind Style Breton Plate
+  +Insanitys Ebony Sword Replacer
+  +Elven Horse Armor Replacer
+  +Artifacts Remastered - Compact Quivers Patch
+  +Artifacts Remastered - Hood Leveled List Fix
+  +Artifacts Remastered
+  +Yami's Unique Gear
+  +Phitts Artifacts
+  +HelBornesSpearSet10
+  +Tamrielic Lore
+  +Vermillion and Silverthorn Robes by Kafei
+  +Nosferat's Merchant and Loot Additions
+  +Blade of Woe Replacer - Nine Tongues
+  +Smaller MOO Backpacks
+  +Knights of the Nine_Weapon Improvement Project Patch
+  +Seamless Equipment - MOO
+  +01 Seamless OCOv2 n HGEC Female clothes fixes
+  +Unique Artifacts for Unique People
+  +Orcish and Daedric armor replacer
+  +Redressing Cyrodiil - Colovia
+  +Redressing Cyrodiil - Nibenay
+  +Redressing Cyrodiil - Seamless Neck patch
+  +Redressing Cyrodiil - Master File
+  +TIBs Compact Quivers - Manual Install - SI
+  +TIBs Compact Quivers - Manual Install
+  +Dark Brotherhood Armor Extended
+  +Blue Darker Glass - Armor and Weapons
+  +Half-off Clavicusvile Mask remodel replacer
+  +Initial Glow Redux
+  +Unique Crimson Scar Mantle and Shroud - Vanilla Replacer
+  +Gray Cowl of Nocturnal Reshaped
+  +Madness Longsword Replacer
+  +Scabbard For Dwarven Longsword
+  +Amelion Helmet Ungoggled
+  +Ebony Helmet Ungoggled
+  +Ebony Armor Extended
+  +Cleaned and Darker Daedric Armor and Weapons
+  +Golden Elven Armor and Weapons
+  +Weapon Improvement Project - Town Guard Shields Preview (Unique Texture Paths)
+  +Fur and Leather Armor - Visual Edits
+  +Improved Amulets and Rings
+  +Red Plume for Imperial Legion Helmet
+  +Imperial Armors - Visual Edits
+  +Lunas Darker Glass Equipment Textures 1.1
+  +TIBs Compact Quivers - Arrow of Extrication addon
+  +Visually Improved Staffs
+  +Assorted Protective Female Armors - Refined
+  +Assorted Protective Female Armors UV fix
+  +Assorted Protective Female Armors
+  +Dwemer Metal - Armor and Weapons
+  +Extra Robe Pack v3a
+  +Snail's Ebony Armory - A Makeover for Ebony Weapons and Shields
+  +Proper Blunt Weapons
+  +Weapon Improvement Project - fixes (NO ESP) v2
+  +Artifacts Redone
+  +Weapon Improvement Project
+  +Classic Sword Replacer Expansion
+  +Classic Sword Replacers
+  +SI Clothes - Color Correction
+  +No muddy dresses (and vomited rugs)
+  +Clothes - Color Correction
+  +MOO - Non-Elder Scrolls Franchise Recolors
+
+================================================================================
+[-] DUNGEONS  (35 mods)
+================================================================================
+  +FleshyPod Retextured
+  +High Fantasy Cyrodiil Caves
+  +AI Enhanced - Ruined Ruins
+  +Ayleid Statues - Retextured
+  +Gecko's Fort Interior Textures
+  +Gecko's Ayleid Ruins Textures
+  +Better Forts - Voiced Addon BSA
+  +Better Fort Hastrel
+  +Better Fort Naso
+  +Better Fort Vlastarus
+  +Better Fort Istirus
+  +Better Fort Carmala
+  +Better Fort Rayles
+  +Better Fort Ontus
+  +Better Fort Doublecross
+  +Better Fort Black Boot
+  +Better Fort Dirich
+  +Better Fort Redman
+  +Better Fort Facian
+  +Better Fort Teleman
+  +Better Fort Roebeck
+  +Better Fort Magia
+  +ARO - Ayleid Ruins Overhaul
+  +Strotis new dungeon meshes
+  +Dungeons of Tamriel Updated
+  +Better dungeons
+  +CDEP FanaCeya Updated
+  +High-Res Varla and Welkynd Texture Replacer
+  +sams lava tex
+  +AI Powered Oblivion Landscape Retexture
+  +HiRes Oblivion Textures
+  +Oblivion Realm HD
+  +Bettys Sewer Textures
+  +Visually Relistic Lava
+  +Gecko's Imperial Dungeon Textures - 2K Parallax
+
+================================================================================
+[-] ARCHITECTURE  (30 mods)
+================================================================================
+  +Anvil Castle Door Remastered
+  +ImperialCity_icdoor04 Remastered
+  +Skingrad_skcastledoorlarge Remastered
+  +Imperial City IcDoor02 Remastered
+  +Arena Ascended - Retexture
+  +Strand Magic - A Mage Guild Theme
+  +xrayys better cloud ruler temple
+  +Cloud Ruler Temple HD
+  +VKVII Oblivion Sidewalk Stonewall
+  +Regal Imperial City
+  +Cathedral HD
+  +Arena Of Awe - Retexture
+  +Cheery Cheydinhal - Retexture
+  +Give Me Some Skingrad - Retexture
+  +Improved Skulls and Bones and Ironwork
+  +Improved Chorrol
+  +Improved Bravil
+  +Leyawiin Woodland floor fix
+  +Leyawiin Woodland
+  +Improved Middle and Upper Class Architecture
+  +TD and AWLS patch
+  +TD_Hutor - Oblivion farms retexture
+  +Improved Bruma
+  +2020 Retexture Project - Farmhouses (AWLS)
+  +Animated Window Lighting System and Chimneys - AWLS
+  +Arena Poster
+  +Unique Signs
+  +Statues HD
+  +VKVII Oblivion Imperial City
+  +VKVII Oblivion ANVIL
+
+================================================================================
+[-] CLUTTER  (36 mods)
+================================================================================
+  +Fire retexture and ENB box remover for Shivering Isles
+  +TD_Premium Meat
+  +English Signboard primarily for Katkat's Ships
+  +Alluring Wine Bottles with Real Glass - Loose Files Patch for Mods
+  +Alluring Wine Bottles with Real Glass
+  +Reb's Average Containers
+  +Thieves Guild HQ - Lore Friendly Big Tony's Deli Sign
+  +Got Wood - Retexture
+  +The Good China - Retexture
+  +Refined fires
+  +Improved Fires and Flames
+  +Book Jackets Oblivion Merged
+  +2x HiRez Daedric Shrines
+  +Distinct Ayleid Boss Chests
+  +Particled Ayleid Stones
+  +HD Cobwebs
+  +Better Scroll Background
+  +Better Window Reflections
+  +Clear Display Cases
+  +Improved Chests for Harvest Containers xOBSE
+  +Harvest Containers xOBSE
+  +Improved Chests
+  +Improved Fruits Vegetables and Meats
+  +Colovian Carpets - A rug and mat retexture
+  +Tamrielic Tapestries- Retexture
+  +Azuras Star retexture
+  +Ayleid Well Crystals
+  +Kinda Actually Decent Environment Map
+  +TD Watercolor - Oblivion paintings replacer
+  +Darooz Upperclass clutter
+  +Retextured Potions
+  +EGO - Beverages and Bottles Replacer
+  +Improved Signs
+  +Glowing Fractured Soulgems
+  +Normal Map for Better Blood
+  +Better Blood skin decal fix
+
+================================================================================
+[-] FLORA  (24 mods)
+================================================================================
+  +The Hist Rebodied by ATD
+  +2020 Retexture Project - Trees and Shrubs
+  +TD Mushroom High-poly Replacer
+  +Ivy replacer
+  +Palm Trees Update10
+  +Blackwood Jungle
+  +Falling Leaves
+  +Far Cry inspired Grass - Expanded
+  +Groundcover for no grass textures
+  +TreeOPT
+  +Harvest Flora
+  +Nirnroot retexture
+  +Simple Shivering Isle Trees
+  +HD Photorealistic Ivy by greenback12 for Oblivion
+  +Flora display fix
+  +Tree Bark HD Reduced
+  +Improved Trees and Flora 2
+  +Improved Doors and Flora
+  +2020 Retexture Project - Grasses
+  +Let there be Flowers
+  +Enhanced Vegetation SI
+  +Enhanced Vegetation - Darker trunks version by Xtudo
+  +Enhanced Vegetation
+  +Improved Trees and Flora
+
+================================================================================
+[+] NPC & CREATURES  (65 mods)
+================================================================================
+  +s6o6t LORE - Oblivion Anymore - Creatures Overhaul v1.6
+  +Katkat TW3 Bears
+  +BAF - Beast Argonians Forever Early Version
+  +Marcus' Skyrim and Daggerfall Skeletons
+  +Water Beasts - Lamia Makeover
+  +Coops Deer and Mountain Lion Revamp
+  +Imperial Horse Armor
+  +Boof's Skinned Hound Retex
+  +Improved Flame Atronach
+  +Tree-Like Spriggans
+  +Slightly more Serious Mehrunes Dagon
+  +Hill Giant Eye Fix - Loreless Creatures - MOO
+  +Gentleman Burz gro-Khash
+  +Slof's Oblivion Horses
+  +Espless Slofs Horse Replacer
+  +Akatosh Retexture by themythofstrider
+  +Natural Vanilla Horses
+  +Countess
+  +Pogscamps (Scamp Retexture)
+  +MOO - katkat's TW 3 Wolves Patch
+  +Wraiths without faces
+  +Horse Turning Fixed
+  +Unique Liches
+  +Xivilaization Revolution
+  +Unique Dog Retextures
+  +Character Customization Expanded
+  +Better Teeth Texture and Mesh for OCOv2 Uses Merged Teeth
+  +OCOv2 Uses Merged Teeth
+  +Coop's MOO and Vanilla Wolf Remesh
+  +Better minotaurs
+  +NPC AI Improvements - Search Distance
+  +NPC Hair Matches Beard - Updated
+  +Khajiit Hair Colors
+  +Mannimarco Revisited UOP Patch
+  +Mannimarco Revisited Rebalance
+  +Mannimarco Revisited
+  +Ducks and Swans for Cyrodiil
+  +Big Liz's Big Textures for Big Lizards (Clannfear and Daedroth)
+  +Improved Frost Atronachs
+  +Mythic Madness
+  +Mythic Animals
+  +Faction Followers
+  +Improved Vanilla Hairs
+  +New Eyes for OCOv2
+  +Improved NPC Faces for OCOv2
+  +OCOv2 Male Beard Extended
+  +OCOv2 Male Beard
+  +Beards in Tamriel - Optimised Meshes
+  +Beards in Tamriel
+  +Warpaints scars and face markings for OCO2
+  +Oblivion Character Overhaul - Advanced Edition
+  +OCOv2 Eyelash Mesh Fix
+  +Oblivion Character Overhaul v2 - DLC Addon
+  +Replacers for Redguardians and Better Looking Redguards
+  +Redguardians - WIP
+  +Better OCOv2 Agemaps
+  +New Brows for OCO
+  +Detailed Mouth for OCOv2
+  +OCOv2 Enhanced Beast Races patch
+  +Brutish Male Orcs for OCOv2
+  +Orsimer Overhaul for Oblivion Character Overhaul version 2
+  +Seamless OCOV2
+  +Better Necks for OCOv2
+  +Oblivion Character Overhaul
+  +Race Balancing Project
+
+================================================================================
+[-] BASE TEXTURES  (14 mods)
+================================================================================
+  +Diverse Liches (Modders Resource)
+  +DT Texture Pack - Unique Landscapes
+  +Momos Crate Resource
+  +HD jerall ice texture with transparency
+  +Nice Ice a.k.a. The Hills Have Ice
+  +2020 Retexture Project - Landscapes and Rocks
+  +Detailed Terrain (2x)
+  +Bloody Spray
+  +Better Blood
+  +Magic Visuals Overhaul - Destruction particle fix
+  +Magic Visuals Overhaul - Balls Remover (Patch)
+  +Magic Visuals Overhaul
+  +Magic and Enchantment Effects Overhaul
+  +John Cyrodiil's beef soup (upscale dump)
+
+================================================================================
+[+] WORLDSPACE EDITS  (44 mods)
+================================================================================
+  +Ayleid Wells Glow
+  +Doomstones Glow
+  +Welkynd and Varla Stones Glow
+  +Wanderer's Wharf
+  +Unofficial Oblivion Tree Patch - UOTP
+  +Falling Rubbish Bravil - Project Ambience
+  +Arcane University Mystic Archives Classrooms
+  +Battlehorn Castle Edited
+  +ElsweyrOptionalFiles
+  +Elsweyr Mysteries
+  +Elsweyr Palm Trees Reduced
+  +ElsweyrPalmTrees Updated
+  +HD Elsweyr - Road Signs
+  +Elsweyr City Extension
+  +AI Enhanced - Elsweyr Desert of Anequina
+  +Elsweyr Anequina Hala Tree Replacer
+  +LOD Palms for Elsweyr Anequina
+  +SI Cities Expanded
+  +SI Unmarked Locations
+  +Temple of the One Altars
+  +Arena Alive Plus
+  +Living Imperial Palace
+  +Better Campsites
+  +Better Dark Brotherhood Sanctuary
+  +The Well Diver
+  +Random Ruins of the First Era
+  +Glenmoril Covens
+  +Minotaur Encampments
+  +More Magical Mages Guild Halls
+  +Add some flavor - Wayshrines and AyleidWells
+  +Add some flavor - Talos Bridge
+  +Add some flavor - Bridges
+  +Add some flavor - priories
+  +Add some flavor - Roadside inns
+  +Deadlands
+  +Better Cities
+  +Meos Settlement - Resource
+  +Weynon Priory Alive
+  +Improved Fighters Guild ENG
+  +MTC-Expanded Villages Updated
+  +Cloud Ruler Temple Alive
+  +Kvatch Rebuilt
+  +Unique Landscapes Compilation
+  +Priory of the Nine Improved
+
+================================================================================
+[-] GAMEPLAY  (42 mods)
+================================================================================
+  +Twohanded Sneak Attacks
+  +Skill Specialization
+  +Oblivion Collectible Cards
+  +Realistic Sprint and Gallop Fixed and Polished
+  +Devotion - Blessings Remastered
+  +OOO Enhanced - Resources
+  +OOO Enhanced
+  +Modern Security Overhaul
+  +Maskars Oblivion Overhaul
+  +Apophis Armory of the Silver Dragon
+  +Gamblers of Cyrodiil
+  +Class Skill Perk
+  +Boon Stones
+  +Vampires Reshoveled
+  +Birthsigns Reshoveled
+  +Simple Primary Needs
+  +OCRAFT - Stations for Sale
+  +OCRAFT - Cobl Glue
+  +OCRAFT - Compatibility Settings
+  +OCRAFT - Oblivion Crafting Framework
+  +New Detection Oblivion (sneak and stealth rebalance)
+  +Oblivifall - Losing My Blurriness. A texture upscale for LMR
+  +Stats Checker
+  +ef's Fishing Mod
+  +OOO Shivering Isles
+  +OOO - Oscuro's Oblivion Overhaul - Updated (Unofficial patch)
+  +OOO - Oscuro's Oblivion Overhaul - Updated
+  +Ayleid Wells Revamped - More Useful Ayleid Well Mod
+  +Oblivifall - Losing My Religion - Cyrodiil Chapel Update
+  +Oblivifall - Losing My Religion - No Golden Gods Replacer
+  +Oblivifall - Losing My Religion Patch - Knights of the Nine DLC
+  +Oblivifall - Losing My Religion Patch - AWLS
+  +Oblivifall - Losing My Religion
+  +Put it in its Place - Enhanced Grabbing
+  +Constant Orrery Effects - Halved
+  +De Rerum Dirennis - Alchemy Overhaul
+  +Better Unique Merchant Items
+  +Simple Horse Utilities
+  +Races Reshoveled
+  +Knights of the Nine - Improved Infamy System
+  +SupreMe Overhaul
+  +COCC - Classes
+
+================================================================================
+[+] DIALOGUE  (10 mods)
+================================================================================
+  +Realistic Player Dialogue Overhaul - Remastered
+  +Lore Dialogue 300 Updated
+  +No Anachronistic Main Quest Comments
+  +Shivering Isles Player Dialogue Overhaul
+  +Star's Extended Dialogue
+  +Realistic Player Dialogue Overhaul
+  +Immersive Character and Dialogue Expansion
+  +Dialogue Tweaks Fixes and Restorations
+  +More Generic Dialogue Restored
+  +Expanded Greetings
+
+================================================================================
+[+] IMMERSION  (42 mods)
+================================================================================
+  +Living Oblivion
+  +Switchable Lightsources
+  +All Natural - Real Lights
+  +Beggars Blessing
+  +Smoking Firesources BETA - Project Ambience
+  +Diseased Bedrolls
+  +Simple Inheritance
+  +DLC Integration - Legacy Edition
+  +Reaction
+  +Productive Mines
+  +Better Oblivion Crisis - Cultists Replace Conjurers
+  +Take or Equip
+  +More Fences
+  +Useful Farm Animals for COBL ver 2
+  +Skooma Refining & Addiction Enhanced
+  +Ayleid Artifacts
+  +Properly Equipped Vampire Hunters
+  +Lost Sorceries of the Ayleids
+  +Worship in Cyrodiil
+  +Tricks of the Trade
+  +Dunmerized Cheydinhal
+  +Reznod Mannequins
+  +Crime Has Witnesses - Responsibility Tweak
+  +Crime has witnesses
+  +Local Guards Features
+  +More Butterflies
+  +Falling Stars
+  +Blankets of Cyrodiil
+  +From Rivers to the Deadlands - The Pits
+  +Quest INIs for Progress Tracker
+  +Progress Tracker - Even more Quest INIs
+  +Progress Tracker Ini Mod Compendium
+  +Progress Tracker - Quest Completionist's Companion
+  +Better Letters
+  +Simple Shield on Back
+  +Radiant AI - NPCs Alive - Cyrodiil - Beta
+  +Lava Does Fire Damage
+  +Kaizits Animated Ingredients - No Shadows
+  +Kaizits Animated Ingredients
+  +Ancestor Moths Expanded
+  +Walk through Oblivion Gates
+  +Mothy Moth Cult
+
+================================================================================
+[+] MAGIC  (18 mods)
+================================================================================
+  +Supreme Magicka Update
+  +Magicka-based enchantment limits
+  +Mysticism Recharges Weapons 5x Bug Fix and Message Addition
+  +Better Bound Items
+  +Magic Visuals Overhaul - Fire laser fix
+  +Available Arcane Enchanters
+  +Necromancy and Lichdom
+  +Quieter Varied Spell Sounds
+  +Magic Revised - Mysticism
+  +Mercers Ingredient Effect Overhaul
+  +Restore All Attributes Spell
+  +Varied Spell Sounds
+  +Better Summon Undead Effect
+  +Av Latta Magicka - Sun Magic Additions
+  +Oblivion Magic Extender
+  +Truly No Default Starting Spells
+  +Magic Visuals Overhaul - OBME Patch
+  +Av Latta Magicka - Oblivion Magic Overhaul
+
+================================================================================
+[+] COMBAT  (12 mods)
+================================================================================
+  +Archery Focus
+  +Better recoil and stagger
+  +Combat Additions
+  +Elden Ring-Inspired Dodge Animations - Vanilla Conversion
+  +Combat Stance Reanimation - a custom preset
+  +Combat Reshoveled
+  +SB - Arrow Master
+  +Character Based Attack Speed
+  +RCB - Realistic Combat Behaviour
+  +Combat Stance Reanimation
+  +Rivalrys Shield Unequipper
+  +DTS - Downsides To Shields
+
+================================================================================
+[+] QUESTS  (45 mods)
+================================================================================
+  +Join the Morag Tong
+  +Join the Mythic Dawn
+  +Join the Blackwood Company
+  +Order of the Dragon EV
+  +Orden des Drachen
+  +Kragenirs Death Quest
+  +Shroud Over Stalrous Manor
+  +The Forgotten Isles - A Large Shivering Isles Expansion
+  +Tales from Elsweyr Anequina-Rev's Redo
+  +Infinitum - Compendium
+  +Join the Order of the Black Worm
+  +Integration - The Stranded Light
+  +Tales of Cyrodiil
+  +Frostcrag Reborn
+  +Journal-Based Quest Directions
+  +Delay DLC Start
+  +Elsweyr the Deserts of Anequina
+  +Into The Void
+  +Quests make friends
+  +Fame Based Daedric Quest Requirements
+  +The Well of Minlorada
+  +Render Unto Them Their Desert - An Inn of Ill Omen Overhaul
+  +Thievery in the Imperial City - Tweaks and Fixes
+  +Mudwater
+  +PrinceShroob Main Quest Delayer (Oblivion)
+  +The Ayleid Steps - Compatibility Patches
+  +Bounty Quests Fixed and Polished
+  +The Ayleid Steps
+  +Knights of the Nine - Revelation - Reasonable Flavor
+  +Companion Vilja
+  +Colored Quests - Updated
+  +Initial Quest Popups Begone
+  +Sinderion's Serendipity - Nirnroot Quest Reward
+  +More Artifacts For Martin
+  +Better Kvatch Rebuilt (Submod)
+  +Rescue Menien From the Kvatch Oblivion Gate (Fully Voiced)
+  +Immersive Quest Marker Overhaul
+  +Bruma Mages Guild Restored
+  +Thieves Guild HQ - Unhealthy Competition
+  +Oblivion Content Restoration Project
+  +Hackdirt The Deep Ones
+  +Hackdirt Alive
+  +Knights of the Nine Revelation
+  +Vampire Hunting - Order of the Virtuous Blood
+  +Nirnroot Quest Revised
+
+================================================================================
+[+] SKELETON & ANIMATION  (4 mods)
+================================================================================
+  +WalkBlessed OBSE Plugin (diagonal move)
+  +NPC Idle Animation Restoration and Additions
+  +Two-handed weapon swing fix for First Person View (Tick Fix)
+  +Faster Dungeon Doors
+
+================================================================================
+[+] USER INTERFACE  (32 mods)
+================================================================================
+  +Horse HUD Bars - Standalone
+  +QZ Easy Menus Update
+  +My Universal Fonts
+  +Extended UI - Vanilla and Darn Boss Bar Retexture
+  +Loot Menu
+  +Status Bars for Needs - Vanilla and Darn Retexture
+  +Status Bars for Needs
+  +Enhanced Hotkeys
+  +Better Oblivion Cursor
+  +Simple Compass Retexture
+  +Upscaled Vanilla Loading Screens plus Shivering Isles - 4k
+  +Display Stats - bug fix(kind of)
+  +New Eye and Crosshair for UI
+  +Upscaled Vanilla Style Loading Screens and MOO Themed Loading Screens - 4k and 2k versions
+  +Vanilla Style Loading Screens Addon
+  +Colored Map Markers
+  +Dynamic Map
+  +Cartographers Map of Oblivion
+  +Display Stats
+  +Display Skill Perk Effects
+  +Custom Spell Icons Updated
+  +Item Description Framework for Maskar's Oblivion Overhaul and WEPON
+  +Extended UI
+  +Colored Quests Light
+  +Main Menu 2K (English)
+  +DarNified UI
+  +Doomstone and Runestone Map Markers
+  +Class portraits diversified
+  +DarNified UI Image Small Changes
+  +World Maps For All Worldspaces
+  +Follower Status
+  +Better Enemy Health
+
+================================================================================
+[+] BUG FIXES & QOL  (36 mods)
+================================================================================
+  +Fewer Random Oblivion gates
+  +Spirit Stones
+  +Grip of Steel - No Player Disarm
+  +Book Tracker Updated
+  +Aleswell No Refraction Fix
+  +Wayshrine Map Markers - Redux
+  +Ayleid Ruins Fixed - Mesh Replacer and Modder Resource
+  +FractionalMagicDamage
+  +Slow Down M'aiq
+  +Armored Shadowmere Fix
+  +Inius Colus Gives Speechcraft Training Quest
+  +SB Weapon Drop Fix
+  +Menu Alt-Tab Crash Fix
+  +OB gate partner bug fix
+  +Icons for Alchemy Apparatus
+  +GPEngineFixes
+  +Ayleid Well Map Markers
+  +AveSithis Engine Fixes
+  +UOP Talos Bridge Collision Fix
+  +Less Maddening Shivering Isles Fetch Quests
+  +No Annoying Conjurer Attack (Spell Tomes DLC fix)
+  +Clickable Magic Gate
+  +Guard Infamy Greeting Fix
+  +Consistent Beggar Voices
+  +Console Paste Support
+  +Migck's Miscellaneous fixes tweaks and additions
+  +Shambles Crash Fix
+  +Unicorn Stay - Good Boy
+  +Faster Sleep Wait (OBSE)
+  +Blue's Engine Fixes
+  +Collection of Fixes by Lazaro
+  +Unofficial Oblivion DLC Patches
+  +Unofficial Shivering Isles Patch
+  +Unofficial Oblivion Patch
+  +DeParallaxer mod
+  +No Refraction Spells
+
+================================================================================
+[+] UTILITIES  (24 mods)
+================================================================================
+  +Oblivion Display Tweaks
+  +AV Uncapper Settings - Fixed
+  +AV Uncapper
+  +Oblivion Construction Set - Non-installer version
+  +TES4Edit
+  +Crash Logger Improved
+  +Console Ignores Player
+  +Cobl
+  +Base Object Swapper Integrations
+  +Base Object Swapper
+  +''I HAVE NO GREETING'' Fix
+  +MessageLogger
+  +ConsoleCommands
+  +AddActorValues
+  +LINK Plus Plus
+  +RuntimeEditorIDs
+  +ConScribe
+  +Blockhead
+  +EngineBugFixes
+  +OBL Mod Limit Fix
+  +SkyBSA
+  +4gb Ram Patcher
+  +MenuQue - OBSE Plugin
+  +Oblivion Script Extender (OBSE xOBSE)
+
+================================================================================
+[-] BASE GAME FILES  (1 mods)
+================================================================================
+  +Cleaned Game Files
+
+================================================================================
+[-] A PAINTED WORLD - 2.3.3  (0 mods)
+================================================================================
